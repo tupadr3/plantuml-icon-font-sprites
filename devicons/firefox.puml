@@ -35,8 +35,9 @@ sprite $firefox [32x32/16] {
 }
 
 
-!define DEV_FIREFOX(alias) ENTITY(rectangle,black,firefox,alias,DEV FIREFOX)
-!define DEV_FIREFOX(alias,label) ENTITY(rectangle,black,firefox,label,alias,DEV FIREFOX)
-!define DEV_FIREFOX(alias,label,shape) ENTITY(shape,black,firefox,label,alias,DEV FIREFOX)
+!define DEV_FIREFOX(_alias) ENTITY(rectangle,black,firefox,_alias,DEV FIREFOX)
+!define DEV_FIREFOX(_alias,_label) ENTITY(rectangle,black,firefox,_label,_alias,DEV FIREFOX)
+!define DEV_FIREFOX(_alias,_label,_shape) ENTITY(_shape,black,firefox,_label,_alias,DEV FIREFOX)
+!define DEV_FIREFOX(_alias,_label,_shape,_color) ENTITY(_shape,_color,firefox,_label,_alias,DEV FIREFOX)
 skinparam folderBackgroundColor<<DEV FIREFOX>> White
 @enduml

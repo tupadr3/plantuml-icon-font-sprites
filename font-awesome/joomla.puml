@@ -51,8 +51,9 @@ sprite $joomla [48x48/16] {
 }
 
 
-!define FA_JOOMLA(alias) ENTITY(rectangle,black,joomla,alias,FA JOOMLA)
-!define FA_JOOMLA(alias,label) ENTITY(rectangle,black,joomla,label,alias,FA JOOMLA)
-!define FA_JOOMLA(alias,label,shape) ENTITY(shape,black,joomla,label,alias,FA JOOMLA)
+!define FA_JOOMLA(_alias) ENTITY(rectangle,black,joomla,_alias,FA JOOMLA)
+!define FA_JOOMLA(_alias,_label) ENTITY(rectangle,black,joomla,_label,_alias,FA JOOMLA)
+!define FA_JOOMLA(_alias,_label,_shape) ENTITY(_shape,black,joomla,_label,_alias,FA JOOMLA)
+!define FA_JOOMLA(_alias,_label,_shape,_color) ENTITY(_shape,_color,joomla,_label,_alias,FA JOOMLA)
 skinparam folderBackgroundColor<<FA JOOMLA>> White
 @enduml

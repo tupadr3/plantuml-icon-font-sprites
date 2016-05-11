@@ -51,8 +51,9 @@ sprite $television [48x48/16] {
 }
 
 
-!define FA_TELEVISION(alias) ENTITY(rectangle,black,television,alias,FA TELEVISION)
-!define FA_TELEVISION(alias,label) ENTITY(rectangle,black,television,label,alias,FA TELEVISION)
-!define FA_TELEVISION(alias,label,shape) ENTITY(shape,black,television,label,alias,FA TELEVISION)
+!define FA_TELEVISION(_alias) ENTITY(rectangle,black,television,_alias,FA TELEVISION)
+!define FA_TELEVISION(_alias,_label) ENTITY(rectangle,black,television,_label,_alias,FA TELEVISION)
+!define FA_TELEVISION(_alias,_label,_shape) ENTITY(_shape,black,television,_label,_alias,FA TELEVISION)
+!define FA_TELEVISION(_alias,_label,_shape,_color) ENTITY(_shape,_color,television,_label,_alias,FA TELEVISION)
 skinparam folderBackgroundColor<<FA TELEVISION>> White
 @enduml

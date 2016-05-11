@@ -35,8 +35,9 @@ sprite $code [32x32/16] {
 }
 
 
-!define DEV_CODE(alias) ENTITY(rectangle,black,code,alias,DEV CODE)
-!define DEV_CODE(alias,label) ENTITY(rectangle,black,code,label,alias,DEV CODE)
-!define DEV_CODE(alias,label,shape) ENTITY(shape,black,code,label,alias,DEV CODE)
+!define DEV_CODE(_alias) ENTITY(rectangle,black,code,_alias,DEV CODE)
+!define DEV_CODE(_alias,_label) ENTITY(rectangle,black,code,_label,_alias,DEV CODE)
+!define DEV_CODE(_alias,_label,_shape) ENTITY(_shape,black,code,_label,_alias,DEV CODE)
+!define DEV_CODE(_alias,_label,_shape,_color) ENTITY(_shape,_color,code,_label,_alias,DEV CODE)
 skinparam folderBackgroundColor<<DEV CODE>> White
 @enduml

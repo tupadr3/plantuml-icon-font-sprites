@@ -51,8 +51,9 @@ sprite $bank [48x48/16] {
 }
 
 
-!define FA_BANK(alias) ENTITY(rectangle,black,bank,alias,FA BANK)
-!define FA_BANK(alias,label) ENTITY(rectangle,black,bank,label,alias,FA BANK)
-!define FA_BANK(alias,label,shape) ENTITY(shape,black,bank,label,alias,FA BANK)
+!define FA_BANK(_alias) ENTITY(rectangle,black,bank,_alias,FA BANK)
+!define FA_BANK(_alias,_label) ENTITY(rectangle,black,bank,_label,_alias,FA BANK)
+!define FA_BANK(_alias,_label,_shape) ENTITY(_shape,black,bank,_label,_alias,FA BANK)
+!define FA_BANK(_alias,_label,_shape,_color) ENTITY(_shape,_color,bank,_label,_alias,FA BANK)
 skinparam folderBackgroundColor<<FA BANK>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $desktop [48x48/16] {
 }
 
 
-!define FA_DESKTOP(alias) ENTITY(rectangle,black,desktop,alias,FA DESKTOP)
-!define FA_DESKTOP(alias,label) ENTITY(rectangle,black,desktop,label,alias,FA DESKTOP)
-!define FA_DESKTOP(alias,label,shape) ENTITY(shape,black,desktop,label,alias,FA DESKTOP)
+!define FA_DESKTOP(_alias) ENTITY(rectangle,black,desktop,_alias,FA DESKTOP)
+!define FA_DESKTOP(_alias,_label) ENTITY(rectangle,black,desktop,_label,_alias,FA DESKTOP)
+!define FA_DESKTOP(_alias,_label,_shape) ENTITY(_shape,black,desktop,_label,_alias,FA DESKTOP)
+!define FA_DESKTOP(_alias,_label,_shape,_color) ENTITY(_shape,_color,desktop,_label,_alias,FA DESKTOP)
 skinparam folderBackgroundColor<<FA DESKTOP>> White
 @enduml

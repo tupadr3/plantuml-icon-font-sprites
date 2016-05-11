@@ -35,8 +35,9 @@ sprite $bootstrap [32x32/16] {
 }
 
 
-!define DEV_BOOTSTRAP(alias) ENTITY(rectangle,black,bootstrap,alias,DEV BOOTSTRAP)
-!define DEV_BOOTSTRAP(alias,label) ENTITY(rectangle,black,bootstrap,label,alias,DEV BOOTSTRAP)
-!define DEV_BOOTSTRAP(alias,label,shape) ENTITY(shape,black,bootstrap,label,alias,DEV BOOTSTRAP)
+!define DEV_BOOTSTRAP(_alias) ENTITY(rectangle,black,bootstrap,_alias,DEV BOOTSTRAP)
+!define DEV_BOOTSTRAP(_alias,_label) ENTITY(rectangle,black,bootstrap,_label,_alias,DEV BOOTSTRAP)
+!define DEV_BOOTSTRAP(_alias,_label,_shape) ENTITY(_shape,black,bootstrap,_label,_alias,DEV BOOTSTRAP)
+!define DEV_BOOTSTRAP(_alias,_label,_shape,_color) ENTITY(_shape,_color,bootstrap,_label,_alias,DEV BOOTSTRAP)
 skinparam folderBackgroundColor<<DEV BOOTSTRAP>> White
 @enduml

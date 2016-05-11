@@ -51,8 +51,9 @@ sprite $yahoo [48x48/16] {
 }
 
 
-!define FA_YAHOO(alias) ENTITY(rectangle,black,yahoo,alias,FA YAHOO)
-!define FA_YAHOO(alias,label) ENTITY(rectangle,black,yahoo,label,alias,FA YAHOO)
-!define FA_YAHOO(alias,label,shape) ENTITY(shape,black,yahoo,label,alias,FA YAHOO)
+!define FA_YAHOO(_alias) ENTITY(rectangle,black,yahoo,_alias,FA YAHOO)
+!define FA_YAHOO(_alias,_label) ENTITY(rectangle,black,yahoo,_label,_alias,FA YAHOO)
+!define FA_YAHOO(_alias,_label,_shape) ENTITY(_shape,black,yahoo,_label,_alias,FA YAHOO)
+!define FA_YAHOO(_alias,_label,_shape,_color) ENTITY(_shape,_color,yahoo,_label,_alias,FA YAHOO)
 skinparam folderBackgroundColor<<FA YAHOO>> White
 @enduml

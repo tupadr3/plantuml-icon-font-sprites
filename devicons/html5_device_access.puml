@@ -35,8 +35,9 @@ sprite $html5_device_access [32x32/16] {
 }
 
 
-!define DEV_HTML5_DEVICE_ACCESS(alias) ENTITY(rectangle,black,html5_device_access,alias,DEV HTML5_DEVICE_ACCESS)
-!define DEV_HTML5_DEVICE_ACCESS(alias,label) ENTITY(rectangle,black,html5_device_access,label,alias,DEV HTML5_DEVICE_ACCESS)
-!define DEV_HTML5_DEVICE_ACCESS(alias,label,shape) ENTITY(shape,black,html5_device_access,label,alias,DEV HTML5_DEVICE_ACCESS)
+!define DEV_HTML5_DEVICE_ACCESS(_alias) ENTITY(rectangle,black,html5_device_access,_alias,DEV HTML5_DEVICE_ACCESS)
+!define DEV_HTML5_DEVICE_ACCESS(_alias,_label) ENTITY(rectangle,black,html5_device_access,_label,_alias,DEV HTML5_DEVICE_ACCESS)
+!define DEV_HTML5_DEVICE_ACCESS(_alias,_label,_shape) ENTITY(_shape,black,html5_device_access,_label,_alias,DEV HTML5_DEVICE_ACCESS)
+!define DEV_HTML5_DEVICE_ACCESS(_alias,_label,_shape,_color) ENTITY(_shape,_color,html5_device_access,_label,_alias,DEV HTML5_DEVICE_ACCESS)
 skinparam folderBackgroundColor<<DEV HTML5_DEVICE_ACCESS>> White
 @enduml

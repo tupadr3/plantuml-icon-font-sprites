@@ -51,8 +51,9 @@ AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA
 }
 
 
-!define FA_GRADUATION_CAP(alias) ENTITY(rectangle,black,graduation_cap,alias,FA GRADUATION_CAP)
-!define FA_GRADUATION_CAP(alias,label) ENTITY(rectangle,black,graduation_cap,label,alias,FA GRADUATION_CAP)
-!define FA_GRADUATION_CAP(alias,label,shape) ENTITY(shape,black,graduation_cap,label,alias,FA GRADUATION_CAP)
+!define FA_GRADUATION_CAP(_alias) ENTITY(rectangle,black,graduation_cap,_alias,FA GRADUATION_CAP)
+!define FA_GRADUATION_CAP(_alias,_label) ENTITY(rectangle,black,graduation_cap,_label,_alias,FA GRADUATION_CAP)
+!define FA_GRADUATION_CAP(_alias,_label,_shape) ENTITY(_shape,black,graduation_cap,_label,_alias,FA GRADUATION_CAP)
+!define FA_GRADUATION_CAP(_alias,_label,_shape,_color) ENTITY(_shape,_color,graduation_cap,_label,_alias,FA GRADUATION_CAP)
 skinparam folderBackgroundColor<<FA GRADUATION_CAP>> White
 @enduml

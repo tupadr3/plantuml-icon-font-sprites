@@ -51,8 +51,9 @@ sprite $feed [48x48/16] {
 }
 
 
-!define FA_FEED(alias) ENTITY(rectangle,black,feed,alias,FA FEED)
-!define FA_FEED(alias,label) ENTITY(rectangle,black,feed,label,alias,FA FEED)
-!define FA_FEED(alias,label,shape) ENTITY(shape,black,feed,label,alias,FA FEED)
+!define FA_FEED(_alias) ENTITY(rectangle,black,feed,_alias,FA FEED)
+!define FA_FEED(_alias,_label) ENTITY(rectangle,black,feed,_label,_alias,FA FEED)
+!define FA_FEED(_alias,_label,_shape) ENTITY(_shape,black,feed,_label,_alias,FA FEED)
+!define FA_FEED(_alias,_label,_shape,_color) ENTITY(_shape,_color,feed,_label,_alias,FA FEED)
 skinparam folderBackgroundColor<<FA FEED>> White
 @enduml

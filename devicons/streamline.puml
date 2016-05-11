@@ -35,8 +35,9 @@ sprite $streamline [32x32/16] {
 }
 
 
-!define DEV_STREAMLINE(alias) ENTITY(rectangle,black,streamline,alias,DEV STREAMLINE)
-!define DEV_STREAMLINE(alias,label) ENTITY(rectangle,black,streamline,label,alias,DEV STREAMLINE)
-!define DEV_STREAMLINE(alias,label,shape) ENTITY(shape,black,streamline,label,alias,DEV STREAMLINE)
+!define DEV_STREAMLINE(_alias) ENTITY(rectangle,black,streamline,_alias,DEV STREAMLINE)
+!define DEV_STREAMLINE(_alias,_label) ENTITY(rectangle,black,streamline,_label,_alias,DEV STREAMLINE)
+!define DEV_STREAMLINE(_alias,_label,_shape) ENTITY(_shape,black,streamline,_label,_alias,DEV STREAMLINE)
+!define DEV_STREAMLINE(_alias,_label,_shape,_color) ENTITY(_shape,_color,streamline,_label,_alias,DEV STREAMLINE)
 skinparam folderBackgroundColor<<DEV STREAMLINE>> White
 @enduml

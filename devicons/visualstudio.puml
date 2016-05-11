@@ -35,8 +35,9 @@ sprite $visualstudio [32x32/16] {
 }
 
 
-!define DEV_VISUALSTUDIO(alias) ENTITY(rectangle,black,visualstudio,alias,DEV VISUALSTUDIO)
-!define DEV_VISUALSTUDIO(alias,label) ENTITY(rectangle,black,visualstudio,label,alias,DEV VISUALSTUDIO)
-!define DEV_VISUALSTUDIO(alias,label,shape) ENTITY(shape,black,visualstudio,label,alias,DEV VISUALSTUDIO)
+!define DEV_VISUALSTUDIO(_alias) ENTITY(rectangle,black,visualstudio,_alias,DEV VISUALSTUDIO)
+!define DEV_VISUALSTUDIO(_alias,_label) ENTITY(rectangle,black,visualstudio,_label,_alias,DEV VISUALSTUDIO)
+!define DEV_VISUALSTUDIO(_alias,_label,_shape) ENTITY(_shape,black,visualstudio,_label,_alias,DEV VISUALSTUDIO)
+!define DEV_VISUALSTUDIO(_alias,_label,_shape,_color) ENTITY(_shape,_color,visualstudio,_label,_alias,DEV VISUALSTUDIO)
 skinparam folderBackgroundColor<<DEV VISUALSTUDIO>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $trophy [48x48/16] {
 }
 
 
-!define FA_TROPHY(alias) ENTITY(rectangle,black,trophy,alias,FA TROPHY)
-!define FA_TROPHY(alias,label) ENTITY(rectangle,black,trophy,label,alias,FA TROPHY)
-!define FA_TROPHY(alias,label,shape) ENTITY(shape,black,trophy,label,alias,FA TROPHY)
+!define FA_TROPHY(_alias) ENTITY(rectangle,black,trophy,_alias,FA TROPHY)
+!define FA_TROPHY(_alias,_label) ENTITY(rectangle,black,trophy,_label,_alias,FA TROPHY)
+!define FA_TROPHY(_alias,_label,_shape) ENTITY(_shape,black,trophy,_label,_alias,FA TROPHY)
+!define FA_TROPHY(_alias,_label,_shape,_color) ENTITY(_shape,_color,trophy,_label,_alias,FA TROPHY)
 skinparam folderBackgroundColor<<FA TROPHY>> White
 @enduml

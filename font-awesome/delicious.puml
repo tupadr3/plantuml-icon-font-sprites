@@ -51,8 +51,9 @@ sprite $delicious [48x48/16] {
 }
 
 
-!define FA_DELICIOUS(alias) ENTITY(rectangle,black,delicious,alias,FA DELICIOUS)
-!define FA_DELICIOUS(alias,label) ENTITY(rectangle,black,delicious,label,alias,FA DELICIOUS)
-!define FA_DELICIOUS(alias,label,shape) ENTITY(shape,black,delicious,label,alias,FA DELICIOUS)
+!define FA_DELICIOUS(_alias) ENTITY(rectangle,black,delicious,_alias,FA DELICIOUS)
+!define FA_DELICIOUS(_alias,_label) ENTITY(rectangle,black,delicious,_label,_alias,FA DELICIOUS)
+!define FA_DELICIOUS(_alias,_label,_shape) ENTITY(_shape,black,delicious,_label,_alias,FA DELICIOUS)
+!define FA_DELICIOUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,delicious,_label,_alias,FA DELICIOUS)
 skinparam folderBackgroundColor<<FA DELICIOUS>> White
 @enduml

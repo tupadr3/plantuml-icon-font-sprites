@@ -35,8 +35,9 @@ sprite $komodo [32x32/16] {
 }
 
 
-!define DEV_KOMODO(alias) ENTITY(rectangle,black,komodo,alias,DEV KOMODO)
-!define DEV_KOMODO(alias,label) ENTITY(rectangle,black,komodo,label,alias,DEV KOMODO)
-!define DEV_KOMODO(alias,label,shape) ENTITY(shape,black,komodo,label,alias,DEV KOMODO)
+!define DEV_KOMODO(_alias) ENTITY(rectangle,black,komodo,_alias,DEV KOMODO)
+!define DEV_KOMODO(_alias,_label) ENTITY(rectangle,black,komodo,_label,_alias,DEV KOMODO)
+!define DEV_KOMODO(_alias,_label,_shape) ENTITY(_shape,black,komodo,_label,_alias,DEV KOMODO)
+!define DEV_KOMODO(_alias,_label,_shape,_color) ENTITY(_shape,_color,komodo,_label,_alias,DEV KOMODO)
 skinparam folderBackgroundColor<<DEV KOMODO>> White
 @enduml

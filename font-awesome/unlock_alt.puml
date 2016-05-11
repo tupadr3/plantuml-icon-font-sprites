@@ -51,8 +51,9 @@ sprite $unlock_alt [48x48/16] {
 }
 
 
-!define FA_UNLOCK_ALT(alias) ENTITY(rectangle,black,unlock_alt,alias,FA UNLOCK_ALT)
-!define FA_UNLOCK_ALT(alias,label) ENTITY(rectangle,black,unlock_alt,label,alias,FA UNLOCK_ALT)
-!define FA_UNLOCK_ALT(alias,label,shape) ENTITY(shape,black,unlock_alt,label,alias,FA UNLOCK_ALT)
+!define FA_UNLOCK_ALT(_alias) ENTITY(rectangle,black,unlock_alt,_alias,FA UNLOCK_ALT)
+!define FA_UNLOCK_ALT(_alias,_label) ENTITY(rectangle,black,unlock_alt,_label,_alias,FA UNLOCK_ALT)
+!define FA_UNLOCK_ALT(_alias,_label,_shape) ENTITY(_shape,black,unlock_alt,_label,_alias,FA UNLOCK_ALT)
+!define FA_UNLOCK_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,unlock_alt,_label,_alias,FA UNLOCK_ALT)
 skinparam folderBackgroundColor<<FA UNLOCK_ALT>> White
 @enduml

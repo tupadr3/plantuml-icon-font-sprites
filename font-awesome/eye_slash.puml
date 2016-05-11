@@ -51,8 +51,9 @@ sprite $eye_slash [48x48/16] {
 }
 
 
-!define FA_EYE_SLASH(alias) ENTITY(rectangle,black,eye_slash,alias,FA EYE_SLASH)
-!define FA_EYE_SLASH(alias,label) ENTITY(rectangle,black,eye_slash,label,alias,FA EYE_SLASH)
-!define FA_EYE_SLASH(alias,label,shape) ENTITY(shape,black,eye_slash,label,alias,FA EYE_SLASH)
+!define FA_EYE_SLASH(_alias) ENTITY(rectangle,black,eye_slash,_alias,FA EYE_SLASH)
+!define FA_EYE_SLASH(_alias,_label) ENTITY(rectangle,black,eye_slash,_label,_alias,FA EYE_SLASH)
+!define FA_EYE_SLASH(_alias,_label,_shape) ENTITY(_shape,black,eye_slash,_label,_alias,FA EYE_SLASH)
+!define FA_EYE_SLASH(_alias,_label,_shape,_color) ENTITY(_shape,_color,eye_slash,_label,_alias,FA EYE_SLASH)
 skinparam folderBackgroundColor<<FA EYE_SLASH>> White
 @enduml

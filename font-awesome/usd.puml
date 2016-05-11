@@ -51,8 +51,9 @@ sprite $usd [48x48/16] {
 }
 
 
-!define FA_USD(alias) ENTITY(rectangle,black,usd,alias,FA USD)
-!define FA_USD(alias,label) ENTITY(rectangle,black,usd,label,alias,FA USD)
-!define FA_USD(alias,label,shape) ENTITY(shape,black,usd,label,alias,FA USD)
+!define FA_USD(_alias) ENTITY(rectangle,black,usd,_alias,FA USD)
+!define FA_USD(_alias,_label) ENTITY(rectangle,black,usd,_label,_alias,FA USD)
+!define FA_USD(_alias,_label,_shape) ENTITY(_shape,black,usd,_label,_alias,FA USD)
+!define FA_USD(_alias,_label,_shape,_color) ENTITY(_shape,_color,usd,_label,_alias,FA USD)
 skinparam folderBackgroundColor<<FA USD>> White
 @enduml

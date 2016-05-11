@@ -51,8 +51,9 @@ sprite $stumbleupon [48x48/16] {
 }
 
 
-!define FA_STUMBLEUPON(alias) ENTITY(rectangle,black,stumbleupon,alias,FA STUMBLEUPON)
-!define FA_STUMBLEUPON(alias,label) ENTITY(rectangle,black,stumbleupon,label,alias,FA STUMBLEUPON)
-!define FA_STUMBLEUPON(alias,label,shape) ENTITY(shape,black,stumbleupon,label,alias,FA STUMBLEUPON)
+!define FA_STUMBLEUPON(_alias) ENTITY(rectangle,black,stumbleupon,_alias,FA STUMBLEUPON)
+!define FA_STUMBLEUPON(_alias,_label) ENTITY(rectangle,black,stumbleupon,_label,_alias,FA STUMBLEUPON)
+!define FA_STUMBLEUPON(_alias,_label,_shape) ENTITY(_shape,black,stumbleupon,_label,_alias,FA STUMBLEUPON)
+!define FA_STUMBLEUPON(_alias,_label,_shape,_color) ENTITY(_shape,_color,stumbleupon,_label,_alias,FA STUMBLEUPON)
 skinparam folderBackgroundColor<<FA STUMBLEUPON>> White
 @enduml

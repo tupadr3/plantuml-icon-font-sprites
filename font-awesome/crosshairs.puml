@@ -51,8 +51,9 @@ sprite $crosshairs [48x48/16] {
 }
 
 
-!define FA_CROSSHAIRS(alias) ENTITY(rectangle,black,crosshairs,alias,FA CROSSHAIRS)
-!define FA_CROSSHAIRS(alias,label) ENTITY(rectangle,black,crosshairs,label,alias,FA CROSSHAIRS)
-!define FA_CROSSHAIRS(alias,label,shape) ENTITY(shape,black,crosshairs,label,alias,FA CROSSHAIRS)
+!define FA_CROSSHAIRS(_alias) ENTITY(rectangle,black,crosshairs,_alias,FA CROSSHAIRS)
+!define FA_CROSSHAIRS(_alias,_label) ENTITY(rectangle,black,crosshairs,_label,_alias,FA CROSSHAIRS)
+!define FA_CROSSHAIRS(_alias,_label,_shape) ENTITY(_shape,black,crosshairs,_label,_alias,FA CROSSHAIRS)
+!define FA_CROSSHAIRS(_alias,_label,_shape,_color) ENTITY(_shape,_color,crosshairs,_label,_alias,FA CROSSHAIRS)
 skinparam folderBackgroundColor<<FA CROSSHAIRS>> White
 @enduml

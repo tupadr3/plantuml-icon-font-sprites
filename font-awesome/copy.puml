@@ -51,8 +51,9 @@ sprite $copy [48x48/16] {
 }
 
 
-!define FA_COPY(alias) ENTITY(rectangle,black,copy,alias,FA COPY)
-!define FA_COPY(alias,label) ENTITY(rectangle,black,copy,label,alias,FA COPY)
-!define FA_COPY(alias,label,shape) ENTITY(shape,black,copy,label,alias,FA COPY)
+!define FA_COPY(_alias) ENTITY(rectangle,black,copy,_alias,FA COPY)
+!define FA_COPY(_alias,_label) ENTITY(rectangle,black,copy,_label,_alias,FA COPY)
+!define FA_COPY(_alias,_label,_shape) ENTITY(_shape,black,copy,_label,_alias,FA COPY)
+!define FA_COPY(_alias,_label,_shape,_color) ENTITY(_shape,_color,copy,_label,_alias,FA COPY)
 skinparam folderBackgroundColor<<FA COPY>> White
 @enduml

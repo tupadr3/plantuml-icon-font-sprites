@@ -51,8 +51,9 @@ sprite $life_bouy [48x48/16] {
 }
 
 
-!define FA_LIFE_BOUY(alias) ENTITY(rectangle,black,life_bouy,alias,FA LIFE_BOUY)
-!define FA_LIFE_BOUY(alias,label) ENTITY(rectangle,black,life_bouy,label,alias,FA LIFE_BOUY)
-!define FA_LIFE_BOUY(alias,label,shape) ENTITY(shape,black,life_bouy,label,alias,FA LIFE_BOUY)
+!define FA_LIFE_BOUY(_alias) ENTITY(rectangle,black,life_bouy,_alias,FA LIFE_BOUY)
+!define FA_LIFE_BOUY(_alias,_label) ENTITY(rectangle,black,life_bouy,_label,_alias,FA LIFE_BOUY)
+!define FA_LIFE_BOUY(_alias,_label,_shape) ENTITY(_shape,black,life_bouy,_label,_alias,FA LIFE_BOUY)
+!define FA_LIFE_BOUY(_alias,_label,_shape,_color) ENTITY(_shape,_color,life_bouy,_label,_alias,FA LIFE_BOUY)
 skinparam folderBackgroundColor<<FA LIFE_BOUY>> White
 @enduml

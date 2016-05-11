@@ -51,8 +51,9 @@ sprite $minus [48x48/16] {
 }
 
 
-!define FA_MINUS(alias) ENTITY(rectangle,black,minus,alias,FA MINUS)
-!define FA_MINUS(alias,label) ENTITY(rectangle,black,minus,label,alias,FA MINUS)
-!define FA_MINUS(alias,label,shape) ENTITY(shape,black,minus,label,alias,FA MINUS)
+!define FA_MINUS(_alias) ENTITY(rectangle,black,minus,_alias,FA MINUS)
+!define FA_MINUS(_alias,_label) ENTITY(rectangle,black,minus,_label,_alias,FA MINUS)
+!define FA_MINUS(_alias,_label,_shape) ENTITY(_shape,black,minus,_label,_alias,FA MINUS)
+!define FA_MINUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,minus,_label,_alias,FA MINUS)
 skinparam folderBackgroundColor<<FA MINUS>> White
 @enduml

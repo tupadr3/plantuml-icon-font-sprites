@@ -51,8 +51,9 @@ sprite $whatsapp [48x48/16] {
 }
 
 
-!define FA_WHATSAPP(alias) ENTITY(rectangle,black,whatsapp,alias,FA WHATSAPP)
-!define FA_WHATSAPP(alias,label) ENTITY(rectangle,black,whatsapp,label,alias,FA WHATSAPP)
-!define FA_WHATSAPP(alias,label,shape) ENTITY(shape,black,whatsapp,label,alias,FA WHATSAPP)
+!define FA_WHATSAPP(_alias) ENTITY(rectangle,black,whatsapp,_alias,FA WHATSAPP)
+!define FA_WHATSAPP(_alias,_label) ENTITY(rectangle,black,whatsapp,_label,_alias,FA WHATSAPP)
+!define FA_WHATSAPP(_alias,_label,_shape) ENTITY(_shape,black,whatsapp,_label,_alias,FA WHATSAPP)
+!define FA_WHATSAPP(_alias,_label,_shape,_color) ENTITY(_shape,_color,whatsapp,_label,_alias,FA WHATSAPP)
 skinparam folderBackgroundColor<<FA WHATSAPP>> White
 @enduml

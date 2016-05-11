@@ -51,8 +51,9 @@ sprite $sitemap [48x48/16] {
 }
 
 
-!define FA_SITEMAP(alias) ENTITY(rectangle,black,sitemap,alias,FA SITEMAP)
-!define FA_SITEMAP(alias,label) ENTITY(rectangle,black,sitemap,label,alias,FA SITEMAP)
-!define FA_SITEMAP(alias,label,shape) ENTITY(shape,black,sitemap,label,alias,FA SITEMAP)
+!define FA_SITEMAP(_alias) ENTITY(rectangle,black,sitemap,_alias,FA SITEMAP)
+!define FA_SITEMAP(_alias,_label) ENTITY(rectangle,black,sitemap,_label,_alias,FA SITEMAP)
+!define FA_SITEMAP(_alias,_label,_shape) ENTITY(_shape,black,sitemap,_label,_alias,FA SITEMAP)
+!define FA_SITEMAP(_alias,_label,_shape,_color) ENTITY(_shape,_color,sitemap,_label,_alias,FA SITEMAP)
 skinparam folderBackgroundColor<<FA SITEMAP>> White
 @enduml

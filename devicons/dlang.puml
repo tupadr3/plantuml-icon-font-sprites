@@ -35,8 +35,9 @@ sprite $dlang [34x32/16] {
 }
 
 
-!define DEV_DLANG(alias) ENTITY(rectangle,black,dlang,alias,DEV DLANG)
-!define DEV_DLANG(alias,label) ENTITY(rectangle,black,dlang,label,alias,DEV DLANG)
-!define DEV_DLANG(alias,label,shape) ENTITY(shape,black,dlang,label,alias,DEV DLANG)
+!define DEV_DLANG(_alias) ENTITY(rectangle,black,dlang,_alias,DEV DLANG)
+!define DEV_DLANG(_alias,_label) ENTITY(rectangle,black,dlang,_label,_alias,DEV DLANG)
+!define DEV_DLANG(_alias,_label,_shape) ENTITY(_shape,black,dlang,_label,_alias,DEV DLANG)
+!define DEV_DLANG(_alias,_label,_shape,_color) ENTITY(_shape,_color,dlang,_label,_alias,DEV DLANG)
 skinparam folderBackgroundColor<<DEV DLANG>> White
 @enduml

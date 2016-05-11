@@ -51,8 +51,9 @@ sprite $twitter [48x48/16] {
 }
 
 
-!define FA_TWITTER(alias) ENTITY(rectangle,black,twitter,alias,FA TWITTER)
-!define FA_TWITTER(alias,label) ENTITY(rectangle,black,twitter,label,alias,FA TWITTER)
-!define FA_TWITTER(alias,label,shape) ENTITY(shape,black,twitter,label,alias,FA TWITTER)
+!define FA_TWITTER(_alias) ENTITY(rectangle,black,twitter,_alias,FA TWITTER)
+!define FA_TWITTER(_alias,_label) ENTITY(rectangle,black,twitter,_label,_alias,FA TWITTER)
+!define FA_TWITTER(_alias,_label,_shape) ENTITY(_shape,black,twitter,_label,_alias,FA TWITTER)
+!define FA_TWITTER(_alias,_label,_shape,_color) ENTITY(_shape,_color,twitter,_label,_alias,FA TWITTER)
 skinparam folderBackgroundColor<<FA TWITTER>> White
 @enduml

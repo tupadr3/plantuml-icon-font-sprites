@@ -51,8 +51,9 @@ sprite $venus_mars [48x48/16] {
 }
 
 
-!define FA_VENUS_MARS(alias) ENTITY(rectangle,black,venus_mars,alias,FA VENUS_MARS)
-!define FA_VENUS_MARS(alias,label) ENTITY(rectangle,black,venus_mars,label,alias,FA VENUS_MARS)
-!define FA_VENUS_MARS(alias,label,shape) ENTITY(shape,black,venus_mars,label,alias,FA VENUS_MARS)
+!define FA_VENUS_MARS(_alias) ENTITY(rectangle,black,venus_mars,_alias,FA VENUS_MARS)
+!define FA_VENUS_MARS(_alias,_label) ENTITY(rectangle,black,venus_mars,_label,_alias,FA VENUS_MARS)
+!define FA_VENUS_MARS(_alias,_label,_shape) ENTITY(_shape,black,venus_mars,_label,_alias,FA VENUS_MARS)
+!define FA_VENUS_MARS(_alias,_label,_shape,_color) ENTITY(_shape,_color,venus_mars,_label,_alias,FA VENUS_MARS)
 skinparam folderBackgroundColor<<FA VENUS_MARS>> White
 @enduml

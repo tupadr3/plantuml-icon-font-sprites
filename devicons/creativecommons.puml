@@ -35,8 +35,9 @@ sprite $creativecommons [32x32/16] {
 }
 
 
-!define DEV_CREATIVECOMMONS(alias) ENTITY(rectangle,black,creativecommons,alias,DEV CREATIVECOMMONS)
-!define DEV_CREATIVECOMMONS(alias,label) ENTITY(rectangle,black,creativecommons,label,alias,DEV CREATIVECOMMONS)
-!define DEV_CREATIVECOMMONS(alias,label,shape) ENTITY(shape,black,creativecommons,label,alias,DEV CREATIVECOMMONS)
+!define DEV_CREATIVECOMMONS(_alias) ENTITY(rectangle,black,creativecommons,_alias,DEV CREATIVECOMMONS)
+!define DEV_CREATIVECOMMONS(_alias,_label) ENTITY(rectangle,black,creativecommons,_label,_alias,DEV CREATIVECOMMONS)
+!define DEV_CREATIVECOMMONS(_alias,_label,_shape) ENTITY(_shape,black,creativecommons,_label,_alias,DEV CREATIVECOMMONS)
+!define DEV_CREATIVECOMMONS(_alias,_label,_shape,_color) ENTITY(_shape,_color,creativecommons,_label,_alias,DEV CREATIVECOMMONS)
 skinparam folderBackgroundColor<<DEV CREATIVECOMMONS>> White
 @enduml

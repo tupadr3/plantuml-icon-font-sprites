@@ -35,8 +35,9 @@ sprite $prolog [32x32/16] {
 }
 
 
-!define DEV_PROLOG(alias) ENTITY(rectangle,black,prolog,alias,DEV PROLOG)
-!define DEV_PROLOG(alias,label) ENTITY(rectangle,black,prolog,label,alias,DEV PROLOG)
-!define DEV_PROLOG(alias,label,shape) ENTITY(shape,black,prolog,label,alias,DEV PROLOG)
+!define DEV_PROLOG(_alias) ENTITY(rectangle,black,prolog,_alias,DEV PROLOG)
+!define DEV_PROLOG(_alias,_label) ENTITY(rectangle,black,prolog,_label,_alias,DEV PROLOG)
+!define DEV_PROLOG(_alias,_label,_shape) ENTITY(_shape,black,prolog,_label,_alias,DEV PROLOG)
+!define DEV_PROLOG(_alias,_label,_shape,_color) ENTITY(_shape,_color,prolog,_label,_alias,DEV PROLOG)
 skinparam folderBackgroundColor<<DEV PROLOG>> White
 @enduml

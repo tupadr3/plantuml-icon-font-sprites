@@ -51,8 +51,9 @@ sprite $trello [48x48/16] {
 }
 
 
-!define FA_TRELLO(alias) ENTITY(rectangle,black,trello,alias,FA TRELLO)
-!define FA_TRELLO(alias,label) ENTITY(rectangle,black,trello,label,alias,FA TRELLO)
-!define FA_TRELLO(alias,label,shape) ENTITY(shape,black,trello,label,alias,FA TRELLO)
+!define FA_TRELLO(_alias) ENTITY(rectangle,black,trello,_alias,FA TRELLO)
+!define FA_TRELLO(_alias,_label) ENTITY(rectangle,black,trello,_label,_alias,FA TRELLO)
+!define FA_TRELLO(_alias,_label,_shape) ENTITY(_shape,black,trello,_label,_alias,FA TRELLO)
+!define FA_TRELLO(_alias,_label,_shape,_color) ENTITY(_shape,_color,trello,_label,_alias,FA TRELLO)
 skinparam folderBackgroundColor<<FA TRELLO>> White
 @enduml

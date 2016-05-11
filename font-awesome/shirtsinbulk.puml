@@ -51,8 +51,9 @@ sprite $shirtsinbulk [48x48/16] {
 }
 
 
-!define FA_SHIRTSINBULK(alias) ENTITY(rectangle,black,shirtsinbulk,alias,FA SHIRTSINBULK)
-!define FA_SHIRTSINBULK(alias,label) ENTITY(rectangle,black,shirtsinbulk,label,alias,FA SHIRTSINBULK)
-!define FA_SHIRTSINBULK(alias,label,shape) ENTITY(shape,black,shirtsinbulk,label,alias,FA SHIRTSINBULK)
+!define FA_SHIRTSINBULK(_alias) ENTITY(rectangle,black,shirtsinbulk,_alias,FA SHIRTSINBULK)
+!define FA_SHIRTSINBULK(_alias,_label) ENTITY(rectangle,black,shirtsinbulk,_label,_alias,FA SHIRTSINBULK)
+!define FA_SHIRTSINBULK(_alias,_label,_shape) ENTITY(_shape,black,shirtsinbulk,_label,_alias,FA SHIRTSINBULK)
+!define FA_SHIRTSINBULK(_alias,_label,_shape,_color) ENTITY(_shape,_color,shirtsinbulk,_label,_alias,FA SHIRTSINBULK)
 skinparam folderBackgroundColor<<FA SHIRTSINBULK>> White
 @enduml

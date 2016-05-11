@@ -51,8 +51,9 @@ sprite $dribbble [48x48/16] {
 }
 
 
-!define FA_DRIBBBLE(alias) ENTITY(rectangle,black,dribbble,alias,FA DRIBBBLE)
-!define FA_DRIBBBLE(alias,label) ENTITY(rectangle,black,dribbble,label,alias,FA DRIBBBLE)
-!define FA_DRIBBBLE(alias,label,shape) ENTITY(shape,black,dribbble,label,alias,FA DRIBBBLE)
+!define FA_DRIBBBLE(_alias) ENTITY(rectangle,black,dribbble,_alias,FA DRIBBBLE)
+!define FA_DRIBBBLE(_alias,_label) ENTITY(rectangle,black,dribbble,_label,_alias,FA DRIBBBLE)
+!define FA_DRIBBBLE(_alias,_label,_shape) ENTITY(_shape,black,dribbble,_label,_alias,FA DRIBBBLE)
+!define FA_DRIBBBLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,dribbble,_label,_alias,FA DRIBBBLE)
 skinparam folderBackgroundColor<<FA DRIBBBLE>> White
 @enduml

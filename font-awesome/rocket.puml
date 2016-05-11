@@ -51,8 +51,9 @@ sprite $rocket [48x48/16] {
 }
 
 
-!define FA_ROCKET(alias) ENTITY(rectangle,black,rocket,alias,FA ROCKET)
-!define FA_ROCKET(alias,label) ENTITY(rectangle,black,rocket,label,alias,FA ROCKET)
-!define FA_ROCKET(alias,label,shape) ENTITY(shape,black,rocket,label,alias,FA ROCKET)
+!define FA_ROCKET(_alias) ENTITY(rectangle,black,rocket,_alias,FA ROCKET)
+!define FA_ROCKET(_alias,_label) ENTITY(rectangle,black,rocket,_label,_alias,FA ROCKET)
+!define FA_ROCKET(_alias,_label,_shape) ENTITY(_shape,black,rocket,_label,_alias,FA ROCKET)
+!define FA_ROCKET(_alias,_label,_shape,_color) ENTITY(_shape,_color,rocket,_label,_alias,FA ROCKET)
 skinparam folderBackgroundColor<<FA ROCKET>> White
 @enduml

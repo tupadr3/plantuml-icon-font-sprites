@@ -35,8 +35,9 @@ sprite $yahoo_small [32x32/16] {
 }
 
 
-!define DEV_YAHOO_SMALL(alias) ENTITY(rectangle,black,yahoo_small,alias,DEV YAHOO_SMALL)
-!define DEV_YAHOO_SMALL(alias,label) ENTITY(rectangle,black,yahoo_small,label,alias,DEV YAHOO_SMALL)
-!define DEV_YAHOO_SMALL(alias,label,shape) ENTITY(shape,black,yahoo_small,label,alias,DEV YAHOO_SMALL)
+!define DEV_YAHOO_SMALL(_alias) ENTITY(rectangle,black,yahoo_small,_alias,DEV YAHOO_SMALL)
+!define DEV_YAHOO_SMALL(_alias,_label) ENTITY(rectangle,black,yahoo_small,_label,_alias,DEV YAHOO_SMALL)
+!define DEV_YAHOO_SMALL(_alias,_label,_shape) ENTITY(_shape,black,yahoo_small,_label,_alias,DEV YAHOO_SMALL)
+!define DEV_YAHOO_SMALL(_alias,_label,_shape,_color) ENTITY(_shape,_color,yahoo_small,_label,_alias,DEV YAHOO_SMALL)
 skinparam folderBackgroundColor<<DEV YAHOO_SMALL>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $google_analytics [32x32/16] {
 }
 
 
-!define DEV_GOOGLE_ANALYTICS(alias) ENTITY(rectangle,black,google_analytics,alias,DEV GOOGLE_ANALYTICS)
-!define DEV_GOOGLE_ANALYTICS(alias,label) ENTITY(rectangle,black,google_analytics,label,alias,DEV GOOGLE_ANALYTICS)
-!define DEV_GOOGLE_ANALYTICS(alias,label,shape) ENTITY(shape,black,google_analytics,label,alias,DEV GOOGLE_ANALYTICS)
+!define DEV_GOOGLE_ANALYTICS(_alias) ENTITY(rectangle,black,google_analytics,_alias,DEV GOOGLE_ANALYTICS)
+!define DEV_GOOGLE_ANALYTICS(_alias,_label) ENTITY(rectangle,black,google_analytics,_label,_alias,DEV GOOGLE_ANALYTICS)
+!define DEV_GOOGLE_ANALYTICS(_alias,_label,_shape) ENTITY(_shape,black,google_analytics,_label,_alias,DEV GOOGLE_ANALYTICS)
+!define DEV_GOOGLE_ANALYTICS(_alias,_label,_shape,_color) ENTITY(_shape,_color,google_analytics,_label,_alias,DEV GOOGLE_ANALYTICS)
 skinparam folderBackgroundColor<<DEV GOOGLE_ANALYTICS>> White
 @enduml

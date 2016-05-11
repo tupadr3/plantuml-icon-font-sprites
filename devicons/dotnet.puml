@@ -35,8 +35,9 @@ sprite $dotnet [32x32/16] {
 }
 
 
-!define DEV_DOTNET(alias) ENTITY(rectangle,black,dotnet,alias,DEV DOTNET)
-!define DEV_DOTNET(alias,label) ENTITY(rectangle,black,dotnet,label,alias,DEV DOTNET)
-!define DEV_DOTNET(alias,label,shape) ENTITY(shape,black,dotnet,label,alias,DEV DOTNET)
+!define DEV_DOTNET(_alias) ENTITY(rectangle,black,dotnet,_alias,DEV DOTNET)
+!define DEV_DOTNET(_alias,_label) ENTITY(rectangle,black,dotnet,_label,_alias,DEV DOTNET)
+!define DEV_DOTNET(_alias,_label,_shape) ENTITY(_shape,black,dotnet,_label,_alias,DEV DOTNET)
+!define DEV_DOTNET(_alias,_label,_shape,_color) ENTITY(_shape,_color,dotnet,_label,_alias,DEV DOTNET)
 skinparam folderBackgroundColor<<DEV DOTNET>> White
 @enduml

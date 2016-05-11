@@ -51,8 +51,9 @@ sprite $puzzle_piece [48x48/16] {
 }
 
 
-!define FA_PUZZLE_PIECE(alias) ENTITY(rectangle,black,puzzle_piece,alias,FA PUZZLE_PIECE)
-!define FA_PUZZLE_PIECE(alias,label) ENTITY(rectangle,black,puzzle_piece,label,alias,FA PUZZLE_PIECE)
-!define FA_PUZZLE_PIECE(alias,label,shape) ENTITY(shape,black,puzzle_piece,label,alias,FA PUZZLE_PIECE)
+!define FA_PUZZLE_PIECE(_alias) ENTITY(rectangle,black,puzzle_piece,_alias,FA PUZZLE_PIECE)
+!define FA_PUZZLE_PIECE(_alias,_label) ENTITY(rectangle,black,puzzle_piece,_label,_alias,FA PUZZLE_PIECE)
+!define FA_PUZZLE_PIECE(_alias,_label,_shape) ENTITY(_shape,black,puzzle_piece,_label,_alias,FA PUZZLE_PIECE)
+!define FA_PUZZLE_PIECE(_alias,_label,_shape,_color) ENTITY(_shape,_color,puzzle_piece,_label,_alias,FA PUZZLE_PIECE)
 skinparam folderBackgroundColor<<FA PUZZLE_PIECE>> White
 @enduml

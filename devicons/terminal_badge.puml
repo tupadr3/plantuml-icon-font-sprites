@@ -35,8 +35,9 @@ sprite $terminal_badge [32x32/16] {
 }
 
 
-!define DEV_TERMINAL_BADGE(alias) ENTITY(rectangle,black,terminal_badge,alias,DEV TERMINAL_BADGE)
-!define DEV_TERMINAL_BADGE(alias,label) ENTITY(rectangle,black,terminal_badge,label,alias,DEV TERMINAL_BADGE)
-!define DEV_TERMINAL_BADGE(alias,label,shape) ENTITY(shape,black,terminal_badge,label,alias,DEV TERMINAL_BADGE)
+!define DEV_TERMINAL_BADGE(_alias) ENTITY(rectangle,black,terminal_badge,_alias,DEV TERMINAL_BADGE)
+!define DEV_TERMINAL_BADGE(_alias,_label) ENTITY(rectangle,black,terminal_badge,_label,_alias,DEV TERMINAL_BADGE)
+!define DEV_TERMINAL_BADGE(_alias,_label,_shape) ENTITY(_shape,black,terminal_badge,_label,_alias,DEV TERMINAL_BADGE)
+!define DEV_TERMINAL_BADGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,terminal_badge,_label,_alias,DEV TERMINAL_BADGE)
 skinparam folderBackgroundColor<<DEV TERMINAL_BADGE>> White
 @enduml

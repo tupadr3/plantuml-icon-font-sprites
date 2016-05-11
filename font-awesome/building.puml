@@ -51,8 +51,9 @@ sprite $building [48x48/16] {
 }
 
 
-!define FA_BUILDING(alias) ENTITY(rectangle,black,building,alias,FA BUILDING)
-!define FA_BUILDING(alias,label) ENTITY(rectangle,black,building,label,alias,FA BUILDING)
-!define FA_BUILDING(alias,label,shape) ENTITY(shape,black,building,label,alias,FA BUILDING)
+!define FA_BUILDING(_alias) ENTITY(rectangle,black,building,_alias,FA BUILDING)
+!define FA_BUILDING(_alias,_label) ENTITY(rectangle,black,building,_label,_alias,FA BUILDING)
+!define FA_BUILDING(_alias,_label,_shape) ENTITY(_shape,black,building,_label,_alias,FA BUILDING)
+!define FA_BUILDING(_alias,_label,_shape,_color) ENTITY(_shape,_color,building,_label,_alias,FA BUILDING)
 skinparam folderBackgroundColor<<FA BUILDING>> White
 @enduml

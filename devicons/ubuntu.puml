@@ -35,8 +35,9 @@ sprite $ubuntu [32x32/16] {
 }
 
 
-!define DEV_UBUNTU(alias) ENTITY(rectangle,black,ubuntu,alias,DEV UBUNTU)
-!define DEV_UBUNTU(alias,label) ENTITY(rectangle,black,ubuntu,label,alias,DEV UBUNTU)
-!define DEV_UBUNTU(alias,label,shape) ENTITY(shape,black,ubuntu,label,alias,DEV UBUNTU)
+!define DEV_UBUNTU(_alias) ENTITY(rectangle,black,ubuntu,_alias,DEV UBUNTU)
+!define DEV_UBUNTU(_alias,_label) ENTITY(rectangle,black,ubuntu,_label,_alias,DEV UBUNTU)
+!define DEV_UBUNTU(_alias,_label,_shape) ENTITY(_shape,black,ubuntu,_label,_alias,DEV UBUNTU)
+!define DEV_UBUNTU(_alias,_label,_shape,_color) ENTITY(_shape,_color,ubuntu,_label,_alias,DEV UBUNTU)
 skinparam folderBackgroundColor<<DEV UBUNTU>> White
 @enduml

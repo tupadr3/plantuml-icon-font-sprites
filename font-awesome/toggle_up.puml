@@ -51,8 +51,9 @@ sprite $toggle_up [48x48/16] {
 }
 
 
-!define FA_TOGGLE_UP(alias) ENTITY(rectangle,black,toggle_up,alias,FA TOGGLE_UP)
-!define FA_TOGGLE_UP(alias,label) ENTITY(rectangle,black,toggle_up,label,alias,FA TOGGLE_UP)
-!define FA_TOGGLE_UP(alias,label,shape) ENTITY(shape,black,toggle_up,label,alias,FA TOGGLE_UP)
+!define FA_TOGGLE_UP(_alias) ENTITY(rectangle,black,toggle_up,_alias,FA TOGGLE_UP)
+!define FA_TOGGLE_UP(_alias,_label) ENTITY(rectangle,black,toggle_up,_label,_alias,FA TOGGLE_UP)
+!define FA_TOGGLE_UP(_alias,_label,_shape) ENTITY(_shape,black,toggle_up,_label,_alias,FA TOGGLE_UP)
+!define FA_TOGGLE_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,toggle_up,_label,_alias,FA TOGGLE_UP)
 skinparam folderBackgroundColor<<FA TOGGLE_UP>> White
 @enduml

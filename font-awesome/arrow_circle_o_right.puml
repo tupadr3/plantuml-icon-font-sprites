@@ -51,8 +51,9 @@ sprite $arrow_circle_o_right [48x48/16] {
 }
 
 
-!define FA_ARROW_CIRCLE_O_RIGHT(alias) ENTITY(rectangle,black,arrow_circle_o_right,alias,FA ARROW_CIRCLE_O_RIGHT)
-!define FA_ARROW_CIRCLE_O_RIGHT(alias,label) ENTITY(rectangle,black,arrow_circle_o_right,label,alias,FA ARROW_CIRCLE_O_RIGHT)
-!define FA_ARROW_CIRCLE_O_RIGHT(alias,label,shape) ENTITY(shape,black,arrow_circle_o_right,label,alias,FA ARROW_CIRCLE_O_RIGHT)
+!define FA_ARROW_CIRCLE_O_RIGHT(_alias) ENTITY(rectangle,black,arrow_circle_o_right,_alias,FA ARROW_CIRCLE_O_RIGHT)
+!define FA_ARROW_CIRCLE_O_RIGHT(_alias,_label) ENTITY(rectangle,black,arrow_circle_o_right,_label,_alias,FA ARROW_CIRCLE_O_RIGHT)
+!define FA_ARROW_CIRCLE_O_RIGHT(_alias,_label,_shape) ENTITY(_shape,black,arrow_circle_o_right,_label,_alias,FA ARROW_CIRCLE_O_RIGHT)
+!define FA_ARROW_CIRCLE_O_RIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,arrow_circle_o_right,_label,_alias,FA ARROW_CIRCLE_O_RIGHT)
 skinparam folderBackgroundColor<<FA ARROW_CIRCLE_O_RIGHT>> White
 @enduml

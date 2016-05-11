@@ -51,8 +51,9 @@ sprite $product_hunt [48x48/16] {
 }
 
 
-!define FA_PRODUCT_HUNT(alias) ENTITY(rectangle,black,product_hunt,alias,FA PRODUCT_HUNT)
-!define FA_PRODUCT_HUNT(alias,label) ENTITY(rectangle,black,product_hunt,label,alias,FA PRODUCT_HUNT)
-!define FA_PRODUCT_HUNT(alias,label,shape) ENTITY(shape,black,product_hunt,label,alias,FA PRODUCT_HUNT)
+!define FA_PRODUCT_HUNT(_alias) ENTITY(rectangle,black,product_hunt,_alias,FA PRODUCT_HUNT)
+!define FA_PRODUCT_HUNT(_alias,_label) ENTITY(rectangle,black,product_hunt,_label,_alias,FA PRODUCT_HUNT)
+!define FA_PRODUCT_HUNT(_alias,_label,_shape) ENTITY(_shape,black,product_hunt,_label,_alias,FA PRODUCT_HUNT)
+!define FA_PRODUCT_HUNT(_alias,_label,_shape,_color) ENTITY(_shape,_color,product_hunt,_label,_alias,FA PRODUCT_HUNT)
 skinparam folderBackgroundColor<<FA PRODUCT_HUNT>> White
 @enduml

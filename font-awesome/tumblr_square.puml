@@ -51,8 +51,9 @@ sprite $tumblr_square [48x48/16] {
 }
 
 
-!define FA_TUMBLR_SQUARE(alias) ENTITY(rectangle,black,tumblr_square,alias,FA TUMBLR_SQUARE)
-!define FA_TUMBLR_SQUARE(alias,label) ENTITY(rectangle,black,tumblr_square,label,alias,FA TUMBLR_SQUARE)
-!define FA_TUMBLR_SQUARE(alias,label,shape) ENTITY(shape,black,tumblr_square,label,alias,FA TUMBLR_SQUARE)
+!define FA_TUMBLR_SQUARE(_alias) ENTITY(rectangle,black,tumblr_square,_alias,FA TUMBLR_SQUARE)
+!define FA_TUMBLR_SQUARE(_alias,_label) ENTITY(rectangle,black,tumblr_square,_label,_alias,FA TUMBLR_SQUARE)
+!define FA_TUMBLR_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,tumblr_square,_label,_alias,FA TUMBLR_SQUARE)
+!define FA_TUMBLR_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,tumblr_square,_label,_alias,FA TUMBLR_SQUARE)
 skinparam folderBackgroundColor<<FA TUMBLR_SQUARE>> White
 @enduml

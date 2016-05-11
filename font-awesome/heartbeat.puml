@@ -51,8 +51,9 @@ sprite $heartbeat [48x48/16] {
 }
 
 
-!define FA_HEARTBEAT(alias) ENTITY(rectangle,black,heartbeat,alias,FA HEARTBEAT)
-!define FA_HEARTBEAT(alias,label) ENTITY(rectangle,black,heartbeat,label,alias,FA HEARTBEAT)
-!define FA_HEARTBEAT(alias,label,shape) ENTITY(shape,black,heartbeat,label,alias,FA HEARTBEAT)
+!define FA_HEARTBEAT(_alias) ENTITY(rectangle,black,heartbeat,_alias,FA HEARTBEAT)
+!define FA_HEARTBEAT(_alias,_label) ENTITY(rectangle,black,heartbeat,_label,_alias,FA HEARTBEAT)
+!define FA_HEARTBEAT(_alias,_label,_shape) ENTITY(_shape,black,heartbeat,_label,_alias,FA HEARTBEAT)
+!define FA_HEARTBEAT(_alias,_label,_shape,_color) ENTITY(_shape,_color,heartbeat,_label,_alias,FA HEARTBEAT)
 skinparam folderBackgroundColor<<FA HEARTBEAT>> White
 @enduml

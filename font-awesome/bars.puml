@@ -51,8 +51,9 @@ sprite $bars [48x48/16] {
 }
 
 
-!define FA_BARS(alias) ENTITY(rectangle,black,bars,alias,FA BARS)
-!define FA_BARS(alias,label) ENTITY(rectangle,black,bars,label,alias,FA BARS)
-!define FA_BARS(alias,label,shape) ENTITY(shape,black,bars,label,alias,FA BARS)
+!define FA_BARS(_alias) ENTITY(rectangle,black,bars,_alias,FA BARS)
+!define FA_BARS(_alias,_label) ENTITY(rectangle,black,bars,_label,_alias,FA BARS)
+!define FA_BARS(_alias,_label,_shape) ENTITY(_shape,black,bars,_label,_alias,FA BARS)
+!define FA_BARS(_alias,_label,_shape,_color) ENTITY(_shape,_color,bars,_label,_alias,FA BARS)
 skinparam folderBackgroundColor<<FA BARS>> White
 @enduml

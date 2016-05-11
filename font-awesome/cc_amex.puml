@@ -51,8 +51,9 @@ BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEB
 }
 
 
-!define FA_CC_AMEX(alias) ENTITY(rectangle,black,cc_amex,alias,FA CC_AMEX)
-!define FA_CC_AMEX(alias,label) ENTITY(rectangle,black,cc_amex,label,alias,FA CC_AMEX)
-!define FA_CC_AMEX(alias,label,shape) ENTITY(shape,black,cc_amex,label,alias,FA CC_AMEX)
+!define FA_CC_AMEX(_alias) ENTITY(rectangle,black,cc_amex,_alias,FA CC_AMEX)
+!define FA_CC_AMEX(_alias,_label) ENTITY(rectangle,black,cc_amex,_label,_alias,FA CC_AMEX)
+!define FA_CC_AMEX(_alias,_label,_shape) ENTITY(_shape,black,cc_amex,_label,_alias,FA CC_AMEX)
+!define FA_CC_AMEX(_alias,_label,_shape,_color) ENTITY(_shape,_color,cc_amex,_label,_alias,FA CC_AMEX)
 skinparam folderBackgroundColor<<FA CC_AMEX>> White
 @enduml

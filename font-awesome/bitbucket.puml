@@ -51,8 +51,9 @@ sprite $bitbucket [48x48/16] {
 }
 
 
-!define FA_BITBUCKET(alias) ENTITY(rectangle,black,bitbucket,alias,FA BITBUCKET)
-!define FA_BITBUCKET(alias,label) ENTITY(rectangle,black,bitbucket,label,alias,FA BITBUCKET)
-!define FA_BITBUCKET(alias,label,shape) ENTITY(shape,black,bitbucket,label,alias,FA BITBUCKET)
+!define FA_BITBUCKET(_alias) ENTITY(rectangle,black,bitbucket,_alias,FA BITBUCKET)
+!define FA_BITBUCKET(_alias,_label) ENTITY(rectangle,black,bitbucket,_label,_alias,FA BITBUCKET)
+!define FA_BITBUCKET(_alias,_label,_shape) ENTITY(_shape,black,bitbucket,_label,_alias,FA BITBUCKET)
+!define FA_BITBUCKET(_alias,_label,_shape,_color) ENTITY(_shape,_color,bitbucket,_label,_alias,FA BITBUCKET)
 skinparam folderBackgroundColor<<FA BITBUCKET>> White
 @enduml

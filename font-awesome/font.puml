@@ -51,8 +51,9 @@ sprite $font [48x48/16] {
 }
 
 
-!define FA_FONT(alias) ENTITY(rectangle,black,font,alias,FA FONT)
-!define FA_FONT(alias,label) ENTITY(rectangle,black,font,label,alias,FA FONT)
-!define FA_FONT(alias,label,shape) ENTITY(shape,black,font,label,alias,FA FONT)
+!define FA_FONT(_alias) ENTITY(rectangle,black,font,_alias,FA FONT)
+!define FA_FONT(_alias,_label) ENTITY(rectangle,black,font,_label,_alias,FA FONT)
+!define FA_FONT(_alias,_label,_shape) ENTITY(_shape,black,font,_label,_alias,FA FONT)
+!define FA_FONT(_alias,_label,_shape,_color) ENTITY(_shape,_color,font,_label,_alias,FA FONT)
 skinparam folderBackgroundColor<<FA FONT>> White
 @enduml

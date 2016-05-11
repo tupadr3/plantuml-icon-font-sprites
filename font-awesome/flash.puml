@@ -51,8 +51,9 @@ sprite $flash [48x48/16] {
 }
 
 
-!define FA_FLASH(alias) ENTITY(rectangle,black,flash,alias,FA FLASH)
-!define FA_FLASH(alias,label) ENTITY(rectangle,black,flash,label,alias,FA FLASH)
-!define FA_FLASH(alias,label,shape) ENTITY(shape,black,flash,label,alias,FA FLASH)
+!define FA_FLASH(_alias) ENTITY(rectangle,black,flash,_alias,FA FLASH)
+!define FA_FLASH(_alias,_label) ENTITY(rectangle,black,flash,_label,_alias,FA FLASH)
+!define FA_FLASH(_alias,_label,_shape) ENTITY(_shape,black,flash,_label,_alias,FA FLASH)
+!define FA_FLASH(_alias,_label,_shape,_color) ENTITY(_shape,_color,flash,_label,_alias,FA FLASH)
 skinparam folderBackgroundColor<<FA FLASH>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $arrow_down [48x48/16] {
 }
 
 
-!define FA_ARROW_DOWN(alias) ENTITY(rectangle,black,arrow_down,alias,FA ARROW_DOWN)
-!define FA_ARROW_DOWN(alias,label) ENTITY(rectangle,black,arrow_down,label,alias,FA ARROW_DOWN)
-!define FA_ARROW_DOWN(alias,label,shape) ENTITY(shape,black,arrow_down,label,alias,FA ARROW_DOWN)
+!define FA_ARROW_DOWN(_alias) ENTITY(rectangle,black,arrow_down,_alias,FA ARROW_DOWN)
+!define FA_ARROW_DOWN(_alias,_label) ENTITY(rectangle,black,arrow_down,_label,_alias,FA ARROW_DOWN)
+!define FA_ARROW_DOWN(_alias,_label,_shape) ENTITY(_shape,black,arrow_down,_label,_alias,FA ARROW_DOWN)
+!define FA_ARROW_DOWN(_alias,_label,_shape,_color) ENTITY(_shape,_color,arrow_down,_label,_alias,FA ARROW_DOWN)
 skinparam folderBackgroundColor<<FA ARROW_DOWN>> White
 @enduml

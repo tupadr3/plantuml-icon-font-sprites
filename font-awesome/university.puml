@@ -51,8 +51,9 @@ sprite $university [48x48/16] {
 }
 
 
-!define FA_UNIVERSITY(alias) ENTITY(rectangle,black,university,alias,FA UNIVERSITY)
-!define FA_UNIVERSITY(alias,label) ENTITY(rectangle,black,university,label,alias,FA UNIVERSITY)
-!define FA_UNIVERSITY(alias,label,shape) ENTITY(shape,black,university,label,alias,FA UNIVERSITY)
+!define FA_UNIVERSITY(_alias) ENTITY(rectangle,black,university,_alias,FA UNIVERSITY)
+!define FA_UNIVERSITY(_alias,_label) ENTITY(rectangle,black,university,_label,_alias,FA UNIVERSITY)
+!define FA_UNIVERSITY(_alias,_label,_shape) ENTITY(_shape,black,university,_label,_alias,FA UNIVERSITY)
+!define FA_UNIVERSITY(_alias,_label,_shape,_color) ENTITY(_shape,_color,university,_label,_alias,FA UNIVERSITY)
 skinparam folderBackgroundColor<<FA UNIVERSITY>> White
 @enduml

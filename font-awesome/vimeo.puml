@@ -51,8 +51,9 @@ sprite $vimeo [48x48/16] {
 }
 
 
-!define FA_VIMEO(alias) ENTITY(rectangle,black,vimeo,alias,FA VIMEO)
-!define FA_VIMEO(alias,label) ENTITY(rectangle,black,vimeo,label,alias,FA VIMEO)
-!define FA_VIMEO(alias,label,shape) ENTITY(shape,black,vimeo,label,alias,FA VIMEO)
+!define FA_VIMEO(_alias) ENTITY(rectangle,black,vimeo,_alias,FA VIMEO)
+!define FA_VIMEO(_alias,_label) ENTITY(rectangle,black,vimeo,_label,_alias,FA VIMEO)
+!define FA_VIMEO(_alias,_label,_shape) ENTITY(_shape,black,vimeo,_label,_alias,FA VIMEO)
+!define FA_VIMEO(_alias,_label,_shape,_color) ENTITY(_shape,_color,vimeo,_label,_alias,FA VIMEO)
 skinparam folderBackgroundColor<<FA VIMEO>> White
 @enduml

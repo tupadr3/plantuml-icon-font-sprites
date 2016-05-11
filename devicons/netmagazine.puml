@@ -35,8 +35,9 @@ sprite $netmagazine [32x32/16] {
 }
 
 
-!define DEV_NETMAGAZINE(alias) ENTITY(rectangle,black,netmagazine,alias,DEV NETMAGAZINE)
-!define DEV_NETMAGAZINE(alias,label) ENTITY(rectangle,black,netmagazine,label,alias,DEV NETMAGAZINE)
-!define DEV_NETMAGAZINE(alias,label,shape) ENTITY(shape,black,netmagazine,label,alias,DEV NETMAGAZINE)
+!define DEV_NETMAGAZINE(_alias) ENTITY(rectangle,black,netmagazine,_alias,DEV NETMAGAZINE)
+!define DEV_NETMAGAZINE(_alias,_label) ENTITY(rectangle,black,netmagazine,_label,_alias,DEV NETMAGAZINE)
+!define DEV_NETMAGAZINE(_alias,_label,_shape) ENTITY(_shape,black,netmagazine,_label,_alias,DEV NETMAGAZINE)
+!define DEV_NETMAGAZINE(_alias,_label,_shape,_color) ENTITY(_shape,_color,netmagazine,_label,_alias,DEV NETMAGAZINE)
 skinparam folderBackgroundColor<<DEV NETMAGAZINE>> White
 @enduml

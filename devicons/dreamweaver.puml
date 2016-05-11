@@ -35,8 +35,9 @@ sprite $dreamweaver [32x32/16] {
 }
 
 
-!define DEV_DREAMWEAVER(alias) ENTITY(rectangle,black,dreamweaver,alias,DEV DREAMWEAVER)
-!define DEV_DREAMWEAVER(alias,label) ENTITY(rectangle,black,dreamweaver,label,alias,DEV DREAMWEAVER)
-!define DEV_DREAMWEAVER(alias,label,shape) ENTITY(shape,black,dreamweaver,label,alias,DEV DREAMWEAVER)
+!define DEV_DREAMWEAVER(_alias) ENTITY(rectangle,black,dreamweaver,_alias,DEV DREAMWEAVER)
+!define DEV_DREAMWEAVER(_alias,_label) ENTITY(rectangle,black,dreamweaver,_label,_alias,DEV DREAMWEAVER)
+!define DEV_DREAMWEAVER(_alias,_label,_shape) ENTITY(_shape,black,dreamweaver,_label,_alias,DEV DREAMWEAVER)
+!define DEV_DREAMWEAVER(_alias,_label,_shape,_color) ENTITY(_shape,_color,dreamweaver,_label,_alias,DEV DREAMWEAVER)
 skinparam folderBackgroundColor<<DEV DREAMWEAVER>> White
 @enduml

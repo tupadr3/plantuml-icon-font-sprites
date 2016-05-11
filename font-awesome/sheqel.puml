@@ -51,8 +51,9 @@ sprite $sheqel [48x48/16] {
 }
 
 
-!define FA_SHEQEL(alias) ENTITY(rectangle,black,sheqel,alias,FA SHEQEL)
-!define FA_SHEQEL(alias,label) ENTITY(rectangle,black,sheqel,label,alias,FA SHEQEL)
-!define FA_SHEQEL(alias,label,shape) ENTITY(shape,black,sheqel,label,alias,FA SHEQEL)
+!define FA_SHEQEL(_alias) ENTITY(rectangle,black,sheqel,_alias,FA SHEQEL)
+!define FA_SHEQEL(_alias,_label) ENTITY(rectangle,black,sheqel,_label,_alias,FA SHEQEL)
+!define FA_SHEQEL(_alias,_label,_shape) ENTITY(_shape,black,sheqel,_label,_alias,FA SHEQEL)
+!define FA_SHEQEL(_alias,_label,_shape,_color) ENTITY(_shape,_color,sheqel,_label,_alias,FA SHEQEL)
 skinparam folderBackgroundColor<<FA SHEQEL>> White
 @enduml

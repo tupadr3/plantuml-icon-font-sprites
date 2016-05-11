@@ -51,8 +51,9 @@ sprite $digg [48x48/16] {
 }
 
 
-!define FA_DIGG(alias) ENTITY(rectangle,black,digg,alias,FA DIGG)
-!define FA_DIGG(alias,label) ENTITY(rectangle,black,digg,label,alias,FA DIGG)
-!define FA_DIGG(alias,label,shape) ENTITY(shape,black,digg,label,alias,FA DIGG)
+!define FA_DIGG(_alias) ENTITY(rectangle,black,digg,_alias,FA DIGG)
+!define FA_DIGG(_alias,_label) ENTITY(rectangle,black,digg,_label,_alias,FA DIGG)
+!define FA_DIGG(_alias,_label,_shape) ENTITY(_shape,black,digg,_label,_alias,FA DIGG)
+!define FA_DIGG(_alias,_label,_shape,_color) ENTITY(_shape,_color,digg,_label,_alias,FA DIGG)
 skinparam folderBackgroundColor<<FA DIGG>> White
 @enduml

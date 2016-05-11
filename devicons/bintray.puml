@@ -35,8 +35,9 @@ sprite $bintray [32x32/16] {
 }
 
 
-!define DEV_BINTRAY(alias) ENTITY(rectangle,black,bintray,alias,DEV BINTRAY)
-!define DEV_BINTRAY(alias,label) ENTITY(rectangle,black,bintray,label,alias,DEV BINTRAY)
-!define DEV_BINTRAY(alias,label,shape) ENTITY(shape,black,bintray,label,alias,DEV BINTRAY)
+!define DEV_BINTRAY(_alias) ENTITY(rectangle,black,bintray,_alias,DEV BINTRAY)
+!define DEV_BINTRAY(_alias,_label) ENTITY(rectangle,black,bintray,_label,_alias,DEV BINTRAY)
+!define DEV_BINTRAY(_alias,_label,_shape) ENTITY(_shape,black,bintray,_label,_alias,DEV BINTRAY)
+!define DEV_BINTRAY(_alias,_label,_shape,_color) ENTITY(_shape,_color,bintray,_label,_alias,DEV BINTRAY)
 skinparam folderBackgroundColor<<DEV BINTRAY>> White
 @enduml

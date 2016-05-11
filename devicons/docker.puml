@@ -35,8 +35,9 @@ sprite $docker [34x32/16] {
 }
 
 
-!define DEV_DOCKER(alias) ENTITY(rectangle,black,docker,alias,DEV DOCKER)
-!define DEV_DOCKER(alias,label) ENTITY(rectangle,black,docker,label,alias,DEV DOCKER)
-!define DEV_DOCKER(alias,label,shape) ENTITY(shape,black,docker,label,alias,DEV DOCKER)
+!define DEV_DOCKER(_alias) ENTITY(rectangle,black,docker,_alias,DEV DOCKER)
+!define DEV_DOCKER(_alias,_label) ENTITY(rectangle,black,docker,_label,_alias,DEV DOCKER)
+!define DEV_DOCKER(_alias,_label,_shape) ENTITY(_shape,black,docker,_label,_alias,DEV DOCKER)
+!define DEV_DOCKER(_alias,_label,_shape,_color) ENTITY(_shape,_color,docker,_label,_alias,DEV DOCKER)
 skinparam folderBackgroundColor<<DEV DOCKER>> White
 @enduml

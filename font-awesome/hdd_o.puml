@@ -51,8 +51,9 @@ sprite $hdd_o [48x48/16] {
 }
 
 
-!define FA_HDD_O(alias) ENTITY(rectangle,black,hdd_o,alias,FA HDD_O)
-!define FA_HDD_O(alias,label) ENTITY(rectangle,black,hdd_o,label,alias,FA HDD_O)
-!define FA_HDD_O(alias,label,shape) ENTITY(shape,black,hdd_o,label,alias,FA HDD_O)
+!define FA_HDD_O(_alias) ENTITY(rectangle,black,hdd_o,_alias,FA HDD_O)
+!define FA_HDD_O(_alias,_label) ENTITY(rectangle,black,hdd_o,_label,_alias,FA HDD_O)
+!define FA_HDD_O(_alias,_label,_shape) ENTITY(_shape,black,hdd_o,_label,_alias,FA HDD_O)
+!define FA_HDD_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,hdd_o,_label,_alias,FA HDD_O)
 skinparam folderBackgroundColor<<FA HDD_O>> White
 @enduml

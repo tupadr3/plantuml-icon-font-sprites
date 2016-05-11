@@ -51,8 +51,9 @@ sprite $repeat [48x48/16] {
 }
 
 
-!define FA_REPEAT(alias) ENTITY(rectangle,black,repeat,alias,FA REPEAT)
-!define FA_REPEAT(alias,label) ENTITY(rectangle,black,repeat,label,alias,FA REPEAT)
-!define FA_REPEAT(alias,label,shape) ENTITY(shape,black,repeat,label,alias,FA REPEAT)
+!define FA_REPEAT(_alias) ENTITY(rectangle,black,repeat,_alias,FA REPEAT)
+!define FA_REPEAT(_alias,_label) ENTITY(rectangle,black,repeat,_label,_alias,FA REPEAT)
+!define FA_REPEAT(_alias,_label,_shape) ENTITY(_shape,black,repeat,_label,_alias,FA REPEAT)
+!define FA_REPEAT(_alias,_label,_shape,_color) ENTITY(_shape,_color,repeat,_label,_alias,FA REPEAT)
 skinparam folderBackgroundColor<<FA REPEAT>> White
 @enduml

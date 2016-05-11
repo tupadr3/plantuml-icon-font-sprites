@@ -51,8 +51,9 @@ sprite $share_alt [48x48/16] {
 }
 
 
-!define FA_SHARE_ALT(alias) ENTITY(rectangle,black,share_alt,alias,FA SHARE_ALT)
-!define FA_SHARE_ALT(alias,label) ENTITY(rectangle,black,share_alt,label,alias,FA SHARE_ALT)
-!define FA_SHARE_ALT(alias,label,shape) ENTITY(shape,black,share_alt,label,alias,FA SHARE_ALT)
+!define FA_SHARE_ALT(_alias) ENTITY(rectangle,black,share_alt,_alias,FA SHARE_ALT)
+!define FA_SHARE_ALT(_alias,_label) ENTITY(rectangle,black,share_alt,_label,_alias,FA SHARE_ALT)
+!define FA_SHARE_ALT(_alias,_label,_shape) ENTITY(_shape,black,share_alt,_label,_alias,FA SHARE_ALT)
+!define FA_SHARE_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,share_alt,_label,_alias,FA SHARE_ALT)
 skinparam folderBackgroundColor<<FA SHARE_ALT>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $html5_connectivity [32x32/16] {
 }
 
 
-!define DEV_HTML5_CONNECTIVITY(alias) ENTITY(rectangle,black,html5_connectivity,alias,DEV HTML5_CONNECTIVITY)
-!define DEV_HTML5_CONNECTIVITY(alias,label) ENTITY(rectangle,black,html5_connectivity,label,alias,DEV HTML5_CONNECTIVITY)
-!define DEV_HTML5_CONNECTIVITY(alias,label,shape) ENTITY(shape,black,html5_connectivity,label,alias,DEV HTML5_CONNECTIVITY)
+!define DEV_HTML5_CONNECTIVITY(_alias) ENTITY(rectangle,black,html5_connectivity,_alias,DEV HTML5_CONNECTIVITY)
+!define DEV_HTML5_CONNECTIVITY(_alias,_label) ENTITY(rectangle,black,html5_connectivity,_label,_alias,DEV HTML5_CONNECTIVITY)
+!define DEV_HTML5_CONNECTIVITY(_alias,_label,_shape) ENTITY(_shape,black,html5_connectivity,_label,_alias,DEV HTML5_CONNECTIVITY)
+!define DEV_HTML5_CONNECTIVITY(_alias,_label,_shape,_color) ENTITY(_shape,_color,html5_connectivity,_label,_alias,DEV HTML5_CONNECTIVITY)
 skinparam folderBackgroundColor<<DEV HTML5_CONNECTIVITY>> White
 @enduml

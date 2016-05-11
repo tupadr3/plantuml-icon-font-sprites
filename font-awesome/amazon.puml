@@ -51,8 +51,9 @@ sprite $amazon [48x48/16] {
 }
 
 
-!define FA_AMAZON(alias) ENTITY(rectangle,black,amazon,alias,FA AMAZON)
-!define FA_AMAZON(alias,label) ENTITY(rectangle,black,amazon,label,alias,FA AMAZON)
-!define FA_AMAZON(alias,label,shape) ENTITY(shape,black,amazon,label,alias,FA AMAZON)
+!define FA_AMAZON(_alias) ENTITY(rectangle,black,amazon,_alias,FA AMAZON)
+!define FA_AMAZON(_alias,_label) ENTITY(rectangle,black,amazon,_label,_alias,FA AMAZON)
+!define FA_AMAZON(_alias,_label,_shape) ENTITY(_shape,black,amazon,_label,_alias,FA AMAZON)
+!define FA_AMAZON(_alias,_label,_shape,_color) ENTITY(_shape,_color,amazon,_label,_alias,FA AMAZON)
 skinparam folderBackgroundColor<<FA AMAZON>> White
 @enduml

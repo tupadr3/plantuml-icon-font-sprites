@@ -51,8 +51,9 @@ sprite $exclamation_triangle [48x48/16] {
 }
 
 
-!define FA_EXCLAMATION_TRIANGLE(alias) ENTITY(rectangle,black,exclamation_triangle,alias,FA EXCLAMATION_TRIANGLE)
-!define FA_EXCLAMATION_TRIANGLE(alias,label) ENTITY(rectangle,black,exclamation_triangle,label,alias,FA EXCLAMATION_TRIANGLE)
-!define FA_EXCLAMATION_TRIANGLE(alias,label,shape) ENTITY(shape,black,exclamation_triangle,label,alias,FA EXCLAMATION_TRIANGLE)
+!define FA_EXCLAMATION_TRIANGLE(_alias) ENTITY(rectangle,black,exclamation_triangle,_alias,FA EXCLAMATION_TRIANGLE)
+!define FA_EXCLAMATION_TRIANGLE(_alias,_label) ENTITY(rectangle,black,exclamation_triangle,_label,_alias,FA EXCLAMATION_TRIANGLE)
+!define FA_EXCLAMATION_TRIANGLE(_alias,_label,_shape) ENTITY(_shape,black,exclamation_triangle,_label,_alias,FA EXCLAMATION_TRIANGLE)
+!define FA_EXCLAMATION_TRIANGLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,exclamation_triangle,_label,_alias,FA EXCLAMATION_TRIANGLE)
 skinparam folderBackgroundColor<<FA EXCLAMATION_TRIANGLE>> White
 @enduml

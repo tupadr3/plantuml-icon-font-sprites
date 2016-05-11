@@ -51,8 +51,9 @@ sprite $ambulance [48x48/16] {
 }
 
 
-!define FA_AMBULANCE(alias) ENTITY(rectangle,black,ambulance,alias,FA AMBULANCE)
-!define FA_AMBULANCE(alias,label) ENTITY(rectangle,black,ambulance,label,alias,FA AMBULANCE)
-!define FA_AMBULANCE(alias,label,shape) ENTITY(shape,black,ambulance,label,alias,FA AMBULANCE)
+!define FA_AMBULANCE(_alias) ENTITY(rectangle,black,ambulance,_alias,FA AMBULANCE)
+!define FA_AMBULANCE(_alias,_label) ENTITY(rectangle,black,ambulance,_label,_alias,FA AMBULANCE)
+!define FA_AMBULANCE(_alias,_label,_shape) ENTITY(_shape,black,ambulance,_label,_alias,FA AMBULANCE)
+!define FA_AMBULANCE(_alias,_label,_shape,_color) ENTITY(_shape,_color,ambulance,_label,_alias,FA AMBULANCE)
 skinparam folderBackgroundColor<<FA AMBULANCE>> White
 @enduml

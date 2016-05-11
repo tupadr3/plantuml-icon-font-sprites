@@ -35,8 +35,9 @@ sprite $cloud9 [32x32/16] {
 }
 
 
-!define DEV_CLOUD9(alias) ENTITY(rectangle,black,cloud9,alias,DEV CLOUD9)
-!define DEV_CLOUD9(alias,label) ENTITY(rectangle,black,cloud9,label,alias,DEV CLOUD9)
-!define DEV_CLOUD9(alias,label,shape) ENTITY(shape,black,cloud9,label,alias,DEV CLOUD9)
+!define DEV_CLOUD9(_alias) ENTITY(rectangle,black,cloud9,_alias,DEV CLOUD9)
+!define DEV_CLOUD9(_alias,_label) ENTITY(rectangle,black,cloud9,_label,_alias,DEV CLOUD9)
+!define DEV_CLOUD9(_alias,_label,_shape) ENTITY(_shape,black,cloud9,_label,_alias,DEV CLOUD9)
+!define DEV_CLOUD9(_alias,_label,_shape,_color) ENTITY(_shape,_color,cloud9,_label,_alias,DEV CLOUD9)
 skinparam folderBackgroundColor<<DEV CLOUD9>> White
 @enduml

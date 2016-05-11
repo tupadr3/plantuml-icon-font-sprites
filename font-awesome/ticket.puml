@@ -51,8 +51,9 @@ sprite $ticket [48x48/16] {
 }
 
 
-!define FA_TICKET(alias) ENTITY(rectangle,black,ticket,alias,FA TICKET)
-!define FA_TICKET(alias,label) ENTITY(rectangle,black,ticket,label,alias,FA TICKET)
-!define FA_TICKET(alias,label,shape) ENTITY(shape,black,ticket,label,alias,FA TICKET)
+!define FA_TICKET(_alias) ENTITY(rectangle,black,ticket,_alias,FA TICKET)
+!define FA_TICKET(_alias,_label) ENTITY(rectangle,black,ticket,_label,_alias,FA TICKET)
+!define FA_TICKET(_alias,_label,_shape) ENTITY(_shape,black,ticket,_label,_alias,FA TICKET)
+!define FA_TICKET(_alias,_label,_shape,_color) ENTITY(_shape,_color,ticket,_label,_alias,FA TICKET)
 skinparam folderBackgroundColor<<FA TICKET>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $drupal [32x32/16] {
 }
 
 
-!define DEV_DRUPAL(alias) ENTITY(rectangle,black,drupal,alias,DEV DRUPAL)
-!define DEV_DRUPAL(alias,label) ENTITY(rectangle,black,drupal,label,alias,DEV DRUPAL)
-!define DEV_DRUPAL(alias,label,shape) ENTITY(shape,black,drupal,label,alias,DEV DRUPAL)
+!define DEV_DRUPAL(_alias) ENTITY(rectangle,black,drupal,_alias,DEV DRUPAL)
+!define DEV_DRUPAL(_alias,_label) ENTITY(rectangle,black,drupal,_label,_alias,DEV DRUPAL)
+!define DEV_DRUPAL(_alias,_label,_shape) ENTITY(_shape,black,drupal,_label,_alias,DEV DRUPAL)
+!define DEV_DRUPAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,drupal,_label,_alias,DEV DRUPAL)
 skinparam folderBackgroundColor<<DEV DRUPAL>> White
 @enduml

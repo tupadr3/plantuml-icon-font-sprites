@@ -35,8 +35,9 @@ sprite $cisco [32x32/16] {
 }
 
 
-!define DEV_CISCO(alias) ENTITY(rectangle,black,cisco,alias,DEV CISCO)
-!define DEV_CISCO(alias,label) ENTITY(rectangle,black,cisco,label,alias,DEV CISCO)
-!define DEV_CISCO(alias,label,shape) ENTITY(shape,black,cisco,label,alias,DEV CISCO)
+!define DEV_CISCO(_alias) ENTITY(rectangle,black,cisco,_alias,DEV CISCO)
+!define DEV_CISCO(_alias,_label) ENTITY(rectangle,black,cisco,_label,_alias,DEV CISCO)
+!define DEV_CISCO(_alias,_label,_shape) ENTITY(_shape,black,cisco,_label,_alias,DEV CISCO)
+!define DEV_CISCO(_alias,_label,_shape,_color) ENTITY(_shape,_color,cisco,_label,_alias,DEV CISCO)
 skinparam folderBackgroundColor<<DEV CISCO>> White
 @enduml

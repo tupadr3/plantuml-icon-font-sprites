@@ -51,8 +51,9 @@ sprite $odnoklassniki [48x48/16] {
 }
 
 
-!define FA_ODNOKLASSNIKI(alias) ENTITY(rectangle,black,odnoklassniki,alias,FA ODNOKLASSNIKI)
-!define FA_ODNOKLASSNIKI(alias,label) ENTITY(rectangle,black,odnoklassniki,label,alias,FA ODNOKLASSNIKI)
-!define FA_ODNOKLASSNIKI(alias,label,shape) ENTITY(shape,black,odnoklassniki,label,alias,FA ODNOKLASSNIKI)
+!define FA_ODNOKLASSNIKI(_alias) ENTITY(rectangle,black,odnoklassniki,_alias,FA ODNOKLASSNIKI)
+!define FA_ODNOKLASSNIKI(_alias,_label) ENTITY(rectangle,black,odnoklassniki,_label,_alias,FA ODNOKLASSNIKI)
+!define FA_ODNOKLASSNIKI(_alias,_label,_shape) ENTITY(_shape,black,odnoklassniki,_label,_alias,FA ODNOKLASSNIKI)
+!define FA_ODNOKLASSNIKI(_alias,_label,_shape,_color) ENTITY(_shape,_color,odnoklassniki,_label,_alias,FA ODNOKLASSNIKI)
 skinparam folderBackgroundColor<<FA ODNOKLASSNIKI>> White
 @enduml

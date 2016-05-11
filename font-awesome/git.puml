@@ -51,8 +51,9 @@ sprite $git [48x48/16] {
 }
 
 
-!define FA_GIT(alias) ENTITY(rectangle,black,git,alias,FA GIT)
-!define FA_GIT(alias,label) ENTITY(rectangle,black,git,label,alias,FA GIT)
-!define FA_GIT(alias,label,shape) ENTITY(shape,black,git,label,alias,FA GIT)
+!define FA_GIT(_alias) ENTITY(rectangle,black,git,_alias,FA GIT)
+!define FA_GIT(_alias,_label) ENTITY(rectangle,black,git,_label,_alias,FA GIT)
+!define FA_GIT(_alias,_label,_shape) ENTITY(_shape,black,git,_label,_alias,FA GIT)
+!define FA_GIT(_alias,_label,_shape,_color) ENTITY(_shape,_color,git,_label,_alias,FA GIT)
 skinparam folderBackgroundColor<<FA GIT>> White
 @enduml

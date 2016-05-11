@@ -35,8 +35,9 @@ sprite $ionic [27x32/16] {
 }
 
 
-!define DEV_IONIC(alias) ENTITY(rectangle,black,ionic,alias,DEV IONIC)
-!define DEV_IONIC(alias,label) ENTITY(rectangle,black,ionic,label,alias,DEV IONIC)
-!define DEV_IONIC(alias,label,shape) ENTITY(shape,black,ionic,label,alias,DEV IONIC)
+!define DEV_IONIC(_alias) ENTITY(rectangle,black,ionic,_alias,DEV IONIC)
+!define DEV_IONIC(_alias,_label) ENTITY(rectangle,black,ionic,_label,_alias,DEV IONIC)
+!define DEV_IONIC(_alias,_label,_shape) ENTITY(_shape,black,ionic,_label,_alias,DEV IONIC)
+!define DEV_IONIC(_alias,_label,_shape,_color) ENTITY(_shape,_color,ionic,_label,_alias,DEV IONIC)
 skinparam folderBackgroundColor<<DEV IONIC>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $safari [32x32/16] {
 }
 
 
-!define DEV_SAFARI(alias) ENTITY(rectangle,black,safari,alias,DEV SAFARI)
-!define DEV_SAFARI(alias,label) ENTITY(rectangle,black,safari,label,alias,DEV SAFARI)
-!define DEV_SAFARI(alias,label,shape) ENTITY(shape,black,safari,label,alias,DEV SAFARI)
+!define DEV_SAFARI(_alias) ENTITY(rectangle,black,safari,_alias,DEV SAFARI)
+!define DEV_SAFARI(_alias,_label) ENTITY(rectangle,black,safari,_label,_alias,DEV SAFARI)
+!define DEV_SAFARI(_alias,_label,_shape) ENTITY(_shape,black,safari,_label,_alias,DEV SAFARI)
+!define DEV_SAFARI(_alias,_label,_shape,_color) ENTITY(_shape,_color,safari,_label,_alias,DEV SAFARI)
 skinparam folderBackgroundColor<<DEV SAFARI>> White
 @enduml

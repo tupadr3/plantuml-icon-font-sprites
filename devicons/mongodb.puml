@@ -35,8 +35,9 @@ sprite $mongodb [32x32/16] {
 }
 
 
-!define DEV_MONGODB(alias) ENTITY(rectangle,black,mongodb,alias,DEV MONGODB)
-!define DEV_MONGODB(alias,label) ENTITY(rectangle,black,mongodb,label,alias,DEV MONGODB)
-!define DEV_MONGODB(alias,label,shape) ENTITY(shape,black,mongodb,label,alias,DEV MONGODB)
+!define DEV_MONGODB(_alias) ENTITY(rectangle,black,mongodb,_alias,DEV MONGODB)
+!define DEV_MONGODB(_alias,_label) ENTITY(rectangle,black,mongodb,_label,_alias,DEV MONGODB)
+!define DEV_MONGODB(_alias,_label,_shape) ENTITY(_shape,black,mongodb,_label,_alias,DEV MONGODB)
+!define DEV_MONGODB(_alias,_label,_shape,_color) ENTITY(_shape,_color,mongodb,_label,_alias,DEV MONGODB)
 skinparam folderBackgroundColor<<DEV MONGODB>> White
 @enduml

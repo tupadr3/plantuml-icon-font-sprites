@@ -35,8 +35,9 @@ sprite $ghost [32x32/16] {
 }
 
 
-!define DEV_GHOST(alias) ENTITY(rectangle,black,ghost,alias,DEV GHOST)
-!define DEV_GHOST(alias,label) ENTITY(rectangle,black,ghost,label,alias,DEV GHOST)
-!define DEV_GHOST(alias,label,shape) ENTITY(shape,black,ghost,label,alias,DEV GHOST)
+!define DEV_GHOST(_alias) ENTITY(rectangle,black,ghost,_alias,DEV GHOST)
+!define DEV_GHOST(_alias,_label) ENTITY(rectangle,black,ghost,_label,_alias,DEV GHOST)
+!define DEV_GHOST(_alias,_label,_shape) ENTITY(_shape,black,ghost,_label,_alias,DEV GHOST)
+!define DEV_GHOST(_alias,_label,_shape,_color) ENTITY(_shape,_color,ghost,_label,_alias,DEV GHOST)
 skinparam folderBackgroundColor<<DEV GHOST>> White
 @enduml

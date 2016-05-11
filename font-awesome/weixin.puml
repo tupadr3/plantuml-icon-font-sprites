@@ -51,8 +51,9 @@ sprite $weixin [48x48/16] {
 }
 
 
-!define FA_WEIXIN(alias) ENTITY(rectangle,black,weixin,alias,FA WEIXIN)
-!define FA_WEIXIN(alias,label) ENTITY(rectangle,black,weixin,label,alias,FA WEIXIN)
-!define FA_WEIXIN(alias,label,shape) ENTITY(shape,black,weixin,label,alias,FA WEIXIN)
+!define FA_WEIXIN(_alias) ENTITY(rectangle,black,weixin,_alias,FA WEIXIN)
+!define FA_WEIXIN(_alias,_label) ENTITY(rectangle,black,weixin,_label,_alias,FA WEIXIN)
+!define FA_WEIXIN(_alias,_label,_shape) ENTITY(_shape,black,weixin,_label,_alias,FA WEIXIN)
+!define FA_WEIXIN(_alias,_label,_shape,_color) ENTITY(_shape,_color,weixin,_label,_alias,FA WEIXIN)
 skinparam folderBackgroundColor<<FA WEIXIN>> White
 @enduml

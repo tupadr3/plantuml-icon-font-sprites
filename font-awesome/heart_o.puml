@@ -51,8 +51,9 @@ sprite $heart_o [48x48/16] {
 }
 
 
-!define FA_HEART_O(alias) ENTITY(rectangle,black,heart_o,alias,FA HEART_O)
-!define FA_HEART_O(alias,label) ENTITY(rectangle,black,heart_o,label,alias,FA HEART_O)
-!define FA_HEART_O(alias,label,shape) ENTITY(shape,black,heart_o,label,alias,FA HEART_O)
+!define FA_HEART_O(_alias) ENTITY(rectangle,black,heart_o,_alias,FA HEART_O)
+!define FA_HEART_O(_alias,_label) ENTITY(rectangle,black,heart_o,_label,_alias,FA HEART_O)
+!define FA_HEART_O(_alias,_label,_shape) ENTITY(_shape,black,heart_o,_label,_alias,FA HEART_O)
+!define FA_HEART_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,heart_o,_label,_alias,FA HEART_O)
 skinparam folderBackgroundColor<<FA HEART_O>> White
 @enduml

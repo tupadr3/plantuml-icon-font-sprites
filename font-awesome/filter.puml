@@ -51,8 +51,9 @@ sprite $filter [48x48/16] {
 }
 
 
-!define FA_FILTER(alias) ENTITY(rectangle,black,filter,alias,FA FILTER)
-!define FA_FILTER(alias,label) ENTITY(rectangle,black,filter,label,alias,FA FILTER)
-!define FA_FILTER(alias,label,shape) ENTITY(shape,black,filter,label,alias,FA FILTER)
+!define FA_FILTER(_alias) ENTITY(rectangle,black,filter,_alias,FA FILTER)
+!define FA_FILTER(_alias,_label) ENTITY(rectangle,black,filter,_label,_alias,FA FILTER)
+!define FA_FILTER(_alias,_label,_shape) ENTITY(_shape,black,filter,_label,_alias,FA FILTER)
+!define FA_FILTER(_alias,_label,_shape,_color) ENTITY(_shape,_color,filter,_label,_alias,FA FILTER)
 skinparam folderBackgroundColor<<FA FILTER>> White
 @enduml

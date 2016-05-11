@@ -35,8 +35,9 @@ sprite $nodejs [32x32/16] {
 }
 
 
-!define DEV_NODEJS(alias) ENTITY(rectangle,black,nodejs,alias,DEV NODEJS)
-!define DEV_NODEJS(alias,label) ENTITY(rectangle,black,nodejs,label,alias,DEV NODEJS)
-!define DEV_NODEJS(alias,label,shape) ENTITY(shape,black,nodejs,label,alias,DEV NODEJS)
+!define DEV_NODEJS(_alias) ENTITY(rectangle,black,nodejs,_alias,DEV NODEJS)
+!define DEV_NODEJS(_alias,_label) ENTITY(rectangle,black,nodejs,_label,_alias,DEV NODEJS)
+!define DEV_NODEJS(_alias,_label,_shape) ENTITY(_shape,black,nodejs,_label,_alias,DEV NODEJS)
+!define DEV_NODEJS(_alias,_label,_shape,_color) ENTITY(_shape,_color,nodejs,_label,_alias,DEV NODEJS)
 skinparam folderBackgroundColor<<DEV NODEJS>> White
 @enduml

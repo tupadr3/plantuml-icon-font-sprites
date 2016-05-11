@@ -35,8 +35,9 @@ sprite $markdown [32x32/16] {
 }
 
 
-!define DEV_MARKDOWN(alias) ENTITY(rectangle,black,markdown,alias,DEV MARKDOWN)
-!define DEV_MARKDOWN(alias,label) ENTITY(rectangle,black,markdown,label,alias,DEV MARKDOWN)
-!define DEV_MARKDOWN(alias,label,shape) ENTITY(shape,black,markdown,label,alias,DEV MARKDOWN)
+!define DEV_MARKDOWN(_alias) ENTITY(rectangle,black,markdown,_alias,DEV MARKDOWN)
+!define DEV_MARKDOWN(_alias,_label) ENTITY(rectangle,black,markdown,_label,_alias,DEV MARKDOWN)
+!define DEV_MARKDOWN(_alias,_label,_shape) ENTITY(_shape,black,markdown,_label,_alias,DEV MARKDOWN)
+!define DEV_MARKDOWN(_alias,_label,_shape,_color) ENTITY(_shape,_color,markdown,_label,_alias,DEV MARKDOWN)
 skinparam folderBackgroundColor<<DEV MARKDOWN>> White
 @enduml

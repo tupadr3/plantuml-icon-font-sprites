@@ -51,8 +51,9 @@ sprite $th_list [48x48/16] {
 }
 
 
-!define FA_TH_LIST(alias) ENTITY(rectangle,black,th_list,alias,FA TH_LIST)
-!define FA_TH_LIST(alias,label) ENTITY(rectangle,black,th_list,label,alias,FA TH_LIST)
-!define FA_TH_LIST(alias,label,shape) ENTITY(shape,black,th_list,label,alias,FA TH_LIST)
+!define FA_TH_LIST(_alias) ENTITY(rectangle,black,th_list,_alias,FA TH_LIST)
+!define FA_TH_LIST(_alias,_label) ENTITY(rectangle,black,th_list,_label,_alias,FA TH_LIST)
+!define FA_TH_LIST(_alias,_label,_shape) ENTITY(_shape,black,th_list,_label,_alias,FA TH_LIST)
+!define FA_TH_LIST(_alias,_label,_shape,_color) ENTITY(_shape,_color,th_list,_label,_alias,FA TH_LIST)
 skinparam folderBackgroundColor<<FA TH_LIST>> White
 @enduml

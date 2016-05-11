@@ -51,8 +51,9 @@ sprite $calendar_check_o [48x48/16] {
 }
 
 
-!define FA_CALENDAR_CHECK_O(alias) ENTITY(rectangle,black,calendar_check_o,alias,FA CALENDAR_CHECK_O)
-!define FA_CALENDAR_CHECK_O(alias,label) ENTITY(rectangle,black,calendar_check_o,label,alias,FA CALENDAR_CHECK_O)
-!define FA_CALENDAR_CHECK_O(alias,label,shape) ENTITY(shape,black,calendar_check_o,label,alias,FA CALENDAR_CHECK_O)
+!define FA_CALENDAR_CHECK_O(_alias) ENTITY(rectangle,black,calendar_check_o,_alias,FA CALENDAR_CHECK_O)
+!define FA_CALENDAR_CHECK_O(_alias,_label) ENTITY(rectangle,black,calendar_check_o,_label,_alias,FA CALENDAR_CHECK_O)
+!define FA_CALENDAR_CHECK_O(_alias,_label,_shape) ENTITY(_shape,black,calendar_check_o,_label,_alias,FA CALENDAR_CHECK_O)
+!define FA_CALENDAR_CHECK_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,calendar_check_o,_label,_alias,FA CALENDAR_CHECK_O)
 skinparam folderBackgroundColor<<FA CALENDAR_CHECK_O>> White
 @enduml

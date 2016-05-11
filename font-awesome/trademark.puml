@@ -51,8 +51,9 @@ sprite $trademark [48x48/16] {
 }
 
 
-!define FA_TRADEMARK(alias) ENTITY(rectangle,black,trademark,alias,FA TRADEMARK)
-!define FA_TRADEMARK(alias,label) ENTITY(rectangle,black,trademark,label,alias,FA TRADEMARK)
-!define FA_TRADEMARK(alias,label,shape) ENTITY(shape,black,trademark,label,alias,FA TRADEMARK)
+!define FA_TRADEMARK(_alias) ENTITY(rectangle,black,trademark,_alias,FA TRADEMARK)
+!define FA_TRADEMARK(_alias,_label) ENTITY(rectangle,black,trademark,_label,_alias,FA TRADEMARK)
+!define FA_TRADEMARK(_alias,_label,_shape) ENTITY(_shape,black,trademark,_label,_alias,FA TRADEMARK)
+!define FA_TRADEMARK(_alias,_label,_shape,_color) ENTITY(_shape,_color,trademark,_label,_alias,FA TRADEMARK)
 skinparam folderBackgroundColor<<FA TRADEMARK>> White
 @enduml

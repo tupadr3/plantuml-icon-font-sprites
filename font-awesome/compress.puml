@@ -51,8 +51,9 @@ sprite $compress [48x48/16] {
 }
 
 
-!define FA_COMPRESS(alias) ENTITY(rectangle,black,compress,alias,FA COMPRESS)
-!define FA_COMPRESS(alias,label) ENTITY(rectangle,black,compress,label,alias,FA COMPRESS)
-!define FA_COMPRESS(alias,label,shape) ENTITY(shape,black,compress,label,alias,FA COMPRESS)
+!define FA_COMPRESS(_alias) ENTITY(rectangle,black,compress,_alias,FA COMPRESS)
+!define FA_COMPRESS(_alias,_label) ENTITY(rectangle,black,compress,_label,_alias,FA COMPRESS)
+!define FA_COMPRESS(_alias,_label,_shape) ENTITY(_shape,black,compress,_label,_alias,FA COMPRESS)
+!define FA_COMPRESS(_alias,_label,_shape,_color) ENTITY(_shape,_color,compress,_label,_alias,FA COMPRESS)
 skinparam folderBackgroundColor<<FA COMPRESS>> White
 @enduml

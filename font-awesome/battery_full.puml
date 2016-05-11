@@ -51,8 +51,9 @@ AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC200
 }
 
 
-!define FA_BATTERY_FULL(alias) ENTITY(rectangle,black,battery_full,alias,FA BATTERY_FULL)
-!define FA_BATTERY_FULL(alias,label) ENTITY(rectangle,black,battery_full,label,alias,FA BATTERY_FULL)
-!define FA_BATTERY_FULL(alias,label,shape) ENTITY(shape,black,battery_full,label,alias,FA BATTERY_FULL)
+!define FA_BATTERY_FULL(_alias) ENTITY(rectangle,black,battery_full,_alias,FA BATTERY_FULL)
+!define FA_BATTERY_FULL(_alias,_label) ENTITY(rectangle,black,battery_full,_label,_alias,FA BATTERY_FULL)
+!define FA_BATTERY_FULL(_alias,_label,_shape) ENTITY(_shape,black,battery_full,_label,_alias,FA BATTERY_FULL)
+!define FA_BATTERY_FULL(_alias,_label,_shape,_color) ENTITY(_shape,_color,battery_full,_label,_alias,FA BATTERY_FULL)
 skinparam folderBackgroundColor<<FA BATTERY_FULL>> White
 @enduml

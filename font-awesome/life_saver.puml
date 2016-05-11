@@ -51,8 +51,9 @@ sprite $life_saver [48x48/16] {
 }
 
 
-!define FA_LIFE_SAVER(alias) ENTITY(rectangle,black,life_saver,alias,FA LIFE_SAVER)
-!define FA_LIFE_SAVER(alias,label) ENTITY(rectangle,black,life_saver,label,alias,FA LIFE_SAVER)
-!define FA_LIFE_SAVER(alias,label,shape) ENTITY(shape,black,life_saver,label,alias,FA LIFE_SAVER)
+!define FA_LIFE_SAVER(_alias) ENTITY(rectangle,black,life_saver,_alias,FA LIFE_SAVER)
+!define FA_LIFE_SAVER(_alias,_label) ENTITY(rectangle,black,life_saver,_label,_alias,FA LIFE_SAVER)
+!define FA_LIFE_SAVER(_alias,_label,_shape) ENTITY(_shape,black,life_saver,_label,_alias,FA LIFE_SAVER)
+!define FA_LIFE_SAVER(_alias,_label,_shape,_color) ENTITY(_shape,_color,life_saver,_label,_alias,FA LIFE_SAVER)
 skinparam folderBackgroundColor<<FA LIFE_SAVER>> White
 @enduml

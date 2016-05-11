@@ -51,8 +51,9 @@ sprite $stethoscope [48x48/16] {
 }
 
 
-!define FA_STETHOSCOPE(alias) ENTITY(rectangle,black,stethoscope,alias,FA STETHOSCOPE)
-!define FA_STETHOSCOPE(alias,label) ENTITY(rectangle,black,stethoscope,label,alias,FA STETHOSCOPE)
-!define FA_STETHOSCOPE(alias,label,shape) ENTITY(shape,black,stethoscope,label,alias,FA STETHOSCOPE)
+!define FA_STETHOSCOPE(_alias) ENTITY(rectangle,black,stethoscope,_alias,FA STETHOSCOPE)
+!define FA_STETHOSCOPE(_alias,_label) ENTITY(rectangle,black,stethoscope,_label,_alias,FA STETHOSCOPE)
+!define FA_STETHOSCOPE(_alias,_label,_shape) ENTITY(_shape,black,stethoscope,_label,_alias,FA STETHOSCOPE)
+!define FA_STETHOSCOPE(_alias,_label,_shape,_color) ENTITY(_shape,_color,stethoscope,_label,_alias,FA STETHOSCOPE)
 skinparam folderBackgroundColor<<FA STETHOSCOPE>> White
 @enduml

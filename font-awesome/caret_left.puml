@@ -51,8 +51,9 @@ sprite $caret_left [48x48/16] {
 }
 
 
-!define FA_CARET_LEFT(alias) ENTITY(rectangle,black,caret_left,alias,FA CARET_LEFT)
-!define FA_CARET_LEFT(alias,label) ENTITY(rectangle,black,caret_left,label,alias,FA CARET_LEFT)
-!define FA_CARET_LEFT(alias,label,shape) ENTITY(shape,black,caret_left,label,alias,FA CARET_LEFT)
+!define FA_CARET_LEFT(_alias) ENTITY(rectangle,black,caret_left,_alias,FA CARET_LEFT)
+!define FA_CARET_LEFT(_alias,_label) ENTITY(rectangle,black,caret_left,_label,_alias,FA CARET_LEFT)
+!define FA_CARET_LEFT(_alias,_label,_shape) ENTITY(_shape,black,caret_left,_label,_alias,FA CARET_LEFT)
+!define FA_CARET_LEFT(_alias,_label,_shape,_color) ENTITY(_shape,_color,caret_left,_label,_alias,FA CARET_LEFT)
 skinparam folderBackgroundColor<<FA CARET_LEFT>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $linkedin_square [48x48/16] {
 }
 
 
-!define FA_LINKEDIN_SQUARE(alias) ENTITY(rectangle,black,linkedin_square,alias,FA LINKEDIN_SQUARE)
-!define FA_LINKEDIN_SQUARE(alias,label) ENTITY(rectangle,black,linkedin_square,label,alias,FA LINKEDIN_SQUARE)
-!define FA_LINKEDIN_SQUARE(alias,label,shape) ENTITY(shape,black,linkedin_square,label,alias,FA LINKEDIN_SQUARE)
+!define FA_LINKEDIN_SQUARE(_alias) ENTITY(rectangle,black,linkedin_square,_alias,FA LINKEDIN_SQUARE)
+!define FA_LINKEDIN_SQUARE(_alias,_label) ENTITY(rectangle,black,linkedin_square,_label,_alias,FA LINKEDIN_SQUARE)
+!define FA_LINKEDIN_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,linkedin_square,_label,_alias,FA LINKEDIN_SQUARE)
+!define FA_LINKEDIN_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,linkedin_square,_label,_alias,FA LINKEDIN_SQUARE)
 skinparam folderBackgroundColor<<FA LINKEDIN_SQUARE>> White
 @enduml

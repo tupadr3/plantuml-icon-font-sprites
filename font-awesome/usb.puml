@@ -51,8 +51,9 @@ CFFFFFFF400000000000CFF500000000000000000FF80000
 }
 
 
-!define FA_USB(alias) ENTITY(rectangle,black,usb,alias,FA USB)
-!define FA_USB(alias,label) ENTITY(rectangle,black,usb,label,alias,FA USB)
-!define FA_USB(alias,label,shape) ENTITY(shape,black,usb,label,alias,FA USB)
+!define FA_USB(_alias) ENTITY(rectangle,black,usb,_alias,FA USB)
+!define FA_USB(_alias,_label) ENTITY(rectangle,black,usb,_label,_alias,FA USB)
+!define FA_USB(_alias,_label,_shape) ENTITY(_shape,black,usb,_label,_alias,FA USB)
+!define FA_USB(_alias,_label,_shape,_color) ENTITY(_shape,_color,usb,_label,_alias,FA USB)
 skinparam folderBackgroundColor<<FA USB>> White
 @enduml

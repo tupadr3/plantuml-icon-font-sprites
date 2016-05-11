@@ -51,8 +51,9 @@ sprite $key [48x48/16] {
 }
 
 
-!define FA_KEY(alias) ENTITY(rectangle,black,key,alias,FA KEY)
-!define FA_KEY(alias,label) ENTITY(rectangle,black,key,label,alias,FA KEY)
-!define FA_KEY(alias,label,shape) ENTITY(shape,black,key,label,alias,FA KEY)
+!define FA_KEY(_alias) ENTITY(rectangle,black,key,_alias,FA KEY)
+!define FA_KEY(_alias,_label) ENTITY(rectangle,black,key,_label,_alias,FA KEY)
+!define FA_KEY(_alias,_label,_shape) ENTITY(_shape,black,key,_label,_alias,FA KEY)
+!define FA_KEY(_alias,_label,_shape,_color) ENTITY(_shape,_color,key,_label,_alias,FA KEY)
 skinparam folderBackgroundColor<<FA KEY>> White
 @enduml

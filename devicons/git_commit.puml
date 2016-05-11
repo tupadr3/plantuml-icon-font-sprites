@@ -35,8 +35,9 @@ sprite $git_commit [32x32/16] {
 }
 
 
-!define DEV_GIT_COMMIT(alias) ENTITY(rectangle,black,git_commit,alias,DEV GIT_COMMIT)
-!define DEV_GIT_COMMIT(alias,label) ENTITY(rectangle,black,git_commit,label,alias,DEV GIT_COMMIT)
-!define DEV_GIT_COMMIT(alias,label,shape) ENTITY(shape,black,git_commit,label,alias,DEV GIT_COMMIT)
+!define DEV_GIT_COMMIT(_alias) ENTITY(rectangle,black,git_commit,_alias,DEV GIT_COMMIT)
+!define DEV_GIT_COMMIT(_alias,_label) ENTITY(rectangle,black,git_commit,_label,_alias,DEV GIT_COMMIT)
+!define DEV_GIT_COMMIT(_alias,_label,_shape) ENTITY(_shape,black,git_commit,_label,_alias,DEV GIT_COMMIT)
+!define DEV_GIT_COMMIT(_alias,_label,_shape,_color) ENTITY(_shape,_color,git_commit,_label,_alias,DEV GIT_COMMIT)
 skinparam folderBackgroundColor<<DEV GIT_COMMIT>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $css3_full [32x32/16] {
 }
 
 
-!define DEV_CSS3_FULL(alias) ENTITY(rectangle,black,css3_full,alias,DEV CSS3_FULL)
-!define DEV_CSS3_FULL(alias,label) ENTITY(rectangle,black,css3_full,label,alias,DEV CSS3_FULL)
-!define DEV_CSS3_FULL(alias,label,shape) ENTITY(shape,black,css3_full,label,alias,DEV CSS3_FULL)
+!define DEV_CSS3_FULL(_alias) ENTITY(rectangle,black,css3_full,_alias,DEV CSS3_FULL)
+!define DEV_CSS3_FULL(_alias,_label) ENTITY(rectangle,black,css3_full,_label,_alias,DEV CSS3_FULL)
+!define DEV_CSS3_FULL(_alias,_label,_shape) ENTITY(_shape,black,css3_full,_label,_alias,DEV CSS3_FULL)
+!define DEV_CSS3_FULL(_alias,_label,_shape,_color) ENTITY(_shape,_color,css3_full,_label,_alias,DEV CSS3_FULL)
 skinparam folderBackgroundColor<<DEV CSS3_FULL>> White
 @enduml

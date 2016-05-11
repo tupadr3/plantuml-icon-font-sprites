@@ -51,8 +51,9 @@ sprite $facebook_official [48x48/16] {
 }
 
 
-!define FA_FACEBOOK_OFFICIAL(alias) ENTITY(rectangle,black,facebook_official,alias,FA FACEBOOK_OFFICIAL)
-!define FA_FACEBOOK_OFFICIAL(alias,label) ENTITY(rectangle,black,facebook_official,label,alias,FA FACEBOOK_OFFICIAL)
-!define FA_FACEBOOK_OFFICIAL(alias,label,shape) ENTITY(shape,black,facebook_official,label,alias,FA FACEBOOK_OFFICIAL)
+!define FA_FACEBOOK_OFFICIAL(_alias) ENTITY(rectangle,black,facebook_official,_alias,FA FACEBOOK_OFFICIAL)
+!define FA_FACEBOOK_OFFICIAL(_alias,_label) ENTITY(rectangle,black,facebook_official,_label,_alias,FA FACEBOOK_OFFICIAL)
+!define FA_FACEBOOK_OFFICIAL(_alias,_label,_shape) ENTITY(_shape,black,facebook_official,_label,_alias,FA FACEBOOK_OFFICIAL)
+!define FA_FACEBOOK_OFFICIAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,facebook_official,_label,_alias,FA FACEBOOK_OFFICIAL)
 skinparam folderBackgroundColor<<FA FACEBOOK_OFFICIAL>> White
 @enduml

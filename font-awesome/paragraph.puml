@@ -51,8 +51,9 @@ sprite $paragraph [48x48/16] {
 }
 
 
-!define FA_PARAGRAPH(alias) ENTITY(rectangle,black,paragraph,alias,FA PARAGRAPH)
-!define FA_PARAGRAPH(alias,label) ENTITY(rectangle,black,paragraph,label,alias,FA PARAGRAPH)
-!define FA_PARAGRAPH(alias,label,shape) ENTITY(shape,black,paragraph,label,alias,FA PARAGRAPH)
+!define FA_PARAGRAPH(_alias) ENTITY(rectangle,black,paragraph,_alias,FA PARAGRAPH)
+!define FA_PARAGRAPH(_alias,_label) ENTITY(rectangle,black,paragraph,_label,_alias,FA PARAGRAPH)
+!define FA_PARAGRAPH(_alias,_label,_shape) ENTITY(_shape,black,paragraph,_label,_alias,FA PARAGRAPH)
+!define FA_PARAGRAPH(_alias,_label,_shape,_color) ENTITY(_shape,_color,paragraph,_label,_alias,FA PARAGRAPH)
 skinparam folderBackgroundColor<<FA PARAGRAPH>> White
 @enduml

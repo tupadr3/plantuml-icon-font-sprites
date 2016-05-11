@@ -51,8 +51,9 @@ sprite $hand_lizard_o [48x48/16] {
 }
 
 
-!define FA_HAND_LIZARD_O(alias) ENTITY(rectangle,black,hand_lizard_o,alias,FA HAND_LIZARD_O)
-!define FA_HAND_LIZARD_O(alias,label) ENTITY(rectangle,black,hand_lizard_o,label,alias,FA HAND_LIZARD_O)
-!define FA_HAND_LIZARD_O(alias,label,shape) ENTITY(shape,black,hand_lizard_o,label,alias,FA HAND_LIZARD_O)
+!define FA_HAND_LIZARD_O(_alias) ENTITY(rectangle,black,hand_lizard_o,_alias,FA HAND_LIZARD_O)
+!define FA_HAND_LIZARD_O(_alias,_label) ENTITY(rectangle,black,hand_lizard_o,_label,_alias,FA HAND_LIZARD_O)
+!define FA_HAND_LIZARD_O(_alias,_label,_shape) ENTITY(_shape,black,hand_lizard_o,_label,_alias,FA HAND_LIZARD_O)
+!define FA_HAND_LIZARD_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,hand_lizard_o,_label,_alias,FA HAND_LIZARD_O)
 skinparam folderBackgroundColor<<FA HAND_LIZARD_O>> White
 @enduml

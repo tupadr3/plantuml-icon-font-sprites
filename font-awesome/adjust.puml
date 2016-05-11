@@ -51,8 +51,9 @@ sprite $adjust [48x48/16] {
 }
 
 
-!define FA_ADJUST(alias) ENTITY(rectangle,black,adjust,alias,FA ADJUST)
-!define FA_ADJUST(alias,label) ENTITY(rectangle,black,adjust,label,alias,FA ADJUST)
-!define FA_ADJUST(alias,label,shape) ENTITY(shape,black,adjust,label,alias,FA ADJUST)
+!define FA_ADJUST(_alias) ENTITY(rectangle,black,adjust,_alias,FA ADJUST)
+!define FA_ADJUST(_alias,_label) ENTITY(rectangle,black,adjust,_label,_alias,FA ADJUST)
+!define FA_ADJUST(_alias,_label,_shape) ENTITY(_shape,black,adjust,_label,_alias,FA ADJUST)
+!define FA_ADJUST(_alias,_label,_shape,_color) ENTITY(_shape,_color,adjust,_label,_alias,FA ADJUST)
 skinparam folderBackgroundColor<<FA ADJUST>> White
 @enduml

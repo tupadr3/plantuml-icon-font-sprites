@@ -51,8 +51,9 @@ sprite $mouse_pointer [48x48/16] {
 }
 
 
-!define FA_MOUSE_POINTER(alias) ENTITY(rectangle,black,mouse_pointer,alias,FA MOUSE_POINTER)
-!define FA_MOUSE_POINTER(alias,label) ENTITY(rectangle,black,mouse_pointer,label,alias,FA MOUSE_POINTER)
-!define FA_MOUSE_POINTER(alias,label,shape) ENTITY(shape,black,mouse_pointer,label,alias,FA MOUSE_POINTER)
+!define FA_MOUSE_POINTER(_alias) ENTITY(rectangle,black,mouse_pointer,_alias,FA MOUSE_POINTER)
+!define FA_MOUSE_POINTER(_alias,_label) ENTITY(rectangle,black,mouse_pointer,_label,_alias,FA MOUSE_POINTER)
+!define FA_MOUSE_POINTER(_alias,_label,_shape) ENTITY(_shape,black,mouse_pointer,_label,_alias,FA MOUSE_POINTER)
+!define FA_MOUSE_POINTER(_alias,_label,_shape,_color) ENTITY(_shape,_color,mouse_pointer,_label,_alias,FA MOUSE_POINTER)
 skinparam folderBackgroundColor<<FA MOUSE_POINTER>> White
 @enduml

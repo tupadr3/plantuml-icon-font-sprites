@@ -35,8 +35,9 @@ sprite $sublime [27x32/16] {
 }
 
 
-!define DEV_SUBLIME(alias) ENTITY(rectangle,black,sublime,alias,DEV SUBLIME)
-!define DEV_SUBLIME(alias,label) ENTITY(rectangle,black,sublime,label,alias,DEV SUBLIME)
-!define DEV_SUBLIME(alias,label,shape) ENTITY(shape,black,sublime,label,alias,DEV SUBLIME)
+!define DEV_SUBLIME(_alias) ENTITY(rectangle,black,sublime,_alias,DEV SUBLIME)
+!define DEV_SUBLIME(_alias,_label) ENTITY(rectangle,black,sublime,_label,_alias,DEV SUBLIME)
+!define DEV_SUBLIME(_alias,_label,_shape) ENTITY(_shape,black,sublime,_label,_alias,DEV SUBLIME)
+!define DEV_SUBLIME(_alias,_label,_shape,_color) ENTITY(_shape,_color,sublime,_label,_alias,DEV SUBLIME)
 skinparam folderBackgroundColor<<DEV SUBLIME>> White
 @enduml

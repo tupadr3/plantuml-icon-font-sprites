@@ -51,8 +51,9 @@ sprite $support [48x48/16] {
 }
 
 
-!define FA_SUPPORT(alias) ENTITY(rectangle,black,support,alias,FA SUPPORT)
-!define FA_SUPPORT(alias,label) ENTITY(rectangle,black,support,label,alias,FA SUPPORT)
-!define FA_SUPPORT(alias,label,shape) ENTITY(shape,black,support,label,alias,FA SUPPORT)
+!define FA_SUPPORT(_alias) ENTITY(rectangle,black,support,_alias,FA SUPPORT)
+!define FA_SUPPORT(_alias,_label) ENTITY(rectangle,black,support,_label,_alias,FA SUPPORT)
+!define FA_SUPPORT(_alias,_label,_shape) ENTITY(_shape,black,support,_label,_alias,FA SUPPORT)
+!define FA_SUPPORT(_alias,_label,_shape,_color) ENTITY(_shape,_color,support,_label,_alias,FA SUPPORT)
 skinparam folderBackgroundColor<<FA SUPPORT>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $backward [48x48/16] {
 }
 
 
-!define FA_BACKWARD(alias) ENTITY(rectangle,black,backward,alias,FA BACKWARD)
-!define FA_BACKWARD(alias,label) ENTITY(rectangle,black,backward,label,alias,FA BACKWARD)
-!define FA_BACKWARD(alias,label,shape) ENTITY(shape,black,backward,label,alias,FA BACKWARD)
+!define FA_BACKWARD(_alias) ENTITY(rectangle,black,backward,_alias,FA BACKWARD)
+!define FA_BACKWARD(_alias,_label) ENTITY(rectangle,black,backward,_label,_alias,FA BACKWARD)
+!define FA_BACKWARD(_alias,_label,_shape) ENTITY(_shape,black,backward,_label,_alias,FA BACKWARD)
+!define FA_BACKWARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,backward,_label,_alias,FA BACKWARD)
 skinparam folderBackgroundColor<<FA BACKWARD>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $futbol_o [48x48/16] {
 }
 
 
-!define FA_FUTBOL_O(alias) ENTITY(rectangle,black,futbol_o,alias,FA FUTBOL_O)
-!define FA_FUTBOL_O(alias,label) ENTITY(rectangle,black,futbol_o,label,alias,FA FUTBOL_O)
-!define FA_FUTBOL_O(alias,label,shape) ENTITY(shape,black,futbol_o,label,alias,FA FUTBOL_O)
+!define FA_FUTBOL_O(_alias) ENTITY(rectangle,black,futbol_o,_alias,FA FUTBOL_O)
+!define FA_FUTBOL_O(_alias,_label) ENTITY(rectangle,black,futbol_o,_label,_alias,FA FUTBOL_O)
+!define FA_FUTBOL_O(_alias,_label,_shape) ENTITY(_shape,black,futbol_o,_label,_alias,FA FUTBOL_O)
+!define FA_FUTBOL_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,futbol_o,_label,_alias,FA FUTBOL_O)
 skinparam folderBackgroundColor<<FA FUTBOL_O>> White
 @enduml

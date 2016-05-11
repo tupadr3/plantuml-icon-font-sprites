@@ -35,8 +35,9 @@ sprite $google_cloud_platform [34x32/16] {
 }
 
 
-!define DEV_GOOGLE_CLOUD_PLATFORM(alias) ENTITY(rectangle,black,google_cloud_platform,alias,DEV GOOGLE_CLOUD_PLATFORM)
-!define DEV_GOOGLE_CLOUD_PLATFORM(alias,label) ENTITY(rectangle,black,google_cloud_platform,label,alias,DEV GOOGLE_CLOUD_PLATFORM)
-!define DEV_GOOGLE_CLOUD_PLATFORM(alias,label,shape) ENTITY(shape,black,google_cloud_platform,label,alias,DEV GOOGLE_CLOUD_PLATFORM)
+!define DEV_GOOGLE_CLOUD_PLATFORM(_alias) ENTITY(rectangle,black,google_cloud_platform,_alias,DEV GOOGLE_CLOUD_PLATFORM)
+!define DEV_GOOGLE_CLOUD_PLATFORM(_alias,_label) ENTITY(rectangle,black,google_cloud_platform,_label,_alias,DEV GOOGLE_CLOUD_PLATFORM)
+!define DEV_GOOGLE_CLOUD_PLATFORM(_alias,_label,_shape) ENTITY(_shape,black,google_cloud_platform,_label,_alias,DEV GOOGLE_CLOUD_PLATFORM)
+!define DEV_GOOGLE_CLOUD_PLATFORM(_alias,_label,_shape,_color) ENTITY(_shape,_color,google_cloud_platform,_label,_alias,DEV GOOGLE_CLOUD_PLATFORM)
 skinparam folderBackgroundColor<<DEV GOOGLE_CLOUD_PLATFORM>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $table [48x48/16] {
 }
 
 
-!define FA_TABLE(alias) ENTITY(rectangle,black,table,alias,FA TABLE)
-!define FA_TABLE(alias,label) ENTITY(rectangle,black,table,label,alias,FA TABLE)
-!define FA_TABLE(alias,label,shape) ENTITY(shape,black,table,label,alias,FA TABLE)
+!define FA_TABLE(_alias) ENTITY(rectangle,black,table,_alias,FA TABLE)
+!define FA_TABLE(_alias,_label) ENTITY(rectangle,black,table,_label,_alias,FA TABLE)
+!define FA_TABLE(_alias,_label,_shape) ENTITY(_shape,black,table,_label,_alias,FA TABLE)
+!define FA_TABLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,table,_label,_alias,FA TABLE)
 skinparam folderBackgroundColor<<FA TABLE>> White
 @enduml

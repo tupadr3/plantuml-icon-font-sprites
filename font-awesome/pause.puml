@@ -51,8 +51,9 @@ sprite $pause [48x48/16] {
 }
 
 
-!define FA_PAUSE(alias) ENTITY(rectangle,black,pause,alias,FA PAUSE)
-!define FA_PAUSE(alias,label) ENTITY(rectangle,black,pause,label,alias,FA PAUSE)
-!define FA_PAUSE(alias,label,shape) ENTITY(shape,black,pause,label,alias,FA PAUSE)
+!define FA_PAUSE(_alias) ENTITY(rectangle,black,pause,_alias,FA PAUSE)
+!define FA_PAUSE(_alias,_label) ENTITY(rectangle,black,pause,_label,_alias,FA PAUSE)
+!define FA_PAUSE(_alias,_label,_shape) ENTITY(_shape,black,pause,_label,_alias,FA PAUSE)
+!define FA_PAUSE(_alias,_label,_shape,_color) ENTITY(_shape,_color,pause,_label,_alias,FA PAUSE)
 skinparam folderBackgroundColor<<FA PAUSE>> White
 @enduml

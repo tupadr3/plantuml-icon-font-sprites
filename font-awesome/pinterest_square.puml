@@ -51,8 +51,9 @@ sprite $pinterest_square [48x48/16] {
 }
 
 
-!define FA_PINTEREST_SQUARE(alias) ENTITY(rectangle,black,pinterest_square,alias,FA PINTEREST_SQUARE)
-!define FA_PINTEREST_SQUARE(alias,label) ENTITY(rectangle,black,pinterest_square,label,alias,FA PINTEREST_SQUARE)
-!define FA_PINTEREST_SQUARE(alias,label,shape) ENTITY(shape,black,pinterest_square,label,alias,FA PINTEREST_SQUARE)
+!define FA_PINTEREST_SQUARE(_alias) ENTITY(rectangle,black,pinterest_square,_alias,FA PINTEREST_SQUARE)
+!define FA_PINTEREST_SQUARE(_alias,_label) ENTITY(rectangle,black,pinterest_square,_label,_alias,FA PINTEREST_SQUARE)
+!define FA_PINTEREST_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,pinterest_square,_label,_alias,FA PINTEREST_SQUARE)
+!define FA_PINTEREST_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,pinterest_square,_label,_alias,FA PINTEREST_SQUARE)
 skinparam folderBackgroundColor<<FA PINTEREST_SQUARE>> White
 @enduml

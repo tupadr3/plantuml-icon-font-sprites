@@ -51,8 +51,9 @@ sprite $behance_square [48x48/16] {
 }
 
 
-!define FA_BEHANCE_SQUARE(alias) ENTITY(rectangle,black,behance_square,alias,FA BEHANCE_SQUARE)
-!define FA_BEHANCE_SQUARE(alias,label) ENTITY(rectangle,black,behance_square,label,alias,FA BEHANCE_SQUARE)
-!define FA_BEHANCE_SQUARE(alias,label,shape) ENTITY(shape,black,behance_square,label,alias,FA BEHANCE_SQUARE)
+!define FA_BEHANCE_SQUARE(_alias) ENTITY(rectangle,black,behance_square,_alias,FA BEHANCE_SQUARE)
+!define FA_BEHANCE_SQUARE(_alias,_label) ENTITY(rectangle,black,behance_square,_label,_alias,FA BEHANCE_SQUARE)
+!define FA_BEHANCE_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,behance_square,_label,_alias,FA BEHANCE_SQUARE)
+!define FA_BEHANCE_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,behance_square,_label,_alias,FA BEHANCE_SQUARE)
 skinparam folderBackgroundColor<<FA BEHANCE_SQUARE>> White
 @enduml

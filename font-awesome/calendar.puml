@@ -51,8 +51,9 @@ sprite $calendar [48x48/16] {
 }
 
 
-!define FA_CALENDAR(alias) ENTITY(rectangle,black,calendar,alias,FA CALENDAR)
-!define FA_CALENDAR(alias,label) ENTITY(rectangle,black,calendar,label,alias,FA CALENDAR)
-!define FA_CALENDAR(alias,label,shape) ENTITY(shape,black,calendar,label,alias,FA CALENDAR)
+!define FA_CALENDAR(_alias) ENTITY(rectangle,black,calendar,_alias,FA CALENDAR)
+!define FA_CALENDAR(_alias,_label) ENTITY(rectangle,black,calendar,_label,_alias,FA CALENDAR)
+!define FA_CALENDAR(_alias,_label,_shape) ENTITY(_shape,black,calendar,_label,_alias,FA CALENDAR)
+!define FA_CALENDAR(_alias,_label,_shape,_color) ENTITY(_shape,_color,calendar,_label,_alias,FA CALENDAR)
 skinparam folderBackgroundColor<<FA CALENDAR>> White
 @enduml

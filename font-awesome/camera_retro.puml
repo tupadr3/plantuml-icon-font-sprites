@@ -51,8 +51,9 @@ sprite $camera_retro [48x48/16] {
 }
 
 
-!define FA_CAMERA_RETRO(alias) ENTITY(rectangle,black,camera_retro,alias,FA CAMERA_RETRO)
-!define FA_CAMERA_RETRO(alias,label) ENTITY(rectangle,black,camera_retro,label,alias,FA CAMERA_RETRO)
-!define FA_CAMERA_RETRO(alias,label,shape) ENTITY(shape,black,camera_retro,label,alias,FA CAMERA_RETRO)
+!define FA_CAMERA_RETRO(_alias) ENTITY(rectangle,black,camera_retro,_alias,FA CAMERA_RETRO)
+!define FA_CAMERA_RETRO(_alias,_label) ENTITY(rectangle,black,camera_retro,_label,_alias,FA CAMERA_RETRO)
+!define FA_CAMERA_RETRO(_alias,_label,_shape) ENTITY(_shape,black,camera_retro,_label,_alias,FA CAMERA_RETRO)
+!define FA_CAMERA_RETRO(_alias,_label,_shape,_color) ENTITY(_shape,_color,camera_retro,_label,_alias,FA CAMERA_RETRO)
 skinparam folderBackgroundColor<<FA CAMERA_RETRO>> White
 @enduml

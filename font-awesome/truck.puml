@@ -51,8 +51,9 @@ sprite $truck [48x48/16] {
 }
 
 
-!define FA_TRUCK(alias) ENTITY(rectangle,black,truck,alias,FA TRUCK)
-!define FA_TRUCK(alias,label) ENTITY(rectangle,black,truck,label,alias,FA TRUCK)
-!define FA_TRUCK(alias,label,shape) ENTITY(shape,black,truck,label,alias,FA TRUCK)
+!define FA_TRUCK(_alias) ENTITY(rectangle,black,truck,_alias,FA TRUCK)
+!define FA_TRUCK(_alias,_label) ENTITY(rectangle,black,truck,_label,_alias,FA TRUCK)
+!define FA_TRUCK(_alias,_label,_shape) ENTITY(_shape,black,truck,_label,_alias,FA TRUCK)
+!define FA_TRUCK(_alias,_label,_shape,_color) ENTITY(_shape,_color,truck,_label,_alias,FA TRUCK)
 skinparam folderBackgroundColor<<FA TRUCK>> White
 @enduml

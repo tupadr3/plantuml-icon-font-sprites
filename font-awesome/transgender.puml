@@ -51,8 +51,9 @@ sprite $transgender [48x48/16] {
 }
 
 
-!define FA_TRANSGENDER(alias) ENTITY(rectangle,black,transgender,alias,FA TRANSGENDER)
-!define FA_TRANSGENDER(alias,label) ENTITY(rectangle,black,transgender,label,alias,FA TRANSGENDER)
-!define FA_TRANSGENDER(alias,label,shape) ENTITY(shape,black,transgender,label,alias,FA TRANSGENDER)
+!define FA_TRANSGENDER(_alias) ENTITY(rectangle,black,transgender,_alias,FA TRANSGENDER)
+!define FA_TRANSGENDER(_alias,_label) ENTITY(rectangle,black,transgender,_label,_alias,FA TRANSGENDER)
+!define FA_TRANSGENDER(_alias,_label,_shape) ENTITY(_shape,black,transgender,_label,_alias,FA TRANSGENDER)
+!define FA_TRANSGENDER(_alias,_label,_shape,_color) ENTITY(_shape,_color,transgender,_label,_alias,FA TRANSGENDER)
 skinparam folderBackgroundColor<<FA TRANSGENDER>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $pencil [48x48/16] {
 }
 
 
-!define FA_PENCIL(alias) ENTITY(rectangle,black,pencil,alias,FA PENCIL)
-!define FA_PENCIL(alias,label) ENTITY(rectangle,black,pencil,label,alias,FA PENCIL)
-!define FA_PENCIL(alias,label,shape) ENTITY(shape,black,pencil,label,alias,FA PENCIL)
+!define FA_PENCIL(_alias) ENTITY(rectangle,black,pencil,_alias,FA PENCIL)
+!define FA_PENCIL(_alias,_label) ENTITY(rectangle,black,pencil,_label,_alias,FA PENCIL)
+!define FA_PENCIL(_alias,_label,_shape) ENTITY(_shape,black,pencil,_label,_alias,FA PENCIL)
+!define FA_PENCIL(_alias,_label,_shape,_color) ENTITY(_shape,_color,pencil,_label,_alias,FA PENCIL)
 skinparam folderBackgroundColor<<FA PENCIL>> White
 @enduml

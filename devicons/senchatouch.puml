@@ -35,8 +35,9 @@ sprite $senchatouch [32x32/16] {
 }
 
 
-!define DEV_SENCHATOUCH(alias) ENTITY(rectangle,black,senchatouch,alias,DEV SENCHATOUCH)
-!define DEV_SENCHATOUCH(alias,label) ENTITY(rectangle,black,senchatouch,label,alias,DEV SENCHATOUCH)
-!define DEV_SENCHATOUCH(alias,label,shape) ENTITY(shape,black,senchatouch,label,alias,DEV SENCHATOUCH)
+!define DEV_SENCHATOUCH(_alias) ENTITY(rectangle,black,senchatouch,_alias,DEV SENCHATOUCH)
+!define DEV_SENCHATOUCH(_alias,_label) ENTITY(rectangle,black,senchatouch,_label,_alias,DEV SENCHATOUCH)
+!define DEV_SENCHATOUCH(_alias,_label,_shape) ENTITY(_shape,black,senchatouch,_label,_alias,DEV SENCHATOUCH)
+!define DEV_SENCHATOUCH(_alias,_label,_shape,_color) ENTITY(_shape,_color,senchatouch,_label,_alias,DEV SENCHATOUCH)
 skinparam folderBackgroundColor<<DEV SENCHATOUCH>> White
 @enduml

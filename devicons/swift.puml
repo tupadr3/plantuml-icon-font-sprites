@@ -35,8 +35,9 @@ sprite $swift [32x32/16] {
 }
 
 
-!define DEV_SWIFT(alias) ENTITY(rectangle,black,swift,alias,DEV SWIFT)
-!define DEV_SWIFT(alias,label) ENTITY(rectangle,black,swift,label,alias,DEV SWIFT)
-!define DEV_SWIFT(alias,label,shape) ENTITY(shape,black,swift,label,alias,DEV SWIFT)
+!define DEV_SWIFT(_alias) ENTITY(rectangle,black,swift,_alias,DEV SWIFT)
+!define DEV_SWIFT(_alias,_label) ENTITY(rectangle,black,swift,_label,_alias,DEV SWIFT)
+!define DEV_SWIFT(_alias,_label,_shape) ENTITY(_shape,black,swift,_label,_alias,DEV SWIFT)
+!define DEV_SWIFT(_alias,_label,_shape,_color) ENTITY(_shape,_color,swift,_label,_alias,DEV SWIFT)
 skinparam folderBackgroundColor<<DEV SWIFT>> White
 @enduml

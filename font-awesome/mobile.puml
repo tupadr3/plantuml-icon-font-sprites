@@ -51,8 +51,9 @@ sprite $mobile [48x48/16] {
 }
 
 
-!define FA_MOBILE(alias) ENTITY(rectangle,black,mobile,alias,FA MOBILE)
-!define FA_MOBILE(alias,label) ENTITY(rectangle,black,mobile,label,alias,FA MOBILE)
-!define FA_MOBILE(alias,label,shape) ENTITY(shape,black,mobile,label,alias,FA MOBILE)
+!define FA_MOBILE(_alias) ENTITY(rectangle,black,mobile,_alias,FA MOBILE)
+!define FA_MOBILE(_alias,_label) ENTITY(rectangle,black,mobile,_label,_alias,FA MOBILE)
+!define FA_MOBILE(_alias,_label,_shape) ENTITY(_shape,black,mobile,_label,_alias,FA MOBILE)
+!define FA_MOBILE(_alias,_label,_shape,_color) ENTITY(_shape,_color,mobile,_label,_alias,FA MOBILE)
 skinparam folderBackgroundColor<<FA MOBILE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $xing [48x48/16] {
 }
 
 
-!define FA_XING(alias) ENTITY(rectangle,black,xing,alias,FA XING)
-!define FA_XING(alias,label) ENTITY(rectangle,black,xing,label,alias,FA XING)
-!define FA_XING(alias,label,shape) ENTITY(shape,black,xing,label,alias,FA XING)
+!define FA_XING(_alias) ENTITY(rectangle,black,xing,_alias,FA XING)
+!define FA_XING(_alias,_label) ENTITY(rectangle,black,xing,_label,_alias,FA XING)
+!define FA_XING(_alias,_label,_shape) ENTITY(_shape,black,xing,_label,_alias,FA XING)
+!define FA_XING(_alias,_label,_shape,_color) ENTITY(_shape,_color,xing,_label,_alias,FA XING)
 skinparam folderBackgroundColor<<FA XING>> White
 @enduml

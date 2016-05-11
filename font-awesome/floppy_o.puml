@@ -51,8 +51,9 @@ sprite $floppy_o [48x48/16] {
 }
 
 
-!define FA_FLOPPY_O(alias) ENTITY(rectangle,black,floppy_o,alias,FA FLOPPY_O)
-!define FA_FLOPPY_O(alias,label) ENTITY(rectangle,black,floppy_o,label,alias,FA FLOPPY_O)
-!define FA_FLOPPY_O(alias,label,shape) ENTITY(shape,black,floppy_o,label,alias,FA FLOPPY_O)
+!define FA_FLOPPY_O(_alias) ENTITY(rectangle,black,floppy_o,_alias,FA FLOPPY_O)
+!define FA_FLOPPY_O(_alias,_label) ENTITY(rectangle,black,floppy_o,_label,_alias,FA FLOPPY_O)
+!define FA_FLOPPY_O(_alias,_label,_shape) ENTITY(_shape,black,floppy_o,_label,_alias,FA FLOPPY_O)
+!define FA_FLOPPY_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,floppy_o,_label,_alias,FA FLOPPY_O)
 skinparam folderBackgroundColor<<FA FLOPPY_O>> White
 @enduml

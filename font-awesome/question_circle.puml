@@ -51,8 +51,9 @@ sprite $question_circle [48x48/16] {
 }
 
 
-!define FA_QUESTION_CIRCLE(alias) ENTITY(rectangle,black,question_circle,alias,FA QUESTION_CIRCLE)
-!define FA_QUESTION_CIRCLE(alias,label) ENTITY(rectangle,black,question_circle,label,alias,FA QUESTION_CIRCLE)
-!define FA_QUESTION_CIRCLE(alias,label,shape) ENTITY(shape,black,question_circle,label,alias,FA QUESTION_CIRCLE)
+!define FA_QUESTION_CIRCLE(_alias) ENTITY(rectangle,black,question_circle,_alias,FA QUESTION_CIRCLE)
+!define FA_QUESTION_CIRCLE(_alias,_label) ENTITY(rectangle,black,question_circle,_label,_alias,FA QUESTION_CIRCLE)
+!define FA_QUESTION_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,question_circle,_label,_alias,FA QUESTION_CIRCLE)
+!define FA_QUESTION_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,question_circle,_label,_alias,FA QUESTION_CIRCLE)
 skinparam folderBackgroundColor<<FA QUESTION_CIRCLE>> White
 @enduml

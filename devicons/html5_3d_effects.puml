@@ -35,8 +35,9 @@ sprite $html5_3d_effects [32x32/16] {
 }
 
 
-!define DEV_HTML5_3D_EFFECTS(alias) ENTITY(rectangle,black,html5_3d_effects,alias,DEV HTML5_3D_EFFECTS)
-!define DEV_HTML5_3D_EFFECTS(alias,label) ENTITY(rectangle,black,html5_3d_effects,label,alias,DEV HTML5_3D_EFFECTS)
-!define DEV_HTML5_3D_EFFECTS(alias,label,shape) ENTITY(shape,black,html5_3d_effects,label,alias,DEV HTML5_3D_EFFECTS)
+!define DEV_HTML5_3D_EFFECTS(_alias) ENTITY(rectangle,black,html5_3d_effects,_alias,DEV HTML5_3D_EFFECTS)
+!define DEV_HTML5_3D_EFFECTS(_alias,_label) ENTITY(rectangle,black,html5_3d_effects,_label,_alias,DEV HTML5_3D_EFFECTS)
+!define DEV_HTML5_3D_EFFECTS(_alias,_label,_shape) ENTITY(_shape,black,html5_3d_effects,_label,_alias,DEV HTML5_3D_EFFECTS)
+!define DEV_HTML5_3D_EFFECTS(_alias,_label,_shape,_color) ENTITY(_shape,_color,html5_3d_effects,_label,_alias,DEV HTML5_3D_EFFECTS)
 skinparam folderBackgroundColor<<DEV HTML5_3D_EFFECTS>> White
 @enduml

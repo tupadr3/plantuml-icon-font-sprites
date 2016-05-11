@@ -35,8 +35,9 @@ sprite $celluloid [32x32/16] {
 }
 
 
-!define DEV_CELLULOID(alias) ENTITY(rectangle,black,celluloid,alias,DEV CELLULOID)
-!define DEV_CELLULOID(alias,label) ENTITY(rectangle,black,celluloid,label,alias,DEV CELLULOID)
-!define DEV_CELLULOID(alias,label,shape) ENTITY(shape,black,celluloid,label,alias,DEV CELLULOID)
+!define DEV_CELLULOID(_alias) ENTITY(rectangle,black,celluloid,_alias,DEV CELLULOID)
+!define DEV_CELLULOID(_alias,_label) ENTITY(rectangle,black,celluloid,_label,_alias,DEV CELLULOID)
+!define DEV_CELLULOID(_alias,_label,_shape) ENTITY(_shape,black,celluloid,_label,_alias,DEV CELLULOID)
+!define DEV_CELLULOID(_alias,_label,_shape,_color) ENTITY(_shape,_color,celluloid,_label,_alias,DEV CELLULOID)
 skinparam folderBackgroundColor<<DEV CELLULOID>> White
 @enduml

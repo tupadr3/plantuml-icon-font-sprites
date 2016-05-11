@@ -51,8 +51,9 @@ sprite $rss [48x48/16] {
 }
 
 
-!define FA_RSS(alias) ENTITY(rectangle,black,rss,alias,FA RSS)
-!define FA_RSS(alias,label) ENTITY(rectangle,black,rss,label,alias,FA RSS)
-!define FA_RSS(alias,label,shape) ENTITY(shape,black,rss,label,alias,FA RSS)
+!define FA_RSS(_alias) ENTITY(rectangle,black,rss,_alias,FA RSS)
+!define FA_RSS(_alias,_label) ENTITY(rectangle,black,rss,_label,_alias,FA RSS)
+!define FA_RSS(_alias,_label,_shape) ENTITY(_shape,black,rss,_label,_alias,FA RSS)
+!define FA_RSS(_alias,_label,_shape,_color) ENTITY(_shape,_color,rss,_label,_alias,FA RSS)
 skinparam folderBackgroundColor<<FA RSS>> White
 @enduml

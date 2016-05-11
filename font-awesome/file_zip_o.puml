@@ -51,8 +51,9 @@ sprite $file_zip_o [48x48/16] {
 }
 
 
-!define FA_FILE_ZIP_O(alias) ENTITY(rectangle,black,file_zip_o,alias,FA FILE_ZIP_O)
-!define FA_FILE_ZIP_O(alias,label) ENTITY(rectangle,black,file_zip_o,label,alias,FA FILE_ZIP_O)
-!define FA_FILE_ZIP_O(alias,label,shape) ENTITY(shape,black,file_zip_o,label,alias,FA FILE_ZIP_O)
+!define FA_FILE_ZIP_O(_alias) ENTITY(rectangle,black,file_zip_o,_alias,FA FILE_ZIP_O)
+!define FA_FILE_ZIP_O(_alias,_label) ENTITY(rectangle,black,file_zip_o,_label,_alias,FA FILE_ZIP_O)
+!define FA_FILE_ZIP_O(_alias,_label,_shape) ENTITY(_shape,black,file_zip_o,_label,_alias,FA FILE_ZIP_O)
+!define FA_FILE_ZIP_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,file_zip_o,_label,_alias,FA FILE_ZIP_O)
 skinparam folderBackgroundColor<<FA FILE_ZIP_O>> White
 @enduml

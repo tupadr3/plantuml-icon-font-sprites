@@ -35,8 +35,9 @@ sprite $dropbox [32x32/16] {
 }
 
 
-!define DEV_DROPBOX(alias) ENTITY(rectangle,black,dropbox,alias,DEV DROPBOX)
-!define DEV_DROPBOX(alias,label) ENTITY(rectangle,black,dropbox,label,alias,DEV DROPBOX)
-!define DEV_DROPBOX(alias,label,shape) ENTITY(shape,black,dropbox,label,alias,DEV DROPBOX)
+!define DEV_DROPBOX(_alias) ENTITY(rectangle,black,dropbox,_alias,DEV DROPBOX)
+!define DEV_DROPBOX(_alias,_label) ENTITY(rectangle,black,dropbox,_label,_alias,DEV DROPBOX)
+!define DEV_DROPBOX(_alias,_label,_shape) ENTITY(_shape,black,dropbox,_label,_alias,DEV DROPBOX)
+!define DEV_DROPBOX(_alias,_label,_shape,_color) ENTITY(_shape,_color,dropbox,_label,_alias,DEV DROPBOX)
 skinparam folderBackgroundColor<<DEV DROPBOX>> White
 @enduml

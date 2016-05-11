@@ -51,8 +51,9 @@ sprite $dot_circle_o [48x48/16] {
 }
 
 
-!define FA_DOT_CIRCLE_O(alias) ENTITY(rectangle,black,dot_circle_o,alias,FA DOT_CIRCLE_O)
-!define FA_DOT_CIRCLE_O(alias,label) ENTITY(rectangle,black,dot_circle_o,label,alias,FA DOT_CIRCLE_O)
-!define FA_DOT_CIRCLE_O(alias,label,shape) ENTITY(shape,black,dot_circle_o,label,alias,FA DOT_CIRCLE_O)
+!define FA_DOT_CIRCLE_O(_alias) ENTITY(rectangle,black,dot_circle_o,_alias,FA DOT_CIRCLE_O)
+!define FA_DOT_CIRCLE_O(_alias,_label) ENTITY(rectangle,black,dot_circle_o,_label,_alias,FA DOT_CIRCLE_O)
+!define FA_DOT_CIRCLE_O(_alias,_label,_shape) ENTITY(_shape,black,dot_circle_o,_label,_alias,FA DOT_CIRCLE_O)
+!define FA_DOT_CIRCLE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,dot_circle_o,_label,_alias,FA DOT_CIRCLE_O)
 skinparam folderBackgroundColor<<FA DOT_CIRCLE_O>> White
 @enduml

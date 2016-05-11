@@ -51,8 +51,9 @@ sprite $sign_in [48x48/16] {
 }
 
 
-!define FA_SIGN_IN(alias) ENTITY(rectangle,black,sign_in,alias,FA SIGN_IN)
-!define FA_SIGN_IN(alias,label) ENTITY(rectangle,black,sign_in,label,alias,FA SIGN_IN)
-!define FA_SIGN_IN(alias,label,shape) ENTITY(shape,black,sign_in,label,alias,FA SIGN_IN)
+!define FA_SIGN_IN(_alias) ENTITY(rectangle,black,sign_in,_alias,FA SIGN_IN)
+!define FA_SIGN_IN(_alias,_label) ENTITY(rectangle,black,sign_in,_label,_alias,FA SIGN_IN)
+!define FA_SIGN_IN(_alias,_label,_shape) ENTITY(_shape,black,sign_in,_label,_alias,FA SIGN_IN)
+!define FA_SIGN_IN(_alias,_label,_shape,_color) ENTITY(_shape,_color,sign_in,_label,_alias,FA SIGN_IN)
 skinparam folderBackgroundColor<<FA SIGN_IN>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $forumbee [48x48/16] {
 }
 
 
-!define FA_FORUMBEE(alias) ENTITY(rectangle,black,forumbee,alias,FA FORUMBEE)
-!define FA_FORUMBEE(alias,label) ENTITY(rectangle,black,forumbee,label,alias,FA FORUMBEE)
-!define FA_FORUMBEE(alias,label,shape) ENTITY(shape,black,forumbee,label,alias,FA FORUMBEE)
+!define FA_FORUMBEE(_alias) ENTITY(rectangle,black,forumbee,_alias,FA FORUMBEE)
+!define FA_FORUMBEE(_alias,_label) ENTITY(rectangle,black,forumbee,_label,_alias,FA FORUMBEE)
+!define FA_FORUMBEE(_alias,_label,_shape) ENTITY(_shape,black,forumbee,_label,_alias,FA FORUMBEE)
+!define FA_FORUMBEE(_alias,_label,_shape,_color) ENTITY(_shape,_color,forumbee,_label,_alias,FA FORUMBEE)
 skinparam folderBackgroundColor<<FA FORUMBEE>> White
 @enduml

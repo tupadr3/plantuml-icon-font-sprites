@@ -51,8 +51,9 @@ sprite $inbox [48x48/16] {
 }
 
 
-!define FA_INBOX(alias) ENTITY(rectangle,black,inbox,alias,FA INBOX)
-!define FA_INBOX(alias,label) ENTITY(rectangle,black,inbox,label,alias,FA INBOX)
-!define FA_INBOX(alias,label,shape) ENTITY(shape,black,inbox,label,alias,FA INBOX)
+!define FA_INBOX(_alias) ENTITY(rectangle,black,inbox,_alias,FA INBOX)
+!define FA_INBOX(_alias,_label) ENTITY(rectangle,black,inbox,_label,_alias,FA INBOX)
+!define FA_INBOX(_alias,_label,_shape) ENTITY(_shape,black,inbox,_label,_alias,FA INBOX)
+!define FA_INBOX(_alias,_label,_shape,_color) ENTITY(_shape,_color,inbox,_label,_alias,FA INBOX)
 skinparam folderBackgroundColor<<FA INBOX>> White
 @enduml

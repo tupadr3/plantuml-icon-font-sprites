@@ -51,8 +51,9 @@ sprite $calculator [48x48/16] {
 }
 
 
-!define FA_CALCULATOR(alias) ENTITY(rectangle,black,calculator,alias,FA CALCULATOR)
-!define FA_CALCULATOR(alias,label) ENTITY(rectangle,black,calculator,label,alias,FA CALCULATOR)
-!define FA_CALCULATOR(alias,label,shape) ENTITY(shape,black,calculator,label,alias,FA CALCULATOR)
+!define FA_CALCULATOR(_alias) ENTITY(rectangle,black,calculator,_alias,FA CALCULATOR)
+!define FA_CALCULATOR(_alias,_label) ENTITY(rectangle,black,calculator,_label,_alias,FA CALCULATOR)
+!define FA_CALCULATOR(_alias,_label,_shape) ENTITY(_shape,black,calculator,_label,_alias,FA CALCULATOR)
+!define FA_CALCULATOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,calculator,_label,_alias,FA CALCULATOR)
 skinparam folderBackgroundColor<<FA CALCULATOR>> White
 @enduml

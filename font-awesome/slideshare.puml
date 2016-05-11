@@ -51,8 +51,9 @@ sprite $slideshare [48x48/16] {
 }
 
 
-!define FA_SLIDESHARE(alias) ENTITY(rectangle,black,slideshare,alias,FA SLIDESHARE)
-!define FA_SLIDESHARE(alias,label) ENTITY(rectangle,black,slideshare,label,alias,FA SLIDESHARE)
-!define FA_SLIDESHARE(alias,label,shape) ENTITY(shape,black,slideshare,label,alias,FA SLIDESHARE)
+!define FA_SLIDESHARE(_alias) ENTITY(rectangle,black,slideshare,_alias,FA SLIDESHARE)
+!define FA_SLIDESHARE(_alias,_label) ENTITY(rectangle,black,slideshare,_label,_alias,FA SLIDESHARE)
+!define FA_SLIDESHARE(_alias,_label,_shape) ENTITY(_shape,black,slideshare,_label,_alias,FA SLIDESHARE)
+!define FA_SLIDESHARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,slideshare,_label,_alias,FA SLIDESHARE)
 skinparam folderBackgroundColor<<FA SLIDESHARE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $steam_square [48x48/16] {
 }
 
 
-!define FA_STEAM_SQUARE(alias) ENTITY(rectangle,black,steam_square,alias,FA STEAM_SQUARE)
-!define FA_STEAM_SQUARE(alias,label) ENTITY(rectangle,black,steam_square,label,alias,FA STEAM_SQUARE)
-!define FA_STEAM_SQUARE(alias,label,shape) ENTITY(shape,black,steam_square,label,alias,FA STEAM_SQUARE)
+!define FA_STEAM_SQUARE(_alias) ENTITY(rectangle,black,steam_square,_alias,FA STEAM_SQUARE)
+!define FA_STEAM_SQUARE(_alias,_label) ENTITY(rectangle,black,steam_square,_label,_alias,FA STEAM_SQUARE)
+!define FA_STEAM_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,steam_square,_label,_alias,FA STEAM_SQUARE)
+!define FA_STEAM_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,steam_square,_label,_alias,FA STEAM_SQUARE)
 skinparam folderBackgroundColor<<FA STEAM_SQUARE>> White
 @enduml

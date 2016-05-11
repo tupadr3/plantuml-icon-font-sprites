@@ -51,8 +51,9 @@ sprite $turkish_lira [48x48/16] {
 }
 
 
-!define FA_TURKISH_LIRA(alias) ENTITY(rectangle,black,turkish_lira,alias,FA TURKISH_LIRA)
-!define FA_TURKISH_LIRA(alias,label) ENTITY(rectangle,black,turkish_lira,label,alias,FA TURKISH_LIRA)
-!define FA_TURKISH_LIRA(alias,label,shape) ENTITY(shape,black,turkish_lira,label,alias,FA TURKISH_LIRA)
+!define FA_TURKISH_LIRA(_alias) ENTITY(rectangle,black,turkish_lira,_alias,FA TURKISH_LIRA)
+!define FA_TURKISH_LIRA(_alias,_label) ENTITY(rectangle,black,turkish_lira,_label,_alias,FA TURKISH_LIRA)
+!define FA_TURKISH_LIRA(_alias,_label,_shape) ENTITY(_shape,black,turkish_lira,_label,_alias,FA TURKISH_LIRA)
+!define FA_TURKISH_LIRA(_alias,_label,_shape,_color) ENTITY(_shape,_color,turkish_lira,_label,_alias,FA TURKISH_LIRA)
 skinparam folderBackgroundColor<<FA TURKISH_LIRA>> White
 @enduml

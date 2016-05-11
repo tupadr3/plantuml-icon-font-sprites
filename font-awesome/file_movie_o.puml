@@ -51,8 +51,9 @@ sprite $file_movie_o [48x48/16] {
 }
 
 
-!define FA_FILE_MOVIE_O(alias) ENTITY(rectangle,black,file_movie_o,alias,FA FILE_MOVIE_O)
-!define FA_FILE_MOVIE_O(alias,label) ENTITY(rectangle,black,file_movie_o,label,alias,FA FILE_MOVIE_O)
-!define FA_FILE_MOVIE_O(alias,label,shape) ENTITY(shape,black,file_movie_o,label,alias,FA FILE_MOVIE_O)
+!define FA_FILE_MOVIE_O(_alias) ENTITY(rectangle,black,file_movie_o,_alias,FA FILE_MOVIE_O)
+!define FA_FILE_MOVIE_O(_alias,_label) ENTITY(rectangle,black,file_movie_o,_label,_alias,FA FILE_MOVIE_O)
+!define FA_FILE_MOVIE_O(_alias,_label,_shape) ENTITY(_shape,black,file_movie_o,_label,_alias,FA FILE_MOVIE_O)
+!define FA_FILE_MOVIE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,file_movie_o,_label,_alias,FA FILE_MOVIE_O)
 skinparam folderBackgroundColor<<FA FILE_MOVIE_O>> White
 @enduml

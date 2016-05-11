@@ -51,8 +51,9 @@ sprite $opera [48x48/16] {
 }
 
 
-!define FA_OPERA(alias) ENTITY(rectangle,black,opera,alias,FA OPERA)
-!define FA_OPERA(alias,label) ENTITY(rectangle,black,opera,label,alias,FA OPERA)
-!define FA_OPERA(alias,label,shape) ENTITY(shape,black,opera,label,alias,FA OPERA)
+!define FA_OPERA(_alias) ENTITY(rectangle,black,opera,_alias,FA OPERA)
+!define FA_OPERA(_alias,_label) ENTITY(rectangle,black,opera,_label,_alias,FA OPERA)
+!define FA_OPERA(_alias,_label,_shape) ENTITY(_shape,black,opera,_label,_alias,FA OPERA)
+!define FA_OPERA(_alias,_label,_shape,_color) ENTITY(_shape,_color,opera,_label,_alias,FA OPERA)
 skinparam folderBackgroundColor<<FA OPERA>> White
 @enduml

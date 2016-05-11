@@ -51,8 +51,9 @@ sprite $bullseye [48x48/16] {
 }
 
 
-!define FA_BULLSEYE(alias) ENTITY(rectangle,black,bullseye,alias,FA BULLSEYE)
-!define FA_BULLSEYE(alias,label) ENTITY(rectangle,black,bullseye,label,alias,FA BULLSEYE)
-!define FA_BULLSEYE(alias,label,shape) ENTITY(shape,black,bullseye,label,alias,FA BULLSEYE)
+!define FA_BULLSEYE(_alias) ENTITY(rectangle,black,bullseye,_alias,FA BULLSEYE)
+!define FA_BULLSEYE(_alias,_label) ENTITY(rectangle,black,bullseye,_label,_alias,FA BULLSEYE)
+!define FA_BULLSEYE(_alias,_label,_shape) ENTITY(_shape,black,bullseye,_label,_alias,FA BULLSEYE)
+!define FA_BULLSEYE(_alias,_label,_shape,_color) ENTITY(_shape,_color,bullseye,_label,_alias,FA BULLSEYE)
 skinparam folderBackgroundColor<<FA BULLSEYE>> White
 @enduml

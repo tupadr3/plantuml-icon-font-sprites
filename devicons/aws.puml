@@ -35,8 +35,9 @@ sprite $aws [34x32/16] {
 }
 
 
-!define DEV_AWS(alias) ENTITY(rectangle,black,aws,alias,DEV AWS)
-!define DEV_AWS(alias,label) ENTITY(rectangle,black,aws,label,alias,DEV AWS)
-!define DEV_AWS(alias,label,shape) ENTITY(shape,black,aws,label,alias,DEV AWS)
+!define DEV_AWS(_alias) ENTITY(rectangle,black,aws,_alias,DEV AWS)
+!define DEV_AWS(_alias,_label) ENTITY(rectangle,black,aws,_label,_alias,DEV AWS)
+!define DEV_AWS(_alias,_label,_shape) ENTITY(_shape,black,aws,_label,_alias,DEV AWS)
+!define DEV_AWS(_alias,_label,_shape,_color) ENTITY(_shape,_color,aws,_label,_alias,DEV AWS)
 skinparam folderBackgroundColor<<DEV AWS>> White
 @enduml

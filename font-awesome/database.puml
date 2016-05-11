@@ -51,8 +51,9 @@ sprite $database [48x48/16] {
 }
 
 
-!define FA_DATABASE(alias) ENTITY(rectangle,black,database,alias,FA DATABASE)
-!define FA_DATABASE(alias,label) ENTITY(rectangle,black,database,label,alias,FA DATABASE)
-!define FA_DATABASE(alias,label,shape) ENTITY(shape,black,database,label,alias,FA DATABASE)
+!define FA_DATABASE(_alias) ENTITY(rectangle,black,database,_alias,FA DATABASE)
+!define FA_DATABASE(_alias,_label) ENTITY(rectangle,black,database,_label,_alias,FA DATABASE)
+!define FA_DATABASE(_alias,_label,_shape) ENTITY(_shape,black,database,_label,_alias,FA DATABASE)
+!define FA_DATABASE(_alias,_label,_shape,_color) ENTITY(_shape,_color,database,_label,_alias,FA DATABASE)
 skinparam folderBackgroundColor<<FA DATABASE>> White
 @enduml

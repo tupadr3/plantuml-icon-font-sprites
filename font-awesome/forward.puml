@@ -51,8 +51,9 @@ sprite $forward [48x48/16] {
 }
 
 
-!define FA_FORWARD(alias) ENTITY(rectangle,black,forward,alias,FA FORWARD)
-!define FA_FORWARD(alias,label) ENTITY(rectangle,black,forward,label,alias,FA FORWARD)
-!define FA_FORWARD(alias,label,shape) ENTITY(shape,black,forward,label,alias,FA FORWARD)
+!define FA_FORWARD(_alias) ENTITY(rectangle,black,forward,_alias,FA FORWARD)
+!define FA_FORWARD(_alias,_label) ENTITY(rectangle,black,forward,_label,_alias,FA FORWARD)
+!define FA_FORWARD(_alias,_label,_shape) ENTITY(_shape,black,forward,_label,_alias,FA FORWARD)
+!define FA_FORWARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,forward,_label,_alias,FA FORWARD)
 skinparam folderBackgroundColor<<FA FORWARD>> White
 @enduml

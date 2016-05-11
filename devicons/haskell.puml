@@ -35,8 +35,9 @@ sprite $haskell [32x32/16] {
 }
 
 
-!define DEV_HASKELL(alias) ENTITY(rectangle,black,haskell,alias,DEV HASKELL)
-!define DEV_HASKELL(alias,label) ENTITY(rectangle,black,haskell,label,alias,DEV HASKELL)
-!define DEV_HASKELL(alias,label,shape) ENTITY(shape,black,haskell,label,alias,DEV HASKELL)
+!define DEV_HASKELL(_alias) ENTITY(rectangle,black,haskell,_alias,DEV HASKELL)
+!define DEV_HASKELL(_alias,_label) ENTITY(rectangle,black,haskell,_label,_alias,DEV HASKELL)
+!define DEV_HASKELL(_alias,_label,_shape) ENTITY(_shape,black,haskell,_label,_alias,DEV HASKELL)
+!define DEV_HASKELL(_alias,_label,_shape,_color) ENTITY(_shape,_color,haskell,_label,_alias,DEV HASKELL)
 skinparam folderBackgroundColor<<DEV HASKELL>> White
 @enduml

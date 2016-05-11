@@ -35,8 +35,9 @@ sprite $codepen [32x32/16] {
 }
 
 
-!define DEV_CODEPEN(alias) ENTITY(rectangle,black,codepen,alias,DEV CODEPEN)
-!define DEV_CODEPEN(alias,label) ENTITY(rectangle,black,codepen,label,alias,DEV CODEPEN)
-!define DEV_CODEPEN(alias,label,shape) ENTITY(shape,black,codepen,label,alias,DEV CODEPEN)
+!define DEV_CODEPEN(_alias) ENTITY(rectangle,black,codepen,_alias,DEV CODEPEN)
+!define DEV_CODEPEN(_alias,_label) ENTITY(rectangle,black,codepen,_label,_alias,DEV CODEPEN)
+!define DEV_CODEPEN(_alias,_label,_shape) ENTITY(_shape,black,codepen,_label,_alias,DEV CODEPEN)
+!define DEV_CODEPEN(_alias,_label,_shape,_color) ENTITY(_shape,_color,codepen,_label,_alias,DEV CODEPEN)
 skinparam folderBackgroundColor<<DEV CODEPEN>> White
 @enduml

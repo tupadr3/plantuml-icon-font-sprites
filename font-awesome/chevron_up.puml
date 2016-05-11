@@ -51,8 +51,9 @@ sprite $chevron_up [48x48/16] {
 }
 
 
-!define FA_CHEVRON_UP(alias) ENTITY(rectangle,black,chevron_up,alias,FA CHEVRON_UP)
-!define FA_CHEVRON_UP(alias,label) ENTITY(rectangle,black,chevron_up,label,alias,FA CHEVRON_UP)
-!define FA_CHEVRON_UP(alias,label,shape) ENTITY(shape,black,chevron_up,label,alias,FA CHEVRON_UP)
+!define FA_CHEVRON_UP(_alias) ENTITY(rectangle,black,chevron_up,_alias,FA CHEVRON_UP)
+!define FA_CHEVRON_UP(_alias,_label) ENTITY(rectangle,black,chevron_up,_label,_alias,FA CHEVRON_UP)
+!define FA_CHEVRON_UP(_alias,_label,_shape) ENTITY(_shape,black,chevron_up,_label,_alias,FA CHEVRON_UP)
+!define FA_CHEVRON_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,chevron_up,_label,_alias,FA CHEVRON_UP)
 skinparam folderBackgroundColor<<FA CHEVRON_UP>> White
 @enduml

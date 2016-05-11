@@ -35,8 +35,9 @@ sprite $envato [32x32/16] {
 }
 
 
-!define DEV_ENVATO(alias) ENTITY(rectangle,black,envato,alias,DEV ENVATO)
-!define DEV_ENVATO(alias,label) ENTITY(rectangle,black,envato,label,alias,DEV ENVATO)
-!define DEV_ENVATO(alias,label,shape) ENTITY(shape,black,envato,label,alias,DEV ENVATO)
+!define DEV_ENVATO(_alias) ENTITY(rectangle,black,envato,_alias,DEV ENVATO)
+!define DEV_ENVATO(_alias,_label) ENTITY(rectangle,black,envato,_label,_alias,DEV ENVATO)
+!define DEV_ENVATO(_alias,_label,_shape) ENTITY(_shape,black,envato,_label,_alias,DEV ENVATO)
+!define DEV_ENVATO(_alias,_label,_shape,_color) ENTITY(_shape,_color,envato,_label,_alias,DEV ENVATO)
 skinparam folderBackgroundColor<<DEV ENVATO>> White
 @enduml

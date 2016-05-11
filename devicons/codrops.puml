@@ -35,8 +35,9 @@ sprite $codrops [32x32/16] {
 }
 
 
-!define DEV_CODROPS(alias) ENTITY(rectangle,black,codrops,alias,DEV CODROPS)
-!define DEV_CODROPS(alias,label) ENTITY(rectangle,black,codrops,label,alias,DEV CODROPS)
-!define DEV_CODROPS(alias,label,shape) ENTITY(shape,black,codrops,label,alias,DEV CODROPS)
+!define DEV_CODROPS(_alias) ENTITY(rectangle,black,codrops,_alias,DEV CODROPS)
+!define DEV_CODROPS(_alias,_label) ENTITY(rectangle,black,codrops,_label,_alias,DEV CODROPS)
+!define DEV_CODROPS(_alias,_label,_shape) ENTITY(_shape,black,codrops,_label,_alias,DEV CODROPS)
+!define DEV_CODROPS(_alias,_label,_shape,_color) ENTITY(_shape,_color,codrops,_label,_alias,DEV CODROPS)
 skinparam folderBackgroundColor<<DEV CODROPS>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $binoculars [48x48/16] {
 }
 
 
-!define FA_BINOCULARS(alias) ENTITY(rectangle,black,binoculars,alias,FA BINOCULARS)
-!define FA_BINOCULARS(alias,label) ENTITY(rectangle,black,binoculars,label,alias,FA BINOCULARS)
-!define FA_BINOCULARS(alias,label,shape) ENTITY(shape,black,binoculars,label,alias,FA BINOCULARS)
+!define FA_BINOCULARS(_alias) ENTITY(rectangle,black,binoculars,_alias,FA BINOCULARS)
+!define FA_BINOCULARS(_alias,_label) ENTITY(rectangle,black,binoculars,_label,_alias,FA BINOCULARS)
+!define FA_BINOCULARS(_alias,_label,_shape) ENTITY(_shape,black,binoculars,_label,_alias,FA BINOCULARS)
+!define FA_BINOCULARS(_alias,_label,_shape,_color) ENTITY(_shape,_color,binoculars,_label,_alias,FA BINOCULARS)
 skinparam folderBackgroundColor<<FA BINOCULARS>> White
 @enduml

@@ -35,8 +35,9 @@ AFC000009DCCFFD60000008B00000000
 }
 
 
-!define DEV_SASS(alias) ENTITY(rectangle,black,sass,alias,DEV SASS)
-!define DEV_SASS(alias,label) ENTITY(rectangle,black,sass,label,alias,DEV SASS)
-!define DEV_SASS(alias,label,shape) ENTITY(shape,black,sass,label,alias,DEV SASS)
+!define DEV_SASS(_alias) ENTITY(rectangle,black,sass,_alias,DEV SASS)
+!define DEV_SASS(_alias,_label) ENTITY(rectangle,black,sass,_label,_alias,DEV SASS)
+!define DEV_SASS(_alias,_label,_shape) ENTITY(_shape,black,sass,_label,_alias,DEV SASS)
+!define DEV_SASS(_alias,_label,_shape,_color) ENTITY(_shape,_color,sass,_label,_alias,DEV SASS)
 skinparam folderBackgroundColor<<DEV SASS>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $postgresql [32x32/16] {
 }
 
 
-!define DEV_POSTGRESQL(alias) ENTITY(rectangle,black,postgresql,alias,DEV POSTGRESQL)
-!define DEV_POSTGRESQL(alias,label) ENTITY(rectangle,black,postgresql,label,alias,DEV POSTGRESQL)
-!define DEV_POSTGRESQL(alias,label,shape) ENTITY(shape,black,postgresql,label,alias,DEV POSTGRESQL)
+!define DEV_POSTGRESQL(_alias) ENTITY(rectangle,black,postgresql,_alias,DEV POSTGRESQL)
+!define DEV_POSTGRESQL(_alias,_label) ENTITY(rectangle,black,postgresql,_label,_alias,DEV POSTGRESQL)
+!define DEV_POSTGRESQL(_alias,_label,_shape) ENTITY(_shape,black,postgresql,_label,_alias,DEV POSTGRESQL)
+!define DEV_POSTGRESQL(_alias,_label,_shape,_color) ENTITY(_shape,_color,postgresql,_label,_alias,DEV POSTGRESQL)
 skinparam folderBackgroundColor<<DEV POSTGRESQL>> White
 @enduml

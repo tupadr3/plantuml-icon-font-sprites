@@ -51,8 +51,9 @@ sprite $tencent_weibo [48x48/16] {
 }
 
 
-!define FA_TENCENT_WEIBO(alias) ENTITY(rectangle,black,tencent_weibo,alias,FA TENCENT_WEIBO)
-!define FA_TENCENT_WEIBO(alias,label) ENTITY(rectangle,black,tencent_weibo,label,alias,FA TENCENT_WEIBO)
-!define FA_TENCENT_WEIBO(alias,label,shape) ENTITY(shape,black,tencent_weibo,label,alias,FA TENCENT_WEIBO)
+!define FA_TENCENT_WEIBO(_alias) ENTITY(rectangle,black,tencent_weibo,_alias,FA TENCENT_WEIBO)
+!define FA_TENCENT_WEIBO(_alias,_label) ENTITY(rectangle,black,tencent_weibo,_label,_alias,FA TENCENT_WEIBO)
+!define FA_TENCENT_WEIBO(_alias,_label,_shape) ENTITY(_shape,black,tencent_weibo,_label,_alias,FA TENCENT_WEIBO)
+!define FA_TENCENT_WEIBO(_alias,_label,_shape,_color) ENTITY(_shape,_color,tencent_weibo,_label,_alias,FA TENCENT_WEIBO)
 skinparam folderBackgroundColor<<FA TENCENT_WEIBO>> White
 @enduml

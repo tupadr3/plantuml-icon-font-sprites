@@ -51,8 +51,9 @@ sprite $medkit [48x48/16] {
 }
 
 
-!define FA_MEDKIT(alias) ENTITY(rectangle,black,medkit,alias,FA MEDKIT)
-!define FA_MEDKIT(alias,label) ENTITY(rectangle,black,medkit,label,alias,FA MEDKIT)
-!define FA_MEDKIT(alias,label,shape) ENTITY(shape,black,medkit,label,alias,FA MEDKIT)
+!define FA_MEDKIT(_alias) ENTITY(rectangle,black,medkit,_alias,FA MEDKIT)
+!define FA_MEDKIT(_alias,_label) ENTITY(rectangle,black,medkit,_label,_alias,FA MEDKIT)
+!define FA_MEDKIT(_alias,_label,_shape) ENTITY(_shape,black,medkit,_label,_alias,FA MEDKIT)
+!define FA_MEDKIT(_alias,_label,_shape,_color) ENTITY(_shape,_color,medkit,_label,_alias,FA MEDKIT)
 skinparam folderBackgroundColor<<FA MEDKIT>> White
 @enduml

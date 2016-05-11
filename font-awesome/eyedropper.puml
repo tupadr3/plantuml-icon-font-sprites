@@ -51,8 +51,9 @@ sprite $eyedropper [48x48/16] {
 }
 
 
-!define FA_EYEDROPPER(alias) ENTITY(rectangle,black,eyedropper,alias,FA EYEDROPPER)
-!define FA_EYEDROPPER(alias,label) ENTITY(rectangle,black,eyedropper,label,alias,FA EYEDROPPER)
-!define FA_EYEDROPPER(alias,label,shape) ENTITY(shape,black,eyedropper,label,alias,FA EYEDROPPER)
+!define FA_EYEDROPPER(_alias) ENTITY(rectangle,black,eyedropper,_alias,FA EYEDROPPER)
+!define FA_EYEDROPPER(_alias,_label) ENTITY(rectangle,black,eyedropper,_label,_alias,FA EYEDROPPER)
+!define FA_EYEDROPPER(_alias,_label,_shape) ENTITY(_shape,black,eyedropper,_label,_alias,FA EYEDROPPER)
+!define FA_EYEDROPPER(_alias,_label,_shape,_color) ENTITY(_shape,_color,eyedropper,_label,_alias,FA EYEDROPPER)
 skinparam folderBackgroundColor<<FA EYEDROPPER>> White
 @enduml

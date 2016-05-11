@@ -51,8 +51,9 @@ sprite $shield [48x48/16] {
 }
 
 
-!define FA_SHIELD(alias) ENTITY(rectangle,black,shield,alias,FA SHIELD)
-!define FA_SHIELD(alias,label) ENTITY(rectangle,black,shield,label,alias,FA SHIELD)
-!define FA_SHIELD(alias,label,shape) ENTITY(shape,black,shield,label,alias,FA SHIELD)
+!define FA_SHIELD(_alias) ENTITY(rectangle,black,shield,_alias,FA SHIELD)
+!define FA_SHIELD(_alias,_label) ENTITY(rectangle,black,shield,_label,_alias,FA SHIELD)
+!define FA_SHIELD(_alias,_label,_shape) ENTITY(_shape,black,shield,_label,_alias,FA SHIELD)
+!define FA_SHIELD(_alias,_label,_shape,_color) ENTITY(_shape,_color,shield,_label,_alias,FA SHIELD)
 skinparam folderBackgroundColor<<FA SHIELD>> White
 @enduml

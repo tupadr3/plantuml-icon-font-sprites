@@ -51,8 +51,9 @@ AEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF806FFFFFE
 }
 
 
-!define FA_SPACE_SHUTTLE(alias) ENTITY(rectangle,black,space_shuttle,alias,FA SPACE_SHUTTLE)
-!define FA_SPACE_SHUTTLE(alias,label) ENTITY(rectangle,black,space_shuttle,label,alias,FA SPACE_SHUTTLE)
-!define FA_SPACE_SHUTTLE(alias,label,shape) ENTITY(shape,black,space_shuttle,label,alias,FA SPACE_SHUTTLE)
+!define FA_SPACE_SHUTTLE(_alias) ENTITY(rectangle,black,space_shuttle,_alias,FA SPACE_SHUTTLE)
+!define FA_SPACE_SHUTTLE(_alias,_label) ENTITY(rectangle,black,space_shuttle,_label,_alias,FA SPACE_SHUTTLE)
+!define FA_SPACE_SHUTTLE(_alias,_label,_shape) ENTITY(_shape,black,space_shuttle,_label,_alias,FA SPACE_SHUTTLE)
+!define FA_SPACE_SHUTTLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,space_shuttle,_label,_alias,FA SPACE_SHUTTLE)
 skinparam folderBackgroundColor<<FA SPACE_SHUTTLE>> White
 @enduml

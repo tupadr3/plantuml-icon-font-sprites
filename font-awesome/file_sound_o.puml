@@ -51,8 +51,9 @@ sprite $file_sound_o [48x48/16] {
 }
 
 
-!define FA_FILE_SOUND_O(alias) ENTITY(rectangle,black,file_sound_o,alias,FA FILE_SOUND_O)
-!define FA_FILE_SOUND_O(alias,label) ENTITY(rectangle,black,file_sound_o,label,alias,FA FILE_SOUND_O)
-!define FA_FILE_SOUND_O(alias,label,shape) ENTITY(shape,black,file_sound_o,label,alias,FA FILE_SOUND_O)
+!define FA_FILE_SOUND_O(_alias) ENTITY(rectangle,black,file_sound_o,_alias,FA FILE_SOUND_O)
+!define FA_FILE_SOUND_O(_alias,_label) ENTITY(rectangle,black,file_sound_o,_label,_alias,FA FILE_SOUND_O)
+!define FA_FILE_SOUND_O(_alias,_label,_shape) ENTITY(_shape,black,file_sound_o,_label,_alias,FA FILE_SOUND_O)
+!define FA_FILE_SOUND_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,file_sound_o,_label,_alias,FA FILE_SOUND_O)
 skinparam folderBackgroundColor<<FA FILE_SOUND_O>> White
 @enduml

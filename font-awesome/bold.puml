@@ -51,8 +51,9 @@ sprite $bold [48x48/16] {
 }
 
 
-!define FA_BOLD(alias) ENTITY(rectangle,black,bold,alias,FA BOLD)
-!define FA_BOLD(alias,label) ENTITY(rectangle,black,bold,label,alias,FA BOLD)
-!define FA_BOLD(alias,label,shape) ENTITY(shape,black,bold,label,alias,FA BOLD)
+!define FA_BOLD(_alias) ENTITY(rectangle,black,bold,_alias,FA BOLD)
+!define FA_BOLD(_alias,_label) ENTITY(rectangle,black,bold,_label,_alias,FA BOLD)
+!define FA_BOLD(_alias,_label,_shape) ENTITY(_shape,black,bold,_label,_alias,FA BOLD)
+!define FA_BOLD(_alias,_label,_shape,_color) ENTITY(_shape,_color,bold,_label,_alias,FA BOLD)
 skinparam folderBackgroundColor<<FA BOLD>> White
 @enduml

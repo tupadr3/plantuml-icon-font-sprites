@@ -51,8 +51,9 @@ sprite $gift [48x48/16] {
 }
 
 
-!define FA_GIFT(alias) ENTITY(rectangle,black,gift,alias,FA GIFT)
-!define FA_GIFT(alias,label) ENTITY(rectangle,black,gift,label,alias,FA GIFT)
-!define FA_GIFT(alias,label,shape) ENTITY(shape,black,gift,label,alias,FA GIFT)
+!define FA_GIFT(_alias) ENTITY(rectangle,black,gift,_alias,FA GIFT)
+!define FA_GIFT(_alias,_label) ENTITY(rectangle,black,gift,_label,_alias,FA GIFT)
+!define FA_GIFT(_alias,_label,_shape) ENTITY(_shape,black,gift,_label,_alias,FA GIFT)
+!define FA_GIFT(_alias,_label,_shape,_color) ENTITY(_shape,_color,gift,_label,_alias,FA GIFT)
 skinparam folderBackgroundColor<<FA GIFT>> White
 @enduml

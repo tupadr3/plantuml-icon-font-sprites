@@ -51,8 +51,9 @@ sprite $remove [48x48/16] {
 }
 
 
-!define FA_REMOVE(alias) ENTITY(rectangle,black,remove,alias,FA REMOVE)
-!define FA_REMOVE(alias,label) ENTITY(rectangle,black,remove,label,alias,FA REMOVE)
-!define FA_REMOVE(alias,label,shape) ENTITY(shape,black,remove,label,alias,FA REMOVE)
+!define FA_REMOVE(_alias) ENTITY(rectangle,black,remove,_alias,FA REMOVE)
+!define FA_REMOVE(_alias,_label) ENTITY(rectangle,black,remove,_label,_alias,FA REMOVE)
+!define FA_REMOVE(_alias,_label,_shape) ENTITY(_shape,black,remove,_label,_alias,FA REMOVE)
+!define FA_REMOVE(_alias,_label,_shape,_color) ENTITY(_shape,_color,remove,_label,_alias,FA REMOVE)
 skinparam folderBackgroundColor<<FA REMOVE>> White
 @enduml

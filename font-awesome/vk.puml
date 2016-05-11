@@ -51,8 +51,9 @@ sprite $vk [48x48/16] {
 }
 
 
-!define FA_VK(alias) ENTITY(rectangle,black,vk,alias,FA VK)
-!define FA_VK(alias,label) ENTITY(rectangle,black,vk,label,alias,FA VK)
-!define FA_VK(alias,label,shape) ENTITY(shape,black,vk,label,alias,FA VK)
+!define FA_VK(_alias) ENTITY(rectangle,black,vk,_alias,FA VK)
+!define FA_VK(_alias,_label) ENTITY(rectangle,black,vk,_label,_alias,FA VK)
+!define FA_VK(_alias,_label,_shape) ENTITY(_shape,black,vk,_label,_alias,FA VK)
+!define FA_VK(_alias,_label,_shape,_color) ENTITY(_shape,_color,vk,_label,_alias,FA VK)
 skinparam folderBackgroundColor<<FA VK>> White
 @enduml

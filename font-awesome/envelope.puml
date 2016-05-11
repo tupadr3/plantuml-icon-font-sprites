@@ -51,8 +51,9 @@ sprite $envelope [48x48/16] {
 }
 
 
-!define FA_ENVELOPE(alias) ENTITY(rectangle,black,envelope,alias,FA ENVELOPE)
-!define FA_ENVELOPE(alias,label) ENTITY(rectangle,black,envelope,label,alias,FA ENVELOPE)
-!define FA_ENVELOPE(alias,label,shape) ENTITY(shape,black,envelope,label,alias,FA ENVELOPE)
+!define FA_ENVELOPE(_alias) ENTITY(rectangle,black,envelope,_alias,FA ENVELOPE)
+!define FA_ENVELOPE(_alias,_label) ENTITY(rectangle,black,envelope,_label,_alias,FA ENVELOPE)
+!define FA_ENVELOPE(_alias,_label,_shape) ENTITY(_shape,black,envelope,_label,_alias,FA ENVELOPE)
+!define FA_ENVELOPE(_alias,_label,_shape,_color) ENTITY(_shape,_color,envelope,_label,_alias,FA ENVELOPE)
 skinparam folderBackgroundColor<<FA ENVELOPE>> White
 @enduml

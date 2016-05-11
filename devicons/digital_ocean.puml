@@ -35,8 +35,9 @@ sprite $digital_ocean [34x32/16] {
 }
 
 
-!define DEV_DIGITAL_OCEAN(alias) ENTITY(rectangle,black,digital_ocean,alias,DEV DIGITAL_OCEAN)
-!define DEV_DIGITAL_OCEAN(alias,label) ENTITY(rectangle,black,digital_ocean,label,alias,DEV DIGITAL_OCEAN)
-!define DEV_DIGITAL_OCEAN(alias,label,shape) ENTITY(shape,black,digital_ocean,label,alias,DEV DIGITAL_OCEAN)
+!define DEV_DIGITAL_OCEAN(_alias) ENTITY(rectangle,black,digital_ocean,_alias,DEV DIGITAL_OCEAN)
+!define DEV_DIGITAL_OCEAN(_alias,_label) ENTITY(rectangle,black,digital_ocean,_label,_alias,DEV DIGITAL_OCEAN)
+!define DEV_DIGITAL_OCEAN(_alias,_label,_shape) ENTITY(_shape,black,digital_ocean,_label,_alias,DEV DIGITAL_OCEAN)
+!define DEV_DIGITAL_OCEAN(_alias,_label,_shape,_color) ENTITY(_shape,_color,digital_ocean,_label,_alias,DEV DIGITAL_OCEAN)
 skinparam folderBackgroundColor<<DEV DIGITAL_OCEAN>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $bomb [48x48/16] {
 }
 
 
-!define FA_BOMB(alias) ENTITY(rectangle,black,bomb,alias,FA BOMB)
-!define FA_BOMB(alias,label) ENTITY(rectangle,black,bomb,label,alias,FA BOMB)
-!define FA_BOMB(alias,label,shape) ENTITY(shape,black,bomb,label,alias,FA BOMB)
+!define FA_BOMB(_alias) ENTITY(rectangle,black,bomb,_alias,FA BOMB)
+!define FA_BOMB(_alias,_label) ENTITY(rectangle,black,bomb,_label,_alias,FA BOMB)
+!define FA_BOMB(_alias,_label,_shape) ENTITY(_shape,black,bomb,_label,_alias,FA BOMB)
+!define FA_BOMB(_alias,_label,_shape,_color) ENTITY(_shape,_color,bomb,_label,_alias,FA BOMB)
 skinparam folderBackgroundColor<<FA BOMB>> White
 @enduml

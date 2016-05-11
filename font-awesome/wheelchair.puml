@@ -51,8 +51,9 @@ sprite $wheelchair [48x48/16] {
 }
 
 
-!define FA_WHEELCHAIR(alias) ENTITY(rectangle,black,wheelchair,alias,FA WHEELCHAIR)
-!define FA_WHEELCHAIR(alias,label) ENTITY(rectangle,black,wheelchair,label,alias,FA WHEELCHAIR)
-!define FA_WHEELCHAIR(alias,label,shape) ENTITY(shape,black,wheelchair,label,alias,FA WHEELCHAIR)
+!define FA_WHEELCHAIR(_alias) ENTITY(rectangle,black,wheelchair,_alias,FA WHEELCHAIR)
+!define FA_WHEELCHAIR(_alias,_label) ENTITY(rectangle,black,wheelchair,_label,_alias,FA WHEELCHAIR)
+!define FA_WHEELCHAIR(_alias,_label,_shape) ENTITY(_shape,black,wheelchair,_label,_alias,FA WHEELCHAIR)
+!define FA_WHEELCHAIR(_alias,_label,_shape,_color) ENTITY(_shape,_color,wheelchair,_label,_alias,FA WHEELCHAIR)
 skinparam folderBackgroundColor<<FA WHEELCHAIR>> White
 @enduml

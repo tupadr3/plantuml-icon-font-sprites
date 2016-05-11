@@ -35,8 +35,9 @@ sprite $groovy [32x32/16] {
 }
 
 
-!define DEV_GROOVY(alias) ENTITY(rectangle,black,groovy,alias,DEV GROOVY)
-!define DEV_GROOVY(alias,label) ENTITY(rectangle,black,groovy,label,alias,DEV GROOVY)
-!define DEV_GROOVY(alias,label,shape) ENTITY(shape,black,groovy,label,alias,DEV GROOVY)
+!define DEV_GROOVY(_alias) ENTITY(rectangle,black,groovy,_alias,DEV GROOVY)
+!define DEV_GROOVY(_alias,_label) ENTITY(rectangle,black,groovy,_label,_alias,DEV GROOVY)
+!define DEV_GROOVY(_alias,_label,_shape) ENTITY(_shape,black,groovy,_label,_alias,DEV GROOVY)
+!define DEV_GROOVY(_alias,_label,_shape,_color) ENTITY(_shape,_color,groovy,_label,_alias,DEV GROOVY)
 skinparam folderBackgroundColor<<DEV GROOVY>> White
 @enduml

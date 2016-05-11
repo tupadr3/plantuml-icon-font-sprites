@@ -35,8 +35,9 @@ sprite $doctrine [32x32/16] {
 }
 
 
-!define DEV_DOCTRINE(alias) ENTITY(rectangle,black,doctrine,alias,DEV DOCTRINE)
-!define DEV_DOCTRINE(alias,label) ENTITY(rectangle,black,doctrine,label,alias,DEV DOCTRINE)
-!define DEV_DOCTRINE(alias,label,shape) ENTITY(shape,black,doctrine,label,alias,DEV DOCTRINE)
+!define DEV_DOCTRINE(_alias) ENTITY(rectangle,black,doctrine,_alias,DEV DOCTRINE)
+!define DEV_DOCTRINE(_alias,_label) ENTITY(rectangle,black,doctrine,_label,_alias,DEV DOCTRINE)
+!define DEV_DOCTRINE(_alias,_label,_shape) ENTITY(_shape,black,doctrine,_label,_alias,DEV DOCTRINE)
+!define DEV_DOCTRINE(_alias,_label,_shape,_color) ENTITY(_shape,_color,doctrine,_label,_alias,DEV DOCTRINE)
 skinparam folderBackgroundColor<<DEV DOCTRINE>> White
 @enduml

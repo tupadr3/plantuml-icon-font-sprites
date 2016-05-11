@@ -51,8 +51,9 @@ sprite $jsfiddle [48x48/16] {
 }
 
 
-!define FA_JSFIDDLE(alias) ENTITY(rectangle,black,jsfiddle,alias,FA JSFIDDLE)
-!define FA_JSFIDDLE(alias,label) ENTITY(rectangle,black,jsfiddle,label,alias,FA JSFIDDLE)
-!define FA_JSFIDDLE(alias,label,shape) ENTITY(shape,black,jsfiddle,label,alias,FA JSFIDDLE)
+!define FA_JSFIDDLE(_alias) ENTITY(rectangle,black,jsfiddle,_alias,FA JSFIDDLE)
+!define FA_JSFIDDLE(_alias,_label) ENTITY(rectangle,black,jsfiddle,_label,_alias,FA JSFIDDLE)
+!define FA_JSFIDDLE(_alias,_label,_shape) ENTITY(_shape,black,jsfiddle,_label,_alias,FA JSFIDDLE)
+!define FA_JSFIDDLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,jsfiddle,_label,_alias,FA JSFIDDLE)
 skinparam folderBackgroundColor<<FA JSFIDDLE>> White
 @enduml

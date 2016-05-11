@@ -35,8 +35,9 @@ sprite $css_tricks [32x32/16] {
 }
 
 
-!define DEV_CSS_TRICKS(alias) ENTITY(rectangle,black,css_tricks,alias,DEV CSS_TRICKS)
-!define DEV_CSS_TRICKS(alias,label) ENTITY(rectangle,black,css_tricks,label,alias,DEV CSS_TRICKS)
-!define DEV_CSS_TRICKS(alias,label,shape) ENTITY(shape,black,css_tricks,label,alias,DEV CSS_TRICKS)
+!define DEV_CSS_TRICKS(_alias) ENTITY(rectangle,black,css_tricks,_alias,DEV CSS_TRICKS)
+!define DEV_CSS_TRICKS(_alias,_label) ENTITY(rectangle,black,css_tricks,_label,_alias,DEV CSS_TRICKS)
+!define DEV_CSS_TRICKS(_alias,_label,_shape) ENTITY(_shape,black,css_tricks,_label,_alias,DEV CSS_TRICKS)
+!define DEV_CSS_TRICKS(_alias,_label,_shape,_color) ENTITY(_shape,_color,css_tricks,_label,_alias,DEV CSS_TRICKS)
 skinparam folderBackgroundColor<<DEV CSS_TRICKS>> White
 @enduml

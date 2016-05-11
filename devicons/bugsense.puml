@@ -35,8 +35,9 @@ sprite $bugsense [32x32/16] {
 }
 
 
-!define DEV_BUGSENSE(alias) ENTITY(rectangle,black,bugsense,alias,DEV BUGSENSE)
-!define DEV_BUGSENSE(alias,label) ENTITY(rectangle,black,bugsense,label,alias,DEV BUGSENSE)
-!define DEV_BUGSENSE(alias,label,shape) ENTITY(shape,black,bugsense,label,alias,DEV BUGSENSE)
+!define DEV_BUGSENSE(_alias) ENTITY(rectangle,black,bugsense,_alias,DEV BUGSENSE)
+!define DEV_BUGSENSE(_alias,_label) ENTITY(rectangle,black,bugsense,_label,_alias,DEV BUGSENSE)
+!define DEV_BUGSENSE(_alias,_label,_shape) ENTITY(_shape,black,bugsense,_label,_alias,DEV BUGSENSE)
+!define DEV_BUGSENSE(_alias,_label,_shape,_color) ENTITY(_shape,_color,bugsense,_label,_alias,DEV BUGSENSE)
 skinparam folderBackgroundColor<<DEV BUGSENSE>> White
 @enduml

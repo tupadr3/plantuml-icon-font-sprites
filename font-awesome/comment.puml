@@ -51,8 +51,9 @@ sprite $comment [48x48/16] {
 }
 
 
-!define FA_COMMENT(alias) ENTITY(rectangle,black,comment,alias,FA COMMENT)
-!define FA_COMMENT(alias,label) ENTITY(rectangle,black,comment,label,alias,FA COMMENT)
-!define FA_COMMENT(alias,label,shape) ENTITY(shape,black,comment,label,alias,FA COMMENT)
+!define FA_COMMENT(_alias) ENTITY(rectangle,black,comment,_alias,FA COMMENT)
+!define FA_COMMENT(_alias,_label) ENTITY(rectangle,black,comment,_label,_alias,FA COMMENT)
+!define FA_COMMENT(_alias,_label,_shape) ENTITY(_shape,black,comment,_label,_alias,FA COMMENT)
+!define FA_COMMENT(_alias,_label,_shape,_color) ENTITY(_shape,_color,comment,_label,_alias,FA COMMENT)
 skinparam folderBackgroundColor<<FA COMMENT>> White
 @enduml

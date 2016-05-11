@@ -51,8 +51,9 @@ sprite $btc [48x48/16] {
 }
 
 
-!define FA_BTC(alias) ENTITY(rectangle,black,btc,alias,FA BTC)
-!define FA_BTC(alias,label) ENTITY(rectangle,black,btc,label,alias,FA BTC)
-!define FA_BTC(alias,label,shape) ENTITY(shape,black,btc,label,alias,FA BTC)
+!define FA_BTC(_alias) ENTITY(rectangle,black,btc,_alias,FA BTC)
+!define FA_BTC(_alias,_label) ENTITY(rectangle,black,btc,_label,_alias,FA BTC)
+!define FA_BTC(_alias,_label,_shape) ENTITY(_shape,black,btc,_label,_alias,FA BTC)
+!define FA_BTC(_alias,_label,_shape,_color) ENTITY(_shape,_color,btc,_label,_alias,FA BTC)
 skinparam folderBackgroundColor<<FA BTC>> White
 @enduml

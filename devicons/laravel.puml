@@ -35,8 +35,9 @@ sprite $laravel [32x32/16] {
 }
 
 
-!define DEV_LARAVEL(alias) ENTITY(rectangle,black,laravel,alias,DEV LARAVEL)
-!define DEV_LARAVEL(alias,label) ENTITY(rectangle,black,laravel,label,alias,DEV LARAVEL)
-!define DEV_LARAVEL(alias,label,shape) ENTITY(shape,black,laravel,label,alias,DEV LARAVEL)
+!define DEV_LARAVEL(_alias) ENTITY(rectangle,black,laravel,_alias,DEV LARAVEL)
+!define DEV_LARAVEL(_alias,_label) ENTITY(rectangle,black,laravel,_label,_alias,DEV LARAVEL)
+!define DEV_LARAVEL(_alias,_label,_shape) ENTITY(_shape,black,laravel,_label,_alias,DEV LARAVEL)
+!define DEV_LARAVEL(_alias,_label,_shape,_color) ENTITY(_shape,_color,laravel,_label,_alias,DEV LARAVEL)
 skinparam folderBackgroundColor<<DEV LARAVEL>> White
 @enduml

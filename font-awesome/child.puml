@@ -51,8 +51,9 @@ sprite $child [48x48/16] {
 }
 
 
-!define FA_CHILD(alias) ENTITY(rectangle,black,child,alias,FA CHILD)
-!define FA_CHILD(alias,label) ENTITY(rectangle,black,child,label,alias,FA CHILD)
-!define FA_CHILD(alias,label,shape) ENTITY(shape,black,child,label,alias,FA CHILD)
+!define FA_CHILD(_alias) ENTITY(rectangle,black,child,_alias,FA CHILD)
+!define FA_CHILD(_alias,_label) ENTITY(rectangle,black,child,_label,_alias,FA CHILD)
+!define FA_CHILD(_alias,_label,_shape) ENTITY(_shape,black,child,_label,_alias,FA CHILD)
+!define FA_CHILD(_alias,_label,_shape,_color) ENTITY(_shape,_color,child,_label,_alias,FA CHILD)
 skinparam folderBackgroundColor<<FA CHILD>> White
 @enduml

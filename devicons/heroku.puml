@@ -35,8 +35,9 @@ sprite $heroku [32x32/16] {
 }
 
 
-!define DEV_HEROKU(alias) ENTITY(rectangle,black,heroku,alias,DEV HEROKU)
-!define DEV_HEROKU(alias,label) ENTITY(rectangle,black,heroku,label,alias,DEV HEROKU)
-!define DEV_HEROKU(alias,label,shape) ENTITY(shape,black,heroku,label,alias,DEV HEROKU)
+!define DEV_HEROKU(_alias) ENTITY(rectangle,black,heroku,_alias,DEV HEROKU)
+!define DEV_HEROKU(_alias,_label) ENTITY(rectangle,black,heroku,_label,_alias,DEV HEROKU)
+!define DEV_HEROKU(_alias,_label,_shape) ENTITY(_shape,black,heroku,_label,_alias,DEV HEROKU)
+!define DEV_HEROKU(_alias,_label,_shape,_color) ENTITY(_shape,_color,heroku,_label,_alias,DEV HEROKU)
 skinparam folderBackgroundColor<<DEV HEROKU>> White
 @enduml

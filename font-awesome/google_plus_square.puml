@@ -51,8 +51,9 @@ sprite $google_plus_square [48x48/16] {
 }
 
 
-!define FA_GOOGLE_PLUS_SQUARE(alias) ENTITY(rectangle,black,google_plus_square,alias,FA GOOGLE_PLUS_SQUARE)
-!define FA_GOOGLE_PLUS_SQUARE(alias,label) ENTITY(rectangle,black,google_plus_square,label,alias,FA GOOGLE_PLUS_SQUARE)
-!define FA_GOOGLE_PLUS_SQUARE(alias,label,shape) ENTITY(shape,black,google_plus_square,label,alias,FA GOOGLE_PLUS_SQUARE)
+!define FA_GOOGLE_PLUS_SQUARE(_alias) ENTITY(rectangle,black,google_plus_square,_alias,FA GOOGLE_PLUS_SQUARE)
+!define FA_GOOGLE_PLUS_SQUARE(_alias,_label) ENTITY(rectangle,black,google_plus_square,_label,_alias,FA GOOGLE_PLUS_SQUARE)
+!define FA_GOOGLE_PLUS_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,google_plus_square,_label,_alias,FA GOOGLE_PLUS_SQUARE)
+!define FA_GOOGLE_PLUS_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,google_plus_square,_label,_alias,FA GOOGLE_PLUS_SQUARE)
 skinparam folderBackgroundColor<<FA GOOGLE_PLUS_SQUARE>> White
 @enduml

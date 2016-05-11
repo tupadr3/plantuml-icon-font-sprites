@@ -51,8 +51,9 @@ sprite $github_alt [48x48/16] {
 }
 
 
-!define FA_GITHUB_ALT(alias) ENTITY(rectangle,black,github_alt,alias,FA GITHUB_ALT)
-!define FA_GITHUB_ALT(alias,label) ENTITY(rectangle,black,github_alt,label,alias,FA GITHUB_ALT)
-!define FA_GITHUB_ALT(alias,label,shape) ENTITY(shape,black,github_alt,label,alias,FA GITHUB_ALT)
+!define FA_GITHUB_ALT(_alias) ENTITY(rectangle,black,github_alt,_alias,FA GITHUB_ALT)
+!define FA_GITHUB_ALT(_alias,_label) ENTITY(rectangle,black,github_alt,_label,_alias,FA GITHUB_ALT)
+!define FA_GITHUB_ALT(_alias,_label,_shape) ENTITY(_shape,black,github_alt,_label,_alias,FA GITHUB_ALT)
+!define FA_GITHUB_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,github_alt,_label,_alias,FA GITHUB_ALT)
 skinparam folderBackgroundColor<<FA GITHUB_ALT>> White
 @enduml

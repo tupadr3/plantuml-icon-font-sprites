@@ -51,8 +51,9 @@ sprite $neuter [48x48/16] {
 }
 
 
-!define FA_NEUTER(alias) ENTITY(rectangle,black,neuter,alias,FA NEUTER)
-!define FA_NEUTER(alias,label) ENTITY(rectangle,black,neuter,label,alias,FA NEUTER)
-!define FA_NEUTER(alias,label,shape) ENTITY(shape,black,neuter,label,alias,FA NEUTER)
+!define FA_NEUTER(_alias) ENTITY(rectangle,black,neuter,_alias,FA NEUTER)
+!define FA_NEUTER(_alias,_label) ENTITY(rectangle,black,neuter,_label,_alias,FA NEUTER)
+!define FA_NEUTER(_alias,_label,_shape) ENTITY(_shape,black,neuter,_label,_alias,FA NEUTER)
+!define FA_NEUTER(_alias,_label,_shape,_color) ENTITY(_shape,_color,neuter,_label,_alias,FA NEUTER)
 skinparam folderBackgroundColor<<FA NEUTER>> White
 @enduml

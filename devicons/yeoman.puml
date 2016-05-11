@@ -35,8 +35,9 @@ sprite $yeoman [32x32/16] {
 }
 
 
-!define DEV_YEOMAN(alias) ENTITY(rectangle,black,yeoman,alias,DEV YEOMAN)
-!define DEV_YEOMAN(alias,label) ENTITY(rectangle,black,yeoman,label,alias,DEV YEOMAN)
-!define DEV_YEOMAN(alias,label,shape) ENTITY(shape,black,yeoman,label,alias,DEV YEOMAN)
+!define DEV_YEOMAN(_alias) ENTITY(rectangle,black,yeoman,_alias,DEV YEOMAN)
+!define DEV_YEOMAN(_alias,_label) ENTITY(rectangle,black,yeoman,_label,_alias,DEV YEOMAN)
+!define DEV_YEOMAN(_alias,_label,_shape) ENTITY(_shape,black,yeoman,_label,_alias,DEV YEOMAN)
+!define DEV_YEOMAN(_alias,_label,_shape,_color) ENTITY(_shape,_color,yeoman,_label,_alias,DEV YEOMAN)
 skinparam folderBackgroundColor<<DEV YEOMAN>> White
 @enduml

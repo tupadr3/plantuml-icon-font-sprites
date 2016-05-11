@@ -35,8 +35,9 @@ sprite $sizzlejs [32x32/16] {
 }
 
 
-!define DEV_SIZZLEJS(alias) ENTITY(rectangle,black,sizzlejs,alias,DEV SIZZLEJS)
-!define DEV_SIZZLEJS(alias,label) ENTITY(rectangle,black,sizzlejs,label,alias,DEV SIZZLEJS)
-!define DEV_SIZZLEJS(alias,label,shape) ENTITY(shape,black,sizzlejs,label,alias,DEV SIZZLEJS)
+!define DEV_SIZZLEJS(_alias) ENTITY(rectangle,black,sizzlejs,_alias,DEV SIZZLEJS)
+!define DEV_SIZZLEJS(_alias,_label) ENTITY(rectangle,black,sizzlejs,_label,_alias,DEV SIZZLEJS)
+!define DEV_SIZZLEJS(_alias,_label,_shape) ENTITY(_shape,black,sizzlejs,_label,_alias,DEV SIZZLEJS)
+!define DEV_SIZZLEJS(_alias,_label,_shape,_color) ENTITY(_shape,_color,sizzlejs,_label,_alias,DEV SIZZLEJS)
 skinparam folderBackgroundColor<<DEV SIZZLEJS>> White
 @enduml

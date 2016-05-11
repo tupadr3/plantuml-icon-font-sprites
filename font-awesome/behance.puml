@@ -51,8 +51,9 @@ sprite $behance [48x48/16] {
 }
 
 
-!define FA_BEHANCE(alias) ENTITY(rectangle,black,behance,alias,FA BEHANCE)
-!define FA_BEHANCE(alias,label) ENTITY(rectangle,black,behance,label,alias,FA BEHANCE)
-!define FA_BEHANCE(alias,label,shape) ENTITY(shape,black,behance,label,alias,FA BEHANCE)
+!define FA_BEHANCE(_alias) ENTITY(rectangle,black,behance,_alias,FA BEHANCE)
+!define FA_BEHANCE(_alias,_label) ENTITY(rectangle,black,behance,_label,_alias,FA BEHANCE)
+!define FA_BEHANCE(_alias,_label,_shape) ENTITY(_shape,black,behance,_label,_alias,FA BEHANCE)
+!define FA_BEHANCE(_alias,_label,_shape,_color) ENTITY(_shape,_color,behance,_label,_alias,FA BEHANCE)
 skinparam folderBackgroundColor<<FA BEHANCE>> White
 @enduml

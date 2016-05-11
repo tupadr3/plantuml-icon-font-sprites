@@ -51,8 +51,9 @@ sprite $trash [48x48/16] {
 }
 
 
-!define FA_TRASH(alias) ENTITY(rectangle,black,trash,alias,FA TRASH)
-!define FA_TRASH(alias,label) ENTITY(rectangle,black,trash,label,alias,FA TRASH)
-!define FA_TRASH(alias,label,shape) ENTITY(shape,black,trash,label,alias,FA TRASH)
+!define FA_TRASH(_alias) ENTITY(rectangle,black,trash,_alias,FA TRASH)
+!define FA_TRASH(_alias,_label) ENTITY(rectangle,black,trash,_label,_alias,FA TRASH)
+!define FA_TRASH(_alias,_label,_shape) ENTITY(_shape,black,trash,_label,_alias,FA TRASH)
+!define FA_TRASH(_alias,_label,_shape,_color) ENTITY(_shape,_color,trash,_label,_alias,FA TRASH)
 skinparam folderBackgroundColor<<FA TRASH>> White
 @enduml

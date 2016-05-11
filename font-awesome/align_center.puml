@@ -51,8 +51,9 @@ sprite $align_center [48x48/16] {
 }
 
 
-!define FA_ALIGN_CENTER(alias) ENTITY(rectangle,black,align_center,alias,FA ALIGN_CENTER)
-!define FA_ALIGN_CENTER(alias,label) ENTITY(rectangle,black,align_center,label,alias,FA ALIGN_CENTER)
-!define FA_ALIGN_CENTER(alias,label,shape) ENTITY(shape,black,align_center,label,alias,FA ALIGN_CENTER)
+!define FA_ALIGN_CENTER(_alias) ENTITY(rectangle,black,align_center,_alias,FA ALIGN_CENTER)
+!define FA_ALIGN_CENTER(_alias,_label) ENTITY(rectangle,black,align_center,_label,_alias,FA ALIGN_CENTER)
+!define FA_ALIGN_CENTER(_alias,_label,_shape) ENTITY(_shape,black,align_center,_label,_alias,FA ALIGN_CENTER)
+!define FA_ALIGN_CENTER(_alias,_label,_shape,_color) ENTITY(_shape,_color,align_center,_label,_alias,FA ALIGN_CENTER)
 skinparam folderBackgroundColor<<FA ALIGN_CENTER>> White
 @enduml

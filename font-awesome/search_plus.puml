@@ -51,8 +51,9 @@ sprite $search_plus [48x48/16] {
 }
 
 
-!define FA_SEARCH_PLUS(alias) ENTITY(rectangle,black,search_plus,alias,FA SEARCH_PLUS)
-!define FA_SEARCH_PLUS(alias,label) ENTITY(rectangle,black,search_plus,label,alias,FA SEARCH_PLUS)
-!define FA_SEARCH_PLUS(alias,label,shape) ENTITY(shape,black,search_plus,label,alias,FA SEARCH_PLUS)
+!define FA_SEARCH_PLUS(_alias) ENTITY(rectangle,black,search_plus,_alias,FA SEARCH_PLUS)
+!define FA_SEARCH_PLUS(_alias,_label) ENTITY(rectangle,black,search_plus,_label,_alias,FA SEARCH_PLUS)
+!define FA_SEARCH_PLUS(_alias,_label,_shape) ENTITY(_shape,black,search_plus,_label,_alias,FA SEARCH_PLUS)
+!define FA_SEARCH_PLUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,search_plus,_label,_alias,FA SEARCH_PLUS)
 skinparam folderBackgroundColor<<FA SEARCH_PLUS>> White
 @enduml

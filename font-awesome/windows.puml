@@ -51,8 +51,9 @@ sprite $windows [48x48/16] {
 }
 
 
-!define FA_WINDOWS(alias) ENTITY(rectangle,black,windows,alias,FA WINDOWS)
-!define FA_WINDOWS(alias,label) ENTITY(rectangle,black,windows,label,alias,FA WINDOWS)
-!define FA_WINDOWS(alias,label,shape) ENTITY(shape,black,windows,label,alias,FA WINDOWS)
+!define FA_WINDOWS(_alias) ENTITY(rectangle,black,windows,_alias,FA WINDOWS)
+!define FA_WINDOWS(_alias,_label) ENTITY(rectangle,black,windows,_label,_alias,FA WINDOWS)
+!define FA_WINDOWS(_alias,_label,_shape) ENTITY(_shape,black,windows,_label,_alias,FA WINDOWS)
+!define FA_WINDOWS(_alias,_label,_shape,_color) ENTITY(_shape,_color,windows,_label,_alias,FA WINDOWS)
 skinparam folderBackgroundColor<<FA WINDOWS>> White
 @enduml

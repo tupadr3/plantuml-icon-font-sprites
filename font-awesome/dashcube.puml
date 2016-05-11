@@ -51,8 +51,9 @@ sprite $dashcube [48x48/16] {
 }
 
 
-!define FA_DASHCUBE(alias) ENTITY(rectangle,black,dashcube,alias,FA DASHCUBE)
-!define FA_DASHCUBE(alias,label) ENTITY(rectangle,black,dashcube,label,alias,FA DASHCUBE)
-!define FA_DASHCUBE(alias,label,shape) ENTITY(shape,black,dashcube,label,alias,FA DASHCUBE)
+!define FA_DASHCUBE(_alias) ENTITY(rectangle,black,dashcube,_alias,FA DASHCUBE)
+!define FA_DASHCUBE(_alias,_label) ENTITY(rectangle,black,dashcube,_label,_alias,FA DASHCUBE)
+!define FA_DASHCUBE(_alias,_label,_shape) ENTITY(_shape,black,dashcube,_label,_alias,FA DASHCUBE)
+!define FA_DASHCUBE(_alias,_label,_shape,_color) ENTITY(_shape,_color,dashcube,_label,_alias,FA DASHCUBE)
 skinparam folderBackgroundColor<<FA DASHCUBE>> White
 @enduml

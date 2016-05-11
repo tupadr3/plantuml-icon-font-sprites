@@ -51,8 +51,9 @@ sprite $bitcoin [48x48/16] {
 }
 
 
-!define FA_BITCOIN(alias) ENTITY(rectangle,black,bitcoin,alias,FA BITCOIN)
-!define FA_BITCOIN(alias,label) ENTITY(rectangle,black,bitcoin,label,alias,FA BITCOIN)
-!define FA_BITCOIN(alias,label,shape) ENTITY(shape,black,bitcoin,label,alias,FA BITCOIN)
+!define FA_BITCOIN(_alias) ENTITY(rectangle,black,bitcoin,_alias,FA BITCOIN)
+!define FA_BITCOIN(_alias,_label) ENTITY(rectangle,black,bitcoin,_label,_alias,FA BITCOIN)
+!define FA_BITCOIN(_alias,_label,_shape) ENTITY(_shape,black,bitcoin,_label,_alias,FA BITCOIN)
+!define FA_BITCOIN(_alias,_label,_shape,_color) ENTITY(_shape,_color,bitcoin,_label,_alias,FA BITCOIN)
 skinparam folderBackgroundColor<<FA BITCOIN>> White
 @enduml

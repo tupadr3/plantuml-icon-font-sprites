@@ -51,8 +51,9 @@ sprite $percent [48x48/16] {
 }
 
 
-!define FA_PERCENT(alias) ENTITY(rectangle,black,percent,alias,FA PERCENT)
-!define FA_PERCENT(alias,label) ENTITY(rectangle,black,percent,label,alias,FA PERCENT)
-!define FA_PERCENT(alias,label,shape) ENTITY(shape,black,percent,label,alias,FA PERCENT)
+!define FA_PERCENT(_alias) ENTITY(rectangle,black,percent,_alias,FA PERCENT)
+!define FA_PERCENT(_alias,_label) ENTITY(rectangle,black,percent,_label,_alias,FA PERCENT)
+!define FA_PERCENT(_alias,_label,_shape) ENTITY(_shape,black,percent,_label,_alias,FA PERCENT)
+!define FA_PERCENT(_alias,_label,_shape,_color) ENTITY(_shape,_color,percent,_label,_alias,FA PERCENT)
 skinparam folderBackgroundColor<<FA PERCENT>> White
 @enduml

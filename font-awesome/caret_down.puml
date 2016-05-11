@@ -51,8 +51,9 @@ sprite $caret_down [48x48/16] {
 }
 
 
-!define FA_CARET_DOWN(alias) ENTITY(rectangle,black,caret_down,alias,FA CARET_DOWN)
-!define FA_CARET_DOWN(alias,label) ENTITY(rectangle,black,caret_down,label,alias,FA CARET_DOWN)
-!define FA_CARET_DOWN(alias,label,shape) ENTITY(shape,black,caret_down,label,alias,FA CARET_DOWN)
+!define FA_CARET_DOWN(_alias) ENTITY(rectangle,black,caret_down,_alias,FA CARET_DOWN)
+!define FA_CARET_DOWN(_alias,_label) ENTITY(rectangle,black,caret_down,_label,_alias,FA CARET_DOWN)
+!define FA_CARET_DOWN(_alias,_label,_shape) ENTITY(_shape,black,caret_down,_label,_alias,FA CARET_DOWN)
+!define FA_CARET_DOWN(_alias,_label,_shape,_color) ENTITY(_shape,_color,caret_down,_label,_alias,FA CARET_DOWN)
 skinparam folderBackgroundColor<<FA CARET_DOWN>> White
 @enduml

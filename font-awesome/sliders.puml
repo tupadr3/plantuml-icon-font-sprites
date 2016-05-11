@@ -51,8 +51,9 @@ sprite $sliders [48x48/16] {
 }
 
 
-!define FA_SLIDERS(alias) ENTITY(rectangle,black,sliders,alias,FA SLIDERS)
-!define FA_SLIDERS(alias,label) ENTITY(rectangle,black,sliders,label,alias,FA SLIDERS)
-!define FA_SLIDERS(alias,label,shape) ENTITY(shape,black,sliders,label,alias,FA SLIDERS)
+!define FA_SLIDERS(_alias) ENTITY(rectangle,black,sliders,_alias,FA SLIDERS)
+!define FA_SLIDERS(_alias,_label) ENTITY(rectangle,black,sliders,_label,_alias,FA SLIDERS)
+!define FA_SLIDERS(_alias,_label,_shape) ENTITY(_shape,black,sliders,_label,_alias,FA SLIDERS)
+!define FA_SLIDERS(_alias,_label,_shape,_color) ENTITY(_shape,_color,sliders,_label,_alias,FA SLIDERS)
 skinparam folderBackgroundColor<<FA SLIDERS>> White
 @enduml

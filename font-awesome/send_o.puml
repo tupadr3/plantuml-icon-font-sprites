@@ -51,8 +51,9 @@ sprite $send_o [48x48/16] {
 }
 
 
-!define FA_SEND_O(alias) ENTITY(rectangle,black,send_o,alias,FA SEND_O)
-!define FA_SEND_O(alias,label) ENTITY(rectangle,black,send_o,label,alias,FA SEND_O)
-!define FA_SEND_O(alias,label,shape) ENTITY(shape,black,send_o,label,alias,FA SEND_O)
+!define FA_SEND_O(_alias) ENTITY(rectangle,black,send_o,_alias,FA SEND_O)
+!define FA_SEND_O(_alias,_label) ENTITY(rectangle,black,send_o,_label,_alias,FA SEND_O)
+!define FA_SEND_O(_alias,_label,_shape) ENTITY(_shape,black,send_o,_label,_alias,FA SEND_O)
+!define FA_SEND_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,send_o,_label,_alias,FA SEND_O)
 skinparam folderBackgroundColor<<FA SEND_O>> White
 @enduml

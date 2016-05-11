@@ -51,8 +51,9 @@ sprite $strikethrough [48x48/16] {
 }
 
 
-!define FA_STRIKETHROUGH(alias) ENTITY(rectangle,black,strikethrough,alias,FA STRIKETHROUGH)
-!define FA_STRIKETHROUGH(alias,label) ENTITY(rectangle,black,strikethrough,label,alias,FA STRIKETHROUGH)
-!define FA_STRIKETHROUGH(alias,label,shape) ENTITY(shape,black,strikethrough,label,alias,FA STRIKETHROUGH)
+!define FA_STRIKETHROUGH(_alias) ENTITY(rectangle,black,strikethrough,_alias,FA STRIKETHROUGH)
+!define FA_STRIKETHROUGH(_alias,_label) ENTITY(rectangle,black,strikethrough,_label,_alias,FA STRIKETHROUGH)
+!define FA_STRIKETHROUGH(_alias,_label,_shape) ENTITY(_shape,black,strikethrough,_label,_alias,FA STRIKETHROUGH)
+!define FA_STRIKETHROUGH(_alias,_label,_shape,_color) ENTITY(_shape,_color,strikethrough,_label,_alias,FA STRIKETHROUGH)
 skinparam folderBackgroundColor<<FA STRIKETHROUGH>> White
 @enduml

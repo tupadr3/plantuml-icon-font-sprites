@@ -51,8 +51,9 @@ sprite $ioxhost [48x48/16] {
 }
 
 
-!define FA_IOXHOST(alias) ENTITY(rectangle,black,ioxhost,alias,FA IOXHOST)
-!define FA_IOXHOST(alias,label) ENTITY(rectangle,black,ioxhost,label,alias,FA IOXHOST)
-!define FA_IOXHOST(alias,label,shape) ENTITY(shape,black,ioxhost,label,alias,FA IOXHOST)
+!define FA_IOXHOST(_alias) ENTITY(rectangle,black,ioxhost,_alias,FA IOXHOST)
+!define FA_IOXHOST(_alias,_label) ENTITY(rectangle,black,ioxhost,_label,_alias,FA IOXHOST)
+!define FA_IOXHOST(_alias,_label,_shape) ENTITY(_shape,black,ioxhost,_label,_alias,FA IOXHOST)
+!define FA_IOXHOST(_alias,_label,_shape,_color) ENTITY(_shape,_color,ioxhost,_label,_alias,FA IOXHOST)
 skinparam folderBackgroundColor<<FA IOXHOST>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $fax [48x48/16] {
 }
 
 
-!define FA_FAX(alias) ENTITY(rectangle,black,fax,alias,FA FAX)
-!define FA_FAX(alias,label) ENTITY(rectangle,black,fax,label,alias,FA FAX)
-!define FA_FAX(alias,label,shape) ENTITY(shape,black,fax,label,alias,FA FAX)
+!define FA_FAX(_alias) ENTITY(rectangle,black,fax,_alias,FA FAX)
+!define FA_FAX(_alias,_label) ENTITY(rectangle,black,fax,_label,_alias,FA FAX)
+!define FA_FAX(_alias,_label,_shape) ENTITY(_shape,black,fax,_label,_alias,FA FAX)
+!define FA_FAX(_alias,_label,_shape,_color) ENTITY(_shape,_color,fax,_label,_alias,FA FAX)
 skinparam folderBackgroundColor<<FA FAX>> White
 @enduml

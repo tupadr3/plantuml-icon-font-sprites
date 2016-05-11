@@ -51,8 +51,9 @@ sprite $creative_commons [48x48/16] {
 }
 
 
-!define FA_CREATIVE_COMMONS(alias) ENTITY(rectangle,black,creative_commons,alias,FA CREATIVE_COMMONS)
-!define FA_CREATIVE_COMMONS(alias,label) ENTITY(rectangle,black,creative_commons,label,alias,FA CREATIVE_COMMONS)
-!define FA_CREATIVE_COMMONS(alias,label,shape) ENTITY(shape,black,creative_commons,label,alias,FA CREATIVE_COMMONS)
+!define FA_CREATIVE_COMMONS(_alias) ENTITY(rectangle,black,creative_commons,_alias,FA CREATIVE_COMMONS)
+!define FA_CREATIVE_COMMONS(_alias,_label) ENTITY(rectangle,black,creative_commons,_label,_alias,FA CREATIVE_COMMONS)
+!define FA_CREATIVE_COMMONS(_alias,_label,_shape) ENTITY(_shape,black,creative_commons,_label,_alias,FA CREATIVE_COMMONS)
+!define FA_CREATIVE_COMMONS(_alias,_label,_shape,_color) ENTITY(_shape,_color,creative_commons,_label,_alias,FA CREATIVE_COMMONS)
 skinparam folderBackgroundColor<<FA CREATIVE_COMMONS>> White
 @enduml

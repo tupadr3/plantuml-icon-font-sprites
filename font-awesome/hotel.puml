@@ -51,8 +51,9 @@ sprite $hotel [48x48/16] {
 }
 
 
-!define FA_HOTEL(alias) ENTITY(rectangle,black,hotel,alias,FA HOTEL)
-!define FA_HOTEL(alias,label) ENTITY(rectangle,black,hotel,label,alias,FA HOTEL)
-!define FA_HOTEL(alias,label,shape) ENTITY(shape,black,hotel,label,alias,FA HOTEL)
+!define FA_HOTEL(_alias) ENTITY(rectangle,black,hotel,_alias,FA HOTEL)
+!define FA_HOTEL(_alias,_label) ENTITY(rectangle,black,hotel,_label,_alias,FA HOTEL)
+!define FA_HOTEL(_alias,_label,_shape) ENTITY(_shape,black,hotel,_label,_alias,FA HOTEL)
+!define FA_HOTEL(_alias,_label,_shape,_color) ENTITY(_shape,_color,hotel,_label,_alias,FA HOTEL)
 skinparam folderBackgroundColor<<FA HOTEL>> White
 @enduml

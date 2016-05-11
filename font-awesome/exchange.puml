@@ -51,8 +51,9 @@ sprite $exchange [48x48/16] {
 }
 
 
-!define FA_EXCHANGE(alias) ENTITY(rectangle,black,exchange,alias,FA EXCHANGE)
-!define FA_EXCHANGE(alias,label) ENTITY(rectangle,black,exchange,label,alias,FA EXCHANGE)
-!define FA_EXCHANGE(alias,label,shape) ENTITY(shape,black,exchange,label,alias,FA EXCHANGE)
+!define FA_EXCHANGE(_alias) ENTITY(rectangle,black,exchange,_alias,FA EXCHANGE)
+!define FA_EXCHANGE(_alias,_label) ENTITY(rectangle,black,exchange,_label,_alias,FA EXCHANGE)
+!define FA_EXCHANGE(_alias,_label,_shape) ENTITY(_shape,black,exchange,_label,_alias,FA EXCHANGE)
+!define FA_EXCHANGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,exchange,_label,_alias,FA EXCHANGE)
 skinparam folderBackgroundColor<<FA EXCHANGE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $modx [48x48/16] {
 }
 
 
-!define FA_MODX(alias) ENTITY(rectangle,black,modx,alias,FA MODX)
-!define FA_MODX(alias,label) ENTITY(rectangle,black,modx,label,alias,FA MODX)
-!define FA_MODX(alias,label,shape) ENTITY(shape,black,modx,label,alias,FA MODX)
+!define FA_MODX(_alias) ENTITY(rectangle,black,modx,_alias,FA MODX)
+!define FA_MODX(_alias,_label) ENTITY(rectangle,black,modx,_label,_alias,FA MODX)
+!define FA_MODX(_alias,_label,_shape) ENTITY(_shape,black,modx,_label,_alias,FA MODX)
+!define FA_MODX(_alias,_label,_shape,_color) ENTITY(_shape,_color,modx,_label,_alias,FA MODX)
 skinparam folderBackgroundColor<<FA MODX>> White
 @enduml

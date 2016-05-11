@@ -51,8 +51,9 @@ sprite $industry [48x48/16] {
 }
 
 
-!define FA_INDUSTRY(alias) ENTITY(rectangle,black,industry,alias,FA INDUSTRY)
-!define FA_INDUSTRY(alias,label) ENTITY(rectangle,black,industry,label,alias,FA INDUSTRY)
-!define FA_INDUSTRY(alias,label,shape) ENTITY(shape,black,industry,label,alias,FA INDUSTRY)
+!define FA_INDUSTRY(_alias) ENTITY(rectangle,black,industry,_alias,FA INDUSTRY)
+!define FA_INDUSTRY(_alias,_label) ENTITY(rectangle,black,industry,_label,_alias,FA INDUSTRY)
+!define FA_INDUSTRY(_alias,_label,_shape) ENTITY(_shape,black,industry,_label,_alias,FA INDUSTRY)
+!define FA_INDUSTRY(_alias,_label,_shape,_color) ENTITY(_shape,_color,industry,_label,_alias,FA INDUSTRY)
 skinparam folderBackgroundColor<<FA INDUSTRY>> White
 @enduml

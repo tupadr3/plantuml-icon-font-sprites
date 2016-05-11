@@ -51,8 +51,9 @@ sprite $skyatlas [48x48/16] {
 }
 
 
-!define FA_SKYATLAS(alias) ENTITY(rectangle,black,skyatlas,alias,FA SKYATLAS)
-!define FA_SKYATLAS(alias,label) ENTITY(rectangle,black,skyatlas,label,alias,FA SKYATLAS)
-!define FA_SKYATLAS(alias,label,shape) ENTITY(shape,black,skyatlas,label,alias,FA SKYATLAS)
+!define FA_SKYATLAS(_alias) ENTITY(rectangle,black,skyatlas,_alias,FA SKYATLAS)
+!define FA_SKYATLAS(_alias,_label) ENTITY(rectangle,black,skyatlas,_label,_alias,FA SKYATLAS)
+!define FA_SKYATLAS(_alias,_label,_shape) ENTITY(_shape,black,skyatlas,_label,_alias,FA SKYATLAS)
+!define FA_SKYATLAS(_alias,_label,_shape,_color) ENTITY(_shape,_color,skyatlas,_label,_alias,FA SKYATLAS)
 skinparam folderBackgroundColor<<FA SKYATLAS>> White
 @enduml

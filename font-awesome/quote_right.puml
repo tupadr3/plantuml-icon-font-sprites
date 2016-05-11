@@ -51,8 +51,9 @@ sprite $quote_right [48x48/16] {
 }
 
 
-!define FA_QUOTE_RIGHT(alias) ENTITY(rectangle,black,quote_right,alias,FA QUOTE_RIGHT)
-!define FA_QUOTE_RIGHT(alias,label) ENTITY(rectangle,black,quote_right,label,alias,FA QUOTE_RIGHT)
-!define FA_QUOTE_RIGHT(alias,label,shape) ENTITY(shape,black,quote_right,label,alias,FA QUOTE_RIGHT)
+!define FA_QUOTE_RIGHT(_alias) ENTITY(rectangle,black,quote_right,_alias,FA QUOTE_RIGHT)
+!define FA_QUOTE_RIGHT(_alias,_label) ENTITY(rectangle,black,quote_right,_label,_alias,FA QUOTE_RIGHT)
+!define FA_QUOTE_RIGHT(_alias,_label,_shape) ENTITY(_shape,black,quote_right,_label,_alias,FA QUOTE_RIGHT)
+!define FA_QUOTE_RIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,quote_right,_label,_alias,FA QUOTE_RIGHT)
 skinparam folderBackgroundColor<<FA QUOTE_RIGHT>> White
 @enduml

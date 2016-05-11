@@ -51,8 +51,9 @@ sprite $eye [48x48/16] {
 }
 
 
-!define FA_EYE(alias) ENTITY(rectangle,black,eye,alias,FA EYE)
-!define FA_EYE(alias,label) ENTITY(rectangle,black,eye,label,alias,FA EYE)
-!define FA_EYE(alias,label,shape) ENTITY(shape,black,eye,label,alias,FA EYE)
+!define FA_EYE(_alias) ENTITY(rectangle,black,eye,_alias,FA EYE)
+!define FA_EYE(_alias,_label) ENTITY(rectangle,black,eye,_label,_alias,FA EYE)
+!define FA_EYE(_alias,_label,_shape) ENTITY(_shape,black,eye,_label,_alias,FA EYE)
+!define FA_EYE(_alias,_label,_shape,_color) ENTITY(_shape,_color,eye,_label,_alias,FA EYE)
 skinparam folderBackgroundColor<<FA EYE>> White
 @enduml

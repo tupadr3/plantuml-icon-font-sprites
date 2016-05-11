@@ -51,8 +51,9 @@ sprite $wifi [48x48/16] {
 }
 
 
-!define FA_WIFI(alias) ENTITY(rectangle,black,wifi,alias,FA WIFI)
-!define FA_WIFI(alias,label) ENTITY(rectangle,black,wifi,label,alias,FA WIFI)
-!define FA_WIFI(alias,label,shape) ENTITY(shape,black,wifi,label,alias,FA WIFI)
+!define FA_WIFI(_alias) ENTITY(rectangle,black,wifi,_alias,FA WIFI)
+!define FA_WIFI(_alias,_label) ENTITY(rectangle,black,wifi,_label,_alias,FA WIFI)
+!define FA_WIFI(_alias,_label,_shape) ENTITY(_shape,black,wifi,_label,_alias,FA WIFI)
+!define FA_WIFI(_alias,_label,_shape,_color) ENTITY(_shape,_color,wifi,_label,_alias,FA WIFI)
 skinparam folderBackgroundColor<<FA WIFI>> White
 @enduml

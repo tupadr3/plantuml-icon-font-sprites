@@ -51,8 +51,9 @@ sprite $female [48x48/16] {
 }
 
 
-!define FA_FEMALE(alias) ENTITY(rectangle,black,female,alias,FA FEMALE)
-!define FA_FEMALE(alias,label) ENTITY(rectangle,black,female,label,alias,FA FEMALE)
-!define FA_FEMALE(alias,label,shape) ENTITY(shape,black,female,label,alias,FA FEMALE)
+!define FA_FEMALE(_alias) ENTITY(rectangle,black,female,_alias,FA FEMALE)
+!define FA_FEMALE(_alias,_label) ENTITY(rectangle,black,female,_label,_alias,FA FEMALE)
+!define FA_FEMALE(_alias,_label,_shape) ENTITY(_shape,black,female,_label,_alias,FA FEMALE)
+!define FA_FEMALE(_alias,_label,_shape,_color) ENTITY(_shape,_color,female,_label,_alias,FA FEMALE)
 skinparam folderBackgroundColor<<FA FEMALE>> White
 @enduml

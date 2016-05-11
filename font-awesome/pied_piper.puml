@@ -51,8 +51,9 @@ sprite $pied_piper [48x48/16] {
 }
 
 
-!define FA_PIED_PIPER(alias) ENTITY(rectangle,black,pied_piper,alias,FA PIED_PIPER)
-!define FA_PIED_PIPER(alias,label) ENTITY(rectangle,black,pied_piper,label,alias,FA PIED_PIPER)
-!define FA_PIED_PIPER(alias,label,shape) ENTITY(shape,black,pied_piper,label,alias,FA PIED_PIPER)
+!define FA_PIED_PIPER(_alias) ENTITY(rectangle,black,pied_piper,_alias,FA PIED_PIPER)
+!define FA_PIED_PIPER(_alias,_label) ENTITY(rectangle,black,pied_piper,_label,_alias,FA PIED_PIPER)
+!define FA_PIED_PIPER(_alias,_label,_shape) ENTITY(_shape,black,pied_piper,_label,_alias,FA PIED_PIPER)
+!define FA_PIED_PIPER(_alias,_label,_shape,_color) ENTITY(_shape,_color,pied_piper,_label,_alias,FA PIED_PIPER)
 skinparam folderBackgroundColor<<FA PIED_PIPER>> White
 @enduml

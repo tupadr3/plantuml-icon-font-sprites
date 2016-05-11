@@ -35,8 +35,9 @@ sprite $sqllite [34x32/16] {
 }
 
 
-!define DEV_SQLLITE(alias) ENTITY(rectangle,black,sqllite,alias,DEV SQLLITE)
-!define DEV_SQLLITE(alias,label) ENTITY(rectangle,black,sqllite,label,alias,DEV SQLLITE)
-!define DEV_SQLLITE(alias,label,shape) ENTITY(shape,black,sqllite,label,alias,DEV SQLLITE)
+!define DEV_SQLLITE(_alias) ENTITY(rectangle,black,sqllite,_alias,DEV SQLLITE)
+!define DEV_SQLLITE(_alias,_label) ENTITY(rectangle,black,sqllite,_label,_alias,DEV SQLLITE)
+!define DEV_SQLLITE(_alias,_label,_shape) ENTITY(_shape,black,sqllite,_label,_alias,DEV SQLLITE)
+!define DEV_SQLLITE(_alias,_label,_shape,_color) ENTITY(_shape,_color,sqllite,_label,_alias,DEV SQLLITE)
 skinparam folderBackgroundColor<<DEV SQLLITE>> White
 @enduml

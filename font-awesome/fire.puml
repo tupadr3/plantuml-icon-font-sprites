@@ -51,8 +51,9 @@ sprite $fire [48x48/16] {
 }
 
 
-!define FA_FIRE(alias) ENTITY(rectangle,black,fire,alias,FA FIRE)
-!define FA_FIRE(alias,label) ENTITY(rectangle,black,fire,label,alias,FA FIRE)
-!define FA_FIRE(alias,label,shape) ENTITY(shape,black,fire,label,alias,FA FIRE)
+!define FA_FIRE(_alias) ENTITY(rectangle,black,fire,_alias,FA FIRE)
+!define FA_FIRE(_alias,_label) ENTITY(rectangle,black,fire,_label,_alias,FA FIRE)
+!define FA_FIRE(_alias,_label,_shape) ENTITY(_shape,black,fire,_label,_alias,FA FIRE)
+!define FA_FIRE(_alias,_label,_shape,_color) ENTITY(_shape,_color,fire,_label,_alias,FA FIRE)
 skinparam folderBackgroundColor<<FA FIRE>> White
 @enduml

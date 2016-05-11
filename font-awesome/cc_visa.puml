@@ -51,8 +51,9 @@ BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEB
 }
 
 
-!define FA_CC_VISA(alias) ENTITY(rectangle,black,cc_visa,alias,FA CC_VISA)
-!define FA_CC_VISA(alias,label) ENTITY(rectangle,black,cc_visa,label,alias,FA CC_VISA)
-!define FA_CC_VISA(alias,label,shape) ENTITY(shape,black,cc_visa,label,alias,FA CC_VISA)
+!define FA_CC_VISA(_alias) ENTITY(rectangle,black,cc_visa,_alias,FA CC_VISA)
+!define FA_CC_VISA(_alias,_label) ENTITY(rectangle,black,cc_visa,_label,_alias,FA CC_VISA)
+!define FA_CC_VISA(_alias,_label,_shape) ENTITY(_shape,black,cc_visa,_label,_alias,FA CC_VISA)
+!define FA_CC_VISA(_alias,_label,_shape,_color) ENTITY(_shape,_color,cc_visa,_label,_alias,FA CC_VISA)
 skinparam folderBackgroundColor<<FA CC_VISA>> White
 @enduml

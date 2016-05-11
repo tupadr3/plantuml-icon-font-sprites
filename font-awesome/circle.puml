@@ -51,8 +51,9 @@ sprite $circle [48x48/16] {
 }
 
 
-!define FA_CIRCLE(alias) ENTITY(rectangle,black,circle,alias,FA CIRCLE)
-!define FA_CIRCLE(alias,label) ENTITY(rectangle,black,circle,label,alias,FA CIRCLE)
-!define FA_CIRCLE(alias,label,shape) ENTITY(shape,black,circle,label,alias,FA CIRCLE)
+!define FA_CIRCLE(_alias) ENTITY(rectangle,black,circle,_alias,FA CIRCLE)
+!define FA_CIRCLE(_alias,_label) ENTITY(rectangle,black,circle,_label,_alias,FA CIRCLE)
+!define FA_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,circle,_label,_alias,FA CIRCLE)
+!define FA_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,circle,_label,_alias,FA CIRCLE)
 skinparam folderBackgroundColor<<FA CIRCLE>> White
 @enduml

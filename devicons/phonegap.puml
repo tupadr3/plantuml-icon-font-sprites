@@ -35,8 +35,9 @@ sprite $phonegap [32x32/16] {
 }
 
 
-!define DEV_PHONEGAP(alias) ENTITY(rectangle,black,phonegap,alias,DEV PHONEGAP)
-!define DEV_PHONEGAP(alias,label) ENTITY(rectangle,black,phonegap,label,alias,DEV PHONEGAP)
-!define DEV_PHONEGAP(alias,label,shape) ENTITY(shape,black,phonegap,label,alias,DEV PHONEGAP)
+!define DEV_PHONEGAP(_alias) ENTITY(rectangle,black,phonegap,_alias,DEV PHONEGAP)
+!define DEV_PHONEGAP(_alias,_label) ENTITY(rectangle,black,phonegap,_label,_alias,DEV PHONEGAP)
+!define DEV_PHONEGAP(_alias,_label,_shape) ENTITY(_shape,black,phonegap,_label,_alias,DEV PHONEGAP)
+!define DEV_PHONEGAP(_alias,_label,_shape,_color) ENTITY(_shape,_color,phonegap,_label,_alias,DEV PHONEGAP)
 skinparam folderBackgroundColor<<DEV PHONEGAP>> White
 @enduml

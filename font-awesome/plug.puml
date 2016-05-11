@@ -51,8 +51,9 @@ sprite $plug [48x48/16] {
 }
 
 
-!define FA_PLUG(alias) ENTITY(rectangle,black,plug,alias,FA PLUG)
-!define FA_PLUG(alias,label) ENTITY(rectangle,black,plug,label,alias,FA PLUG)
-!define FA_PLUG(alias,label,shape) ENTITY(shape,black,plug,label,alias,FA PLUG)
+!define FA_PLUG(_alias) ENTITY(rectangle,black,plug,_alias,FA PLUG)
+!define FA_PLUG(_alias,_label) ENTITY(rectangle,black,plug,_label,_alias,FA PLUG)
+!define FA_PLUG(_alias,_label,_shape) ENTITY(_shape,black,plug,_label,_alias,FA PLUG)
+!define FA_PLUG(_alias,_label,_shape,_color) ENTITY(_shape,_color,plug,_label,_alias,FA PLUG)
 skinparam folderBackgroundColor<<FA PLUG>> White
 @enduml

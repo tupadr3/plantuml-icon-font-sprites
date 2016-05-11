@@ -51,8 +51,9 @@ sprite $times_circle [48x48/16] {
 }
 
 
-!define FA_TIMES_CIRCLE(alias) ENTITY(rectangle,black,times_circle,alias,FA TIMES_CIRCLE)
-!define FA_TIMES_CIRCLE(alias,label) ENTITY(rectangle,black,times_circle,label,alias,FA TIMES_CIRCLE)
-!define FA_TIMES_CIRCLE(alias,label,shape) ENTITY(shape,black,times_circle,label,alias,FA TIMES_CIRCLE)
+!define FA_TIMES_CIRCLE(_alias) ENTITY(rectangle,black,times_circle,_alias,FA TIMES_CIRCLE)
+!define FA_TIMES_CIRCLE(_alias,_label) ENTITY(rectangle,black,times_circle,_label,_alias,FA TIMES_CIRCLE)
+!define FA_TIMES_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,times_circle,_label,_alias,FA TIMES_CIRCLE)
+!define FA_TIMES_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,times_circle,_label,_alias,FA TIMES_CIRCLE)
 skinparam folderBackgroundColor<<FA TIMES_CIRCLE>> White
 @enduml

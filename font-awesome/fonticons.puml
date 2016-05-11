@@ -51,8 +51,9 @@ sprite $fonticons [48x48/16] {
 }
 
 
-!define FA_FONTICONS(alias) ENTITY(rectangle,black,fonticons,alias,FA FONTICONS)
-!define FA_FONTICONS(alias,label) ENTITY(rectangle,black,fonticons,label,alias,FA FONTICONS)
-!define FA_FONTICONS(alias,label,shape) ENTITY(shape,black,fonticons,label,alias,FA FONTICONS)
+!define FA_FONTICONS(_alias) ENTITY(rectangle,black,fonticons,_alias,FA FONTICONS)
+!define FA_FONTICONS(_alias,_label) ENTITY(rectangle,black,fonticons,_label,_alias,FA FONTICONS)
+!define FA_FONTICONS(_alias,_label,_shape) ENTITY(_shape,black,fonticons,_label,_alias,FA FONTICONS)
+!define FA_FONTICONS(_alias,_label,_shape,_color) ENTITY(_shape,_color,fonticons,_label,_alias,FA FONTICONS)
 skinparam folderBackgroundColor<<FA FONTICONS>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $bug [48x48/16] {
 }
 
 
-!define FA_BUG(alias) ENTITY(rectangle,black,bug,alias,FA BUG)
-!define FA_BUG(alias,label) ENTITY(rectangle,black,bug,label,alias,FA BUG)
-!define FA_BUG(alias,label,shape) ENTITY(shape,black,bug,label,alias,FA BUG)
+!define FA_BUG(_alias) ENTITY(rectangle,black,bug,_alias,FA BUG)
+!define FA_BUG(_alias,_label) ENTITY(rectangle,black,bug,_label,_alias,FA BUG)
+!define FA_BUG(_alias,_label,_shape) ENTITY(_shape,black,bug,_label,_alias,FA BUG)
+!define FA_BUG(_alias,_label,_shape,_color) ENTITY(_shape,_color,bug,_label,_alias,FA BUG)
 skinparam folderBackgroundColor<<FA BUG>> White
 @enduml

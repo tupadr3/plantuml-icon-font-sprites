@@ -35,8 +35,9 @@ sprite $cssdeck [32x32/16] {
 }
 
 
-!define DEV_CSSDECK(alias) ENTITY(rectangle,black,cssdeck,alias,DEV CSSDECK)
-!define DEV_CSSDECK(alias,label) ENTITY(rectangle,black,cssdeck,label,alias,DEV CSSDECK)
-!define DEV_CSSDECK(alias,label,shape) ENTITY(shape,black,cssdeck,label,alias,DEV CSSDECK)
+!define DEV_CSSDECK(_alias) ENTITY(rectangle,black,cssdeck,_alias,DEV CSSDECK)
+!define DEV_CSSDECK(_alias,_label) ENTITY(rectangle,black,cssdeck,_label,_alias,DEV CSSDECK)
+!define DEV_CSSDECK(_alias,_label,_shape) ENTITY(_shape,black,cssdeck,_label,_alias,DEV CSSDECK)
+!define DEV_CSSDECK(_alias,_label,_shape,_color) ENTITY(_shape,_color,cssdeck,_label,_alias,DEV CSSDECK)
 skinparam folderBackgroundColor<<DEV CSSDECK>> White
 @enduml

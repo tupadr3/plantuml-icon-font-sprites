@@ -51,8 +51,9 @@ sprite $coffee [48x48/16] {
 }
 
 
-!define FA_COFFEE(alias) ENTITY(rectangle,black,coffee,alias,FA COFFEE)
-!define FA_COFFEE(alias,label) ENTITY(rectangle,black,coffee,label,alias,FA COFFEE)
-!define FA_COFFEE(alias,label,shape) ENTITY(shape,black,coffee,label,alias,FA COFFEE)
+!define FA_COFFEE(_alias) ENTITY(rectangle,black,coffee,_alias,FA COFFEE)
+!define FA_COFFEE(_alias,_label) ENTITY(rectangle,black,coffee,_label,_alias,FA COFFEE)
+!define FA_COFFEE(_alias,_label,_shape) ENTITY(_shape,black,coffee,_label,_alias,FA COFFEE)
+!define FA_COFFEE(_alias,_label,_shape,_color) ENTITY(_shape,_color,coffee,_label,_alias,FA COFFEE)
 skinparam folderBackgroundColor<<FA COFFEE>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $ruby_rough [32x32/16] {
 }
 
 
-!define DEV_RUBY_ROUGH(alias) ENTITY(rectangle,black,ruby_rough,alias,DEV RUBY_ROUGH)
-!define DEV_RUBY_ROUGH(alias,label) ENTITY(rectangle,black,ruby_rough,label,alias,DEV RUBY_ROUGH)
-!define DEV_RUBY_ROUGH(alias,label,shape) ENTITY(shape,black,ruby_rough,label,alias,DEV RUBY_ROUGH)
+!define DEV_RUBY_ROUGH(_alias) ENTITY(rectangle,black,ruby_rough,_alias,DEV RUBY_ROUGH)
+!define DEV_RUBY_ROUGH(_alias,_label) ENTITY(rectangle,black,ruby_rough,_label,_alias,DEV RUBY_ROUGH)
+!define DEV_RUBY_ROUGH(_alias,_label,_shape) ENTITY(_shape,black,ruby_rough,_label,_alias,DEV RUBY_ROUGH)
+!define DEV_RUBY_ROUGH(_alias,_label,_shape,_color) ENTITY(_shape,_color,ruby_rough,_label,_alias,DEV RUBY_ROUGH)
 skinparam folderBackgroundColor<<DEV RUBY_ROUGH>> White
 @enduml

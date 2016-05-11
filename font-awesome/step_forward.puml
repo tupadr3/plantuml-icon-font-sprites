@@ -51,8 +51,9 @@ sprite $step_forward [48x48/16] {
 }
 
 
-!define FA_STEP_FORWARD(alias) ENTITY(rectangle,black,step_forward,alias,FA STEP_FORWARD)
-!define FA_STEP_FORWARD(alias,label) ENTITY(rectangle,black,step_forward,label,alias,FA STEP_FORWARD)
-!define FA_STEP_FORWARD(alias,label,shape) ENTITY(shape,black,step_forward,label,alias,FA STEP_FORWARD)
+!define FA_STEP_FORWARD(_alias) ENTITY(rectangle,black,step_forward,_alias,FA STEP_FORWARD)
+!define FA_STEP_FORWARD(_alias,_label) ENTITY(rectangle,black,step_forward,_label,_alias,FA STEP_FORWARD)
+!define FA_STEP_FORWARD(_alias,_label,_shape) ENTITY(_shape,black,step_forward,_label,_alias,FA STEP_FORWARD)
+!define FA_STEP_FORWARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,step_forward,_label,_alias,FA STEP_FORWARD)
 skinparam folderBackgroundColor<<FA STEP_FORWARD>> White
 @enduml

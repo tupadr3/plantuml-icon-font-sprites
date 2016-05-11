@@ -51,8 +51,9 @@ sprite $edit [48x48/16] {
 }
 
 
-!define FA_EDIT(alias) ENTITY(rectangle,black,edit,alias,FA EDIT)
-!define FA_EDIT(alias,label) ENTITY(rectangle,black,edit,label,alias,FA EDIT)
-!define FA_EDIT(alias,label,shape) ENTITY(shape,black,edit,label,alias,FA EDIT)
+!define FA_EDIT(_alias) ENTITY(rectangle,black,edit,_alias,FA EDIT)
+!define FA_EDIT(_alias,_label) ENTITY(rectangle,black,edit,_label,_alias,FA EDIT)
+!define FA_EDIT(_alias,_label,_shape) ENTITY(_shape,black,edit,_label,_alias,FA EDIT)
+!define FA_EDIT(_alias,_label,_shape,_color) ENTITY(_shape,_color,edit,_label,_alias,FA EDIT)
 skinparam folderBackgroundColor<<FA EDIT>> White
 @enduml

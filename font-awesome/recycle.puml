@@ -51,8 +51,9 @@ sprite $recycle [48x48/16] {
 }
 
 
-!define FA_RECYCLE(alias) ENTITY(rectangle,black,recycle,alias,FA RECYCLE)
-!define FA_RECYCLE(alias,label) ENTITY(rectangle,black,recycle,label,alias,FA RECYCLE)
-!define FA_RECYCLE(alias,label,shape) ENTITY(shape,black,recycle,label,alias,FA RECYCLE)
+!define FA_RECYCLE(_alias) ENTITY(rectangle,black,recycle,_alias,FA RECYCLE)
+!define FA_RECYCLE(_alias,_label) ENTITY(rectangle,black,recycle,_label,_alias,FA RECYCLE)
+!define FA_RECYCLE(_alias,_label,_shape) ENTITY(_shape,black,recycle,_label,_alias,FA RECYCLE)
+!define FA_RECYCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,recycle,_label,_alias,FA RECYCLE)
 skinparam folderBackgroundColor<<FA RECYCLE>> White
 @enduml

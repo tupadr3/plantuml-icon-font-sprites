@@ -51,8 +51,9 @@ sprite $line_chart [48x48/16] {
 }
 
 
-!define FA_LINE_CHART(alias) ENTITY(rectangle,black,line_chart,alias,FA LINE_CHART)
-!define FA_LINE_CHART(alias,label) ENTITY(rectangle,black,line_chart,label,alias,FA LINE_CHART)
-!define FA_LINE_CHART(alias,label,shape) ENTITY(shape,black,line_chart,label,alias,FA LINE_CHART)
+!define FA_LINE_CHART(_alias) ENTITY(rectangle,black,line_chart,_alias,FA LINE_CHART)
+!define FA_LINE_CHART(_alias,_label) ENTITY(rectangle,black,line_chart,_label,_alias,FA LINE_CHART)
+!define FA_LINE_CHART(_alias,_label,_shape) ENTITY(_shape,black,line_chart,_label,_alias,FA LINE_CHART)
+!define FA_LINE_CHART(_alias,_label,_shape,_color) ENTITY(_shape,_color,line_chart,_label,_alias,FA LINE_CHART)
 skinparam folderBackgroundColor<<FA LINE_CHART>> White
 @enduml

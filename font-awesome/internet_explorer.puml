@@ -51,8 +51,9 @@ sprite $internet_explorer [48x48/16] {
 }
 
 
-!define FA_INTERNET_EXPLORER(alias) ENTITY(rectangle,black,internet_explorer,alias,FA INTERNET_EXPLORER)
-!define FA_INTERNET_EXPLORER(alias,label) ENTITY(rectangle,black,internet_explorer,label,alias,FA INTERNET_EXPLORER)
-!define FA_INTERNET_EXPLORER(alias,label,shape) ENTITY(shape,black,internet_explorer,label,alias,FA INTERNET_EXPLORER)
+!define FA_INTERNET_EXPLORER(_alias) ENTITY(rectangle,black,internet_explorer,_alias,FA INTERNET_EXPLORER)
+!define FA_INTERNET_EXPLORER(_alias,_label) ENTITY(rectangle,black,internet_explorer,_label,_alias,FA INTERNET_EXPLORER)
+!define FA_INTERNET_EXPLORER(_alias,_label,_shape) ENTITY(_shape,black,internet_explorer,_label,_alias,FA INTERNET_EXPLORER)
+!define FA_INTERNET_EXPLORER(_alias,_label,_shape,_color) ENTITY(_shape,_color,internet_explorer,_label,_alias,FA INTERNET_EXPLORER)
 skinparam folderBackgroundColor<<FA INTERNET_EXPLORER>> White
 @enduml

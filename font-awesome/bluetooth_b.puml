@@ -51,8 +51,9 @@ sprite $bluetooth_b [48x48/16] {
 }
 
 
-!define FA_BLUETOOTH_B(alias) ENTITY(rectangle,black,bluetooth_b,alias,FA BLUETOOTH_B)
-!define FA_BLUETOOTH_B(alias,label) ENTITY(rectangle,black,bluetooth_b,label,alias,FA BLUETOOTH_B)
-!define FA_BLUETOOTH_B(alias,label,shape) ENTITY(shape,black,bluetooth_b,label,alias,FA BLUETOOTH_B)
+!define FA_BLUETOOTH_B(_alias) ENTITY(rectangle,black,bluetooth_b,_alias,FA BLUETOOTH_B)
+!define FA_BLUETOOTH_B(_alias,_label) ENTITY(rectangle,black,bluetooth_b,_label,_alias,FA BLUETOOTH_B)
+!define FA_BLUETOOTH_B(_alias,_label,_shape) ENTITY(_shape,black,bluetooth_b,_label,_alias,FA BLUETOOTH_B)
+!define FA_BLUETOOTH_B(_alias,_label,_shape,_color) ENTITY(_shape,_color,bluetooth_b,_label,_alias,FA BLUETOOTH_B)
 skinparam folderBackgroundColor<<FA BLUETOOTH_B>> White
 @enduml

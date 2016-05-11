@@ -51,8 +51,9 @@ sprite $intersex [48x48/16] {
 }
 
 
-!define FA_INTERSEX(alias) ENTITY(rectangle,black,intersex,alias,FA INTERSEX)
-!define FA_INTERSEX(alias,label) ENTITY(rectangle,black,intersex,label,alias,FA INTERSEX)
-!define FA_INTERSEX(alias,label,shape) ENTITY(shape,black,intersex,label,alias,FA INTERSEX)
+!define FA_INTERSEX(_alias) ENTITY(rectangle,black,intersex,_alias,FA INTERSEX)
+!define FA_INTERSEX(_alias,_label) ENTITY(rectangle,black,intersex,_label,_alias,FA INTERSEX)
+!define FA_INTERSEX(_alias,_label,_shape) ENTITY(_shape,black,intersex,_label,_alias,FA INTERSEX)
+!define FA_INTERSEX(_alias,_label,_shape,_color) ENTITY(_shape,_color,intersex,_label,_alias,FA INTERSEX)
 skinparam folderBackgroundColor<<FA INTERSEX>> White
 @enduml

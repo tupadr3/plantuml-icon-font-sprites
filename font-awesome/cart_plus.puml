@@ -51,8 +51,9 @@ sprite $cart_plus [48x48/16] {
 }
 
 
-!define FA_CART_PLUS(alias) ENTITY(rectangle,black,cart_plus,alias,FA CART_PLUS)
-!define FA_CART_PLUS(alias,label) ENTITY(rectangle,black,cart_plus,label,alias,FA CART_PLUS)
-!define FA_CART_PLUS(alias,label,shape) ENTITY(shape,black,cart_plus,label,alias,FA CART_PLUS)
+!define FA_CART_PLUS(_alias) ENTITY(rectangle,black,cart_plus,_alias,FA CART_PLUS)
+!define FA_CART_PLUS(_alias,_label) ENTITY(rectangle,black,cart_plus,_label,_alias,FA CART_PLUS)
+!define FA_CART_PLUS(_alias,_label,_shape) ENTITY(_shape,black,cart_plus,_label,_alias,FA CART_PLUS)
+!define FA_CART_PLUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,cart_plus,_label,_alias,FA CART_PLUS)
 skinparam folderBackgroundColor<<FA CART_PLUS>> White
 @enduml

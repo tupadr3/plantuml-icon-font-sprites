@@ -51,8 +51,9 @@ sprite $thumbs_up [48x48/16] {
 }
 
 
-!define FA_THUMBS_UP(alias) ENTITY(rectangle,black,thumbs_up,alias,FA THUMBS_UP)
-!define FA_THUMBS_UP(alias,label) ENTITY(rectangle,black,thumbs_up,label,alias,FA THUMBS_UP)
-!define FA_THUMBS_UP(alias,label,shape) ENTITY(shape,black,thumbs_up,label,alias,FA THUMBS_UP)
+!define FA_THUMBS_UP(_alias) ENTITY(rectangle,black,thumbs_up,_alias,FA THUMBS_UP)
+!define FA_THUMBS_UP(_alias,_label) ENTITY(rectangle,black,thumbs_up,_label,_alias,FA THUMBS_UP)
+!define FA_THUMBS_UP(_alias,_label,_shape) ENTITY(_shape,black,thumbs_up,_label,_alias,FA THUMBS_UP)
+!define FA_THUMBS_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,thumbs_up,_label,_alias,FA THUMBS_UP)
 skinparam folderBackgroundColor<<FA THUMBS_UP>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $facebook_square [48x48/16] {
 }
 
 
-!define FA_FACEBOOK_SQUARE(alias) ENTITY(rectangle,black,facebook_square,alias,FA FACEBOOK_SQUARE)
-!define FA_FACEBOOK_SQUARE(alias,label) ENTITY(rectangle,black,facebook_square,label,alias,FA FACEBOOK_SQUARE)
-!define FA_FACEBOOK_SQUARE(alias,label,shape) ENTITY(shape,black,facebook_square,label,alias,FA FACEBOOK_SQUARE)
+!define FA_FACEBOOK_SQUARE(_alias) ENTITY(rectangle,black,facebook_square,_alias,FA FACEBOOK_SQUARE)
+!define FA_FACEBOOK_SQUARE(_alias,_label) ENTITY(rectangle,black,facebook_square,_label,_alias,FA FACEBOOK_SQUARE)
+!define FA_FACEBOOK_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,facebook_square,_label,_alias,FA FACEBOOK_SQUARE)
+!define FA_FACEBOOK_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,facebook_square,_label,_alias,FA FACEBOOK_SQUARE)
 skinparam folderBackgroundColor<<FA FACEBOOK_SQUARE>> White
 @enduml

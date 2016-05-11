@@ -51,8 +51,9 @@ sprite $tv [48x48/16] {
 }
 
 
-!define FA_TV(alias) ENTITY(rectangle,black,tv,alias,FA TV)
-!define FA_TV(alias,label) ENTITY(rectangle,black,tv,label,alias,FA TV)
-!define FA_TV(alias,label,shape) ENTITY(shape,black,tv,label,alias,FA TV)
+!define FA_TV(_alias) ENTITY(rectangle,black,tv,_alias,FA TV)
+!define FA_TV(_alias,_label) ENTITY(rectangle,black,tv,_label,_alias,FA TV)
+!define FA_TV(_alias,_label,_shape) ENTITY(_shape,black,tv,_label,_alias,FA TV)
+!define FA_TV(_alias,_label,_shape,_color) ENTITY(_shape,_color,tv,_label,_alias,FA TV)
 skinparam folderBackgroundColor<<FA TV>> White
 @enduml

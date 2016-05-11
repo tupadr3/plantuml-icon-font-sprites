@@ -51,8 +51,9 @@ sprite $openid [48x48/16] {
 }
 
 
-!define FA_OPENID(alias) ENTITY(rectangle,black,openid,alias,FA OPENID)
-!define FA_OPENID(alias,label) ENTITY(rectangle,black,openid,label,alias,FA OPENID)
-!define FA_OPENID(alias,label,shape) ENTITY(shape,black,openid,label,alias,FA OPENID)
+!define FA_OPENID(_alias) ENTITY(rectangle,black,openid,_alias,FA OPENID)
+!define FA_OPENID(_alias,_label) ENTITY(rectangle,black,openid,_label,_alias,FA OPENID)
+!define FA_OPENID(_alias,_label,_shape) ENTITY(_shape,black,openid,_label,_alias,FA OPENID)
+!define FA_OPENID(_alias,_label,_shape,_color) ENTITY(_shape,_color,openid,_label,_alias,FA OPENID)
 skinparam folderBackgroundColor<<FA OPENID>> White
 @enduml

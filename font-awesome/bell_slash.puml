@@ -51,8 +51,9 @@ sprite $bell_slash [48x48/16] {
 }
 
 
-!define FA_BELL_SLASH(alias) ENTITY(rectangle,black,bell_slash,alias,FA BELL_SLASH)
-!define FA_BELL_SLASH(alias,label) ENTITY(rectangle,black,bell_slash,label,alias,FA BELL_SLASH)
-!define FA_BELL_SLASH(alias,label,shape) ENTITY(shape,black,bell_slash,label,alias,FA BELL_SLASH)
+!define FA_BELL_SLASH(_alias) ENTITY(rectangle,black,bell_slash,_alias,FA BELL_SLASH)
+!define FA_BELL_SLASH(_alias,_label) ENTITY(rectangle,black,bell_slash,_label,_alias,FA BELL_SLASH)
+!define FA_BELL_SLASH(_alias,_label,_shape) ENTITY(_shape,black,bell_slash,_label,_alias,FA BELL_SLASH)
+!define FA_BELL_SLASH(_alias,_label,_shape,_color) ENTITY(_shape,_color,bell_slash,_label,_alias,FA BELL_SLASH)
 skinparam folderBackgroundColor<<FA BELL_SLASH>> White
 @enduml

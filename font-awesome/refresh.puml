@@ -51,8 +51,9 @@ sprite $refresh [48x48/16] {
 }
 
 
-!define FA_REFRESH(alias) ENTITY(rectangle,black,refresh,alias,FA REFRESH)
-!define FA_REFRESH(alias,label) ENTITY(rectangle,black,refresh,label,alias,FA REFRESH)
-!define FA_REFRESH(alias,label,shape) ENTITY(shape,black,refresh,label,alias,FA REFRESH)
+!define FA_REFRESH(_alias) ENTITY(rectangle,black,refresh,_alias,FA REFRESH)
+!define FA_REFRESH(_alias,_label) ENTITY(rectangle,black,refresh,_label,_alias,FA REFRESH)
+!define FA_REFRESH(_alias,_label,_shape) ENTITY(_shape,black,refresh,_label,_alias,FA REFRESH)
+!define FA_REFRESH(_alias,_label,_shape,_color) ENTITY(_shape,_color,refresh,_label,_alias,FA REFRESH)
 skinparam folderBackgroundColor<<FA REFRESH>> White
 @enduml

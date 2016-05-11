@@ -51,8 +51,9 @@ sprite $thumb_tack [48x48/16] {
 }
 
 
-!define FA_THUMB_TACK(alias) ENTITY(rectangle,black,thumb_tack,alias,FA THUMB_TACK)
-!define FA_THUMB_TACK(alias,label) ENTITY(rectangle,black,thumb_tack,label,alias,FA THUMB_TACK)
-!define FA_THUMB_TACK(alias,label,shape) ENTITY(shape,black,thumb_tack,label,alias,FA THUMB_TACK)
+!define FA_THUMB_TACK(_alias) ENTITY(rectangle,black,thumb_tack,_alias,FA THUMB_TACK)
+!define FA_THUMB_TACK(_alias,_label) ENTITY(rectangle,black,thumb_tack,_label,_alias,FA THUMB_TACK)
+!define FA_THUMB_TACK(_alias,_label,_shape) ENTITY(_shape,black,thumb_tack,_label,_alias,FA THUMB_TACK)
+!define FA_THUMB_TACK(_alias,_label,_shape,_color) ENTITY(_shape,_color,thumb_tack,_label,_alias,FA THUMB_TACK)
 skinparam folderBackgroundColor<<FA THUMB_TACK>> White
 @enduml

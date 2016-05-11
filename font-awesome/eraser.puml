@@ -51,8 +51,9 @@ sprite $eraser [48x48/16] {
 }
 
 
-!define FA_ERASER(alias) ENTITY(rectangle,black,eraser,alias,FA ERASER)
-!define FA_ERASER(alias,label) ENTITY(rectangle,black,eraser,label,alias,FA ERASER)
-!define FA_ERASER(alias,label,shape) ENTITY(shape,black,eraser,label,alias,FA ERASER)
+!define FA_ERASER(_alias) ENTITY(rectangle,black,eraser,_alias,FA ERASER)
+!define FA_ERASER(_alias,_label) ENTITY(rectangle,black,eraser,_label,_alias,FA ERASER)
+!define FA_ERASER(_alias,_label,_shape) ENTITY(_shape,black,eraser,_label,_alias,FA ERASER)
+!define FA_ERASER(_alias,_label,_shape,_color) ENTITY(_shape,_color,eraser,_label,_alias,FA ERASER)
 skinparam folderBackgroundColor<<FA ERASER>> White
 @enduml

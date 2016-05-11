@@ -51,8 +51,9 @@ sprite $automobile [48x48/16] {
 }
 
 
-!define FA_AUTOMOBILE(alias) ENTITY(rectangle,black,automobile,alias,FA AUTOMOBILE)
-!define FA_AUTOMOBILE(alias,label) ENTITY(rectangle,black,automobile,label,alias,FA AUTOMOBILE)
-!define FA_AUTOMOBILE(alias,label,shape) ENTITY(shape,black,automobile,label,alias,FA AUTOMOBILE)
+!define FA_AUTOMOBILE(_alias) ENTITY(rectangle,black,automobile,_alias,FA AUTOMOBILE)
+!define FA_AUTOMOBILE(_alias,_label) ENTITY(rectangle,black,automobile,_label,_alias,FA AUTOMOBILE)
+!define FA_AUTOMOBILE(_alias,_label,_shape) ENTITY(_shape,black,automobile,_label,_alias,FA AUTOMOBILE)
+!define FA_AUTOMOBILE(_alias,_label,_shape,_color) ENTITY(_shape,_color,automobile,_label,_alias,FA AUTOMOBILE)
 skinparam folderBackgroundColor<<FA AUTOMOBILE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $medium [48x48/16] {
 }
 
 
-!define FA_MEDIUM(alias) ENTITY(rectangle,black,medium,alias,FA MEDIUM)
-!define FA_MEDIUM(alias,label) ENTITY(rectangle,black,medium,label,alias,FA MEDIUM)
-!define FA_MEDIUM(alias,label,shape) ENTITY(shape,black,medium,label,alias,FA MEDIUM)
+!define FA_MEDIUM(_alias) ENTITY(rectangle,black,medium,_alias,FA MEDIUM)
+!define FA_MEDIUM(_alias,_label) ENTITY(rectangle,black,medium,_label,_alias,FA MEDIUM)
+!define FA_MEDIUM(_alias,_label,_shape) ENTITY(_shape,black,medium,_label,_alias,FA MEDIUM)
+!define FA_MEDIUM(_alias,_label,_shape,_color) ENTITY(_shape,_color,medium,_label,_alias,FA MEDIUM)
 skinparam folderBackgroundColor<<FA MEDIUM>> White
 @enduml

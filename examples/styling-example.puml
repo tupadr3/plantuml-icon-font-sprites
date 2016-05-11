@@ -1,0 +1,24 @@
+@startuml
+
+!include ../common.puml
+!include ../font-awesome/server.puml
+!include ../font-awesome/database.puml
+
+title Styling example
+
+FA_SERVER(web1,WEB1) #Green
+FA_SERVER(web2,WEB1) #Yellow
+FA_SERVER(web3,WEB1) #Blue
+FA_SERVER(web4,WEB1) #YellowGreen
+
+FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
+FA_DATABASE(db2,SPARE,database) #Red
+
+db1 <--> db2
+
+web1 <--> db1
+web2 <--> db1
+web3 <--> db1
+web4 <--> db1
+
+@enduml

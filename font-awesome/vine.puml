@@ -51,8 +51,9 @@ sprite $vine [48x48/16] {
 }
 
 
-!define FA_VINE(alias) ENTITY(rectangle,black,vine,alias,FA VINE)
-!define FA_VINE(alias,label) ENTITY(rectangle,black,vine,label,alias,FA VINE)
-!define FA_VINE(alias,label,shape) ENTITY(shape,black,vine,label,alias,FA VINE)
+!define FA_VINE(_alias) ENTITY(rectangle,black,vine,_alias,FA VINE)
+!define FA_VINE(_alias,_label) ENTITY(rectangle,black,vine,_label,_alias,FA VINE)
+!define FA_VINE(_alias,_label,_shape) ENTITY(_shape,black,vine,_label,_alias,FA VINE)
+!define FA_VINE(_alias,_label,_shape,_color) ENTITY(_shape,_color,vine,_label,_alias,FA VINE)
 skinparam folderBackgroundColor<<FA VINE>> White
 @enduml

@@ -35,8 +35,9 @@ C4284C98208408C84018A90C5D2
 }
 
 
-!define DEV_METEORFULL(alias) ENTITY(rectangle,black,meteorfull,alias,DEV METEORFULL)
-!define DEV_METEORFULL(alias,label) ENTITY(rectangle,black,meteorfull,label,alias,DEV METEORFULL)
-!define DEV_METEORFULL(alias,label,shape) ENTITY(shape,black,meteorfull,label,alias,DEV METEORFULL)
+!define DEV_METEORFULL(_alias) ENTITY(rectangle,black,meteorfull,_alias,DEV METEORFULL)
+!define DEV_METEORFULL(_alias,_label) ENTITY(rectangle,black,meteorfull,_label,_alias,DEV METEORFULL)
+!define DEV_METEORFULL(_alias,_label,_shape) ENTITY(_shape,black,meteorfull,_label,_alias,DEV METEORFULL)
+!define DEV_METEORFULL(_alias,_label,_shape,_color) ENTITY(_shape,_color,meteorfull,_label,_alias,DEV METEORFULL)
 skinparam folderBackgroundColor<<DEV METEORFULL>> White
 @enduml

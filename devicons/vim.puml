@@ -35,8 +35,9 @@ sprite $vim [34x32/16] {
 }
 
 
-!define DEV_VIM(alias) ENTITY(rectangle,black,vim,alias,DEV VIM)
-!define DEV_VIM(alias,label) ENTITY(rectangle,black,vim,label,alias,DEV VIM)
-!define DEV_VIM(alias,label,shape) ENTITY(shape,black,vim,label,alias,DEV VIM)
+!define DEV_VIM(_alias) ENTITY(rectangle,black,vim,_alias,DEV VIM)
+!define DEV_VIM(_alias,_label) ENTITY(rectangle,black,vim,_label,_alias,DEV VIM)
+!define DEV_VIM(_alias,_label,_shape) ENTITY(_shape,black,vim,_label,_alias,DEV VIM)
+!define DEV_VIM(_alias,_label,_shape,_color) ENTITY(_shape,_color,vim,_label,_alias,DEV VIM)
 skinparam folderBackgroundColor<<DEV VIM>> White
 @enduml

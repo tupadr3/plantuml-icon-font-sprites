@@ -51,8 +51,9 @@ sprite $cny [48x48/16] {
 }
 
 
-!define FA_CNY(alias) ENTITY(rectangle,black,cny,alias,FA CNY)
-!define FA_CNY(alias,label) ENTITY(rectangle,black,cny,label,alias,FA CNY)
-!define FA_CNY(alias,label,shape) ENTITY(shape,black,cny,label,alias,FA CNY)
+!define FA_CNY(_alias) ENTITY(rectangle,black,cny,_alias,FA CNY)
+!define FA_CNY(_alias,_label) ENTITY(rectangle,black,cny,_label,_alias,FA CNY)
+!define FA_CNY(_alias,_label,_shape) ENTITY(_shape,black,cny,_label,_alias,FA CNY)
+!define FA_CNY(_alias,_label,_shape,_color) ENTITY(_shape,_color,cny,_label,_alias,FA CNY)
 skinparam folderBackgroundColor<<FA CNY>> White
 @enduml

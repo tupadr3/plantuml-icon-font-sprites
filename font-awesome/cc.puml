@@ -51,8 +51,9 @@ sprite $cc [48x48/16] {
 }
 
 
-!define FA_CC(alias) ENTITY(rectangle,black,cc,alias,FA CC)
-!define FA_CC(alias,label) ENTITY(rectangle,black,cc,label,alias,FA CC)
-!define FA_CC(alias,label,shape) ENTITY(shape,black,cc,label,alias,FA CC)
+!define FA_CC(_alias) ENTITY(rectangle,black,cc,_alias,FA CC)
+!define FA_CC(_alias,_label) ENTITY(rectangle,black,cc,_label,_alias,FA CC)
+!define FA_CC(_alias,_label,_shape) ENTITY(_shape,black,cc,_label,_alias,FA CC)
+!define FA_CC(_alias,_label,_shape,_color) ENTITY(_shape,_color,cc,_label,_alias,FA CC)
 skinparam folderBackgroundColor<<FA CC>> White
 @enduml

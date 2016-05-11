@@ -51,8 +51,9 @@ sprite $rotate_right [48x48/16] {
 }
 
 
-!define FA_ROTATE_RIGHT(alias) ENTITY(rectangle,black,rotate_right,alias,FA ROTATE_RIGHT)
-!define FA_ROTATE_RIGHT(alias,label) ENTITY(rectangle,black,rotate_right,label,alias,FA ROTATE_RIGHT)
-!define FA_ROTATE_RIGHT(alias,label,shape) ENTITY(shape,black,rotate_right,label,alias,FA ROTATE_RIGHT)
+!define FA_ROTATE_RIGHT(_alias) ENTITY(rectangle,black,rotate_right,_alias,FA ROTATE_RIGHT)
+!define FA_ROTATE_RIGHT(_alias,_label) ENTITY(rectangle,black,rotate_right,_label,_alias,FA ROTATE_RIGHT)
+!define FA_ROTATE_RIGHT(_alias,_label,_shape) ENTITY(_shape,black,rotate_right,_label,_alias,FA ROTATE_RIGHT)
+!define FA_ROTATE_RIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,rotate_right,_label,_alias,FA ROTATE_RIGHT)
 skinparam folderBackgroundColor<<FA ROTATE_RIGHT>> White
 @enduml

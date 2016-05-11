@@ -51,8 +51,9 @@ sprite $star_half_full [48x48/16] {
 }
 
 
-!define FA_STAR_HALF_FULL(alias) ENTITY(rectangle,black,star_half_full,alias,FA STAR_HALF_FULL)
-!define FA_STAR_HALF_FULL(alias,label) ENTITY(rectangle,black,star_half_full,label,alias,FA STAR_HALF_FULL)
-!define FA_STAR_HALF_FULL(alias,label,shape) ENTITY(shape,black,star_half_full,label,alias,FA STAR_HALF_FULL)
+!define FA_STAR_HALF_FULL(_alias) ENTITY(rectangle,black,star_half_full,_alias,FA STAR_HALF_FULL)
+!define FA_STAR_HALF_FULL(_alias,_label) ENTITY(rectangle,black,star_half_full,_label,_alias,FA STAR_HALF_FULL)
+!define FA_STAR_HALF_FULL(_alias,_label,_shape) ENTITY(_shape,black,star_half_full,_label,_alias,FA STAR_HALF_FULL)
+!define FA_STAR_HALF_FULL(_alias,_label,_shape,_color) ENTITY(_shape,_color,star_half_full,_label,_alias,FA STAR_HALF_FULL)
 skinparam folderBackgroundColor<<FA STAR_HALF_FULL>> White
 @enduml

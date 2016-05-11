@@ -35,8 +35,9 @@ sprite $git_branch [32x32/16] {
 }
 
 
-!define DEV_GIT_BRANCH(alias) ENTITY(rectangle,black,git_branch,alias,DEV GIT_BRANCH)
-!define DEV_GIT_BRANCH(alias,label) ENTITY(rectangle,black,git_branch,label,alias,DEV GIT_BRANCH)
-!define DEV_GIT_BRANCH(alias,label,shape) ENTITY(shape,black,git_branch,label,alias,DEV GIT_BRANCH)
+!define DEV_GIT_BRANCH(_alias) ENTITY(rectangle,black,git_branch,_alias,DEV GIT_BRANCH)
+!define DEV_GIT_BRANCH(_alias,_label) ENTITY(rectangle,black,git_branch,_label,_alias,DEV GIT_BRANCH)
+!define DEV_GIT_BRANCH(_alias,_label,_shape) ENTITY(_shape,black,git_branch,_label,_alias,DEV GIT_BRANCH)
+!define DEV_GIT_BRANCH(_alias,_label,_shape,_color) ENTITY(_shape,_color,git_branch,_label,_alias,DEV GIT_BRANCH)
 skinparam folderBackgroundColor<<DEV GIT_BRANCH>> White
 @enduml

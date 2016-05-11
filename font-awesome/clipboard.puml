@@ -51,8 +51,9 @@ sprite $clipboard [48x48/16] {
 }
 
 
-!define FA_CLIPBOARD(alias) ENTITY(rectangle,black,clipboard,alias,FA CLIPBOARD)
-!define FA_CLIPBOARD(alias,label) ENTITY(rectangle,black,clipboard,label,alias,FA CLIPBOARD)
-!define FA_CLIPBOARD(alias,label,shape) ENTITY(shape,black,clipboard,label,alias,FA CLIPBOARD)
+!define FA_CLIPBOARD(_alias) ENTITY(rectangle,black,clipboard,_alias,FA CLIPBOARD)
+!define FA_CLIPBOARD(_alias,_label) ENTITY(rectangle,black,clipboard,_label,_alias,FA CLIPBOARD)
+!define FA_CLIPBOARD(_alias,_label,_shape) ENTITY(_shape,black,clipboard,_label,_alias,FA CLIPBOARD)
+!define FA_CLIPBOARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,clipboard,_label,_alias,FA CLIPBOARD)
 skinparam folderBackgroundColor<<FA CLIPBOARD>> White
 @enduml

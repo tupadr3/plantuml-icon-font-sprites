@@ -35,8 +35,9 @@ sprite $travis [32x32/16] {
 }
 
 
-!define DEV_TRAVIS(alias) ENTITY(rectangle,black,travis,alias,DEV TRAVIS)
-!define DEV_TRAVIS(alias,label) ENTITY(rectangle,black,travis,label,alias,DEV TRAVIS)
-!define DEV_TRAVIS(alias,label,shape) ENTITY(shape,black,travis,label,alias,DEV TRAVIS)
+!define DEV_TRAVIS(_alias) ENTITY(rectangle,black,travis,_alias,DEV TRAVIS)
+!define DEV_TRAVIS(_alias,_label) ENTITY(rectangle,black,travis,_label,_alias,DEV TRAVIS)
+!define DEV_TRAVIS(_alias,_label,_shape) ENTITY(_shape,black,travis,_label,_alias,DEV TRAVIS)
+!define DEV_TRAVIS(_alias,_label,_shape,_color) ENTITY(_shape,_color,travis,_label,_alias,DEV TRAVIS)
 skinparam folderBackgroundColor<<DEV TRAVIS>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $times [48x48/16] {
 }
 
 
-!define FA_TIMES(alias) ENTITY(rectangle,black,times,alias,FA TIMES)
-!define FA_TIMES(alias,label) ENTITY(rectangle,black,times,label,alias,FA TIMES)
-!define FA_TIMES(alias,label,shape) ENTITY(shape,black,times,label,alias,FA TIMES)
+!define FA_TIMES(_alias) ENTITY(rectangle,black,times,_alias,FA TIMES)
+!define FA_TIMES(_alias,_label) ENTITY(rectangle,black,times,_label,_alias,FA TIMES)
+!define FA_TIMES(_alias,_label,_shape) ENTITY(_shape,black,times,_label,_alias,FA TIMES)
+!define FA_TIMES(_alias,_label,_shape,_color) ENTITY(_shape,_color,times,_label,_alias,FA TIMES)
 skinparam folderBackgroundColor<<FA TIMES>> White
 @enduml

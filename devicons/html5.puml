@@ -35,8 +35,9 @@ sprite $html5 [32x32/16] {
 }
 
 
-!define DEV_HTML5(alias) ENTITY(rectangle,black,html5,alias,DEV HTML5)
-!define DEV_HTML5(alias,label) ENTITY(rectangle,black,html5,label,alias,DEV HTML5)
-!define DEV_HTML5(alias,label,shape) ENTITY(shape,black,html5,label,alias,DEV HTML5)
+!define DEV_HTML5(_alias) ENTITY(rectangle,black,html5,_alias,DEV HTML5)
+!define DEV_HTML5(_alias,_label) ENTITY(rectangle,black,html5,_label,_alias,DEV HTML5)
+!define DEV_HTML5(_alias,_label,_shape) ENTITY(_shape,black,html5,_label,_alias,DEV HTML5)
+!define DEV_HTML5(_alias,_label,_shape,_color) ENTITY(_shape,_color,html5,_label,_alias,DEV HTML5)
 skinparam folderBackgroundColor<<DEV HTML5>> White
 @enduml

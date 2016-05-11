@@ -51,8 +51,9 @@ sprite $edge [48x48/16] {
 }
 
 
-!define FA_EDGE(alias) ENTITY(rectangle,black,edge,alias,FA EDGE)
-!define FA_EDGE(alias,label) ENTITY(rectangle,black,edge,label,alias,FA EDGE)
-!define FA_EDGE(alias,label,shape) ENTITY(shape,black,edge,label,alias,FA EDGE)
+!define FA_EDGE(_alias) ENTITY(rectangle,black,edge,_alias,FA EDGE)
+!define FA_EDGE(_alias,_label) ENTITY(rectangle,black,edge,_label,_alias,FA EDGE)
+!define FA_EDGE(_alias,_label,_shape) ENTITY(_shape,black,edge,_label,_alias,FA EDGE)
+!define FA_EDGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,edge,_label,_alias,FA EDGE)
 skinparam folderBackgroundColor<<FA EDGE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $inr [48x48/16] {
 }
 
 
-!define FA_INR(alias) ENTITY(rectangle,black,inr,alias,FA INR)
-!define FA_INR(alias,label) ENTITY(rectangle,black,inr,label,alias,FA INR)
-!define FA_INR(alias,label,shape) ENTITY(shape,black,inr,label,alias,FA INR)
+!define FA_INR(_alias) ENTITY(rectangle,black,inr,_alias,FA INR)
+!define FA_INR(_alias,_label) ENTITY(rectangle,black,inr,_label,_alias,FA INR)
+!define FA_INR(_alias,_label,_shape) ENTITY(_shape,black,inr,_label,_alias,FA INR)
+!define FA_INR(_alias,_label,_shape,_color) ENTITY(_shape,_color,inr,_label,_alias,FA INR)
 skinparam folderBackgroundColor<<FA INR>> White
 @enduml

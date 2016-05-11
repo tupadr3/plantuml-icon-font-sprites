@@ -51,8 +51,9 @@ sprite $moon_o [48x48/16] {
 }
 
 
-!define FA_MOON_O(alias) ENTITY(rectangle,black,moon_o,alias,FA MOON_O)
-!define FA_MOON_O(alias,label) ENTITY(rectangle,black,moon_o,label,alias,FA MOON_O)
-!define FA_MOON_O(alias,label,shape) ENTITY(shape,black,moon_o,label,alias,FA MOON_O)
+!define FA_MOON_O(_alias) ENTITY(rectangle,black,moon_o,_alias,FA MOON_O)
+!define FA_MOON_O(_alias,_label) ENTITY(rectangle,black,moon_o,_label,_alias,FA MOON_O)
+!define FA_MOON_O(_alias,_label,_shape) ENTITY(_shape,black,moon_o,_label,_alias,FA MOON_O)
+!define FA_MOON_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,moon_o,_label,_alias,FA MOON_O)
 skinparam folderBackgroundColor<<FA MOON_O>> White
 @enduml

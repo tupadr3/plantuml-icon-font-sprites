@@ -35,8 +35,9 @@ sprite $mozilla [32x32/16] {
 }
 
 
-!define DEV_MOZILLA(alias) ENTITY(rectangle,black,mozilla,alias,DEV MOZILLA)
-!define DEV_MOZILLA(alias,label) ENTITY(rectangle,black,mozilla,label,alias,DEV MOZILLA)
-!define DEV_MOZILLA(alias,label,shape) ENTITY(shape,black,mozilla,label,alias,DEV MOZILLA)
+!define DEV_MOZILLA(_alias) ENTITY(rectangle,black,mozilla,_alias,DEV MOZILLA)
+!define DEV_MOZILLA(_alias,_label) ENTITY(rectangle,black,mozilla,_label,_alias,DEV MOZILLA)
+!define DEV_MOZILLA(_alias,_label,_shape) ENTITY(_shape,black,mozilla,_label,_alias,DEV MOZILLA)
+!define DEV_MOZILLA(_alias,_label,_shape,_color) ENTITY(_shape,_color,mozilla,_label,_alias,DEV MOZILLA)
 skinparam folderBackgroundColor<<DEV MOZILLA>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $android [48x48/16] {
 }
 
 
-!define FA_ANDROID(alias) ENTITY(rectangle,black,android,alias,FA ANDROID)
-!define FA_ANDROID(alias,label) ENTITY(rectangle,black,android,label,alias,FA ANDROID)
-!define FA_ANDROID(alias,label,shape) ENTITY(shape,black,android,label,alias,FA ANDROID)
+!define FA_ANDROID(_alias) ENTITY(rectangle,black,android,_alias,FA ANDROID)
+!define FA_ANDROID(_alias,_label) ENTITY(rectangle,black,android,_label,_alias,FA ANDROID)
+!define FA_ANDROID(_alias,_label,_shape) ENTITY(_shape,black,android,_label,_alias,FA ANDROID)
+!define FA_ANDROID(_alias,_label,_shape,_color) ENTITY(_shape,_color,android,_label,_alias,FA ANDROID)
 skinparam folderBackgroundColor<<FA ANDROID>> White
 @enduml

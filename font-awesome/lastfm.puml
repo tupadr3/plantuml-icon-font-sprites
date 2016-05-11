@@ -51,8 +51,9 @@ sprite $lastfm [48x48/16] {
 }
 
 
-!define FA_LASTFM(alias) ENTITY(rectangle,black,lastfm,alias,FA LASTFM)
-!define FA_LASTFM(alias,label) ENTITY(rectangle,black,lastfm,label,alias,FA LASTFM)
-!define FA_LASTFM(alias,label,shape) ENTITY(shape,black,lastfm,label,alias,FA LASTFM)
+!define FA_LASTFM(_alias) ENTITY(rectangle,black,lastfm,_alias,FA LASTFM)
+!define FA_LASTFM(_alias,_label) ENTITY(rectangle,black,lastfm,_label,_alias,FA LASTFM)
+!define FA_LASTFM(_alias,_label,_shape) ENTITY(_shape,black,lastfm,_label,_alias,FA LASTFM)
+!define FA_LASTFM(_alias,_label,_shape,_color) ENTITY(_shape,_color,lastfm,_label,_alias,FA LASTFM)
 skinparam folderBackgroundColor<<FA LASTFM>> White
 @enduml

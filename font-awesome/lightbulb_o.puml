@@ -51,8 +51,9 @@ sprite $lightbulb_o [48x48/16] {
 }
 
 
-!define FA_LIGHTBULB_O(alias) ENTITY(rectangle,black,lightbulb_o,alias,FA LIGHTBULB_O)
-!define FA_LIGHTBULB_O(alias,label) ENTITY(rectangle,black,lightbulb_o,label,alias,FA LIGHTBULB_O)
-!define FA_LIGHTBULB_O(alias,label,shape) ENTITY(shape,black,lightbulb_o,label,alias,FA LIGHTBULB_O)
+!define FA_LIGHTBULB_O(_alias) ENTITY(rectangle,black,lightbulb_o,_alias,FA LIGHTBULB_O)
+!define FA_LIGHTBULB_O(_alias,_label) ENTITY(rectangle,black,lightbulb_o,_label,_alias,FA LIGHTBULB_O)
+!define FA_LIGHTBULB_O(_alias,_label,_shape) ENTITY(_shape,black,lightbulb_o,_label,_alias,FA LIGHTBULB_O)
+!define FA_LIGHTBULB_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,lightbulb_o,_label,_alias,FA LIGHTBULB_O)
 skinparam folderBackgroundColor<<FA LIGHTBULB_O>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $extjs [32x32/16] {
 }
 
 
-!define DEV_EXTJS(alias) ENTITY(rectangle,black,extjs,alias,DEV EXTJS)
-!define DEV_EXTJS(alias,label) ENTITY(rectangle,black,extjs,label,alias,DEV EXTJS)
-!define DEV_EXTJS(alias,label,shape) ENTITY(shape,black,extjs,label,alias,DEV EXTJS)
+!define DEV_EXTJS(_alias) ENTITY(rectangle,black,extjs,_alias,DEV EXTJS)
+!define DEV_EXTJS(_alias,_label) ENTITY(rectangle,black,extjs,_label,_alias,DEV EXTJS)
+!define DEV_EXTJS(_alias,_label,_shape) ENTITY(_shape,black,extjs,_label,_alias,DEV EXTJS)
+!define DEV_EXTJS(_alias,_label,_shape,_color) ENTITY(_shape,_color,extjs,_label,_alias,DEV EXTJS)
 skinparam folderBackgroundColor<<DEV EXTJS>> White
 @enduml

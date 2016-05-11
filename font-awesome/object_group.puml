@@ -51,8 +51,9 @@ sprite $object_group [48x48/16] {
 }
 
 
-!define FA_OBJECT_GROUP(alias) ENTITY(rectangle,black,object_group,alias,FA OBJECT_GROUP)
-!define FA_OBJECT_GROUP(alias,label) ENTITY(rectangle,black,object_group,label,alias,FA OBJECT_GROUP)
-!define FA_OBJECT_GROUP(alias,label,shape) ENTITY(shape,black,object_group,label,alias,FA OBJECT_GROUP)
+!define FA_OBJECT_GROUP(_alias) ENTITY(rectangle,black,object_group,_alias,FA OBJECT_GROUP)
+!define FA_OBJECT_GROUP(_alias,_label) ENTITY(rectangle,black,object_group,_label,_alias,FA OBJECT_GROUP)
+!define FA_OBJECT_GROUP(_alias,_label,_shape) ENTITY(_shape,black,object_group,_label,_alias,FA OBJECT_GROUP)
+!define FA_OBJECT_GROUP(_alias,_label,_shape,_color) ENTITY(_shape,_color,object_group,_label,_alias,FA OBJECT_GROUP)
 skinparam folderBackgroundColor<<FA OBJECT_GROUP>> White
 @enduml

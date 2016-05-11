@@ -51,8 +51,9 @@ sprite $paypal [48x48/16] {
 }
 
 
-!define FA_PAYPAL(alias) ENTITY(rectangle,black,paypal,alias,FA PAYPAL)
-!define FA_PAYPAL(alias,label) ENTITY(rectangle,black,paypal,label,alias,FA PAYPAL)
-!define FA_PAYPAL(alias,label,shape) ENTITY(shape,black,paypal,label,alias,FA PAYPAL)
+!define FA_PAYPAL(_alias) ENTITY(rectangle,black,paypal,_alias,FA PAYPAL)
+!define FA_PAYPAL(_alias,_label) ENTITY(rectangle,black,paypal,_label,_alias,FA PAYPAL)
+!define FA_PAYPAL(_alias,_label,_shape) ENTITY(_shape,black,paypal,_label,_alias,FA PAYPAL)
+!define FA_PAYPAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,paypal,_label,_alias,FA PAYPAL)
 skinparam folderBackgroundColor<<FA PAYPAL>> White
 @enduml

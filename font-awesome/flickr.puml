@@ -51,8 +51,9 @@ sprite $flickr [48x48/16] {
 }
 
 
-!define FA_FLICKR(alias) ENTITY(rectangle,black,flickr,alias,FA FLICKR)
-!define FA_FLICKR(alias,label) ENTITY(rectangle,black,flickr,label,alias,FA FLICKR)
-!define FA_FLICKR(alias,label,shape) ENTITY(shape,black,flickr,label,alias,FA FLICKR)
+!define FA_FLICKR(_alias) ENTITY(rectangle,black,flickr,_alias,FA FLICKR)
+!define FA_FLICKR(_alias,_label) ENTITY(rectangle,black,flickr,_label,_alias,FA FLICKR)
+!define FA_FLICKR(_alias,_label,_shape) ENTITY(_shape,black,flickr,_label,_alias,FA FLICKR)
+!define FA_FLICKR(_alias,_label,_shape,_color) ENTITY(_shape,_color,flickr,_label,_alias,FA FLICKR)
 skinparam folderBackgroundColor<<FA FLICKR>> White
 @enduml

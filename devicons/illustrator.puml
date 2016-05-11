@@ -35,8 +35,9 @@ sprite $illustrator [34x32/16] {
 }
 
 
-!define DEV_ILLUSTRATOR(alias) ENTITY(rectangle,black,illustrator,alias,DEV ILLUSTRATOR)
-!define DEV_ILLUSTRATOR(alias,label) ENTITY(rectangle,black,illustrator,label,alias,DEV ILLUSTRATOR)
-!define DEV_ILLUSTRATOR(alias,label,shape) ENTITY(shape,black,illustrator,label,alias,DEV ILLUSTRATOR)
+!define DEV_ILLUSTRATOR(_alias) ENTITY(rectangle,black,illustrator,_alias,DEV ILLUSTRATOR)
+!define DEV_ILLUSTRATOR(_alias,_label) ENTITY(rectangle,black,illustrator,_label,_alias,DEV ILLUSTRATOR)
+!define DEV_ILLUSTRATOR(_alias,_label,_shape) ENTITY(_shape,black,illustrator,_label,_alias,DEV ILLUSTRATOR)
+!define DEV_ILLUSTRATOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,illustrator,_label,_alias,DEV ILLUSTRATOR)
 skinparam folderBackgroundColor<<DEV ILLUSTRATOR>> White
 @enduml

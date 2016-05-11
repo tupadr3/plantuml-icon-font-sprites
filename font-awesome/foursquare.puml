@@ -51,8 +51,9 @@ sprite $foursquare [48x48/16] {
 }
 
 
-!define FA_FOURSQUARE(alias) ENTITY(rectangle,black,foursquare,alias,FA FOURSQUARE)
-!define FA_FOURSQUARE(alias,label) ENTITY(rectangle,black,foursquare,label,alias,FA FOURSQUARE)
-!define FA_FOURSQUARE(alias,label,shape) ENTITY(shape,black,foursquare,label,alias,FA FOURSQUARE)
+!define FA_FOURSQUARE(_alias) ENTITY(rectangle,black,foursquare,_alias,FA FOURSQUARE)
+!define FA_FOURSQUARE(_alias,_label) ENTITY(rectangle,black,foursquare,_label,_alias,FA FOURSQUARE)
+!define FA_FOURSQUARE(_alias,_label,_shape) ENTITY(_shape,black,foursquare,_label,_alias,FA FOURSQUARE)
+!define FA_FOURSQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,foursquare,_label,_alias,FA FOURSQUARE)
 skinparam folderBackgroundColor<<FA FOURSQUARE>> White
 @enduml

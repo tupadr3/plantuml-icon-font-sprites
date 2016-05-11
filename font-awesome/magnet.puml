@@ -51,8 +51,9 @@ sprite $magnet [48x48/16] {
 }
 
 
-!define FA_MAGNET(alias) ENTITY(rectangle,black,magnet,alias,FA MAGNET)
-!define FA_MAGNET(alias,label) ENTITY(rectangle,black,magnet,label,alias,FA MAGNET)
-!define FA_MAGNET(alias,label,shape) ENTITY(shape,black,magnet,label,alias,FA MAGNET)
+!define FA_MAGNET(_alias) ENTITY(rectangle,black,magnet,_alias,FA MAGNET)
+!define FA_MAGNET(_alias,_label) ENTITY(rectangle,black,magnet,_label,_alias,FA MAGNET)
+!define FA_MAGNET(_alias,_label,_shape) ENTITY(_shape,black,magnet,_label,_alias,FA MAGNET)
+!define FA_MAGNET(_alias,_label,_shape,_color) ENTITY(_shape,_color,magnet,_label,_alias,FA MAGNET)
 skinparam folderBackgroundColor<<FA MAGNET>> White
 @enduml

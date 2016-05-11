@@ -51,8 +51,9 @@ sprite $share [48x48/16] {
 }
 
 
-!define FA_SHARE(alias) ENTITY(rectangle,black,share,alias,FA SHARE)
-!define FA_SHARE(alias,label) ENTITY(rectangle,black,share,label,alias,FA SHARE)
-!define FA_SHARE(alias,label,shape) ENTITY(shape,black,share,label,alias,FA SHARE)
+!define FA_SHARE(_alias) ENTITY(rectangle,black,share,_alias,FA SHARE)
+!define FA_SHARE(_alias,_label) ENTITY(rectangle,black,share,_label,_alias,FA SHARE)
+!define FA_SHARE(_alias,_label,_shape) ENTITY(_shape,black,share,_label,_alias,FA SHARE)
+!define FA_SHARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,share,_label,_alias,FA SHARE)
 skinparam folderBackgroundColor<<FA SHARE>> White
 @enduml

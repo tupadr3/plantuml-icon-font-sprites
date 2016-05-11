@@ -51,8 +51,9 @@ sprite $css3 [48x48/16] {
 }
 
 
-!define FA_CSS3(alias) ENTITY(rectangle,black,css3,alias,FA CSS3)
-!define FA_CSS3(alias,label) ENTITY(rectangle,black,css3,label,alias,FA CSS3)
-!define FA_CSS3(alias,label,shape) ENTITY(shape,black,css3,label,alias,FA CSS3)
+!define FA_CSS3(_alias) ENTITY(rectangle,black,css3,_alias,FA CSS3)
+!define FA_CSS3(_alias,_label) ENTITY(rectangle,black,css3,_label,_alias,FA CSS3)
+!define FA_CSS3(_alias,_label,_shape) ENTITY(_shape,black,css3,_label,_alias,FA CSS3)
+!define FA_CSS3(_alias,_label,_shape,_color) ENTITY(_shape,_color,css3,_label,_alias,FA CSS3)
 skinparam folderBackgroundColor<<FA CSS3>> White
 @enduml

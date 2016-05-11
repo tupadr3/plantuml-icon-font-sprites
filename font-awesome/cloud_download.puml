@@ -51,8 +51,9 @@ sprite $cloud_download [48x48/16] {
 }
 
 
-!define FA_CLOUD_DOWNLOAD(alias) ENTITY(rectangle,black,cloud_download,alias,FA CLOUD_DOWNLOAD)
-!define FA_CLOUD_DOWNLOAD(alias,label) ENTITY(rectangle,black,cloud_download,label,alias,FA CLOUD_DOWNLOAD)
-!define FA_CLOUD_DOWNLOAD(alias,label,shape) ENTITY(shape,black,cloud_download,label,alias,FA CLOUD_DOWNLOAD)
+!define FA_CLOUD_DOWNLOAD(_alias) ENTITY(rectangle,black,cloud_download,_alias,FA CLOUD_DOWNLOAD)
+!define FA_CLOUD_DOWNLOAD(_alias,_label) ENTITY(rectangle,black,cloud_download,_label,_alias,FA CLOUD_DOWNLOAD)
+!define FA_CLOUD_DOWNLOAD(_alias,_label,_shape) ENTITY(_shape,black,cloud_download,_label,_alias,FA CLOUD_DOWNLOAD)
+!define FA_CLOUD_DOWNLOAD(_alias,_label,_shape,_color) ENTITY(_shape,_color,cloud_download,_label,_alias,FA CLOUD_DOWNLOAD)
 skinparam folderBackgroundColor<<FA CLOUD_DOWNLOAD>> White
 @enduml

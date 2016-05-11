@@ -35,8 +35,9 @@ sprite $wordpress [32x32/16] {
 }
 
 
-!define DEV_WORDPRESS(alias) ENTITY(rectangle,black,wordpress,alias,DEV WORDPRESS)
-!define DEV_WORDPRESS(alias,label) ENTITY(rectangle,black,wordpress,label,alias,DEV WORDPRESS)
-!define DEV_WORDPRESS(alias,label,shape) ENTITY(shape,black,wordpress,label,alias,DEV WORDPRESS)
+!define DEV_WORDPRESS(_alias) ENTITY(rectangle,black,wordpress,_alias,DEV WORDPRESS)
+!define DEV_WORDPRESS(_alias,_label) ENTITY(rectangle,black,wordpress,_label,_alias,DEV WORDPRESS)
+!define DEV_WORDPRESS(_alias,_label,_shape) ENTITY(_shape,black,wordpress,_label,_alias,DEV WORDPRESS)
+!define DEV_WORDPRESS(_alias,_label,_shape,_color) ENTITY(_shape,_color,wordpress,_label,_alias,DEV WORDPRESS)
 skinparam folderBackgroundColor<<DEV WORDPRESS>> White
 @enduml

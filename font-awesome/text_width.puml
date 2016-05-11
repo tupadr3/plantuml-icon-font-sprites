@@ -51,8 +51,9 @@ sprite $text_width [48x48/16] {
 }
 
 
-!define FA_TEXT_WIDTH(alias) ENTITY(rectangle,black,text_width,alias,FA TEXT_WIDTH)
-!define FA_TEXT_WIDTH(alias,label) ENTITY(rectangle,black,text_width,label,alias,FA TEXT_WIDTH)
-!define FA_TEXT_WIDTH(alias,label,shape) ENTITY(shape,black,text_width,label,alias,FA TEXT_WIDTH)
+!define FA_TEXT_WIDTH(_alias) ENTITY(rectangle,black,text_width,_alias,FA TEXT_WIDTH)
+!define FA_TEXT_WIDTH(_alias,_label) ENTITY(rectangle,black,text_width,_label,_alias,FA TEXT_WIDTH)
+!define FA_TEXT_WIDTH(_alias,_label,_shape) ENTITY(_shape,black,text_width,_label,_alias,FA TEXT_WIDTH)
+!define FA_TEXT_WIDTH(_alias,_label,_shape,_color) ENTITY(_shape,_color,text_width,_label,_alias,FA TEXT_WIDTH)
 skinparam folderBackgroundColor<<FA TEXT_WIDTH>> White
 @enduml

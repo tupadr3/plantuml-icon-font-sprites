@@ -51,8 +51,9 @@ sprite $qq [48x48/16] {
 }
 
 
-!define FA_QQ(alias) ENTITY(rectangle,black,qq,alias,FA QQ)
-!define FA_QQ(alias,label) ENTITY(rectangle,black,qq,label,alias,FA QQ)
-!define FA_QQ(alias,label,shape) ENTITY(shape,black,qq,label,alias,FA QQ)
+!define FA_QQ(_alias) ENTITY(rectangle,black,qq,_alias,FA QQ)
+!define FA_QQ(_alias,_label) ENTITY(rectangle,black,qq,_label,_alias,FA QQ)
+!define FA_QQ(_alias,_label,_shape) ENTITY(_shape,black,qq,_label,_alias,FA QQ)
+!define FA_QQ(_alias,_label,_shape,_color) ENTITY(_shape,_color,qq,_label,_alias,FA QQ)
 skinparam folderBackgroundColor<<FA QQ>> White
 @enduml

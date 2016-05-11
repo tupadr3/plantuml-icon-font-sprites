@@ -51,8 +51,9 @@ sprite $slack [48x48/16] {
 }
 
 
-!define FA_SLACK(alias) ENTITY(rectangle,black,slack,alias,FA SLACK)
-!define FA_SLACK(alias,label) ENTITY(rectangle,black,slack,label,alias,FA SLACK)
-!define FA_SLACK(alias,label,shape) ENTITY(shape,black,slack,label,alias,FA SLACK)
+!define FA_SLACK(_alias) ENTITY(rectangle,black,slack,_alias,FA SLACK)
+!define FA_SLACK(_alias,_label) ENTITY(rectangle,black,slack,_label,_alias,FA SLACK)
+!define FA_SLACK(_alias,_label,_shape) ENTITY(_shape,black,slack,_label,_alias,FA SLACK)
+!define FA_SLACK(_alias,_label,_shape,_color) ENTITY(_shape,_color,slack,_label,_alias,FA SLACK)
 skinparam folderBackgroundColor<<FA SLACK>> White
 @enduml

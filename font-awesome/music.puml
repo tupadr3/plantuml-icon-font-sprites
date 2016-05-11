@@ -51,8 +51,9 @@ sprite $music [48x48/16] {
 }
 
 
-!define FA_MUSIC(alias) ENTITY(rectangle,black,music,alias,FA MUSIC)
-!define FA_MUSIC(alias,label) ENTITY(rectangle,black,music,label,alias,FA MUSIC)
-!define FA_MUSIC(alias,label,shape) ENTITY(shape,black,music,label,alias,FA MUSIC)
+!define FA_MUSIC(_alias) ENTITY(rectangle,black,music,_alias,FA MUSIC)
+!define FA_MUSIC(_alias,_label) ENTITY(rectangle,black,music,_label,_alias,FA MUSIC)
+!define FA_MUSIC(_alias,_label,_shape) ENTITY(_shape,black,music,_label,_alias,FA MUSIC)
+!define FA_MUSIC(_alias,_label,_shape,_color) ENTITY(_shape,_color,music,_label,_alias,FA MUSIC)
 skinparam folderBackgroundColor<<FA MUSIC>> White
 @enduml

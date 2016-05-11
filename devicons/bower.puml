@@ -35,8 +35,9 @@ sprite $bower [32x32/16] {
 }
 
 
-!define DEV_BOWER(alias) ENTITY(rectangle,black,bower,alias,DEV BOWER)
-!define DEV_BOWER(alias,label) ENTITY(rectangle,black,bower,label,alias,DEV BOWER)
-!define DEV_BOWER(alias,label,shape) ENTITY(shape,black,bower,label,alias,DEV BOWER)
+!define DEV_BOWER(_alias) ENTITY(rectangle,black,bower,_alias,DEV BOWER)
+!define DEV_BOWER(_alias,_label) ENTITY(rectangle,black,bower,_label,_alias,DEV BOWER)
+!define DEV_BOWER(_alias,_label,_shape) ENTITY(_shape,black,bower,_label,_alias,DEV BOWER)
+!define DEV_BOWER(_alias,_label,_shape,_color) ENTITY(_shape,_color,bower,_label,_alias,DEV BOWER)
 skinparam folderBackgroundColor<<DEV BOWER>> White
 @enduml

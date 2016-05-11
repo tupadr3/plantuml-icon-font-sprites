@@ -51,8 +51,9 @@ sprite $taxi [48x48/16] {
 }
 
 
-!define FA_TAXI(alias) ENTITY(rectangle,black,taxi,alias,FA TAXI)
-!define FA_TAXI(alias,label) ENTITY(rectangle,black,taxi,label,alias,FA TAXI)
-!define FA_TAXI(alias,label,shape) ENTITY(shape,black,taxi,label,alias,FA TAXI)
+!define FA_TAXI(_alias) ENTITY(rectangle,black,taxi,_alias,FA TAXI)
+!define FA_TAXI(_alias,_label) ENTITY(rectangle,black,taxi,_label,_alias,FA TAXI)
+!define FA_TAXI(_alias,_label,_shape) ENTITY(_shape,black,taxi,_label,_alias,FA TAXI)
+!define FA_TAXI(_alias,_label,_shape,_color) ENTITY(_shape,_color,taxi,_label,_alias,FA TAXI)
 skinparam folderBackgroundColor<<FA TAXI>> White
 @enduml

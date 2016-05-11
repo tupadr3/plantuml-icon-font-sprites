@@ -51,8 +51,9 @@ sprite $bed [48x48/16] {
 }
 
 
-!define FA_BED(alias) ENTITY(rectangle,black,bed,alias,FA BED)
-!define FA_BED(alias,label) ENTITY(rectangle,black,bed,label,alias,FA BED)
-!define FA_BED(alias,label,shape) ENTITY(shape,black,bed,label,alias,FA BED)
+!define FA_BED(_alias) ENTITY(rectangle,black,bed,_alias,FA BED)
+!define FA_BED(_alias,_label) ENTITY(rectangle,black,bed,_label,_alias,FA BED)
+!define FA_BED(_alias,_label,_shape) ENTITY(_shape,black,bed,_label,_alias,FA BED)
+!define FA_BED(_alias,_label,_shape,_color) ENTITY(_shape,_color,bed,_label,_alias,FA BED)
 skinparam folderBackgroundColor<<FA BED>> White
 @enduml

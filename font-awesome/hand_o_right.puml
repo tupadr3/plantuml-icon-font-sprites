@@ -51,8 +51,9 @@ sprite $hand_o_right [48x48/16] {
 }
 
 
-!define FA_HAND_O_RIGHT(alias) ENTITY(rectangle,black,hand_o_right,alias,FA HAND_O_RIGHT)
-!define FA_HAND_O_RIGHT(alias,label) ENTITY(rectangle,black,hand_o_right,label,alias,FA HAND_O_RIGHT)
-!define FA_HAND_O_RIGHT(alias,label,shape) ENTITY(shape,black,hand_o_right,label,alias,FA HAND_O_RIGHT)
+!define FA_HAND_O_RIGHT(_alias) ENTITY(rectangle,black,hand_o_right,_alias,FA HAND_O_RIGHT)
+!define FA_HAND_O_RIGHT(_alias,_label) ENTITY(rectangle,black,hand_o_right,_label,_alias,FA HAND_O_RIGHT)
+!define FA_HAND_O_RIGHT(_alias,_label,_shape) ENTITY(_shape,black,hand_o_right,_label,_alias,FA HAND_O_RIGHT)
+!define FA_HAND_O_RIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,hand_o_right,_label,_alias,FA HAND_O_RIGHT)
 skinparam folderBackgroundColor<<FA HAND_O_RIGHT>> White
 @enduml

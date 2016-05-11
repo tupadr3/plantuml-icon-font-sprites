@@ -35,8 +35,9 @@ sprite $codeigniter [32x32/16] {
 }
 
 
-!define DEV_CODEIGNITER(alias) ENTITY(rectangle,black,codeigniter,alias,DEV CODEIGNITER)
-!define DEV_CODEIGNITER(alias,label) ENTITY(rectangle,black,codeigniter,label,alias,DEV CODEIGNITER)
-!define DEV_CODEIGNITER(alias,label,shape) ENTITY(shape,black,codeigniter,label,alias,DEV CODEIGNITER)
+!define DEV_CODEIGNITER(_alias) ENTITY(rectangle,black,codeigniter,_alias,DEV CODEIGNITER)
+!define DEV_CODEIGNITER(_alias,_label) ENTITY(rectangle,black,codeigniter,_label,_alias,DEV CODEIGNITER)
+!define DEV_CODEIGNITER(_alias,_label,_shape) ENTITY(_shape,black,codeigniter,_label,_alias,DEV CODEIGNITER)
+!define DEV_CODEIGNITER(_alias,_label,_shape,_color) ENTITY(_shape,_color,codeigniter,_label,_alias,DEV CODEIGNITER)
 skinparam folderBackgroundColor<<DEV CODEIGNITER>> White
 @enduml

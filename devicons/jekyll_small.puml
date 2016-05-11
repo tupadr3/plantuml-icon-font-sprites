@@ -35,8 +35,9 @@ sprite $jekyll_small [32x32/16] {
 }
 
 
-!define DEV_JEKYLL_SMALL(alias) ENTITY(rectangle,black,jekyll_small,alias,DEV JEKYLL_SMALL)
-!define DEV_JEKYLL_SMALL(alias,label) ENTITY(rectangle,black,jekyll_small,label,alias,DEV JEKYLL_SMALL)
-!define DEV_JEKYLL_SMALL(alias,label,shape) ENTITY(shape,black,jekyll_small,label,alias,DEV JEKYLL_SMALL)
+!define DEV_JEKYLL_SMALL(_alias) ENTITY(rectangle,black,jekyll_small,_alias,DEV JEKYLL_SMALL)
+!define DEV_JEKYLL_SMALL(_alias,_label) ENTITY(rectangle,black,jekyll_small,_label,_alias,DEV JEKYLL_SMALL)
+!define DEV_JEKYLL_SMALL(_alias,_label,_shape) ENTITY(_shape,black,jekyll_small,_label,_alias,DEV JEKYLL_SMALL)
+!define DEV_JEKYLL_SMALL(_alias,_label,_shape,_color) ENTITY(_shape,_color,jekyll_small,_label,_alias,DEV JEKYLL_SMALL)
 skinparam folderBackgroundColor<<DEV JEKYLL_SMALL>> White
 @enduml

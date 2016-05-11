@@ -51,8 +51,9 @@ sprite $tasks [48x48/16] {
 }
 
 
-!define FA_TASKS(alias) ENTITY(rectangle,black,tasks,alias,FA TASKS)
-!define FA_TASKS(alias,label) ENTITY(rectangle,black,tasks,label,alias,FA TASKS)
-!define FA_TASKS(alias,label,shape) ENTITY(shape,black,tasks,label,alias,FA TASKS)
+!define FA_TASKS(_alias) ENTITY(rectangle,black,tasks,_alias,FA TASKS)
+!define FA_TASKS(_alias,_label) ENTITY(rectangle,black,tasks,_label,_alias,FA TASKS)
+!define FA_TASKS(_alias,_label,_shape) ENTITY(_shape,black,tasks,_label,_alias,FA TASKS)
+!define FA_TASKS(_alias,_label,_shape,_color) ENTITY(_shape,_color,tasks,_label,_alias,FA TASKS)
 skinparam folderBackgroundColor<<FA TASKS>> White
 @enduml

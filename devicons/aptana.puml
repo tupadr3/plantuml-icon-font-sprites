@@ -35,8 +35,9 @@ sprite $aptana [32x32/16] {
 }
 
 
-!define DEV_APTANA(alias) ENTITY(rectangle,black,aptana,alias,DEV APTANA)
-!define DEV_APTANA(alias,label) ENTITY(rectangle,black,aptana,label,alias,DEV APTANA)
-!define DEV_APTANA(alias,label,shape) ENTITY(shape,black,aptana,label,alias,DEV APTANA)
+!define DEV_APTANA(_alias) ENTITY(rectangle,black,aptana,_alias,DEV APTANA)
+!define DEV_APTANA(_alias,_label) ENTITY(rectangle,black,aptana,_label,_alias,DEV APTANA)
+!define DEV_APTANA(_alias,_label,_shape) ENTITY(_shape,black,aptana,_label,_alias,DEV APTANA)
+!define DEV_APTANA(_alias,_label,_shape,_color) ENTITY(_shape,_color,aptana,_label,_alias,DEV APTANA)
 skinparam folderBackgroundColor<<DEV APTANA>> White
 @enduml

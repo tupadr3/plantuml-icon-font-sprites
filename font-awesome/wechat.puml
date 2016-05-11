@@ -51,8 +51,9 @@ sprite $wechat [48x48/16] {
 }
 
 
-!define FA_WECHAT(alias) ENTITY(rectangle,black,wechat,alias,FA WECHAT)
-!define FA_WECHAT(alias,label) ENTITY(rectangle,black,wechat,label,alias,FA WECHAT)
-!define FA_WECHAT(alias,label,shape) ENTITY(shape,black,wechat,label,alias,FA WECHAT)
+!define FA_WECHAT(_alias) ENTITY(rectangle,black,wechat,_alias,FA WECHAT)
+!define FA_WECHAT(_alias,_label) ENTITY(rectangle,black,wechat,_label,_alias,FA WECHAT)
+!define FA_WECHAT(_alias,_label,_shape) ENTITY(_shape,black,wechat,_label,_alias,FA WECHAT)
+!define FA_WECHAT(_alias,_label,_shape,_color) ENTITY(_shape,_color,wechat,_label,_alias,FA WECHAT)
 skinparam folderBackgroundColor<<FA WECHAT>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $subway [48x48/16] {
 }
 
 
-!define FA_SUBWAY(alias) ENTITY(rectangle,black,subway,alias,FA SUBWAY)
-!define FA_SUBWAY(alias,label) ENTITY(rectangle,black,subway,label,alias,FA SUBWAY)
-!define FA_SUBWAY(alias,label,shape) ENTITY(shape,black,subway,label,alias,FA SUBWAY)
+!define FA_SUBWAY(_alias) ENTITY(rectangle,black,subway,_alias,FA SUBWAY)
+!define FA_SUBWAY(_alias,_label) ENTITY(rectangle,black,subway,_label,_alias,FA SUBWAY)
+!define FA_SUBWAY(_alias,_label,_shape) ENTITY(_shape,black,subway,_label,_alias,FA SUBWAY)
+!define FA_SUBWAY(_alias,_label,_shape,_color) ENTITY(_shape,_color,subway,_label,_alias,FA SUBWAY)
 skinparam folderBackgroundColor<<FA SUBWAY>> White
 @enduml

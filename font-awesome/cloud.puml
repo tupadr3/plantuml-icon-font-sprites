@@ -51,8 +51,9 @@ sprite $cloud [48x48/16] {
 }
 
 
-!define FA_CLOUD(alias) ENTITY(rectangle,black,cloud,alias,FA CLOUD)
-!define FA_CLOUD(alias,label) ENTITY(rectangle,black,cloud,label,alias,FA CLOUD)
-!define FA_CLOUD(alias,label,shape) ENTITY(shape,black,cloud,label,alias,FA CLOUD)
+!define FA_CLOUD(_alias) ENTITY(rectangle,black,cloud,_alias,FA CLOUD)
+!define FA_CLOUD(_alias,_label) ENTITY(rectangle,black,cloud,_label,_alias,FA CLOUD)
+!define FA_CLOUD(_alias,_label,_shape) ENTITY(_shape,black,cloud,_label,_alias,FA CLOUD)
+!define FA_CLOUD(_alias,_label,_shape,_color) ENTITY(_shape,_color,cloud,_label,_alias,FA CLOUD)
 skinparam folderBackgroundColor<<FA CLOUD>> White
 @enduml

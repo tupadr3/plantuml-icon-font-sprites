@@ -51,8 +51,9 @@ sprite $external_link [48x48/16] {
 }
 
 
-!define FA_EXTERNAL_LINK(alias) ENTITY(rectangle,black,external_link,alias,FA EXTERNAL_LINK)
-!define FA_EXTERNAL_LINK(alias,label) ENTITY(rectangle,black,external_link,label,alias,FA EXTERNAL_LINK)
-!define FA_EXTERNAL_LINK(alias,label,shape) ENTITY(shape,black,external_link,label,alias,FA EXTERNAL_LINK)
+!define FA_EXTERNAL_LINK(_alias) ENTITY(rectangle,black,external_link,_alias,FA EXTERNAL_LINK)
+!define FA_EXTERNAL_LINK(_alias,_label) ENTITY(rectangle,black,external_link,_label,_alias,FA EXTERNAL_LINK)
+!define FA_EXTERNAL_LINK(_alias,_label,_shape) ENTITY(_shape,black,external_link,_label,_alias,FA EXTERNAL_LINK)
+!define FA_EXTERNAL_LINK(_alias,_label,_shape,_color) ENTITY(_shape,_color,external_link,_label,_alias,FA EXTERNAL_LINK)
 skinparam folderBackgroundColor<<FA EXTERNAL_LINK>> White
 @enduml

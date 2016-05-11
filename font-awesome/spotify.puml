@@ -51,8 +51,9 @@ sprite $spotify [48x48/16] {
 }
 
 
-!define FA_SPOTIFY(alias) ENTITY(rectangle,black,spotify,alias,FA SPOTIFY)
-!define FA_SPOTIFY(alias,label) ENTITY(rectangle,black,spotify,label,alias,FA SPOTIFY)
-!define FA_SPOTIFY(alias,label,shape) ENTITY(shape,black,spotify,label,alias,FA SPOTIFY)
+!define FA_SPOTIFY(_alias) ENTITY(rectangle,black,spotify,_alias,FA SPOTIFY)
+!define FA_SPOTIFY(_alias,_label) ENTITY(rectangle,black,spotify,_label,_alias,FA SPOTIFY)
+!define FA_SPOTIFY(_alias,_label,_shape) ENTITY(_shape,black,spotify,_label,_alias,FA SPOTIFY)
+!define FA_SPOTIFY(_alias,_label,_shape,_color) ENTITY(_shape,_color,spotify,_label,_alias,FA SPOTIFY)
 skinparam folderBackgroundColor<<FA SPOTIFY>> White
 @enduml

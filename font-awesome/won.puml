@@ -51,8 +51,9 @@ sprite $won [48x48/16] {
 }
 
 
-!define FA_WON(alias) ENTITY(rectangle,black,won,alias,FA WON)
-!define FA_WON(alias,label) ENTITY(rectangle,black,won,label,alias,FA WON)
-!define FA_WON(alias,label,shape) ENTITY(shape,black,won,label,alias,FA WON)
+!define FA_WON(_alias) ENTITY(rectangle,black,won,_alias,FA WON)
+!define FA_WON(_alias,_label) ENTITY(rectangle,black,won,_label,_alias,FA WON)
+!define FA_WON(_alias,_label,_shape) ENTITY(_shape,black,won,_label,_alias,FA WON)
+!define FA_WON(_alias,_label,_shape,_color) ENTITY(_shape,_color,won,_label,_alias,FA WON)
 skinparam folderBackgroundColor<<FA WON>> White
 @enduml

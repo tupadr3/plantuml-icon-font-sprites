@@ -51,8 +51,9 @@ sprite $rub [48x48/16] {
 }
 
 
-!define FA_RUB(alias) ENTITY(rectangle,black,rub,alias,FA RUB)
-!define FA_RUB(alias,label) ENTITY(rectangle,black,rub,label,alias,FA RUB)
-!define FA_RUB(alias,label,shape) ENTITY(shape,black,rub,label,alias,FA RUB)
+!define FA_RUB(_alias) ENTITY(rectangle,black,rub,_alias,FA RUB)
+!define FA_RUB(_alias,_label) ENTITY(rectangle,black,rub,_label,_alias,FA RUB)
+!define FA_RUB(_alias,_label,_shape) ENTITY(_shape,black,rub,_label,_alias,FA RUB)
+!define FA_RUB(_alias,_label,_shape,_color) ENTITY(_shape,_color,rub,_label,_alias,FA RUB)
 skinparam folderBackgroundColor<<FA RUB>> White
 @enduml

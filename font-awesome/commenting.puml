@@ -51,8 +51,9 @@ sprite $commenting [48x48/16] {
 }
 
 
-!define FA_COMMENTING(alias) ENTITY(rectangle,black,commenting,alias,FA COMMENTING)
-!define FA_COMMENTING(alias,label) ENTITY(rectangle,black,commenting,label,alias,FA COMMENTING)
-!define FA_COMMENTING(alias,label,shape) ENTITY(shape,black,commenting,label,alias,FA COMMENTING)
+!define FA_COMMENTING(_alias) ENTITY(rectangle,black,commenting,_alias,FA COMMENTING)
+!define FA_COMMENTING(_alias,_label) ENTITY(rectangle,black,commenting,_label,_alias,FA COMMENTING)
+!define FA_COMMENTING(_alias,_label,_shape) ENTITY(_shape,black,commenting,_label,_alias,FA COMMENTING)
+!define FA_COMMENTING(_alias,_label,_shape,_color) ENTITY(_shape,_color,commenting,_label,_alias,FA COMMENTING)
 skinparam folderBackgroundColor<<FA COMMENTING>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $newspaper_o [48x48/16] {
 }
 
 
-!define FA_NEWSPAPER_O(alias) ENTITY(rectangle,black,newspaper_o,alias,FA NEWSPAPER_O)
-!define FA_NEWSPAPER_O(alias,label) ENTITY(rectangle,black,newspaper_o,label,alias,FA NEWSPAPER_O)
-!define FA_NEWSPAPER_O(alias,label,shape) ENTITY(shape,black,newspaper_o,label,alias,FA NEWSPAPER_O)
+!define FA_NEWSPAPER_O(_alias) ENTITY(rectangle,black,newspaper_o,_alias,FA NEWSPAPER_O)
+!define FA_NEWSPAPER_O(_alias,_label) ENTITY(rectangle,black,newspaper_o,_label,_alias,FA NEWSPAPER_O)
+!define FA_NEWSPAPER_O(_alias,_label,_shape) ENTITY(_shape,black,newspaper_o,_label,_alias,FA NEWSPAPER_O)
+!define FA_NEWSPAPER_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,newspaper_o,_label,_alias,FA NEWSPAPER_O)
 skinparam folderBackgroundColor<<FA NEWSPAPER_O>> White
 @enduml

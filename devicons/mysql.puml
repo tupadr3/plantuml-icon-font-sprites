@@ -35,8 +35,9 @@ sprite $mysql [32x32/16] {
 }
 
 
-!define DEV_MYSQL(alias) ENTITY(rectangle,black,mysql,alias,DEV MYSQL)
-!define DEV_MYSQL(alias,label) ENTITY(rectangle,black,mysql,label,alias,DEV MYSQL)
-!define DEV_MYSQL(alias,label,shape) ENTITY(shape,black,mysql,label,alias,DEV MYSQL)
+!define DEV_MYSQL(_alias) ENTITY(rectangle,black,mysql,_alias,DEV MYSQL)
+!define DEV_MYSQL(_alias,_label) ENTITY(rectangle,black,mysql,_label,_alias,DEV MYSQL)
+!define DEV_MYSQL(_alias,_label,_shape) ENTITY(_shape,black,mysql,_label,_alias,DEV MYSQL)
+!define DEV_MYSQL(_alias,_label,_shape,_color) ENTITY(_shape,_color,mysql,_label,_alias,DEV MYSQL)
 skinparam folderBackgroundColor<<DEV MYSQL>> White
 @enduml

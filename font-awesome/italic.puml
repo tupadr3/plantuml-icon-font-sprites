@@ -51,8 +51,9 @@ sprite $italic [48x48/16] {
 }
 
 
-!define FA_ITALIC(alias) ENTITY(rectangle,black,italic,alias,FA ITALIC)
-!define FA_ITALIC(alias,label) ENTITY(rectangle,black,italic,label,alias,FA ITALIC)
-!define FA_ITALIC(alias,label,shape) ENTITY(shape,black,italic,label,alias,FA ITALIC)
+!define FA_ITALIC(_alias) ENTITY(rectangle,black,italic,_alias,FA ITALIC)
+!define FA_ITALIC(_alias,_label) ENTITY(rectangle,black,italic,_label,_alias,FA ITALIC)
+!define FA_ITALIC(_alias,_label,_shape) ENTITY(_shape,black,italic,_label,_alias,FA ITALIC)
+!define FA_ITALIC(_alias,_label,_shape,_color) ENTITY(_shape,_color,italic,_label,_alias,FA ITALIC)
 skinparam folderBackgroundColor<<FA ITALIC>> White
 @enduml

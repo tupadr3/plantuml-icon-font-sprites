@@ -51,8 +51,9 @@ sprite $bar_chart_o [48x48/16] {
 }
 
 
-!define FA_BAR_CHART_O(alias) ENTITY(rectangle,black,bar_chart_o,alias,FA BAR_CHART_O)
-!define FA_BAR_CHART_O(alias,label) ENTITY(rectangle,black,bar_chart_o,label,alias,FA BAR_CHART_O)
-!define FA_BAR_CHART_O(alias,label,shape) ENTITY(shape,black,bar_chart_o,label,alias,FA BAR_CHART_O)
+!define FA_BAR_CHART_O(_alias) ENTITY(rectangle,black,bar_chart_o,_alias,FA BAR_CHART_O)
+!define FA_BAR_CHART_O(_alias,_label) ENTITY(rectangle,black,bar_chart_o,_label,_alias,FA BAR_CHART_O)
+!define FA_BAR_CHART_O(_alias,_label,_shape) ENTITY(_shape,black,bar_chart_o,_label,_alias,FA BAR_CHART_O)
+!define FA_BAR_CHART_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,bar_chart_o,_label,_alias,FA BAR_CHART_O)
 skinparam folderBackgroundColor<<FA BAR_CHART_O>> White
 @enduml

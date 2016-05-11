@@ -51,8 +51,9 @@ sprite $calendar_minus_o [48x48/16] {
 }
 
 
-!define FA_CALENDAR_MINUS_O(alias) ENTITY(rectangle,black,calendar_minus_o,alias,FA CALENDAR_MINUS_O)
-!define FA_CALENDAR_MINUS_O(alias,label) ENTITY(rectangle,black,calendar_minus_o,label,alias,FA CALENDAR_MINUS_O)
-!define FA_CALENDAR_MINUS_O(alias,label,shape) ENTITY(shape,black,calendar_minus_o,label,alias,FA CALENDAR_MINUS_O)
+!define FA_CALENDAR_MINUS_O(_alias) ENTITY(rectangle,black,calendar_minus_o,_alias,FA CALENDAR_MINUS_O)
+!define FA_CALENDAR_MINUS_O(_alias,_label) ENTITY(rectangle,black,calendar_minus_o,_label,_alias,FA CALENDAR_MINUS_O)
+!define FA_CALENDAR_MINUS_O(_alias,_label,_shape) ENTITY(_shape,black,calendar_minus_o,_label,_alias,FA CALENDAR_MINUS_O)
+!define FA_CALENDAR_MINUS_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,calendar_minus_o,_label,_alias,FA CALENDAR_MINUS_O)
 skinparam folderBackgroundColor<<FA CALENDAR_MINUS_O>> White
 @enduml

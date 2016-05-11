@@ -51,8 +51,9 @@ sprite $flask [48x48/16] {
 }
 
 
-!define FA_FLASK(alias) ENTITY(rectangle,black,flask,alias,FA FLASK)
-!define FA_FLASK(alias,label) ENTITY(rectangle,black,flask,label,alias,FA FLASK)
-!define FA_FLASK(alias,label,shape) ENTITY(shape,black,flask,label,alias,FA FLASK)
+!define FA_FLASK(_alias) ENTITY(rectangle,black,flask,_alias,FA FLASK)
+!define FA_FLASK(_alias,_label) ENTITY(rectangle,black,flask,_label,_alias,FA FLASK)
+!define FA_FLASK(_alias,_label,_shape) ENTITY(_shape,black,flask,_label,_alias,FA FLASK)
+!define FA_FLASK(_alias,_label,_shape,_color) ENTITY(_shape,_color,flask,_label,_alias,FA FLASK)
 skinparam folderBackgroundColor<<FA FLASK>> White
 @enduml

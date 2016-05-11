@@ -51,8 +51,9 @@ sprite $rupee [48x48/16] {
 }
 
 
-!define FA_RUPEE(alias) ENTITY(rectangle,black,rupee,alias,FA RUPEE)
-!define FA_RUPEE(alias,label) ENTITY(rectangle,black,rupee,label,alias,FA RUPEE)
-!define FA_RUPEE(alias,label,shape) ENTITY(shape,black,rupee,label,alias,FA RUPEE)
+!define FA_RUPEE(_alias) ENTITY(rectangle,black,rupee,_alias,FA RUPEE)
+!define FA_RUPEE(_alias,_label) ENTITY(rectangle,black,rupee,_label,_alias,FA RUPEE)
+!define FA_RUPEE(_alias,_label,_shape) ENTITY(_shape,black,rupee,_label,_alias,FA RUPEE)
+!define FA_RUPEE(_alias,_label,_shape,_color) ENTITY(_shape,_color,rupee,_label,_alias,FA RUPEE)
 skinparam folderBackgroundColor<<FA RUPEE>> White
 @enduml

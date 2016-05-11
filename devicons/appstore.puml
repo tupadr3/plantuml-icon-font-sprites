@@ -35,8 +35,9 @@ sprite $appstore [32x32/16] {
 }
 
 
-!define DEV_APPSTORE(alias) ENTITY(rectangle,black,appstore,alias,DEV APPSTORE)
-!define DEV_APPSTORE(alias,label) ENTITY(rectangle,black,appstore,label,alias,DEV APPSTORE)
-!define DEV_APPSTORE(alias,label,shape) ENTITY(shape,black,appstore,label,alias,DEV APPSTORE)
+!define DEV_APPSTORE(_alias) ENTITY(rectangle,black,appstore,_alias,DEV APPSTORE)
+!define DEV_APPSTORE(_alias,_label) ENTITY(rectangle,black,appstore,_label,_alias,DEV APPSTORE)
+!define DEV_APPSTORE(_alias,_label,_shape) ENTITY(_shape,black,appstore,_label,_alias,DEV APPSTORE)
+!define DEV_APPSTORE(_alias,_label,_shape,_color) ENTITY(_shape,_color,appstore,_label,_alias,DEV APPSTORE)
 skinparam folderBackgroundColor<<DEV APPSTORE>> White
 @enduml

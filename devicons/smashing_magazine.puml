@@ -35,8 +35,9 @@ sprite $smashing_magazine [32x32/16] {
 }
 
 
-!define DEV_SMASHING_MAGAZINE(alias) ENTITY(rectangle,black,smashing_magazine,alias,DEV SMASHING_MAGAZINE)
-!define DEV_SMASHING_MAGAZINE(alias,label) ENTITY(rectangle,black,smashing_magazine,label,alias,DEV SMASHING_MAGAZINE)
-!define DEV_SMASHING_MAGAZINE(alias,label,shape) ENTITY(shape,black,smashing_magazine,label,alias,DEV SMASHING_MAGAZINE)
+!define DEV_SMASHING_MAGAZINE(_alias) ENTITY(rectangle,black,smashing_magazine,_alias,DEV SMASHING_MAGAZINE)
+!define DEV_SMASHING_MAGAZINE(_alias,_label) ENTITY(rectangle,black,smashing_magazine,_label,_alias,DEV SMASHING_MAGAZINE)
+!define DEV_SMASHING_MAGAZINE(_alias,_label,_shape) ENTITY(_shape,black,smashing_magazine,_label,_alias,DEV SMASHING_MAGAZINE)
+!define DEV_SMASHING_MAGAZINE(_alias,_label,_shape,_color) ENTITY(_shape,_color,smashing_magazine,_label,_alias,DEV SMASHING_MAGAZINE)
 skinparam folderBackgroundColor<<DEV SMASHING_MAGAZINE>> White
 @enduml

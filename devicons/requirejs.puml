@@ -35,8 +35,9 @@ sprite $requirejs [32x32/16] {
 }
 
 
-!define DEV_REQUIREJS(alias) ENTITY(rectangle,black,requirejs,alias,DEV REQUIREJS)
-!define DEV_REQUIREJS(alias,label) ENTITY(rectangle,black,requirejs,label,alias,DEV REQUIREJS)
-!define DEV_REQUIREJS(alias,label,shape) ENTITY(shape,black,requirejs,label,alias,DEV REQUIREJS)
+!define DEV_REQUIREJS(_alias) ENTITY(rectangle,black,requirejs,_alias,DEV REQUIREJS)
+!define DEV_REQUIREJS(_alias,_label) ENTITY(rectangle,black,requirejs,_label,_alias,DEV REQUIREJS)
+!define DEV_REQUIREJS(_alias,_label,_shape) ENTITY(_shape,black,requirejs,_label,_alias,DEV REQUIREJS)
+!define DEV_REQUIREJS(_alias,_label,_shape,_color) ENTITY(_shape,_color,requirejs,_label,_alias,DEV REQUIREJS)
 skinparam folderBackgroundColor<<DEV REQUIREJS>> White
 @enduml

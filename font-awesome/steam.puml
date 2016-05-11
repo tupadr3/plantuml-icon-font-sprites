@@ -51,8 +51,9 @@ sprite $steam [48x48/16] {
 }
 
 
-!define FA_STEAM(alias) ENTITY(rectangle,black,steam,alias,FA STEAM)
-!define FA_STEAM(alias,label) ENTITY(rectangle,black,steam,label,alias,FA STEAM)
-!define FA_STEAM(alias,label,shape) ENTITY(shape,black,steam,label,alias,FA STEAM)
+!define FA_STEAM(_alias) ENTITY(rectangle,black,steam,_alias,FA STEAM)
+!define FA_STEAM(_alias,_label) ENTITY(rectangle,black,steam,_label,_alias,FA STEAM)
+!define FA_STEAM(_alias,_label,_shape) ENTITY(_shape,black,steam,_label,_alias,FA STEAM)
+!define FA_STEAM(_alias,_label,_shape,_color) ENTITY(_shape,_color,steam,_label,_alias,FA STEAM)
 skinparam folderBackgroundColor<<FA STEAM>> White
 @enduml

@@ -51,8 +51,9 @@ AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA
 }
 
 
-!define FA_MORTAR_BOARD(alias) ENTITY(rectangle,black,mortar_board,alias,FA MORTAR_BOARD)
-!define FA_MORTAR_BOARD(alias,label) ENTITY(rectangle,black,mortar_board,label,alias,FA MORTAR_BOARD)
-!define FA_MORTAR_BOARD(alias,label,shape) ENTITY(shape,black,mortar_board,label,alias,FA MORTAR_BOARD)
+!define FA_MORTAR_BOARD(_alias) ENTITY(rectangle,black,mortar_board,_alias,FA MORTAR_BOARD)
+!define FA_MORTAR_BOARD(_alias,_label) ENTITY(rectangle,black,mortar_board,_label,_alias,FA MORTAR_BOARD)
+!define FA_MORTAR_BOARD(_alias,_label,_shape) ENTITY(_shape,black,mortar_board,_label,_alias,FA MORTAR_BOARD)
+!define FA_MORTAR_BOARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,mortar_board,_label,_alias,FA MORTAR_BOARD)
 skinparam folderBackgroundColor<<FA MORTAR_BOARD>> White
 @enduml

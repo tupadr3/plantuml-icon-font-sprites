@@ -51,8 +51,9 @@ sprite $google_wallet [48x48/16] {
 }
 
 
-!define FA_GOOGLE_WALLET(alias) ENTITY(rectangle,black,google_wallet,alias,FA GOOGLE_WALLET)
-!define FA_GOOGLE_WALLET(alias,label) ENTITY(rectangle,black,google_wallet,label,alias,FA GOOGLE_WALLET)
-!define FA_GOOGLE_WALLET(alias,label,shape) ENTITY(shape,black,google_wallet,label,alias,FA GOOGLE_WALLET)
+!define FA_GOOGLE_WALLET(_alias) ENTITY(rectangle,black,google_wallet,_alias,FA GOOGLE_WALLET)
+!define FA_GOOGLE_WALLET(_alias,_label) ENTITY(rectangle,black,google_wallet,_label,_alias,FA GOOGLE_WALLET)
+!define FA_GOOGLE_WALLET(_alias,_label,_shape) ENTITY(_shape,black,google_wallet,_label,_alias,FA GOOGLE_WALLET)
+!define FA_GOOGLE_WALLET(_alias,_label,_shape,_color) ENTITY(_shape,_color,google_wallet,_label,_alias,FA GOOGLE_WALLET)
 skinparam folderBackgroundColor<<FA GOOGLE_WALLET>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $unity_small [32x32/16] {
 }
 
 
-!define DEV_UNITY_SMALL(alias) ENTITY(rectangle,black,unity_small,alias,DEV UNITY_SMALL)
-!define DEV_UNITY_SMALL(alias,label) ENTITY(rectangle,black,unity_small,label,alias,DEV UNITY_SMALL)
-!define DEV_UNITY_SMALL(alias,label,shape) ENTITY(shape,black,unity_small,label,alias,DEV UNITY_SMALL)
+!define DEV_UNITY_SMALL(_alias) ENTITY(rectangle,black,unity_small,_alias,DEV UNITY_SMALL)
+!define DEV_UNITY_SMALL(_alias,_label) ENTITY(rectangle,black,unity_small,_label,_alias,DEV UNITY_SMALL)
+!define DEV_UNITY_SMALL(_alias,_label,_shape) ENTITY(_shape,black,unity_small,_label,_alias,DEV UNITY_SMALL)
+!define DEV_UNITY_SMALL(_alias,_label,_shape,_color) ENTITY(_shape,_color,unity_small,_label,_alias,DEV UNITY_SMALL)
 skinparam folderBackgroundColor<<DEV UNITY_SMALL>> White
 @enduml

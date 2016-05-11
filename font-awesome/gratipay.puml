@@ -51,8 +51,9 @@ sprite $gratipay [48x48/16] {
 }
 
 
-!define FA_GRATIPAY(alias) ENTITY(rectangle,black,gratipay,alias,FA GRATIPAY)
-!define FA_GRATIPAY(alias,label) ENTITY(rectangle,black,gratipay,label,alias,FA GRATIPAY)
-!define FA_GRATIPAY(alias,label,shape) ENTITY(shape,black,gratipay,label,alias,FA GRATIPAY)
+!define FA_GRATIPAY(_alias) ENTITY(rectangle,black,gratipay,_alias,FA GRATIPAY)
+!define FA_GRATIPAY(_alias,_label) ENTITY(rectangle,black,gratipay,_label,_alias,FA GRATIPAY)
+!define FA_GRATIPAY(_alias,_label,_shape) ENTITY(_shape,black,gratipay,_label,_alias,FA GRATIPAY)
+!define FA_GRATIPAY(_alias,_label,_shape,_color) ENTITY(_shape,_color,gratipay,_label,_alias,FA GRATIPAY)
 skinparam folderBackgroundColor<<FA GRATIPAY>> White
 @enduml

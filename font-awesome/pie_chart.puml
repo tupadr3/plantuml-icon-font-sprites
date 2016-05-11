@@ -51,8 +51,9 @@ sprite $pie_chart [48x48/16] {
 }
 
 
-!define FA_PIE_CHART(alias) ENTITY(rectangle,black,pie_chart,alias,FA PIE_CHART)
-!define FA_PIE_CHART(alias,label) ENTITY(rectangle,black,pie_chart,label,alias,FA PIE_CHART)
-!define FA_PIE_CHART(alias,label,shape) ENTITY(shape,black,pie_chart,label,alias,FA PIE_CHART)
+!define FA_PIE_CHART(_alias) ENTITY(rectangle,black,pie_chart,_alias,FA PIE_CHART)
+!define FA_PIE_CHART(_alias,_label) ENTITY(rectangle,black,pie_chart,_label,_alias,FA PIE_CHART)
+!define FA_PIE_CHART(_alias,_label,_shape) ENTITY(_shape,black,pie_chart,_label,_alias,FA PIE_CHART)
+!define FA_PIE_CHART(_alias,_label,_shape,_color) ENTITY(_shape,_color,pie_chart,_label,_alias,FA PIE_CHART)
 skinparam folderBackgroundColor<<FA PIE_CHART>> White
 @enduml

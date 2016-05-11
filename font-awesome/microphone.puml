@@ -51,8 +51,9 @@ sprite $microphone [48x48/16] {
 }
 
 
-!define FA_MICROPHONE(alias) ENTITY(rectangle,black,microphone,alias,FA MICROPHONE)
-!define FA_MICROPHONE(alias,label) ENTITY(rectangle,black,microphone,label,alias,FA MICROPHONE)
-!define FA_MICROPHONE(alias,label,shape) ENTITY(shape,black,microphone,label,alias,FA MICROPHONE)
+!define FA_MICROPHONE(_alias) ENTITY(rectangle,black,microphone,_alias,FA MICROPHONE)
+!define FA_MICROPHONE(_alias,_label) ENTITY(rectangle,black,microphone,_label,_alias,FA MICROPHONE)
+!define FA_MICROPHONE(_alias,_label,_shape) ENTITY(_shape,black,microphone,_label,_alias,FA MICROPHONE)
+!define FA_MICROPHONE(_alias,_label,_shape,_color) ENTITY(_shape,_color,microphone,_label,_alias,FA MICROPHONE)
 skinparam folderBackgroundColor<<FA MICROPHONE>> White
 @enduml

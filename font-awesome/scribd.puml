@@ -51,8 +51,9 @@ sprite $scribd [48x48/16] {
 }
 
 
-!define FA_SCRIBD(alias) ENTITY(rectangle,black,scribd,alias,FA SCRIBD)
-!define FA_SCRIBD(alias,label) ENTITY(rectangle,black,scribd,label,alias,FA SCRIBD)
-!define FA_SCRIBD(alias,label,shape) ENTITY(shape,black,scribd,label,alias,FA SCRIBD)
+!define FA_SCRIBD(_alias) ENTITY(rectangle,black,scribd,_alias,FA SCRIBD)
+!define FA_SCRIBD(_alias,_label) ENTITY(rectangle,black,scribd,_label,_alias,FA SCRIBD)
+!define FA_SCRIBD(_alias,_label,_shape) ENTITY(_shape,black,scribd,_label,_alias,FA SCRIBD)
+!define FA_SCRIBD(_alias,_label,_shape,_color) ENTITY(_shape,_color,scribd,_label,_alias,FA SCRIBD)
 skinparam folderBackgroundColor<<FA SCRIBD>> White
 @enduml

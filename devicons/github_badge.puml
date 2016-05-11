@@ -35,8 +35,9 @@ sprite $github_badge [32x32/16] {
 }
 
 
-!define DEV_GITHUB_BADGE(alias) ENTITY(rectangle,black,github_badge,alias,DEV GITHUB_BADGE)
-!define DEV_GITHUB_BADGE(alias,label) ENTITY(rectangle,black,github_badge,label,alias,DEV GITHUB_BADGE)
-!define DEV_GITHUB_BADGE(alias,label,shape) ENTITY(shape,black,github_badge,label,alias,DEV GITHUB_BADGE)
+!define DEV_GITHUB_BADGE(_alias) ENTITY(rectangle,black,github_badge,_alias,DEV GITHUB_BADGE)
+!define DEV_GITHUB_BADGE(_alias,_label) ENTITY(rectangle,black,github_badge,_label,_alias,DEV GITHUB_BADGE)
+!define DEV_GITHUB_BADGE(_alias,_label,_shape) ENTITY(_shape,black,github_badge,_label,_alias,DEV GITHUB_BADGE)
+!define DEV_GITHUB_BADGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,github_badge,_label,_alias,DEV GITHUB_BADGE)
 skinparam folderBackgroundColor<<DEV GITHUB_BADGE>> White
 @enduml

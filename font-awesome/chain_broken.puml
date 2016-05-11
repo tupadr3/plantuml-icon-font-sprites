@@ -51,8 +51,9 @@ sprite $chain_broken [48x48/16] {
 }
 
 
-!define FA_CHAIN_BROKEN(alias) ENTITY(rectangle,black,chain_broken,alias,FA CHAIN_BROKEN)
-!define FA_CHAIN_BROKEN(alias,label) ENTITY(rectangle,black,chain_broken,label,alias,FA CHAIN_BROKEN)
-!define FA_CHAIN_BROKEN(alias,label,shape) ENTITY(shape,black,chain_broken,label,alias,FA CHAIN_BROKEN)
+!define FA_CHAIN_BROKEN(_alias) ENTITY(rectangle,black,chain_broken,_alias,FA CHAIN_BROKEN)
+!define FA_CHAIN_BROKEN(_alias,_label) ENTITY(rectangle,black,chain_broken,_label,_alias,FA CHAIN_BROKEN)
+!define FA_CHAIN_BROKEN(_alias,_label,_shape) ENTITY(_shape,black,chain_broken,_label,_alias,FA CHAIN_BROKEN)
+!define FA_CHAIN_BROKEN(_alias,_label,_shape,_color) ENTITY(_shape,_color,chain_broken,_label,_alias,FA CHAIN_BROKEN)
 skinparam folderBackgroundColor<<FA CHAIN_BROKEN>> White
 @enduml

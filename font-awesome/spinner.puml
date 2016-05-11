@@ -51,8 +51,9 @@ sprite $spinner [48x48/16] {
 }
 
 
-!define FA_SPINNER(alias) ENTITY(rectangle,black,spinner,alias,FA SPINNER)
-!define FA_SPINNER(alias,label) ENTITY(rectangle,black,spinner,label,alias,FA SPINNER)
-!define FA_SPINNER(alias,label,shape) ENTITY(shape,black,spinner,label,alias,FA SPINNER)
+!define FA_SPINNER(_alias) ENTITY(rectangle,black,spinner,_alias,FA SPINNER)
+!define FA_SPINNER(_alias,_label) ENTITY(rectangle,black,spinner,_label,_alias,FA SPINNER)
+!define FA_SPINNER(_alias,_label,_shape) ENTITY(_shape,black,spinner,_label,_alias,FA SPINNER)
+!define FA_SPINNER(_alias,_label,_shape,_color) ENTITY(_shape,_color,spinner,_label,_alias,FA SPINNER)
 skinparam folderBackgroundColor<<FA SPINNER>> White
 @enduml

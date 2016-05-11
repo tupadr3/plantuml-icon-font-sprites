@@ -51,8 +51,9 @@ sprite $road [48x48/16] {
 }
 
 
-!define FA_ROAD(alias) ENTITY(rectangle,black,road,alias,FA ROAD)
-!define FA_ROAD(alias,label) ENTITY(rectangle,black,road,label,alias,FA ROAD)
-!define FA_ROAD(alias,label,shape) ENTITY(shape,black,road,label,alias,FA ROAD)
+!define FA_ROAD(_alias) ENTITY(rectangle,black,road,_alias,FA ROAD)
+!define FA_ROAD(_alias,_label) ENTITY(rectangle,black,road,_label,_alias,FA ROAD)
+!define FA_ROAD(_alias,_label,_shape) ENTITY(_shape,black,road,_label,_alias,FA ROAD)
+!define FA_ROAD(_alias,_label,_shape,_color) ENTITY(_shape,_color,road,_label,_alias,FA ROAD)
 skinparam folderBackgroundColor<<FA ROAD>> White
 @enduml

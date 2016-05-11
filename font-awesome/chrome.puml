@@ -51,8 +51,9 @@ sprite $chrome [48x48/16] {
 }
 
 
-!define FA_CHROME(alias) ENTITY(rectangle,black,chrome,alias,FA CHROME)
-!define FA_CHROME(alias,label) ENTITY(rectangle,black,chrome,label,alias,FA CHROME)
-!define FA_CHROME(alias,label,shape) ENTITY(shape,black,chrome,label,alias,FA CHROME)
+!define FA_CHROME(_alias) ENTITY(rectangle,black,chrome,_alias,FA CHROME)
+!define FA_CHROME(_alias,_label) ENTITY(rectangle,black,chrome,_label,_alias,FA CHROME)
+!define FA_CHROME(_alias,_label,_shape) ENTITY(_shape,black,chrome,_label,_alias,FA CHROME)
+!define FA_CHROME(_alias,_label,_shape,_color) ENTITY(_shape,_color,chrome,_label,_alias,FA CHROME)
 skinparam folderBackgroundColor<<FA CHROME>> White
 @enduml

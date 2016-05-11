@@ -51,8 +51,9 @@ sprite $list_ol [48x48/16] {
 }
 
 
-!define FA_LIST_OL(alias) ENTITY(rectangle,black,list_ol,alias,FA LIST_OL)
-!define FA_LIST_OL(alias,label) ENTITY(rectangle,black,list_ol,label,alias,FA LIST_OL)
-!define FA_LIST_OL(alias,label,shape) ENTITY(shape,black,list_ol,label,alias,FA LIST_OL)
+!define FA_LIST_OL(_alias) ENTITY(rectangle,black,list_ol,_alias,FA LIST_OL)
+!define FA_LIST_OL(_alias,_label) ENTITY(rectangle,black,list_ol,_label,_alias,FA LIST_OL)
+!define FA_LIST_OL(_alias,_label,_shape) ENTITY(_shape,black,list_ol,_label,_alias,FA LIST_OL)
+!define FA_LIST_OL(_alias,_label,_shape,_color) ENTITY(_shape,_color,list_ol,_label,_alias,FA LIST_OL)
 skinparam folderBackgroundColor<<FA LIST_OL>> White
 @enduml

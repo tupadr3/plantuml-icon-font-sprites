@@ -51,8 +51,9 @@ sprite $rebel [48x48/16] {
 }
 
 
-!define FA_REBEL(alias) ENTITY(rectangle,black,rebel,alias,FA REBEL)
-!define FA_REBEL(alias,label) ENTITY(rectangle,black,rebel,label,alias,FA REBEL)
-!define FA_REBEL(alias,label,shape) ENTITY(shape,black,rebel,label,alias,FA REBEL)
+!define FA_REBEL(_alias) ENTITY(rectangle,black,rebel,_alias,FA REBEL)
+!define FA_REBEL(_alias,_label) ENTITY(rectangle,black,rebel,_label,_alias,FA REBEL)
+!define FA_REBEL(_alias,_label,_shape) ENTITY(_shape,black,rebel,_label,_alias,FA REBEL)
+!define FA_REBEL(_alias,_label,_shape,_color) ENTITY(_shape,_color,rebel,_label,_alias,FA REBEL)
 skinparam folderBackgroundColor<<FA REBEL>> White
 @enduml

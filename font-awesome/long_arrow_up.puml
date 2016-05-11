@@ -51,8 +51,9 @@ sprite $long_arrow_up [48x48/16] {
 }
 
 
-!define FA_LONG_ARROW_UP(alias) ENTITY(rectangle,black,long_arrow_up,alias,FA LONG_ARROW_UP)
-!define FA_LONG_ARROW_UP(alias,label) ENTITY(rectangle,black,long_arrow_up,label,alias,FA LONG_ARROW_UP)
-!define FA_LONG_ARROW_UP(alias,label,shape) ENTITY(shape,black,long_arrow_up,label,alias,FA LONG_ARROW_UP)
+!define FA_LONG_ARROW_UP(_alias) ENTITY(rectangle,black,long_arrow_up,_alias,FA LONG_ARROW_UP)
+!define FA_LONG_ARROW_UP(_alias,_label) ENTITY(rectangle,black,long_arrow_up,_label,_alias,FA LONG_ARROW_UP)
+!define FA_LONG_ARROW_UP(_alias,_label,_shape) ENTITY(_shape,black,long_arrow_up,_label,_alias,FA LONG_ARROW_UP)
+!define FA_LONG_ARROW_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,long_arrow_up,_label,_alias,FA LONG_ARROW_UP)
 skinparam folderBackgroundColor<<FA LONG_ARROW_UP>> White
 @enduml

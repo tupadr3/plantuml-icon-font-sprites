@@ -51,8 +51,9 @@ sprite $euro [48x48/16] {
 }
 
 
-!define FA_EURO(alias) ENTITY(rectangle,black,euro,alias,FA EURO)
-!define FA_EURO(alias,label) ENTITY(rectangle,black,euro,label,alias,FA EURO)
-!define FA_EURO(alias,label,shape) ENTITY(shape,black,euro,label,alias,FA EURO)
+!define FA_EURO(_alias) ENTITY(rectangle,black,euro,_alias,FA EURO)
+!define FA_EURO(_alias,_label) ENTITY(rectangle,black,euro,_label,_alias,FA EURO)
+!define FA_EURO(_alias,_label,_shape) ENTITY(_shape,black,euro,_label,_alias,FA EURO)
+!define FA_EURO(_alias,_label,_shape,_color) ENTITY(_shape,_color,euro,_label,_alias,FA EURO)
 skinparam folderBackgroundColor<<FA EURO>> White
 @enduml

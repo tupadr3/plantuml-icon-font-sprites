@@ -51,8 +51,9 @@ sprite $youtube_square [48x48/16] {
 }
 
 
-!define FA_YOUTUBE_SQUARE(alias) ENTITY(rectangle,black,youtube_square,alias,FA YOUTUBE_SQUARE)
-!define FA_YOUTUBE_SQUARE(alias,label) ENTITY(rectangle,black,youtube_square,label,alias,FA YOUTUBE_SQUARE)
-!define FA_YOUTUBE_SQUARE(alias,label,shape) ENTITY(shape,black,youtube_square,label,alias,FA YOUTUBE_SQUARE)
+!define FA_YOUTUBE_SQUARE(_alias) ENTITY(rectangle,black,youtube_square,_alias,FA YOUTUBE_SQUARE)
+!define FA_YOUTUBE_SQUARE(_alias,_label) ENTITY(rectangle,black,youtube_square,_label,_alias,FA YOUTUBE_SQUARE)
+!define FA_YOUTUBE_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,youtube_square,_label,_alias,FA YOUTUBE_SQUARE)
+!define FA_YOUTUBE_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,youtube_square,_label,_alias,FA YOUTUBE_SQUARE)
 skinparam folderBackgroundColor<<FA YOUTUBE_SQUARE>> White
 @enduml

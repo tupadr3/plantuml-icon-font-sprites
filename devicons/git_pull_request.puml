@@ -35,8 +35,9 @@ sprite $git_pull_request [32x32/16] {
 }
 
 
-!define DEV_GIT_PULL_REQUEST(alias) ENTITY(rectangle,black,git_pull_request,alias,DEV GIT_PULL_REQUEST)
-!define DEV_GIT_PULL_REQUEST(alias,label) ENTITY(rectangle,black,git_pull_request,label,alias,DEV GIT_PULL_REQUEST)
-!define DEV_GIT_PULL_REQUEST(alias,label,shape) ENTITY(shape,black,git_pull_request,label,alias,DEV GIT_PULL_REQUEST)
+!define DEV_GIT_PULL_REQUEST(_alias) ENTITY(rectangle,black,git_pull_request,_alias,DEV GIT_PULL_REQUEST)
+!define DEV_GIT_PULL_REQUEST(_alias,_label) ENTITY(rectangle,black,git_pull_request,_label,_alias,DEV GIT_PULL_REQUEST)
+!define DEV_GIT_PULL_REQUEST(_alias,_label,_shape) ENTITY(_shape,black,git_pull_request,_label,_alias,DEV GIT_PULL_REQUEST)
+!define DEV_GIT_PULL_REQUEST(_alias,_label,_shape,_color) ENTITY(_shape,_color,git_pull_request,_label,_alias,DEV GIT_PULL_REQUEST)
 skinparam folderBackgroundColor<<DEV GIT_PULL_REQUEST>> White
 @enduml

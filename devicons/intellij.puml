@@ -35,8 +35,9 @@ sprite $intellij [34x32/16] {
 }
 
 
-!define DEV_INTELLIJ(alias) ENTITY(rectangle,black,intellij,alias,DEV INTELLIJ)
-!define DEV_INTELLIJ(alias,label) ENTITY(rectangle,black,intellij,label,alias,DEV INTELLIJ)
-!define DEV_INTELLIJ(alias,label,shape) ENTITY(shape,black,intellij,label,alias,DEV INTELLIJ)
+!define DEV_INTELLIJ(_alias) ENTITY(rectangle,black,intellij,_alias,DEV INTELLIJ)
+!define DEV_INTELLIJ(_alias,_label) ENTITY(rectangle,black,intellij,_label,_alias,DEV INTELLIJ)
+!define DEV_INTELLIJ(_alias,_label,_shape) ENTITY(_shape,black,intellij,_label,_alias,DEV INTELLIJ)
+!define DEV_INTELLIJ(_alias,_label,_shape,_color) ENTITY(_shape,_color,intellij,_label,_alias,DEV INTELLIJ)
 skinparam folderBackgroundColor<<DEV INTELLIJ>> White
 @enduml

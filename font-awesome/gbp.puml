@@ -51,8 +51,9 @@ sprite $gbp [48x48/16] {
 }
 
 
-!define FA_GBP(alias) ENTITY(rectangle,black,gbp,alias,FA GBP)
-!define FA_GBP(alias,label) ENTITY(rectangle,black,gbp,label,alias,FA GBP)
-!define FA_GBP(alias,label,shape) ENTITY(shape,black,gbp,label,alias,FA GBP)
+!define FA_GBP(_alias) ENTITY(rectangle,black,gbp,_alias,FA GBP)
+!define FA_GBP(_alias,_label) ENTITY(rectangle,black,gbp,_label,_alias,FA GBP)
+!define FA_GBP(_alias,_label,_shape) ENTITY(_shape,black,gbp,_label,_alias,FA GBP)
+!define FA_GBP(_alias,_label,_shape,_color) ENTITY(_shape,_color,gbp,_label,_alias,FA GBP)
 skinparam folderBackgroundColor<<FA GBP>> White
 @enduml

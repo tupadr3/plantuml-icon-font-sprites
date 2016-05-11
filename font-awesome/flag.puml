@@ -51,8 +51,9 @@ sprite $flag [48x48/16] {
 }
 
 
-!define FA_FLAG(alias) ENTITY(rectangle,black,flag,alias,FA FLAG)
-!define FA_FLAG(alias,label) ENTITY(rectangle,black,flag,label,alias,FA FLAG)
-!define FA_FLAG(alias,label,shape) ENTITY(shape,black,flag,label,alias,FA FLAG)
+!define FA_FLAG(_alias) ENTITY(rectangle,black,flag,_alias,FA FLAG)
+!define FA_FLAG(_alias,_label) ENTITY(rectangle,black,flag,_label,_alias,FA FLAG)
+!define FA_FLAG(_alias,_label,_shape) ENTITY(_shape,black,flag,_label,_alias,FA FLAG)
+!define FA_FLAG(_alias,_label,_shape,_color) ENTITY(_shape,_color,flag,_label,_alias,FA FLAG)
 skinparam folderBackgroundColor<<FA FLAG>> White
 @enduml

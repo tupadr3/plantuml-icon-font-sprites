@@ -51,8 +51,9 @@ sprite $spoon [48x48/16] {
 }
 
 
-!define FA_SPOON(alias) ENTITY(rectangle,black,spoon,alias,FA SPOON)
-!define FA_SPOON(alias,label) ENTITY(rectangle,black,spoon,label,alias,FA SPOON)
-!define FA_SPOON(alias,label,shape) ENTITY(shape,black,spoon,label,alias,FA SPOON)
+!define FA_SPOON(_alias) ENTITY(rectangle,black,spoon,_alias,FA SPOON)
+!define FA_SPOON(_alias,_label) ENTITY(rectangle,black,spoon,_label,_alias,FA SPOON)
+!define FA_SPOON(_alias,_label,_shape) ENTITY(_shape,black,spoon,_label,_alias,FA SPOON)
+!define FA_SPOON(_alias,_label,_shape,_color) ENTITY(_shape,_color,spoon,_label,_alias,FA SPOON)
 skinparam folderBackgroundColor<<FA SPOON>> White
 @enduml

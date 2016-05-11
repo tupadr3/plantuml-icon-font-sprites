@@ -51,8 +51,9 @@ sprite $retweet [48x48/16] {
 }
 
 
-!define FA_RETWEET(alias) ENTITY(rectangle,black,retweet,alias,FA RETWEET)
-!define FA_RETWEET(alias,label) ENTITY(rectangle,black,retweet,label,alias,FA RETWEET)
-!define FA_RETWEET(alias,label,shape) ENTITY(shape,black,retweet,label,alias,FA RETWEET)
+!define FA_RETWEET(_alias) ENTITY(rectangle,black,retweet,_alias,FA RETWEET)
+!define FA_RETWEET(_alias,_label) ENTITY(rectangle,black,retweet,_label,_alias,FA RETWEET)
+!define FA_RETWEET(_alias,_label,_shape) ENTITY(_shape,black,retweet,_label,_alias,FA RETWEET)
+!define FA_RETWEET(_alias,_label,_shape,_color) ENTITY(_shape,_color,retweet,_label,_alias,FA RETWEET)
 skinparam folderBackgroundColor<<FA RETWEET>> White
 @enduml

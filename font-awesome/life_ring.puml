@@ -51,8 +51,9 @@ sprite $life_ring [48x48/16] {
 }
 
 
-!define FA_LIFE_RING(alias) ENTITY(rectangle,black,life_ring,alias,FA LIFE_RING)
-!define FA_LIFE_RING(alias,label) ENTITY(rectangle,black,life_ring,label,alias,FA LIFE_RING)
-!define FA_LIFE_RING(alias,label,shape) ENTITY(shape,black,life_ring,label,alias,FA LIFE_RING)
+!define FA_LIFE_RING(_alias) ENTITY(rectangle,black,life_ring,_alias,FA LIFE_RING)
+!define FA_LIFE_RING(_alias,_label) ENTITY(rectangle,black,life_ring,_label,_alias,FA LIFE_RING)
+!define FA_LIFE_RING(_alias,_label,_shape) ENTITY(_shape,black,life_ring,_label,_alias,FA LIFE_RING)
+!define FA_LIFE_RING(_alias,_label,_shape,_color) ENTITY(_shape,_color,life_ring,_label,_alias,FA LIFE_RING)
 skinparam folderBackgroundColor<<FA LIFE_RING>> White
 @enduml

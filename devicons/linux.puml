@@ -35,8 +35,9 @@ sprite $linux [32x32/16] {
 }
 
 
-!define DEV_LINUX(alias) ENTITY(rectangle,black,linux,alias,DEV LINUX)
-!define DEV_LINUX(alias,label) ENTITY(rectangle,black,linux,label,alias,DEV LINUX)
-!define DEV_LINUX(alias,label,shape) ENTITY(shape,black,linux,label,alias,DEV LINUX)
+!define DEV_LINUX(_alias) ENTITY(rectangle,black,linux,_alias,DEV LINUX)
+!define DEV_LINUX(_alias,_label) ENTITY(rectangle,black,linux,_label,_alias,DEV LINUX)
+!define DEV_LINUX(_alias,_label,_shape) ENTITY(_shape,black,linux,_label,_alias,DEV LINUX)
+!define DEV_LINUX(_alias,_label,_shape,_color) ENTITY(_shape,_color,linux,_label,_alias,DEV LINUX)
 skinparam folderBackgroundColor<<DEV LINUX>> White
 @enduml

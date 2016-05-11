@@ -51,8 +51,9 @@ sprite $codiepie [48x48/16] {
 }
 
 
-!define FA_CODIEPIE(alias) ENTITY(rectangle,black,codiepie,alias,FA CODIEPIE)
-!define FA_CODIEPIE(alias,label) ENTITY(rectangle,black,codiepie,label,alias,FA CODIEPIE)
-!define FA_CODIEPIE(alias,label,shape) ENTITY(shape,black,codiepie,label,alias,FA CODIEPIE)
+!define FA_CODIEPIE(_alias) ENTITY(rectangle,black,codiepie,_alias,FA CODIEPIE)
+!define FA_CODIEPIE(_alias,_label) ENTITY(rectangle,black,codiepie,_label,_alias,FA CODIEPIE)
+!define FA_CODIEPIE(_alias,_label,_shape) ENTITY(_shape,black,codiepie,_label,_alias,FA CODIEPIE)
+!define FA_CODIEPIE(_alias,_label,_shape,_color) ENTITY(_shape,_color,codiepie,_label,_alias,FA CODIEPIE)
 skinparam folderBackgroundColor<<FA CODIEPIE>> White
 @enduml

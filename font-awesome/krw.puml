@@ -51,8 +51,9 @@ sprite $krw [48x48/16] {
 }
 
 
-!define FA_KRW(alias) ENTITY(rectangle,black,krw,alias,FA KRW)
-!define FA_KRW(alias,label) ENTITY(rectangle,black,krw,label,alias,FA KRW)
-!define FA_KRW(alias,label,shape) ENTITY(shape,black,krw,label,alias,FA KRW)
+!define FA_KRW(_alias) ENTITY(rectangle,black,krw,_alias,FA KRW)
+!define FA_KRW(_alias,_label) ENTITY(rectangle,black,krw,_label,_alias,FA KRW)
+!define FA_KRW(_alias,_label,_shape) ENTITY(_shape,black,krw,_label,_alias,FA KRW)
+!define FA_KRW(_alias,_label,_shape,_color) ENTITY(_shape,_color,krw,_label,_alias,FA KRW)
 skinparam folderBackgroundColor<<FA KRW>> White
 @enduml

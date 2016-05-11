@@ -51,8 +51,9 @@ sprite $apple [48x48/16] {
 }
 
 
-!define FA_APPLE(alias) ENTITY(rectangle,black,apple,alias,FA APPLE)
-!define FA_APPLE(alias,label) ENTITY(rectangle,black,apple,label,alias,FA APPLE)
-!define FA_APPLE(alias,label,shape) ENTITY(shape,black,apple,label,alias,FA APPLE)
+!define FA_APPLE(_alias) ENTITY(rectangle,black,apple,_alias,FA APPLE)
+!define FA_APPLE(_alias,_label) ENTITY(rectangle,black,apple,_label,_alias,FA APPLE)
+!define FA_APPLE(_alias,_label,_shape) ENTITY(_shape,black,apple,_label,_alias,FA APPLE)
+!define FA_APPLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,apple,_label,_alias,FA APPLE)
 skinparam folderBackgroundColor<<FA APPLE>> White
 @enduml

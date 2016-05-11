@@ -51,8 +51,9 @@ sprite $hand_rock_o [48x48/16] {
 }
 
 
-!define FA_HAND_ROCK_O(alias) ENTITY(rectangle,black,hand_rock_o,alias,FA HAND_ROCK_O)
-!define FA_HAND_ROCK_O(alias,label) ENTITY(rectangle,black,hand_rock_o,label,alias,FA HAND_ROCK_O)
-!define FA_HAND_ROCK_O(alias,label,shape) ENTITY(shape,black,hand_rock_o,label,alias,FA HAND_ROCK_O)
+!define FA_HAND_ROCK_O(_alias) ENTITY(rectangle,black,hand_rock_o,_alias,FA HAND_ROCK_O)
+!define FA_HAND_ROCK_O(_alias,_label) ENTITY(rectangle,black,hand_rock_o,_label,_alias,FA HAND_ROCK_O)
+!define FA_HAND_ROCK_O(_alias,_label,_shape) ENTITY(_shape,black,hand_rock_o,_label,_alias,FA HAND_ROCK_O)
+!define FA_HAND_ROCK_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,hand_rock_o,_label,_alias,FA HAND_ROCK_O)
 skinparam folderBackgroundColor<<FA HAND_ROCK_O>> White
 @enduml

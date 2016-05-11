@@ -51,8 +51,9 @@ sprite $subscript [48x48/16] {
 }
 
 
-!define FA_SUBSCRIPT(alias) ENTITY(rectangle,black,subscript,alias,FA SUBSCRIPT)
-!define FA_SUBSCRIPT(alias,label) ENTITY(rectangle,black,subscript,label,alias,FA SUBSCRIPT)
-!define FA_SUBSCRIPT(alias,label,shape) ENTITY(shape,black,subscript,label,alias,FA SUBSCRIPT)
+!define FA_SUBSCRIPT(_alias) ENTITY(rectangle,black,subscript,_alias,FA SUBSCRIPT)
+!define FA_SUBSCRIPT(_alias,_label) ENTITY(rectangle,black,subscript,_label,_alias,FA SUBSCRIPT)
+!define FA_SUBSCRIPT(_alias,_label,_shape) ENTITY(_shape,black,subscript,_label,_alias,FA SUBSCRIPT)
+!define FA_SUBSCRIPT(_alias,_label,_shape,_color) ENTITY(_shape,_color,subscript,_label,_alias,FA SUBSCRIPT)
 skinparam folderBackgroundColor<<FA SUBSCRIPT>> White
 @enduml

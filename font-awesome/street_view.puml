@@ -51,8 +51,9 @@ sprite $street_view [48x48/16] {
 }
 
 
-!define FA_STREET_VIEW(alias) ENTITY(rectangle,black,street_view,alias,FA STREET_VIEW)
-!define FA_STREET_VIEW(alias,label) ENTITY(rectangle,black,street_view,label,alias,FA STREET_VIEW)
-!define FA_STREET_VIEW(alias,label,shape) ENTITY(shape,black,street_view,label,alias,FA STREET_VIEW)
+!define FA_STREET_VIEW(_alias) ENTITY(rectangle,black,street_view,_alias,FA STREET_VIEW)
+!define FA_STREET_VIEW(_alias,_label) ENTITY(rectangle,black,street_view,_label,_alias,FA STREET_VIEW)
+!define FA_STREET_VIEW(_alias,_label,_shape) ENTITY(_shape,black,street_view,_label,_alias,FA STREET_VIEW)
+!define FA_STREET_VIEW(_alias,_label,_shape,_color) ENTITY(_shape,_color,street_view,_label,_alias,FA STREET_VIEW)
 skinparam folderBackgroundColor<<FA STREET_VIEW>> White
 @enduml

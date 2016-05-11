@@ -51,8 +51,9 @@ sprite $twitch [48x48/16] {
 }
 
 
-!define FA_TWITCH(alias) ENTITY(rectangle,black,twitch,alias,FA TWITCH)
-!define FA_TWITCH(alias,label) ENTITY(rectangle,black,twitch,label,alias,FA TWITCH)
-!define FA_TWITCH(alias,label,shape) ENTITY(shape,black,twitch,label,alias,FA TWITCH)
+!define FA_TWITCH(_alias) ENTITY(rectangle,black,twitch,_alias,FA TWITCH)
+!define FA_TWITCH(_alias,_label) ENTITY(rectangle,black,twitch,_label,_alias,FA TWITCH)
+!define FA_TWITCH(_alias,_label,_shape) ENTITY(_shape,black,twitch,_label,_alias,FA TWITCH)
+!define FA_TWITCH(_alias,_label,_shape,_color) ENTITY(_shape,_color,twitch,_label,_alias,FA TWITCH)
 skinparam folderBackgroundColor<<FA TWITCH>> White
 @enduml

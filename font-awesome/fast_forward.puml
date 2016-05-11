@@ -51,8 +51,9 @@ sprite $fast_forward [48x48/16] {
 }
 
 
-!define FA_FAST_FORWARD(alias) ENTITY(rectangle,black,fast_forward,alias,FA FAST_FORWARD)
-!define FA_FAST_FORWARD(alias,label) ENTITY(rectangle,black,fast_forward,label,alias,FA FAST_FORWARD)
-!define FA_FAST_FORWARD(alias,label,shape) ENTITY(shape,black,fast_forward,label,alias,FA FAST_FORWARD)
+!define FA_FAST_FORWARD(_alias) ENTITY(rectangle,black,fast_forward,_alias,FA FAST_FORWARD)
+!define FA_FAST_FORWARD(_alias,_label) ENTITY(rectangle,black,fast_forward,_label,_alias,FA FAST_FORWARD)
+!define FA_FAST_FORWARD(_alias,_label,_shape) ENTITY(_shape,black,fast_forward,_label,_alias,FA FAST_FORWARD)
+!define FA_FAST_FORWARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,fast_forward,_label,_alias,FA FAST_FORWARD)
 skinparam folderBackgroundColor<<FA FAST_FORWARD>> White
 @enduml

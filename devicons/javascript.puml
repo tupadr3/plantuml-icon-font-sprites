@@ -35,8 +35,9 @@ sprite $javascript [32x32/16] {
 }
 
 
-!define DEV_JAVASCRIPT(alias) ENTITY(rectangle,black,javascript,alias,DEV JAVASCRIPT)
-!define DEV_JAVASCRIPT(alias,label) ENTITY(rectangle,black,javascript,label,alias,DEV JAVASCRIPT)
-!define DEV_JAVASCRIPT(alias,label,shape) ENTITY(shape,black,javascript,label,alias,DEV JAVASCRIPT)
+!define DEV_JAVASCRIPT(_alias) ENTITY(rectangle,black,javascript,_alias,DEV JAVASCRIPT)
+!define DEV_JAVASCRIPT(_alias,_label) ENTITY(rectangle,black,javascript,_label,_alias,DEV JAVASCRIPT)
+!define DEV_JAVASCRIPT(_alias,_label,_shape) ENTITY(_shape,black,javascript,_label,_alias,DEV JAVASCRIPT)
+!define DEV_JAVASCRIPT(_alias,_label,_shape,_color) ENTITY(_shape,_color,javascript,_label,_alias,DEV JAVASCRIPT)
 skinparam folderBackgroundColor<<DEV JAVASCRIPT>> White
 @enduml

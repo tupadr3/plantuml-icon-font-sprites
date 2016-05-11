@@ -35,8 +35,9 @@ sprite $photoshop [34x32/16] {
 }
 
 
-!define DEV_PHOTOSHOP(alias) ENTITY(rectangle,black,photoshop,alias,DEV PHOTOSHOP)
-!define DEV_PHOTOSHOP(alias,label) ENTITY(rectangle,black,photoshop,label,alias,DEV PHOTOSHOP)
-!define DEV_PHOTOSHOP(alias,label,shape) ENTITY(shape,black,photoshop,label,alias,DEV PHOTOSHOP)
+!define DEV_PHOTOSHOP(_alias) ENTITY(rectangle,black,photoshop,_alias,DEV PHOTOSHOP)
+!define DEV_PHOTOSHOP(_alias,_label) ENTITY(rectangle,black,photoshop,_label,_alias,DEV PHOTOSHOP)
+!define DEV_PHOTOSHOP(_alias,_label,_shape) ENTITY(_shape,black,photoshop,_label,_alias,DEV PHOTOSHOP)
+!define DEV_PHOTOSHOP(_alias,_label,_shape,_color) ENTITY(_shape,_color,photoshop,_label,_alias,DEV PHOTOSHOP)
 skinparam folderBackgroundColor<<DEV PHOTOSHOP>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $user_times [48x48/16] {
 }
 
 
-!define FA_USER_TIMES(alias) ENTITY(rectangle,black,user_times,alias,FA USER_TIMES)
-!define FA_USER_TIMES(alias,label) ENTITY(rectangle,black,user_times,label,alias,FA USER_TIMES)
-!define FA_USER_TIMES(alias,label,shape) ENTITY(shape,black,user_times,label,alias,FA USER_TIMES)
+!define FA_USER_TIMES(_alias) ENTITY(rectangle,black,user_times,_alias,FA USER_TIMES)
+!define FA_USER_TIMES(_alias,_label) ENTITY(rectangle,black,user_times,_label,_alias,FA USER_TIMES)
+!define FA_USER_TIMES(_alias,_label,_shape) ENTITY(_shape,black,user_times,_label,_alias,FA USER_TIMES)
+!define FA_USER_TIMES(_alias,_label,_shape,_color) ENTITY(_shape,_color,user_times,_label,_alias,FA USER_TIMES)
 skinparam folderBackgroundColor<<FA USER_TIMES>> White
 @enduml

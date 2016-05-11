@@ -51,8 +51,9 @@ sprite $train [48x48/16] {
 }
 
 
-!define FA_TRAIN(alias) ENTITY(rectangle,black,train,alias,FA TRAIN)
-!define FA_TRAIN(alias,label) ENTITY(rectangle,black,train,label,alias,FA TRAIN)
-!define FA_TRAIN(alias,label,shape) ENTITY(shape,black,train,label,alias,FA TRAIN)
+!define FA_TRAIN(_alias) ENTITY(rectangle,black,train,_alias,FA TRAIN)
+!define FA_TRAIN(_alias,_label) ENTITY(rectangle,black,train,_label,_alias,FA TRAIN)
+!define FA_TRAIN(_alias,_label,_shape) ENTITY(_shape,black,train,_label,_alias,FA TRAIN)
+!define FA_TRAIN(_alias,_label,_shape,_color) ENTITY(_shape,_color,train,_label,_alias,FA TRAIN)
 skinparam folderBackgroundColor<<FA TRAIN>> White
 @enduml

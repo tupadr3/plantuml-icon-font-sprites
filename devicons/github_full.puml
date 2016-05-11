@@ -35,8 +35,9 @@ AF427F8CF08F40FC00CF8F40FC8F40FC
 }
 
 
-!define DEV_GITHUB_FULL(alias) ENTITY(rectangle,black,github_full,alias,DEV GITHUB_FULL)
-!define DEV_GITHUB_FULL(alias,label) ENTITY(rectangle,black,github_full,label,alias,DEV GITHUB_FULL)
-!define DEV_GITHUB_FULL(alias,label,shape) ENTITY(shape,black,github_full,label,alias,DEV GITHUB_FULL)
+!define DEV_GITHUB_FULL(_alias) ENTITY(rectangle,black,github_full,_alias,DEV GITHUB_FULL)
+!define DEV_GITHUB_FULL(_alias,_label) ENTITY(rectangle,black,github_full,_label,_alias,DEV GITHUB_FULL)
+!define DEV_GITHUB_FULL(_alias,_label,_shape) ENTITY(_shape,black,github_full,_label,_alias,DEV GITHUB_FULL)
+!define DEV_GITHUB_FULL(_alias,_label,_shape,_color) ENTITY(_shape,_color,github_full,_label,_alias,DEV GITHUB_FULL)
 skinparam folderBackgroundColor<<DEV GITHUB_FULL>> White
 @enduml

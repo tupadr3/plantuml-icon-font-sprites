@@ -51,8 +51,9 @@ sprite $close [48x48/16] {
 }
 
 
-!define FA_CLOSE(alias) ENTITY(rectangle,black,close,alias,FA CLOSE)
-!define FA_CLOSE(alias,label) ENTITY(rectangle,black,close,label,alias,FA CLOSE)
-!define FA_CLOSE(alias,label,shape) ENTITY(shape,black,close,label,alias,FA CLOSE)
+!define FA_CLOSE(_alias) ENTITY(rectangle,black,close,_alias,FA CLOSE)
+!define FA_CLOSE(_alias,_label) ENTITY(rectangle,black,close,_label,_alias,FA CLOSE)
+!define FA_CLOSE(_alias,_label,_shape) ENTITY(_shape,black,close,_label,_alias,FA CLOSE)
+!define FA_CLOSE(_alias,_label,_shape,_color) ENTITY(_shape,_color,close,_label,_alias,FA CLOSE)
 skinparam folderBackgroundColor<<FA CLOSE>> White
 @enduml

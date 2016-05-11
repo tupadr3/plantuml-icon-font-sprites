@@ -51,8 +51,9 @@ sprite $gittip [48x48/16] {
 }
 
 
-!define FA_GITTIP(alias) ENTITY(rectangle,black,gittip,alias,FA GITTIP)
-!define FA_GITTIP(alias,label) ENTITY(rectangle,black,gittip,label,alias,FA GITTIP)
-!define FA_GITTIP(alias,label,shape) ENTITY(shape,black,gittip,label,alias,FA GITTIP)
+!define FA_GITTIP(_alias) ENTITY(rectangle,black,gittip,_alias,FA GITTIP)
+!define FA_GITTIP(_alias,_label) ENTITY(rectangle,black,gittip,_label,_alias,FA GITTIP)
+!define FA_GITTIP(_alias,_label,_shape) ENTITY(_shape,black,gittip,_label,_alias,FA GITTIP)
+!define FA_GITTIP(_alias,_label,_shape,_color) ENTITY(_shape,_color,gittip,_label,_alias,FA GITTIP)
 skinparam folderBackgroundColor<<FA GITTIP>> White
 @enduml

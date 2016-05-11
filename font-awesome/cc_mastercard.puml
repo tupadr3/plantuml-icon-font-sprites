@@ -51,8 +51,9 @@ BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEB
 }
 
 
-!define FA_CC_MASTERCARD(alias) ENTITY(rectangle,black,cc_mastercard,alias,FA CC_MASTERCARD)
-!define FA_CC_MASTERCARD(alias,label) ENTITY(rectangle,black,cc_mastercard,label,alias,FA CC_MASTERCARD)
-!define FA_CC_MASTERCARD(alias,label,shape) ENTITY(shape,black,cc_mastercard,label,alias,FA CC_MASTERCARD)
+!define FA_CC_MASTERCARD(_alias) ENTITY(rectangle,black,cc_mastercard,_alias,FA CC_MASTERCARD)
+!define FA_CC_MASTERCARD(_alias,_label) ENTITY(rectangle,black,cc_mastercard,_label,_alias,FA CC_MASTERCARD)
+!define FA_CC_MASTERCARD(_alias,_label,_shape) ENTITY(_shape,black,cc_mastercard,_label,_alias,FA CC_MASTERCARD)
+!define FA_CC_MASTERCARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,cc_mastercard,_label,_alias,FA CC_MASTERCARD)
 skinparam folderBackgroundColor<<FA CC_MASTERCARD>> White
 @enduml

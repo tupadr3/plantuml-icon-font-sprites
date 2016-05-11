@@ -51,8 +51,9 @@ sprite $paper_plane_o [48x48/16] {
 }
 
 
-!define FA_PAPER_PLANE_O(alias) ENTITY(rectangle,black,paper_plane_o,alias,FA PAPER_PLANE_O)
-!define FA_PAPER_PLANE_O(alias,label) ENTITY(rectangle,black,paper_plane_o,label,alias,FA PAPER_PLANE_O)
-!define FA_PAPER_PLANE_O(alias,label,shape) ENTITY(shape,black,paper_plane_o,label,alias,FA PAPER_PLANE_O)
+!define FA_PAPER_PLANE_O(_alias) ENTITY(rectangle,black,paper_plane_o,_alias,FA PAPER_PLANE_O)
+!define FA_PAPER_PLANE_O(_alias,_label) ENTITY(rectangle,black,paper_plane_o,_label,_alias,FA PAPER_PLANE_O)
+!define FA_PAPER_PLANE_O(_alias,_label,_shape) ENTITY(_shape,black,paper_plane_o,_label,_alias,FA PAPER_PLANE_O)
+!define FA_PAPER_PLANE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,paper_plane_o,_label,_alias,FA PAPER_PLANE_O)
 skinparam folderBackgroundColor<<FA PAPER_PLANE_O>> White
 @enduml

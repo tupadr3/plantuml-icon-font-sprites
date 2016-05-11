@@ -51,8 +51,9 @@ sprite $tree [48x48/16] {
 }
 
 
-!define FA_TREE(alias) ENTITY(rectangle,black,tree,alias,FA TREE)
-!define FA_TREE(alias,label) ENTITY(rectangle,black,tree,label,alias,FA TREE)
-!define FA_TREE(alias,label,shape) ENTITY(shape,black,tree,label,alias,FA TREE)
+!define FA_TREE(_alias) ENTITY(rectangle,black,tree,_alias,FA TREE)
+!define FA_TREE(_alias,_label) ENTITY(rectangle,black,tree,_label,_alias,FA TREE)
+!define FA_TREE(_alias,_label,_shape) ENTITY(_shape,black,tree,_label,_alias,FA TREE)
+!define FA_TREE(_alias,_label,_shape,_color) ENTITY(_shape,_color,tree,_label,_alias,FA TREE)
 skinparam folderBackgroundColor<<FA TREE>> White
 @enduml

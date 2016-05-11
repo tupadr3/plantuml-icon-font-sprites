@@ -51,8 +51,9 @@ sprite $expeditedssl [48x48/16] {
 }
 
 
-!define FA_EXPEDITEDSSL(alias) ENTITY(rectangle,black,expeditedssl,alias,FA EXPEDITEDSSL)
-!define FA_EXPEDITEDSSL(alias,label) ENTITY(rectangle,black,expeditedssl,label,alias,FA EXPEDITEDSSL)
-!define FA_EXPEDITEDSSL(alias,label,shape) ENTITY(shape,black,expeditedssl,label,alias,FA EXPEDITEDSSL)
+!define FA_EXPEDITEDSSL(_alias) ENTITY(rectangle,black,expeditedssl,_alias,FA EXPEDITEDSSL)
+!define FA_EXPEDITEDSSL(_alias,_label) ENTITY(rectangle,black,expeditedssl,_label,_alias,FA EXPEDITEDSSL)
+!define FA_EXPEDITEDSSL(_alias,_label,_shape) ENTITY(_shape,black,expeditedssl,_label,_alias,FA EXPEDITEDSSL)
+!define FA_EXPEDITEDSSL(_alias,_label,_shape,_color) ENTITY(_shape,_color,expeditedssl,_label,_alias,FA EXPEDITEDSSL)
 skinparam folderBackgroundColor<<FA EXPEDITEDSSL>> White
 @enduml

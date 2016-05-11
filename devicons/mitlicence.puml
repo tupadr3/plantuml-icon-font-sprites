@@ -35,8 +35,9 @@ sprite $mitlicence [32x32/16] {
 }
 
 
-!define DEV_MITLICENCE(alias) ENTITY(rectangle,black,mitlicence,alias,DEV MITLICENCE)
-!define DEV_MITLICENCE(alias,label) ENTITY(rectangle,black,mitlicence,label,alias,DEV MITLICENCE)
-!define DEV_MITLICENCE(alias,label,shape) ENTITY(shape,black,mitlicence,label,alias,DEV MITLICENCE)
+!define DEV_MITLICENCE(_alias) ENTITY(rectangle,black,mitlicence,_alias,DEV MITLICENCE)
+!define DEV_MITLICENCE(_alias,_label) ENTITY(rectangle,black,mitlicence,_label,_alias,DEV MITLICENCE)
+!define DEV_MITLICENCE(_alias,_label,_shape) ENTITY(_shape,black,mitlicence,_label,_alias,DEV MITLICENCE)
+!define DEV_MITLICENCE(_alias,_label,_shape,_color) ENTITY(_shape,_color,mitlicence,_label,_alias,DEV MITLICENCE)
 skinparam folderBackgroundColor<<DEV MITLICENCE>> White
 @enduml

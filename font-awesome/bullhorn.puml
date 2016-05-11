@@ -51,8 +51,9 @@ sprite $bullhorn [48x48/16] {
 }
 
 
-!define FA_BULLHORN(alias) ENTITY(rectangle,black,bullhorn,alias,FA BULLHORN)
-!define FA_BULLHORN(alias,label) ENTITY(rectangle,black,bullhorn,label,alias,FA BULLHORN)
-!define FA_BULLHORN(alias,label,shape) ENTITY(shape,black,bullhorn,label,alias,FA BULLHORN)
+!define FA_BULLHORN(_alias) ENTITY(rectangle,black,bullhorn,_alias,FA BULLHORN)
+!define FA_BULLHORN(_alias,_label) ENTITY(rectangle,black,bullhorn,_label,_alias,FA BULLHORN)
+!define FA_BULLHORN(_alias,_label,_shape) ENTITY(_shape,black,bullhorn,_label,_alias,FA BULLHORN)
+!define FA_BULLHORN(_alias,_label,_shape,_color) ENTITY(_shape,_color,bullhorn,_label,_alias,FA BULLHORN)
 skinparam folderBackgroundColor<<FA BULLHORN>> White
 @enduml

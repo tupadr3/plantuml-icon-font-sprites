@@ -51,8 +51,9 @@ sprite $save [48x48/16] {
 }
 
 
-!define FA_SAVE(alias) ENTITY(rectangle,black,save,alias,FA SAVE)
-!define FA_SAVE(alias,label) ENTITY(rectangle,black,save,label,alias,FA SAVE)
-!define FA_SAVE(alias,label,shape) ENTITY(shape,black,save,label,alias,FA SAVE)
+!define FA_SAVE(_alias) ENTITY(rectangle,black,save,_alias,FA SAVE)
+!define FA_SAVE(_alias,_label) ENTITY(rectangle,black,save,_label,_alias,FA SAVE)
+!define FA_SAVE(_alias,_label,_shape) ENTITY(_shape,black,save,_label,_alias,FA SAVE)
+!define FA_SAVE(_alias,_label,_shape,_color) ENTITY(_shape,_color,save,_label,_alias,FA SAVE)
 skinparam folderBackgroundColor<<FA SAVE>> White
 @enduml

@@ -51,8 +51,9 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 }
 
 
-!define FA_CREDIT_CARD_ALT(alias) ENTITY(rectangle,black,credit_card_alt,alias,FA CREDIT_CARD_ALT)
-!define FA_CREDIT_CARD_ALT(alias,label) ENTITY(rectangle,black,credit_card_alt,label,alias,FA CREDIT_CARD_ALT)
-!define FA_CREDIT_CARD_ALT(alias,label,shape) ENTITY(shape,black,credit_card_alt,label,alias,FA CREDIT_CARD_ALT)
+!define FA_CREDIT_CARD_ALT(_alias) ENTITY(rectangle,black,credit_card_alt,_alias,FA CREDIT_CARD_ALT)
+!define FA_CREDIT_CARD_ALT(_alias,_label) ENTITY(rectangle,black,credit_card_alt,_label,_alias,FA CREDIT_CARD_ALT)
+!define FA_CREDIT_CARD_ALT(_alias,_label,_shape) ENTITY(_shape,black,credit_card_alt,_label,_alias,FA CREDIT_CARD_ALT)
+!define FA_CREDIT_CARD_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,credit_card_alt,_label,_alias,FA CREDIT_CARD_ALT)
 skinparam folderBackgroundColor<<FA CREDIT_CARD_ALT>> White
 @enduml

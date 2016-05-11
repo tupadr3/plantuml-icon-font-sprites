@@ -51,8 +51,9 @@ sprite $power_off [48x48/16] {
 }
 
 
-!define FA_POWER_OFF(alias) ENTITY(rectangle,black,power_off,alias,FA POWER_OFF)
-!define FA_POWER_OFF(alias,label) ENTITY(rectangle,black,power_off,label,alias,FA POWER_OFF)
-!define FA_POWER_OFF(alias,label,shape) ENTITY(shape,black,power_off,label,alias,FA POWER_OFF)
+!define FA_POWER_OFF(_alias) ENTITY(rectangle,black,power_off,_alias,FA POWER_OFF)
+!define FA_POWER_OFF(_alias,_label) ENTITY(rectangle,black,power_off,_label,_alias,FA POWER_OFF)
+!define FA_POWER_OFF(_alias,_label,_shape) ENTITY(_shape,black,power_off,_label,_alias,FA POWER_OFF)
+!define FA_POWER_OFF(_alias,_label,_shape,_color) ENTITY(_shape,_color,power_off,_label,_alias,FA POWER_OFF)
 skinparam folderBackgroundColor<<FA POWER_OFF>> White
 @enduml

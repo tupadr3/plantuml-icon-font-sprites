@@ -35,8 +35,9 @@ sprite $git_compare [32x32/16] {
 }
 
 
-!define DEV_GIT_COMPARE(alias) ENTITY(rectangle,black,git_compare,alias,DEV GIT_COMPARE)
-!define DEV_GIT_COMPARE(alias,label) ENTITY(rectangle,black,git_compare,label,alias,DEV GIT_COMPARE)
-!define DEV_GIT_COMPARE(alias,label,shape) ENTITY(shape,black,git_compare,label,alias,DEV GIT_COMPARE)
+!define DEV_GIT_COMPARE(_alias) ENTITY(rectangle,black,git_compare,_alias,DEV GIT_COMPARE)
+!define DEV_GIT_COMPARE(_alias,_label) ENTITY(rectangle,black,git_compare,_label,_alias,DEV GIT_COMPARE)
+!define DEV_GIT_COMPARE(_alias,_label,_shape) ENTITY(_shape,black,git_compare,_label,_alias,DEV GIT_COMPARE)
+!define DEV_GIT_COMPARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,git_compare,_label,_alias,DEV GIT_COMPARE)
 skinparam folderBackgroundColor<<DEV GIT_COMPARE>> White
 @enduml

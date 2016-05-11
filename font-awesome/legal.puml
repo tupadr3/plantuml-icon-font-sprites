@@ -51,8 +51,9 @@ sprite $legal [48x48/16] {
 }
 
 
-!define FA_LEGAL(alias) ENTITY(rectangle,black,legal,alias,FA LEGAL)
-!define FA_LEGAL(alias,label) ENTITY(rectangle,black,legal,label,alias,FA LEGAL)
-!define FA_LEGAL(alias,label,shape) ENTITY(shape,black,legal,label,alias,FA LEGAL)
+!define FA_LEGAL(_alias) ENTITY(rectangle,black,legal,_alias,FA LEGAL)
+!define FA_LEGAL(_alias,_label) ENTITY(rectangle,black,legal,_label,_alias,FA LEGAL)
+!define FA_LEGAL(_alias,_label,_shape) ENTITY(_shape,black,legal,_label,_alias,FA LEGAL)
+!define FA_LEGAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,legal,_label,_alias,FA LEGAL)
 skinparam folderBackgroundColor<<FA LEGAL>> White
 @enduml

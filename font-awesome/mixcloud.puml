@@ -51,8 +51,9 @@ FFFF500000000000000000000000000008FFF902FFF505FF
 }
 
 
-!define FA_MIXCLOUD(alias) ENTITY(rectangle,black,mixcloud,alias,FA MIXCLOUD)
-!define FA_MIXCLOUD(alias,label) ENTITY(rectangle,black,mixcloud,label,alias,FA MIXCLOUD)
-!define FA_MIXCLOUD(alias,label,shape) ENTITY(shape,black,mixcloud,label,alias,FA MIXCLOUD)
+!define FA_MIXCLOUD(_alias) ENTITY(rectangle,black,mixcloud,_alias,FA MIXCLOUD)
+!define FA_MIXCLOUD(_alias,_label) ENTITY(rectangle,black,mixcloud,_label,_alias,FA MIXCLOUD)
+!define FA_MIXCLOUD(_alias,_label,_shape) ENTITY(_shape,black,mixcloud,_label,_alias,FA MIXCLOUD)
+!define FA_MIXCLOUD(_alias,_label,_shape,_color) ENTITY(_shape,_color,mixcloud,_label,_alias,FA MIXCLOUD)
 skinparam folderBackgroundColor<<FA MIXCLOUD>> White
 @enduml

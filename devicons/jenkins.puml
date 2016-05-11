@@ -35,8 +35,9 @@ sprite $jenkins [32x32/16] {
 }
 
 
-!define DEV_JENKINS(alias) ENTITY(rectangle,black,jenkins,alias,DEV JENKINS)
-!define DEV_JENKINS(alias,label) ENTITY(rectangle,black,jenkins,label,alias,DEV JENKINS)
-!define DEV_JENKINS(alias,label,shape) ENTITY(shape,black,jenkins,label,alias,DEV JENKINS)
+!define DEV_JENKINS(_alias) ENTITY(rectangle,black,jenkins,_alias,DEV JENKINS)
+!define DEV_JENKINS(_alias,_label) ENTITY(rectangle,black,jenkins,_label,_alias,DEV JENKINS)
+!define DEV_JENKINS(_alias,_label,_shape) ENTITY(_shape,black,jenkins,_label,_alias,DEV JENKINS)
+!define DEV_JENKINS(_alias,_label,_shape,_color) ENTITY(_shape,_color,jenkins,_label,_alias,DEV JENKINS)
 skinparam folderBackgroundColor<<DEV JENKINS>> White
 @enduml

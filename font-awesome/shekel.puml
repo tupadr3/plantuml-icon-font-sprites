@@ -51,8 +51,9 @@ sprite $shekel [48x48/16] {
 }
 
 
-!define FA_SHEKEL(alias) ENTITY(rectangle,black,shekel,alias,FA SHEKEL)
-!define FA_SHEKEL(alias,label) ENTITY(rectangle,black,shekel,label,alias,FA SHEKEL)
-!define FA_SHEKEL(alias,label,shape) ENTITY(shape,black,shekel,label,alias,FA SHEKEL)
+!define FA_SHEKEL(_alias) ENTITY(rectangle,black,shekel,_alias,FA SHEKEL)
+!define FA_SHEKEL(_alias,_label) ENTITY(rectangle,black,shekel,_label,_alias,FA SHEKEL)
+!define FA_SHEKEL(_alias,_label,_shape) ENTITY(_shape,black,shekel,_label,_alias,FA SHEKEL)
+!define FA_SHEKEL(_alias,_label,_shape,_color) ENTITY(_shape,_color,shekel,_label,_alias,FA SHEKEL)
 skinparam folderBackgroundColor<<FA SHEKEL>> White
 @enduml

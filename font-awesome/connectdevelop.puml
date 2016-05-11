@@ -51,8 +51,9 @@ sprite $connectdevelop [48x48/16] {
 }
 
 
-!define FA_CONNECTDEVELOP(alias) ENTITY(rectangle,black,connectdevelop,alias,FA CONNECTDEVELOP)
-!define FA_CONNECTDEVELOP(alias,label) ENTITY(rectangle,black,connectdevelop,label,alias,FA CONNECTDEVELOP)
-!define FA_CONNECTDEVELOP(alias,label,shape) ENTITY(shape,black,connectdevelop,label,alias,FA CONNECTDEVELOP)
+!define FA_CONNECTDEVELOP(_alias) ENTITY(rectangle,black,connectdevelop,_alias,FA CONNECTDEVELOP)
+!define FA_CONNECTDEVELOP(_alias,_label) ENTITY(rectangle,black,connectdevelop,_label,_alias,FA CONNECTDEVELOP)
+!define FA_CONNECTDEVELOP(_alias,_label,_shape) ENTITY(_shape,black,connectdevelop,_label,_alias,FA CONNECTDEVELOP)
+!define FA_CONNECTDEVELOP(_alias,_label,_shape,_color) ENTITY(_shape,_color,connectdevelop,_label,_alias,FA CONNECTDEVELOP)
 skinparam folderBackgroundColor<<FA CONNECTDEVELOP>> White
 @enduml

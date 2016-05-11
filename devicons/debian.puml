@@ -35,8 +35,9 @@ sprite $debian [32x32/16] {
 }
 
 
-!define DEV_DEBIAN(alias) ENTITY(rectangle,black,debian,alias,DEV DEBIAN)
-!define DEV_DEBIAN(alias,label) ENTITY(rectangle,black,debian,label,alias,DEV DEBIAN)
-!define DEV_DEBIAN(alias,label,shape) ENTITY(shape,black,debian,label,alias,DEV DEBIAN)
+!define DEV_DEBIAN(_alias) ENTITY(rectangle,black,debian,_alias,DEV DEBIAN)
+!define DEV_DEBIAN(_alias,_label) ENTITY(rectangle,black,debian,_label,_alias,DEV DEBIAN)
+!define DEV_DEBIAN(_alias,_label,_shape) ENTITY(_shape,black,debian,_label,_alias,DEV DEBIAN)
+!define DEV_DEBIAN(_alias,_label,_shape,_color) ENTITY(_shape,_color,debian,_label,_alias,DEV DEBIAN)
 skinparam folderBackgroundColor<<DEV DEBIAN>> White
 @enduml

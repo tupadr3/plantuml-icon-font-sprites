@@ -35,8 +35,9 @@ sprite $onedrive [32x32/16] {
 }
 
 
-!define DEV_ONEDRIVE(alias) ENTITY(rectangle,black,onedrive,alias,DEV ONEDRIVE)
-!define DEV_ONEDRIVE(alias,label) ENTITY(rectangle,black,onedrive,label,alias,DEV ONEDRIVE)
-!define DEV_ONEDRIVE(alias,label,shape) ENTITY(shape,black,onedrive,label,alias,DEV ONEDRIVE)
+!define DEV_ONEDRIVE(_alias) ENTITY(rectangle,black,onedrive,_alias,DEV ONEDRIVE)
+!define DEV_ONEDRIVE(_alias,_label) ENTITY(rectangle,black,onedrive,_label,_alias,DEV ONEDRIVE)
+!define DEV_ONEDRIVE(_alias,_label,_shape) ENTITY(_shape,black,onedrive,_label,_alias,DEV ONEDRIVE)
+!define DEV_ONEDRIVE(_alias,_label,_shape,_color) ENTITY(_shape,_color,onedrive,_label,_alias,DEV ONEDRIVE)
 skinparam folderBackgroundColor<<DEV ONEDRIVE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $dedent [48x48/16] {
 }
 
 
-!define FA_DEDENT(alias) ENTITY(rectangle,black,dedent,alias,FA DEDENT)
-!define FA_DEDENT(alias,label) ENTITY(rectangle,black,dedent,label,alias,FA DEDENT)
-!define FA_DEDENT(alias,label,shape) ENTITY(shape,black,dedent,label,alias,FA DEDENT)
+!define FA_DEDENT(_alias) ENTITY(rectangle,black,dedent,_alias,FA DEDENT)
+!define FA_DEDENT(_alias,_label) ENTITY(rectangle,black,dedent,_label,_alias,FA DEDENT)
+!define FA_DEDENT(_alias,_label,_shape) ENTITY(_shape,black,dedent,_label,_alias,FA DEDENT)
+!define FA_DEDENT(_alias,_label,_shape,_color) ENTITY(_shape,_color,dedent,_label,_alias,FA DEDENT)
 skinparam folderBackgroundColor<<FA DEDENT>> White
 @enduml

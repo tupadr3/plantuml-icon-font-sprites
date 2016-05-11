@@ -35,8 +35,9 @@ sprite $techcrunch [32x32/16] {
 }
 
 
-!define DEV_TECHCRUNCH(alias) ENTITY(rectangle,black,techcrunch,alias,DEV TECHCRUNCH)
-!define DEV_TECHCRUNCH(alias,label) ENTITY(rectangle,black,techcrunch,label,alias,DEV TECHCRUNCH)
-!define DEV_TECHCRUNCH(alias,label,shape) ENTITY(shape,black,techcrunch,label,alias,DEV TECHCRUNCH)
+!define DEV_TECHCRUNCH(_alias) ENTITY(rectangle,black,techcrunch,_alias,DEV TECHCRUNCH)
+!define DEV_TECHCRUNCH(_alias,_label) ENTITY(rectangle,black,techcrunch,_label,_alias,DEV TECHCRUNCH)
+!define DEV_TECHCRUNCH(_alias,_label,_shape) ENTITY(_shape,black,techcrunch,_label,_alias,DEV TECHCRUNCH)
+!define DEV_TECHCRUNCH(_alias,_label,_shape,_color) ENTITY(_shape,_color,techcrunch,_label,_alias,DEV TECHCRUNCH)
 skinparam folderBackgroundColor<<DEV TECHCRUNCH>> White
 @enduml

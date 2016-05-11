@@ -35,8 +35,9 @@ sprite $coffeescript [32x32/16] {
 }
 
 
-!define DEV_COFFEESCRIPT(alias) ENTITY(rectangle,black,coffeescript,alias,DEV COFFEESCRIPT)
-!define DEV_COFFEESCRIPT(alias,label) ENTITY(rectangle,black,coffeescript,label,alias,DEV COFFEESCRIPT)
-!define DEV_COFFEESCRIPT(alias,label,shape) ENTITY(shape,black,coffeescript,label,alias,DEV COFFEESCRIPT)
+!define DEV_COFFEESCRIPT(_alias) ENTITY(rectangle,black,coffeescript,_alias,DEV COFFEESCRIPT)
+!define DEV_COFFEESCRIPT(_alias,_label) ENTITY(rectangle,black,coffeescript,_label,_alias,DEV COFFEESCRIPT)
+!define DEV_COFFEESCRIPT(_alias,_label,_shape) ENTITY(_shape,black,coffeescript,_label,_alias,DEV COFFEESCRIPT)
+!define DEV_COFFEESCRIPT(_alias,_label,_shape,_color) ENTITY(_shape,_color,coffeescript,_label,_alias,DEV COFFEESCRIPT)
 skinparam folderBackgroundColor<<DEV COFFEESCRIPT>> White
 @enduml

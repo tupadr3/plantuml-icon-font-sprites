@@ -51,8 +51,9 @@ sprite $angellist [48x48/16] {
 }
 
 
-!define FA_ANGELLIST(alias) ENTITY(rectangle,black,angellist,alias,FA ANGELLIST)
-!define FA_ANGELLIST(alias,label) ENTITY(rectangle,black,angellist,label,alias,FA ANGELLIST)
-!define FA_ANGELLIST(alias,label,shape) ENTITY(shape,black,angellist,label,alias,FA ANGELLIST)
+!define FA_ANGELLIST(_alias) ENTITY(rectangle,black,angellist,_alias,FA ANGELLIST)
+!define FA_ANGELLIST(_alias,_label) ENTITY(rectangle,black,angellist,_label,_alias,FA ANGELLIST)
+!define FA_ANGELLIST(_alias,_label,_shape) ENTITY(_shape,black,angellist,_label,_alias,FA ANGELLIST)
+!define FA_ANGELLIST(_alias,_label,_shape,_color) ENTITY(_shape,_color,angellist,_label,_alias,FA ANGELLIST)
 skinparam folderBackgroundColor<<FA ANGELLIST>> White
 @enduml

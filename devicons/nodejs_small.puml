@@ -35,8 +35,9 @@ sprite $nodejs_small [32x32/16] {
 }
 
 
-!define DEV_NODEJS_SMALL(alias) ENTITY(rectangle,black,nodejs_small,alias,DEV NODEJS_SMALL)
-!define DEV_NODEJS_SMALL(alias,label) ENTITY(rectangle,black,nodejs_small,label,alias,DEV NODEJS_SMALL)
-!define DEV_NODEJS_SMALL(alias,label,shape) ENTITY(shape,black,nodejs_small,label,alias,DEV NODEJS_SMALL)
+!define DEV_NODEJS_SMALL(_alias) ENTITY(rectangle,black,nodejs_small,_alias,DEV NODEJS_SMALL)
+!define DEV_NODEJS_SMALL(_alias,_label) ENTITY(rectangle,black,nodejs_small,_label,_alias,DEV NODEJS_SMALL)
+!define DEV_NODEJS_SMALL(_alias,_label,_shape) ENTITY(_shape,black,nodejs_small,_label,_alias,DEV NODEJS_SMALL)
+!define DEV_NODEJS_SMALL(_alias,_label,_shape,_color) ENTITY(_shape,_color,nodejs_small,_label,_alias,DEV NODEJS_SMALL)
 skinparam folderBackgroundColor<<DEV NODEJS_SMALL>> White
 @enduml

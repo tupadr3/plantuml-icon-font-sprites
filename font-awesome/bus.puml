@@ -51,8 +51,9 @@ sprite $bus [48x48/16] {
 }
 
 
-!define FA_BUS(alias) ENTITY(rectangle,black,bus,alias,FA BUS)
-!define FA_BUS(alias,label) ENTITY(rectangle,black,bus,label,alias,FA BUS)
-!define FA_BUS(alias,label,shape) ENTITY(shape,black,bus,label,alias,FA BUS)
+!define FA_BUS(_alias) ENTITY(rectangle,black,bus,_alias,FA BUS)
+!define FA_BUS(_alias,_label) ENTITY(rectangle,black,bus,_label,_alias,FA BUS)
+!define FA_BUS(_alias,_label,_shape) ENTITY(_shape,black,bus,_label,_alias,FA BUS)
+!define FA_BUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,bus,_label,_alias,FA BUS)
 skinparam folderBackgroundColor<<FA BUS>> White
 @enduml

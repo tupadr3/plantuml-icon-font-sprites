@@ -51,8 +51,9 @@ sprite $mars_stroke_v [48x48/16] {
 }
 
 
-!define FA_MARS_STROKE_V(alias) ENTITY(rectangle,black,mars_stroke_v,alias,FA MARS_STROKE_V)
-!define FA_MARS_STROKE_V(alias,label) ENTITY(rectangle,black,mars_stroke_v,label,alias,FA MARS_STROKE_V)
-!define FA_MARS_STROKE_V(alias,label,shape) ENTITY(shape,black,mars_stroke_v,label,alias,FA MARS_STROKE_V)
+!define FA_MARS_STROKE_V(_alias) ENTITY(rectangle,black,mars_stroke_v,_alias,FA MARS_STROKE_V)
+!define FA_MARS_STROKE_V(_alias,_label) ENTITY(rectangle,black,mars_stroke_v,_label,_alias,FA MARS_STROKE_V)
+!define FA_MARS_STROKE_V(_alias,_label,_shape) ENTITY(_shape,black,mars_stroke_v,_label,_alias,FA MARS_STROKE_V)
+!define FA_MARS_STROKE_V(_alias,_label,_shape,_color) ENTITY(_shape,_color,mars_stroke_v,_label,_alias,FA MARS_STROKE_V)
 skinparam folderBackgroundColor<<FA MARS_STROKE_V>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $archive [48x48/16] {
 }
 
 
-!define FA_ARCHIVE(alias) ENTITY(rectangle,black,archive,alias,FA ARCHIVE)
-!define FA_ARCHIVE(alias,label) ENTITY(rectangle,black,archive,label,alias,FA ARCHIVE)
-!define FA_ARCHIVE(alias,label,shape) ENTITY(shape,black,archive,label,alias,FA ARCHIVE)
+!define FA_ARCHIVE(_alias) ENTITY(rectangle,black,archive,_alias,FA ARCHIVE)
+!define FA_ARCHIVE(_alias,_label) ENTITY(rectangle,black,archive,_label,_alias,FA ARCHIVE)
+!define FA_ARCHIVE(_alias,_label,_shape) ENTITY(_shape,black,archive,_label,_alias,FA ARCHIVE)
+!define FA_ARCHIVE(_alias,_label,_shape,_color) ENTITY(_shape,_color,archive,_label,_alias,FA ARCHIVE)
 skinparam folderBackgroundColor<<FA ARCHIVE>> White
 @enduml

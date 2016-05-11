@@ -35,8 +35,9 @@ sprite $openshift [34x32/16] {
 }
 
 
-!define DEV_OPENSHIFT(alias) ENTITY(rectangle,black,openshift,alias,DEV OPENSHIFT)
-!define DEV_OPENSHIFT(alias,label) ENTITY(rectangle,black,openshift,label,alias,DEV OPENSHIFT)
-!define DEV_OPENSHIFT(alias,label,shape) ENTITY(shape,black,openshift,label,alias,DEV OPENSHIFT)
+!define DEV_OPENSHIFT(_alias) ENTITY(rectangle,black,openshift,_alias,DEV OPENSHIFT)
+!define DEV_OPENSHIFT(_alias,_label) ENTITY(rectangle,black,openshift,_label,_alias,DEV OPENSHIFT)
+!define DEV_OPENSHIFT(_alias,_label,_shape) ENTITY(_shape,black,openshift,_label,_alias,DEV OPENSHIFT)
+!define DEV_OPENSHIFT(_alias,_label,_shape,_color) ENTITY(_shape,_color,openshift,_label,_alias,DEV OPENSHIFT)
 skinparam folderBackgroundColor<<DEV OPENSHIFT>> White
 @enduml

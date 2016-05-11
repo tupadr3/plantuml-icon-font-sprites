@@ -35,8 +35,9 @@ sprite $materializecss [34x32/16] {
 }
 
 
-!define DEV_MATERIALIZECSS(alias) ENTITY(rectangle,black,materializecss,alias,DEV MATERIALIZECSS)
-!define DEV_MATERIALIZECSS(alias,label) ENTITY(rectangle,black,materializecss,label,alias,DEV MATERIALIZECSS)
-!define DEV_MATERIALIZECSS(alias,label,shape) ENTITY(shape,black,materializecss,label,alias,DEV MATERIALIZECSS)
+!define DEV_MATERIALIZECSS(_alias) ENTITY(rectangle,black,materializecss,_alias,DEV MATERIALIZECSS)
+!define DEV_MATERIALIZECSS(_alias,_label) ENTITY(rectangle,black,materializecss,_label,_alias,DEV MATERIALIZECSS)
+!define DEV_MATERIALIZECSS(_alias,_label,_shape) ENTITY(_shape,black,materializecss,_label,_alias,DEV MATERIALIZECSS)
+!define DEV_MATERIALIZECSS(_alias,_label,_shape,_color) ENTITY(_shape,_color,materializecss,_label,_alias,DEV MATERIALIZECSS)
 skinparam folderBackgroundColor<<DEV MATERIALIZECSS>> White
 @enduml

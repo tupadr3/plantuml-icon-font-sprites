@@ -51,8 +51,9 @@ sprite $star [48x48/16] {
 }
 
 
-!define FA_STAR(alias) ENTITY(rectangle,black,star,alias,FA STAR)
-!define FA_STAR(alias,label) ENTITY(rectangle,black,star,label,alias,FA STAR)
-!define FA_STAR(alias,label,shape) ENTITY(shape,black,star,label,alias,FA STAR)
+!define FA_STAR(_alias) ENTITY(rectangle,black,star,_alias,FA STAR)
+!define FA_STAR(_alias,_label) ENTITY(rectangle,black,star,_label,_alias,FA STAR)
+!define FA_STAR(_alias,_label,_shape) ENTITY(_shape,black,star,_label,_alias,FA STAR)
+!define FA_STAR(_alias,_label,_shape,_color) ENTITY(_shape,_color,star,_label,_alias,FA STAR)
 skinparam folderBackgroundColor<<FA STAR>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $stack_overflow [48x48/16] {
 }
 
 
-!define FA_STACK_OVERFLOW(alias) ENTITY(rectangle,black,stack_overflow,alias,FA STACK_OVERFLOW)
-!define FA_STACK_OVERFLOW(alias,label) ENTITY(rectangle,black,stack_overflow,label,alias,FA STACK_OVERFLOW)
-!define FA_STACK_OVERFLOW(alias,label,shape) ENTITY(shape,black,stack_overflow,label,alias,FA STACK_OVERFLOW)
+!define FA_STACK_OVERFLOW(_alias) ENTITY(rectangle,black,stack_overflow,_alias,FA STACK_OVERFLOW)
+!define FA_STACK_OVERFLOW(_alias,_label) ENTITY(rectangle,black,stack_overflow,_label,_alias,FA STACK_OVERFLOW)
+!define FA_STACK_OVERFLOW(_alias,_label,_shape) ENTITY(_shape,black,stack_overflow,_label,_alias,FA STACK_OVERFLOW)
+!define FA_STACK_OVERFLOW(_alias,_label,_shape,_color) ENTITY(_shape,_color,stack_overflow,_label,_alias,FA STACK_OVERFLOW)
 skinparam folderBackgroundColor<<FA STACK_OVERFLOW>> White
 @enduml

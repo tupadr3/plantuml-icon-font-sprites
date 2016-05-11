@@ -35,8 +35,9 @@ sprite $database [32x32/16] {
 }
 
 
-!define DEV_DATABASE(alias) ENTITY(rectangle,black,database,alias,DEV DATABASE)
-!define DEV_DATABASE(alias,label) ENTITY(rectangle,black,database,label,alias,DEV DATABASE)
-!define DEV_DATABASE(alias,label,shape) ENTITY(shape,black,database,label,alias,DEV DATABASE)
+!define DEV_DATABASE(_alias) ENTITY(rectangle,black,database,_alias,DEV DATABASE)
+!define DEV_DATABASE(_alias,_label) ENTITY(rectangle,black,database,_label,_alias,DEV DATABASE)
+!define DEV_DATABASE(_alias,_label,_shape) ENTITY(_shape,black,database,_label,_alias,DEV DATABASE)
+!define DEV_DATABASE(_alias,_label,_shape,_color) ENTITY(_shape,_color,database,_label,_alias,DEV DATABASE)
 skinparam folderBackgroundColor<<DEV DATABASE>> White
 @enduml

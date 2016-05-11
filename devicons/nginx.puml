@@ -35,8 +35,9 @@ sprite $nginx [32x32/16] {
 }
 
 
-!define DEV_NGINX(alias) ENTITY(rectangle,black,nginx,alias,DEV NGINX)
-!define DEV_NGINX(alias,label) ENTITY(rectangle,black,nginx,label,alias,DEV NGINX)
-!define DEV_NGINX(alias,label,shape) ENTITY(shape,black,nginx,label,alias,DEV NGINX)
+!define DEV_NGINX(_alias) ENTITY(rectangle,black,nginx,_alias,DEV NGINX)
+!define DEV_NGINX(_alias,_label) ENTITY(rectangle,black,nginx,_label,_alias,DEV NGINX)
+!define DEV_NGINX(_alias,_label,_shape) ENTITY(_shape,black,nginx,_label,_alias,DEV NGINX)
+!define DEV_NGINX(_alias,_label,_shape,_color) ENTITY(_shape,_color,nginx,_label,_alias,DEV NGINX)
 skinparam folderBackgroundColor<<DEV NGINX>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $erlang [34x32/16] {
 }
 
 
-!define DEV_ERLANG(alias) ENTITY(rectangle,black,erlang,alias,DEV ERLANG)
-!define DEV_ERLANG(alias,label) ENTITY(rectangle,black,erlang,label,alias,DEV ERLANG)
-!define DEV_ERLANG(alias,label,shape) ENTITY(shape,black,erlang,label,alias,DEV ERLANG)
+!define DEV_ERLANG(_alias) ENTITY(rectangle,black,erlang,_alias,DEV ERLANG)
+!define DEV_ERLANG(_alias,_label) ENTITY(rectangle,black,erlang,_label,_alias,DEV ERLANG)
+!define DEV_ERLANG(_alias,_label,_shape) ENTITY(_shape,black,erlang,_label,_alias,DEV ERLANG)
+!define DEV_ERLANG(_alias,_label,_shape,_color) ENTITY(_shape,_color,erlang,_label,_alias,DEV ERLANG)
 skinparam folderBackgroundColor<<DEV ERLANG>> White
 @enduml

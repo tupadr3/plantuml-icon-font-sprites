@@ -51,8 +51,9 @@ BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEB
 }
 
 
-!define FA_CC_PAYPAL(alias) ENTITY(rectangle,black,cc_paypal,alias,FA CC_PAYPAL)
-!define FA_CC_PAYPAL(alias,label) ENTITY(rectangle,black,cc_paypal,label,alias,FA CC_PAYPAL)
-!define FA_CC_PAYPAL(alias,label,shape) ENTITY(shape,black,cc_paypal,label,alias,FA CC_PAYPAL)
+!define FA_CC_PAYPAL(_alias) ENTITY(rectangle,black,cc_paypal,_alias,FA CC_PAYPAL)
+!define FA_CC_PAYPAL(_alias,_label) ENTITY(rectangle,black,cc_paypal,_label,_alias,FA CC_PAYPAL)
+!define FA_CC_PAYPAL(_alias,_label,_shape) ENTITY(_shape,black,cc_paypal,_label,_alias,FA CC_PAYPAL)
+!define FA_CC_PAYPAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,cc_paypal,_label,_alias,FA CC_PAYPAL)
 skinparam folderBackgroundColor<<FA CC_PAYPAL>> White
 @enduml

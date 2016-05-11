@@ -51,8 +51,9 @@ sprite $sticky_note_o [48x48/16] {
 }
 
 
-!define FA_STICKY_NOTE_O(alias) ENTITY(rectangle,black,sticky_note_o,alias,FA STICKY_NOTE_O)
-!define FA_STICKY_NOTE_O(alias,label) ENTITY(rectangle,black,sticky_note_o,label,alias,FA STICKY_NOTE_O)
-!define FA_STICKY_NOTE_O(alias,label,shape) ENTITY(shape,black,sticky_note_o,label,alias,FA STICKY_NOTE_O)
+!define FA_STICKY_NOTE_O(_alias) ENTITY(rectangle,black,sticky_note_o,_alias,FA STICKY_NOTE_O)
+!define FA_STICKY_NOTE_O(_alias,_label) ENTITY(rectangle,black,sticky_note_o,_label,_alias,FA STICKY_NOTE_O)
+!define FA_STICKY_NOTE_O(_alias,_label,_shape) ENTITY(_shape,black,sticky_note_o,_label,_alias,FA STICKY_NOTE_O)
+!define FA_STICKY_NOTE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,sticky_note_o,_label,_alias,FA STICKY_NOTE_O)
 skinparam folderBackgroundColor<<FA STICKY_NOTE_O>> White
 @enduml

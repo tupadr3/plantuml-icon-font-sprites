@@ -51,8 +51,9 @@ sprite $500px [48x48/16] {
 }
 
 
-!define FA_500PX(alias) ENTITY(rectangle,black,500px,alias,FA 500PX)
-!define FA_500PX(alias,label) ENTITY(rectangle,black,500px,label,alias,FA 500PX)
-!define FA_500PX(alias,label,shape) ENTITY(shape,black,500px,label,alias,FA 500PX)
+!define FA_500PX(_alias) ENTITY(rectangle,black,500px,_alias,FA 500PX)
+!define FA_500PX(_alias,_label) ENTITY(rectangle,black,500px,_label,_alias,FA 500PX)
+!define FA_500PX(_alias,_label,_shape) ENTITY(_shape,black,500px,_label,_alias,FA 500PX)
+!define FA_500PX(_alias,_label,_shape,_color) ENTITY(_shape,_color,500px,_label,_alias,FA 500PX)
 skinparam folderBackgroundColor<<FA 500PX>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $square [48x48/16] {
 }
 
 
-!define FA_SQUARE(alias) ENTITY(rectangle,black,square,alias,FA SQUARE)
-!define FA_SQUARE(alias,label) ENTITY(rectangle,black,square,label,alias,FA SQUARE)
-!define FA_SQUARE(alias,label,shape) ENTITY(shape,black,square,label,alias,FA SQUARE)
+!define FA_SQUARE(_alias) ENTITY(rectangle,black,square,_alias,FA SQUARE)
+!define FA_SQUARE(_alias,_label) ENTITY(rectangle,black,square,_label,_alias,FA SQUARE)
+!define FA_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,square,_label,_alias,FA SQUARE)
+!define FA_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,square,_label,_alias,FA SQUARE)
 skinparam folderBackgroundColor<<FA SQUARE>> White
 @enduml

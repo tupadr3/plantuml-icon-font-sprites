@@ -51,8 +51,9 @@ sprite $paste [48x48/16] {
 }
 
 
-!define FA_PASTE(alias) ENTITY(rectangle,black,paste,alias,FA PASTE)
-!define FA_PASTE(alias,label) ENTITY(rectangle,black,paste,label,alias,FA PASTE)
-!define FA_PASTE(alias,label,shape) ENTITY(shape,black,paste,label,alias,FA PASTE)
+!define FA_PASTE(_alias) ENTITY(rectangle,black,paste,_alias,FA PASTE)
+!define FA_PASTE(_alias,_label) ENTITY(rectangle,black,paste,_label,_alias,FA PASTE)
+!define FA_PASTE(_alias,_label,_shape) ENTITY(_shape,black,paste,_label,_alias,FA PASTE)
+!define FA_PASTE(_alias,_label,_shape,_color) ENTITY(_shape,_color,paste,_label,_alias,FA PASTE)
 skinparam folderBackgroundColor<<FA PASTE>> White
 @enduml

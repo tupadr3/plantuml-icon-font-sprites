@@ -51,8 +51,9 @@ sprite $gavel [48x48/16] {
 }
 
 
-!define FA_GAVEL(alias) ENTITY(rectangle,black,gavel,alias,FA GAVEL)
-!define FA_GAVEL(alias,label) ENTITY(rectangle,black,gavel,label,alias,FA GAVEL)
-!define FA_GAVEL(alias,label,shape) ENTITY(shape,black,gavel,label,alias,FA GAVEL)
+!define FA_GAVEL(_alias) ENTITY(rectangle,black,gavel,_alias,FA GAVEL)
+!define FA_GAVEL(_alias,_label) ENTITY(rectangle,black,gavel,_label,_alias,FA GAVEL)
+!define FA_GAVEL(_alias,_label,_shape) ENTITY(_shape,black,gavel,_label,_alias,FA GAVEL)
+!define FA_GAVEL(_alias,_label,_shape,_color) ENTITY(_shape,_color,gavel,_label,_alias,FA GAVEL)
 skinparam folderBackgroundColor<<FA GAVEL>> White
 @enduml

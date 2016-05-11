@@ -51,8 +51,9 @@ sprite $file [48x48/16] {
 }
 
 
-!define FA_FILE(alias) ENTITY(rectangle,black,file,alias,FA FILE)
-!define FA_FILE(alias,label) ENTITY(rectangle,black,file,label,alias,FA FILE)
-!define FA_FILE(alias,label,shape) ENTITY(shape,black,file,label,alias,FA FILE)
+!define FA_FILE(_alias) ENTITY(rectangle,black,file,_alias,FA FILE)
+!define FA_FILE(_alias,_label) ENTITY(rectangle,black,file,_label,_alias,FA FILE)
+!define FA_FILE(_alias,_label,_shape) ENTITY(_shape,black,file,_label,_alias,FA FILE)
+!define FA_FILE(_alias,_label,_shape,_color) ENTITY(_shape,_color,file,_label,_alias,FA FILE)
 skinparam folderBackgroundColor<<FA FILE>> White
 @enduml

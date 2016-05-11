@@ -51,8 +51,9 @@ sprite $meanpath [48x48/16] {
 }
 
 
-!define FA_MEANPATH(alias) ENTITY(rectangle,black,meanpath,alias,FA MEANPATH)
-!define FA_MEANPATH(alias,label) ENTITY(rectangle,black,meanpath,label,alias,FA MEANPATH)
-!define FA_MEANPATH(alias,label,shape) ENTITY(shape,black,meanpath,label,alias,FA MEANPATH)
+!define FA_MEANPATH(_alias) ENTITY(rectangle,black,meanpath,_alias,FA MEANPATH)
+!define FA_MEANPATH(_alias,_label) ENTITY(rectangle,black,meanpath,_label,_alias,FA MEANPATH)
+!define FA_MEANPATH(_alias,_label,_shape) ENTITY(_shape,black,meanpath,_label,_alias,FA MEANPATH)
+!define FA_MEANPATH(_alias,_label,_shape,_color) ENTITY(_shape,_color,meanpath,_label,_alias,FA MEANPATH)
 skinparam folderBackgroundColor<<FA MEANPATH>> White
 @enduml

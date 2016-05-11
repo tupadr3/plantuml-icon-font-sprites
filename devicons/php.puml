@@ -35,8 +35,9 @@ sprite $php [32x32/16] {
 }
 
 
-!define DEV_PHP(alias) ENTITY(rectangle,black,php,alias,DEV PHP)
-!define DEV_PHP(alias,label) ENTITY(rectangle,black,php,label,alias,DEV PHP)
-!define DEV_PHP(alias,label,shape) ENTITY(shape,black,php,label,alias,DEV PHP)
+!define DEV_PHP(_alias) ENTITY(rectangle,black,php,_alias,DEV PHP)
+!define DEV_PHP(_alias,_label) ENTITY(rectangle,black,php,_label,_alias,DEV PHP)
+!define DEV_PHP(_alias,_label,_shape) ENTITY(_shape,black,php,_label,_alias,DEV PHP)
+!define DEV_PHP(_alias,_label,_shape,_color) ENTITY(_shape,_color,php,_label,_alias,DEV PHP)
 skinparam folderBackgroundColor<<DEV PHP>> White
 @enduml

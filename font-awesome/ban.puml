@@ -51,8 +51,9 @@ sprite $ban [48x48/16] {
 }
 
 
-!define FA_BAN(alias) ENTITY(rectangle,black,ban,alias,FA BAN)
-!define FA_BAN(alias,label) ENTITY(rectangle,black,ban,label,alias,FA BAN)
-!define FA_BAN(alias,label,shape) ENTITY(shape,black,ban,label,alias,FA BAN)
+!define FA_BAN(_alias) ENTITY(rectangle,black,ban,_alias,FA BAN)
+!define FA_BAN(_alias,_label) ENTITY(rectangle,black,ban,_label,_alias,FA BAN)
+!define FA_BAN(_alias,_label,_shape) ENTITY(_shape,black,ban,_label,_alias,FA BAN)
+!define FA_BAN(_alias,_label,_shape,_color) ENTITY(_shape,_color,ban,_label,_alias,FA BAN)
 skinparam folderBackgroundColor<<FA BAN>> White
 @enduml

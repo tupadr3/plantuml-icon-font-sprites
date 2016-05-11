@@ -35,8 +35,9 @@ sprite $rackspace [34x32/16] {
 }
 
 
-!define DEV_RACKSPACE(alias) ENTITY(rectangle,black,rackspace,alias,DEV RACKSPACE)
-!define DEV_RACKSPACE(alias,label) ENTITY(rectangle,black,rackspace,label,alias,DEV RACKSPACE)
-!define DEV_RACKSPACE(alias,label,shape) ENTITY(shape,black,rackspace,label,alias,DEV RACKSPACE)
+!define DEV_RACKSPACE(_alias) ENTITY(rectangle,black,rackspace,_alias,DEV RACKSPACE)
+!define DEV_RACKSPACE(_alias,_label) ENTITY(rectangle,black,rackspace,_label,_alias,DEV RACKSPACE)
+!define DEV_RACKSPACE(_alias,_label,_shape) ENTITY(_shape,black,rackspace,_label,_alias,DEV RACKSPACE)
+!define DEV_RACKSPACE(_alias,_label,_shape,_color) ENTITY(_shape,_color,rackspace,_label,_alias,DEV RACKSPACE)
 skinparam folderBackgroundColor<<DEV RACKSPACE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $wrench [48x48/16] {
 }
 
 
-!define FA_WRENCH(alias) ENTITY(rectangle,black,wrench,alias,FA WRENCH)
-!define FA_WRENCH(alias,label) ENTITY(rectangle,black,wrench,label,alias,FA WRENCH)
-!define FA_WRENCH(alias,label,shape) ENTITY(shape,black,wrench,label,alias,FA WRENCH)
+!define FA_WRENCH(_alias) ENTITY(rectangle,black,wrench,_alias,FA WRENCH)
+!define FA_WRENCH(_alias,_label) ENTITY(rectangle,black,wrench,_label,_alias,FA WRENCH)
+!define FA_WRENCH(_alias,_label,_shape) ENTITY(_shape,black,wrench,_label,_alias,FA WRENCH)
+!define FA_WRENCH(_alias,_label,_shape,_color) ENTITY(_shape,_color,wrench,_label,_alias,FA WRENCH)
 skinparam folderBackgroundColor<<FA WRENCH>> White
 @enduml

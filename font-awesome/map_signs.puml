@@ -51,8 +51,9 @@ sprite $map_signs [48x48/16] {
 }
 
 
-!define FA_MAP_SIGNS(alias) ENTITY(rectangle,black,map_signs,alias,FA MAP_SIGNS)
-!define FA_MAP_SIGNS(alias,label) ENTITY(rectangle,black,map_signs,label,alias,FA MAP_SIGNS)
-!define FA_MAP_SIGNS(alias,label,shape) ENTITY(shape,black,map_signs,label,alias,FA MAP_SIGNS)
+!define FA_MAP_SIGNS(_alias) ENTITY(rectangle,black,map_signs,_alias,FA MAP_SIGNS)
+!define FA_MAP_SIGNS(_alias,_label) ENTITY(rectangle,black,map_signs,_label,_alias,FA MAP_SIGNS)
+!define FA_MAP_SIGNS(_alias,_label,_shape) ENTITY(_shape,black,map_signs,_label,_alias,FA MAP_SIGNS)
+!define FA_MAP_SIGNS(_alias,_label,_shape,_color) ENTITY(_shape,_color,map_signs,_label,_alias,FA MAP_SIGNS)
 skinparam folderBackgroundColor<<FA MAP_SIGNS>> White
 @enduml

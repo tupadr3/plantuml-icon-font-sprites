@@ -35,8 +35,9 @@ sprite $typo3 [32x32/16] {
 }
 
 
-!define DEV_TYPO3(alias) ENTITY(rectangle,black,typo3,alias,DEV TYPO3)
-!define DEV_TYPO3(alias,label) ENTITY(rectangle,black,typo3,label,alias,DEV TYPO3)
-!define DEV_TYPO3(alias,label,shape) ENTITY(shape,black,typo3,label,alias,DEV TYPO3)
+!define DEV_TYPO3(_alias) ENTITY(rectangle,black,typo3,_alias,DEV TYPO3)
+!define DEV_TYPO3(_alias,_label) ENTITY(rectangle,black,typo3,_label,_alias,DEV TYPO3)
+!define DEV_TYPO3(_alias,_label,_shape) ENTITY(_shape,black,typo3,_label,_alias,DEV TYPO3)
+!define DEV_TYPO3(_alias,_label,_shape,_color) ENTITY(_shape,_color,typo3,_label,_alias,DEV TYPO3)
 skinparam folderBackgroundColor<<DEV TYPO3>> White
 @enduml

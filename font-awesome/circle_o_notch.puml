@@ -51,8 +51,9 @@ sprite $circle_o_notch [48x48/16] {
 }
 
 
-!define FA_CIRCLE_O_NOTCH(alias) ENTITY(rectangle,black,circle_o_notch,alias,FA CIRCLE_O_NOTCH)
-!define FA_CIRCLE_O_NOTCH(alias,label) ENTITY(rectangle,black,circle_o_notch,label,alias,FA CIRCLE_O_NOTCH)
-!define FA_CIRCLE_O_NOTCH(alias,label,shape) ENTITY(shape,black,circle_o_notch,label,alias,FA CIRCLE_O_NOTCH)
+!define FA_CIRCLE_O_NOTCH(_alias) ENTITY(rectangle,black,circle_o_notch,_alias,FA CIRCLE_O_NOTCH)
+!define FA_CIRCLE_O_NOTCH(_alias,_label) ENTITY(rectangle,black,circle_o_notch,_label,_alias,FA CIRCLE_O_NOTCH)
+!define FA_CIRCLE_O_NOTCH(_alias,_label,_shape) ENTITY(_shape,black,circle_o_notch,_label,_alias,FA CIRCLE_O_NOTCH)
+!define FA_CIRCLE_O_NOTCH(_alias,_label,_shape,_color) ENTITY(_shape,_color,circle_o_notch,_label,_alias,FA CIRCLE_O_NOTCH)
 skinparam folderBackgroundColor<<FA CIRCLE_O_NOTCH>> White
 @enduml

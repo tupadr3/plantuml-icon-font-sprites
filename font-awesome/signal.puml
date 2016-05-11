@@ -51,8 +51,9 @@ sprite $signal [48x48/16] {
 }
 
 
-!define FA_SIGNAL(alias) ENTITY(rectangle,black,signal,alias,FA SIGNAL)
-!define FA_SIGNAL(alias,label) ENTITY(rectangle,black,signal,label,alias,FA SIGNAL)
-!define FA_SIGNAL(alias,label,shape) ENTITY(shape,black,signal,label,alias,FA SIGNAL)
+!define FA_SIGNAL(_alias) ENTITY(rectangle,black,signal,_alias,FA SIGNAL)
+!define FA_SIGNAL(_alias,_label) ENTITY(rectangle,black,signal,_label,_alias,FA SIGNAL)
+!define FA_SIGNAL(_alias,_label,_shape) ENTITY(_shape,black,signal,_label,_alias,FA SIGNAL)
+!define FA_SIGNAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,signal,_label,_alias,FA SIGNAL)
 skinparam folderBackgroundColor<<FA SIGNAL>> White
 @enduml

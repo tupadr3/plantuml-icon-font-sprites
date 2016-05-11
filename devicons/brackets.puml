@@ -35,8 +35,9 @@ sprite $brackets [32x32/16] {
 }
 
 
-!define DEV_BRACKETS(alias) ENTITY(rectangle,black,brackets,alias,DEV BRACKETS)
-!define DEV_BRACKETS(alias,label) ENTITY(rectangle,black,brackets,label,alias,DEV BRACKETS)
-!define DEV_BRACKETS(alias,label,shape) ENTITY(shape,black,brackets,label,alias,DEV BRACKETS)
+!define DEV_BRACKETS(_alias) ENTITY(rectangle,black,brackets,_alias,DEV BRACKETS)
+!define DEV_BRACKETS(_alias,_label) ENTITY(rectangle,black,brackets,_label,_alias,DEV BRACKETS)
+!define DEV_BRACKETS(_alias,_label,_shape) ENTITY(_shape,black,brackets,_label,_alias,DEV BRACKETS)
+!define DEV_BRACKETS(_alias,_label,_shape,_color) ENTITY(_shape,_color,brackets,_label,_alias,DEV BRACKETS)
 skinparam folderBackgroundColor<<DEV BRACKETS>> White
 @enduml

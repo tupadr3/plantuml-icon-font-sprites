@@ -51,8 +51,9 @@ FFFFFFE2000000000000008FFFFFF40000000000CEEEC000
 }
 
 
-!define FA_GOOGLE_PLUS(alias) ENTITY(rectangle,black,google_plus,alias,FA GOOGLE_PLUS)
-!define FA_GOOGLE_PLUS(alias,label) ENTITY(rectangle,black,google_plus,label,alias,FA GOOGLE_PLUS)
-!define FA_GOOGLE_PLUS(alias,label,shape) ENTITY(shape,black,google_plus,label,alias,FA GOOGLE_PLUS)
+!define FA_GOOGLE_PLUS(_alias) ENTITY(rectangle,black,google_plus,_alias,FA GOOGLE_PLUS)
+!define FA_GOOGLE_PLUS(_alias,_label) ENTITY(rectangle,black,google_plus,_label,_alias,FA GOOGLE_PLUS)
+!define FA_GOOGLE_PLUS(_alias,_label,_shape) ENTITY(_shape,black,google_plus,_label,_alias,FA GOOGLE_PLUS)
+!define FA_GOOGLE_PLUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,google_plus,_label,_alias,FA GOOGLE_PLUS)
 skinparam folderBackgroundColor<<FA GOOGLE_PLUS>> White
 @enduml

@@ -35,8 +35,9 @@ CFFFFFFFFFFFFFF44FFFFFFFFFFFFFF8
 }
 
 
-!define DEV_MODERNIZR(alias) ENTITY(rectangle,black,modernizr,alias,DEV MODERNIZR)
-!define DEV_MODERNIZR(alias,label) ENTITY(rectangle,black,modernizr,label,alias,DEV MODERNIZR)
-!define DEV_MODERNIZR(alias,label,shape) ENTITY(shape,black,modernizr,label,alias,DEV MODERNIZR)
+!define DEV_MODERNIZR(_alias) ENTITY(rectangle,black,modernizr,_alias,DEV MODERNIZR)
+!define DEV_MODERNIZR(_alias,_label) ENTITY(rectangle,black,modernizr,_label,_alias,DEV MODERNIZR)
+!define DEV_MODERNIZR(_alias,_label,_shape) ENTITY(_shape,black,modernizr,_label,_alias,DEV MODERNIZR)
+!define DEV_MODERNIZR(_alias,_label,_shape,_color) ENTITY(_shape,_color,modernizr,_label,_alias,DEV MODERNIZR)
 skinparam folderBackgroundColor<<DEV MODERNIZR>> White
 @enduml

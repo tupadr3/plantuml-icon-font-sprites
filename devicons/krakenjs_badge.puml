@@ -35,8 +35,9 @@ sprite $krakenjs_badge [32x32/16] {
 }
 
 
-!define DEV_KRAKENJS_BADGE(alias) ENTITY(rectangle,black,krakenjs_badge,alias,DEV KRAKENJS_BADGE)
-!define DEV_KRAKENJS_BADGE(alias,label) ENTITY(rectangle,black,krakenjs_badge,label,alias,DEV KRAKENJS_BADGE)
-!define DEV_KRAKENJS_BADGE(alias,label,shape) ENTITY(shape,black,krakenjs_badge,label,alias,DEV KRAKENJS_BADGE)
+!define DEV_KRAKENJS_BADGE(_alias) ENTITY(rectangle,black,krakenjs_badge,_alias,DEV KRAKENJS_BADGE)
+!define DEV_KRAKENJS_BADGE(_alias,_label) ENTITY(rectangle,black,krakenjs_badge,_label,_alias,DEV KRAKENJS_BADGE)
+!define DEV_KRAKENJS_BADGE(_alias,_label,_shape) ENTITY(_shape,black,krakenjs_badge,_label,_alias,DEV KRAKENJS_BADGE)
+!define DEV_KRAKENJS_BADGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,krakenjs_badge,_label,_alias,DEV KRAKENJS_BADGE)
 skinparam folderBackgroundColor<<DEV KRAKENJS_BADGE>> White
 @enduml

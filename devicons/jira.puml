@@ -35,8 +35,9 @@ sprite $jira [32x32/16] {
 }
 
 
-!define DEV_JIRA(alias) ENTITY(rectangle,black,jira,alias,DEV JIRA)
-!define DEV_JIRA(alias,label) ENTITY(rectangle,black,jira,label,alias,DEV JIRA)
-!define DEV_JIRA(alias,label,shape) ENTITY(shape,black,jira,label,alias,DEV JIRA)
+!define DEV_JIRA(_alias) ENTITY(rectangle,black,jira,_alias,DEV JIRA)
+!define DEV_JIRA(_alias,_label) ENTITY(rectangle,black,jira,_label,_alias,DEV JIRA)
+!define DEV_JIRA(_alias,_label,_shape) ENTITY(_shape,black,jira,_label,_alias,DEV JIRA)
+!define DEV_JIRA(_alias,_label,_shape,_color) ENTITY(_shape,_color,jira,_label,_alias,DEV JIRA)
 skinparam folderBackgroundColor<<DEV JIRA>> White
 @enduml

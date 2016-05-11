@@ -35,8 +35,9 @@ sprite $less [32x32/16] {
 }
 
 
-!define DEV_LESS(alias) ENTITY(rectangle,black,less,alias,DEV LESS)
-!define DEV_LESS(alias,label) ENTITY(rectangle,black,less,label,alias,DEV LESS)
-!define DEV_LESS(alias,label,shape) ENTITY(shape,black,less,label,alias,DEV LESS)
+!define DEV_LESS(_alias) ENTITY(rectangle,black,less,_alias,DEV LESS)
+!define DEV_LESS(_alias,_label) ENTITY(rectangle,black,less,_label,_alias,DEV LESS)
+!define DEV_LESS(_alias,_label,_shape) ENTITY(_shape,black,less,_label,_alias,DEV LESS)
+!define DEV_LESS(_alias,_label,_shape,_color) ENTITY(_shape,_color,less,_label,_alias,DEV LESS)
 skinparam folderBackgroundColor<<DEV LESS>> White
 @enduml

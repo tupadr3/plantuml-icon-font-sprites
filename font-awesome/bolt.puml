@@ -51,8 +51,9 @@ sprite $bolt [48x48/16] {
 }
 
 
-!define FA_BOLT(alias) ENTITY(rectangle,black,bolt,alias,FA BOLT)
-!define FA_BOLT(alias,label) ENTITY(rectangle,black,bolt,label,alias,FA BOLT)
-!define FA_BOLT(alias,label,shape) ENTITY(shape,black,bolt,label,alias,FA BOLT)
+!define FA_BOLT(_alias) ENTITY(rectangle,black,bolt,_alias,FA BOLT)
+!define FA_BOLT(_alias,_label) ENTITY(rectangle,black,bolt,_label,_alias,FA BOLT)
+!define FA_BOLT(_alias,_label,_shape) ENTITY(_shape,black,bolt,_label,_alias,FA BOLT)
+!define FA_BOLT(_alias,_label,_shape,_color) ENTITY(_shape,_color,bolt,_label,_alias,FA BOLT)
 skinparam folderBackgroundColor<<FA BOLT>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $cube [48x48/16] {
 }
 
 
-!define FA_CUBE(alias) ENTITY(rectangle,black,cube,alias,FA CUBE)
-!define FA_CUBE(alias,label) ENTITY(rectangle,black,cube,label,alias,FA CUBE)
-!define FA_CUBE(alias,label,shape) ENTITY(shape,black,cube,label,alias,FA CUBE)
+!define FA_CUBE(_alias) ENTITY(rectangle,black,cube,_alias,FA CUBE)
+!define FA_CUBE(_alias,_label) ENTITY(rectangle,black,cube,_label,_alias,FA CUBE)
+!define FA_CUBE(_alias,_label,_shape) ENTITY(_shape,black,cube,_label,_alias,FA CUBE)
+!define FA_CUBE(_alias,_label,_shape,_color) ENTITY(_shape,_color,cube,_label,_alias,FA CUBE)
 skinparam folderBackgroundColor<<FA CUBE>> White
 @enduml

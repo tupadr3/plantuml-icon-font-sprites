@@ -35,8 +35,9 @@ sprite $msql_server [32x32/16] {
 }
 
 
-!define DEV_MSQL_SERVER(alias) ENTITY(rectangle,black,msql_server,alias,DEV MSQL_SERVER)
-!define DEV_MSQL_SERVER(alias,label) ENTITY(rectangle,black,msql_server,label,alias,DEV MSQL_SERVER)
-!define DEV_MSQL_SERVER(alias,label,shape) ENTITY(shape,black,msql_server,label,alias,DEV MSQL_SERVER)
+!define DEV_MSQL_SERVER(_alias) ENTITY(rectangle,black,msql_server,_alias,DEV MSQL_SERVER)
+!define DEV_MSQL_SERVER(_alias,_label) ENTITY(rectangle,black,msql_server,_label,_alias,DEV MSQL_SERVER)
+!define DEV_MSQL_SERVER(_alias,_label,_shape) ENTITY(_shape,black,msql_server,_label,_alias,DEV MSQL_SERVER)
+!define DEV_MSQL_SERVER(_alias,_label,_shape,_color) ENTITY(_shape,_color,msql_server,_label,_alias,DEV MSQL_SERVER)
 skinparam folderBackgroundColor<<DEV MSQL_SERVER>> White
 @enduml

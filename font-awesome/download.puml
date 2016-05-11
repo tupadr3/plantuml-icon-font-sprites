@@ -51,8 +51,9 @@ sprite $download [48x48/16] {
 }
 
 
-!define FA_DOWNLOAD(alias) ENTITY(rectangle,black,download,alias,FA DOWNLOAD)
-!define FA_DOWNLOAD(alias,label) ENTITY(rectangle,black,download,label,alias,FA DOWNLOAD)
-!define FA_DOWNLOAD(alias,label,shape) ENTITY(shape,black,download,label,alias,FA DOWNLOAD)
+!define FA_DOWNLOAD(_alias) ENTITY(rectangle,black,download,_alias,FA DOWNLOAD)
+!define FA_DOWNLOAD(_alias,_label) ENTITY(rectangle,black,download,_label,_alias,FA DOWNLOAD)
+!define FA_DOWNLOAD(_alias,_label,_shape) ENTITY(_shape,black,download,_label,_alias,FA DOWNLOAD)
+!define FA_DOWNLOAD(_alias,_label,_shape,_color) ENTITY(_shape,_color,download,_label,_alias,FA DOWNLOAD)
 skinparam folderBackgroundColor<<FA DOWNLOAD>> White
 @enduml

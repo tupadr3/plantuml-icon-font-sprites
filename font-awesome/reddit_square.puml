@@ -51,8 +51,9 @@ sprite $reddit_square [48x48/16] {
 }
 
 
-!define FA_REDDIT_SQUARE(alias) ENTITY(rectangle,black,reddit_square,alias,FA REDDIT_SQUARE)
-!define FA_REDDIT_SQUARE(alias,label) ENTITY(rectangle,black,reddit_square,label,alias,FA REDDIT_SQUARE)
-!define FA_REDDIT_SQUARE(alias,label,shape) ENTITY(shape,black,reddit_square,label,alias,FA REDDIT_SQUARE)
+!define FA_REDDIT_SQUARE(_alias) ENTITY(rectangle,black,reddit_square,_alias,FA REDDIT_SQUARE)
+!define FA_REDDIT_SQUARE(_alias,_label) ENTITY(rectangle,black,reddit_square,_label,_alias,FA REDDIT_SQUARE)
+!define FA_REDDIT_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,reddit_square,_label,_alias,FA REDDIT_SQUARE)
+!define FA_REDDIT_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,reddit_square,_label,_alias,FA REDDIT_SQUARE)
 skinparam folderBackgroundColor<<FA REDDIT_SQUARE>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $git_merge [32x32/16] {
 }
 
 
-!define DEV_GIT_MERGE(alias) ENTITY(rectangle,black,git_merge,alias,DEV GIT_MERGE)
-!define DEV_GIT_MERGE(alias,label) ENTITY(rectangle,black,git_merge,label,alias,DEV GIT_MERGE)
-!define DEV_GIT_MERGE(alias,label,shape) ENTITY(shape,black,git_merge,label,alias,DEV GIT_MERGE)
+!define DEV_GIT_MERGE(_alias) ENTITY(rectangle,black,git_merge,_alias,DEV GIT_MERGE)
+!define DEV_GIT_MERGE(_alias,_label) ENTITY(rectangle,black,git_merge,_label,_alias,DEV GIT_MERGE)
+!define DEV_GIT_MERGE(_alias,_label,_shape) ENTITY(_shape,black,git_merge,_label,_alias,DEV GIT_MERGE)
+!define DEV_GIT_MERGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,git_merge,_label,_alias,DEV GIT_MERGE)
 skinparam folderBackgroundColor<<DEV GIT_MERGE>> White
 @enduml

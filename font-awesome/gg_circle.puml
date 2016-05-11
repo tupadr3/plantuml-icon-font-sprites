@@ -51,8 +51,9 @@ sprite $gg_circle [48x48/16] {
 }
 
 
-!define FA_GG_CIRCLE(alias) ENTITY(rectangle,black,gg_circle,alias,FA GG_CIRCLE)
-!define FA_GG_CIRCLE(alias,label) ENTITY(rectangle,black,gg_circle,label,alias,FA GG_CIRCLE)
-!define FA_GG_CIRCLE(alias,label,shape) ENTITY(shape,black,gg_circle,label,alias,FA GG_CIRCLE)
+!define FA_GG_CIRCLE(_alias) ENTITY(rectangle,black,gg_circle,_alias,FA GG_CIRCLE)
+!define FA_GG_CIRCLE(_alias,_label) ENTITY(rectangle,black,gg_circle,_label,_alias,FA GG_CIRCLE)
+!define FA_GG_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,gg_circle,_label,_alias,FA GG_CIRCLE)
+!define FA_GG_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,gg_circle,_label,_alias,FA GG_CIRCLE)
 skinparam folderBackgroundColor<<FA GG_CIRCLE>> White
 @enduml

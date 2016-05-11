@@ -35,8 +35,9 @@ sprite $appcelerator [34x32/16] {
 }
 
 
-!define DEV_APPCELERATOR(alias) ENTITY(rectangle,black,appcelerator,alias,DEV APPCELERATOR)
-!define DEV_APPCELERATOR(alias,label) ENTITY(rectangle,black,appcelerator,label,alias,DEV APPCELERATOR)
-!define DEV_APPCELERATOR(alias,label,shape) ENTITY(shape,black,appcelerator,label,alias,DEV APPCELERATOR)
+!define DEV_APPCELERATOR(_alias) ENTITY(rectangle,black,appcelerator,_alias,DEV APPCELERATOR)
+!define DEV_APPCELERATOR(_alias,_label) ENTITY(rectangle,black,appcelerator,_label,_alias,DEV APPCELERATOR)
+!define DEV_APPCELERATOR(_alias,_label,_shape) ENTITY(_shape,black,appcelerator,_label,_alias,DEV APPCELERATOR)
+!define DEV_APPCELERATOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,appcelerator,_label,_alias,DEV APPCELERATOR)
 skinparam folderBackgroundColor<<DEV APPCELERATOR>> White
 @enduml

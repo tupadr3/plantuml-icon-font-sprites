@@ -35,8 +35,9 @@ sprite $perl [32x32/16] {
 }
 
 
-!define DEV_PERL(alias) ENTITY(rectangle,black,perl,alias,DEV PERL)
-!define DEV_PERL(alias,label) ENTITY(rectangle,black,perl,label,alias,DEV PERL)
-!define DEV_PERL(alias,label,shape) ENTITY(shape,black,perl,label,alias,DEV PERL)
+!define DEV_PERL(_alias) ENTITY(rectangle,black,perl,_alias,DEV PERL)
+!define DEV_PERL(_alias,_label) ENTITY(rectangle,black,perl,_label,_alias,DEV PERL)
+!define DEV_PERL(_alias,_label,_shape) ENTITY(_shape,black,perl,_label,_alias,DEV PERL)
+!define DEV_PERL(_alias,_label,_shape,_color) ENTITY(_shape,_color,perl,_label,_alias,DEV PERL)
 skinparam folderBackgroundColor<<DEV PERL>> White
 @enduml

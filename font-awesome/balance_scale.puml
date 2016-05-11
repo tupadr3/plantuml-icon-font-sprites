@@ -51,8 +51,9 @@ FFFFFFFFFFFFFFFFF4000DFF0002FFFFFFFFFFFFFFFFF800
 }
 
 
-!define FA_BALANCE_SCALE(alias) ENTITY(rectangle,black,balance_scale,alias,FA BALANCE_SCALE)
-!define FA_BALANCE_SCALE(alias,label) ENTITY(rectangle,black,balance_scale,label,alias,FA BALANCE_SCALE)
-!define FA_BALANCE_SCALE(alias,label,shape) ENTITY(shape,black,balance_scale,label,alias,FA BALANCE_SCALE)
+!define FA_BALANCE_SCALE(_alias) ENTITY(rectangle,black,balance_scale,_alias,FA BALANCE_SCALE)
+!define FA_BALANCE_SCALE(_alias,_label) ENTITY(rectangle,black,balance_scale,_label,_alias,FA BALANCE_SCALE)
+!define FA_BALANCE_SCALE(_alias,_label,_shape) ENTITY(_shape,black,balance_scale,_label,_alias,FA BALANCE_SCALE)
+!define FA_BALANCE_SCALE(_alias,_label,_shape,_color) ENTITY(_shape,_color,balance_scale,_label,_alias,FA BALANCE_SCALE)
 skinparam folderBackgroundColor<<FA BALANCE_SCALE>> White
 @enduml

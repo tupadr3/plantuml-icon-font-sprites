@@ -51,8 +51,9 @@ sprite $cog [48x48/16] {
 }
 
 
-!define FA_COG(alias) ENTITY(rectangle,black,cog,alias,FA COG)
-!define FA_COG(alias,label) ENTITY(rectangle,black,cog,label,alias,FA COG)
-!define FA_COG(alias,label,shape) ENTITY(shape,black,cog,label,alias,FA COG)
+!define FA_COG(_alias) ENTITY(rectangle,black,cog,_alias,FA COG)
+!define FA_COG(_alias,_label) ENTITY(rectangle,black,cog,_label,_alias,FA COG)
+!define FA_COG(_alias,_label,_shape) ENTITY(_shape,black,cog,_label,_alias,FA COG)
+!define FA_COG(_alias,_label,_shape,_color) ENTITY(_shape,_color,cog,_label,_alias,FA COG)
 skinparam folderBackgroundColor<<FA COG>> White
 @enduml

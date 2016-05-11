@@ -51,8 +51,9 @@ sprite $flag_checkered [48x48/16] {
 }
 
 
-!define FA_FLAG_CHECKERED(alias) ENTITY(rectangle,black,flag_checkered,alias,FA FLAG_CHECKERED)
-!define FA_FLAG_CHECKERED(alias,label) ENTITY(rectangle,black,flag_checkered,label,alias,FA FLAG_CHECKERED)
-!define FA_FLAG_CHECKERED(alias,label,shape) ENTITY(shape,black,flag_checkered,label,alias,FA FLAG_CHECKERED)
+!define FA_FLAG_CHECKERED(_alias) ENTITY(rectangle,black,flag_checkered,_alias,FA FLAG_CHECKERED)
+!define FA_FLAG_CHECKERED(_alias,_label) ENTITY(rectangle,black,flag_checkered,_label,_alias,FA FLAG_CHECKERED)
+!define FA_FLAG_CHECKERED(_alias,_label,_shape) ENTITY(_shape,black,flag_checkered,_label,_alias,FA FLAG_CHECKERED)
+!define FA_FLAG_CHECKERED(_alias,_label,_shape,_color) ENTITY(_shape,_color,flag_checkered,_label,_alias,FA FLAG_CHECKERED)
 skinparam folderBackgroundColor<<FA FLAG_CHECKERED>> White
 @enduml

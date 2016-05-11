@@ -35,8 +35,9 @@ sprite $mailchimp [32x32/16] {
 }
 
 
-!define DEV_MAILCHIMP(alias) ENTITY(rectangle,black,mailchimp,alias,DEV MAILCHIMP)
-!define DEV_MAILCHIMP(alias,label) ENTITY(rectangle,black,mailchimp,label,alias,DEV MAILCHIMP)
-!define DEV_MAILCHIMP(alias,label,shape) ENTITY(shape,black,mailchimp,label,alias,DEV MAILCHIMP)
+!define DEV_MAILCHIMP(_alias) ENTITY(rectangle,black,mailchimp,_alias,DEV MAILCHIMP)
+!define DEV_MAILCHIMP(_alias,_label) ENTITY(rectangle,black,mailchimp,_label,_alias,DEV MAILCHIMP)
+!define DEV_MAILCHIMP(_alias,_label,_shape) ENTITY(_shape,black,mailchimp,_label,_alias,DEV MAILCHIMP)
+!define DEV_MAILCHIMP(_alias,_label,_shape,_color) ENTITY(_shape,_color,mailchimp,_label,_alias,DEV MAILCHIMP)
 skinparam folderBackgroundColor<<DEV MAILCHIMP>> White
 @enduml

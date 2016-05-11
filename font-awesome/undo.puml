@@ -51,8 +51,9 @@ sprite $undo [48x48/16] {
 }
 
 
-!define FA_UNDO(alias) ENTITY(rectangle,black,undo,alias,FA UNDO)
-!define FA_UNDO(alias,label) ENTITY(rectangle,black,undo,label,alias,FA UNDO)
-!define FA_UNDO(alias,label,shape) ENTITY(shape,black,undo,label,alias,FA UNDO)
+!define FA_UNDO(_alias) ENTITY(rectangle,black,undo,_alias,FA UNDO)
+!define FA_UNDO(_alias,_label) ENTITY(rectangle,black,undo,_label,_alias,FA UNDO)
+!define FA_UNDO(_alias,_label,_shape) ENTITY(_shape,black,undo,_label,_alias,FA UNDO)
+!define FA_UNDO(_alias,_label,_shape,_color) ENTITY(_shape,_color,undo,_label,_alias,FA UNDO)
 skinparam folderBackgroundColor<<FA UNDO>> White
 @enduml

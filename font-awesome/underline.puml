@@ -51,8 +51,9 @@ sprite $underline [48x48/16] {
 }
 
 
-!define FA_UNDERLINE(alias) ENTITY(rectangle,black,underline,alias,FA UNDERLINE)
-!define FA_UNDERLINE(alias,label) ENTITY(rectangle,black,underline,label,alias,FA UNDERLINE)
-!define FA_UNDERLINE(alias,label,shape) ENTITY(shape,black,underline,label,alias,FA UNDERLINE)
+!define FA_UNDERLINE(_alias) ENTITY(rectangle,black,underline,_alias,FA UNDERLINE)
+!define FA_UNDERLINE(_alias,_label) ENTITY(rectangle,black,underline,_label,_alias,FA UNDERLINE)
+!define FA_UNDERLINE(_alias,_label,_shape) ENTITY(_shape,black,underline,_label,_alias,FA UNDERLINE)
+!define FA_UNDERLINE(_alias,_label,_shape,_color) ENTITY(_shape,_color,underline,_label,_alias,FA UNDERLINE)
 skinparam folderBackgroundColor<<FA UNDERLINE>> White
 @enduml

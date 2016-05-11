@@ -51,8 +51,9 @@ sprite $fighter_jet [48x48/16] {
 }
 
 
-!define FA_FIGHTER_JET(alias) ENTITY(rectangle,black,fighter_jet,alias,FA FIGHTER_JET)
-!define FA_FIGHTER_JET(alias,label) ENTITY(rectangle,black,fighter_jet,label,alias,FA FIGHTER_JET)
-!define FA_FIGHTER_JET(alias,label,shape) ENTITY(shape,black,fighter_jet,label,alias,FA FIGHTER_JET)
+!define FA_FIGHTER_JET(_alias) ENTITY(rectangle,black,fighter_jet,_alias,FA FIGHTER_JET)
+!define FA_FIGHTER_JET(_alias,_label) ENTITY(rectangle,black,fighter_jet,_label,_alias,FA FIGHTER_JET)
+!define FA_FIGHTER_JET(_alias,_label,_shape) ENTITY(_shape,black,fighter_jet,_label,_alias,FA FIGHTER_JET)
+!define FA_FIGHTER_JET(_alias,_label,_shape,_color) ENTITY(_shape,_color,fighter_jet,_label,_alias,FA FIGHTER_JET)
 skinparam folderBackgroundColor<<FA FIGHTER_JET>> White
 @enduml

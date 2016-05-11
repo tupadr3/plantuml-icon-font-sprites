@@ -35,8 +35,9 @@ sprite $go [32x32/16] {
 }
 
 
-!define DEV_GO(alias) ENTITY(rectangle,black,go,alias,DEV GO)
-!define DEV_GO(alias,label) ENTITY(rectangle,black,go,label,alias,DEV GO)
-!define DEV_GO(alias,label,shape) ENTITY(shape,black,go,label,alias,DEV GO)
+!define DEV_GO(_alias) ENTITY(rectangle,black,go,_alias,DEV GO)
+!define DEV_GO(_alias,_label) ENTITY(rectangle,black,go,_label,_alias,DEV GO)
+!define DEV_GO(_alias,_label,_shape) ENTITY(_shape,black,go,_label,_alias,DEV GO)
+!define DEV_GO(_alias,_label,_shape,_color) ENTITY(_shape,_color,go,_label,_alias,DEV GO)
 skinparam folderBackgroundColor<<DEV GO>> White
 @enduml

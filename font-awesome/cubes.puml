@@ -51,8 +51,9 @@ BFFFFFFFFFFFB002AFFFFE9EFFFFFFFFFFF4005DFFFFC300
 }
 
 
-!define FA_CUBES(alias) ENTITY(rectangle,black,cubes,alias,FA CUBES)
-!define FA_CUBES(alias,label) ENTITY(rectangle,black,cubes,label,alias,FA CUBES)
-!define FA_CUBES(alias,label,shape) ENTITY(shape,black,cubes,label,alias,FA CUBES)
+!define FA_CUBES(_alias) ENTITY(rectangle,black,cubes,_alias,FA CUBES)
+!define FA_CUBES(_alias,_label) ENTITY(rectangle,black,cubes,_label,_alias,FA CUBES)
+!define FA_CUBES(_alias,_label,_shape) ENTITY(_shape,black,cubes,_label,_alias,FA CUBES)
+!define FA_CUBES(_alias,_label,_shape,_color) ENTITY(_shape,_color,cubes,_label,_alias,FA CUBES)
 skinparam folderBackgroundColor<<FA CUBES>> White
 @enduml

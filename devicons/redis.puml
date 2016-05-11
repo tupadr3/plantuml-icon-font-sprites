@@ -35,8 +35,9 @@ sprite $redis [32x32/16] {
 }
 
 
-!define DEV_REDIS(alias) ENTITY(rectangle,black,redis,alias,DEV REDIS)
-!define DEV_REDIS(alias,label) ENTITY(rectangle,black,redis,label,alias,DEV REDIS)
-!define DEV_REDIS(alias,label,shape) ENTITY(shape,black,redis,label,alias,DEV REDIS)
+!define DEV_REDIS(_alias) ENTITY(rectangle,black,redis,_alias,DEV REDIS)
+!define DEV_REDIS(_alias,_label) ENTITY(rectangle,black,redis,_label,_alias,DEV REDIS)
+!define DEV_REDIS(_alias,_label,_shape) ENTITY(_shape,black,redis,_label,_alias,DEV REDIS)
+!define DEV_REDIS(_alias,_label,_shape,_color) ENTITY(_shape,_color,redis,_label,_alias,DEV REDIS)
 skinparam folderBackgroundColor<<DEV REDIS>> White
 @enduml

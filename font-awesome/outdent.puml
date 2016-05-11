@@ -51,8 +51,9 @@ sprite $outdent [48x48/16] {
 }
 
 
-!define FA_OUTDENT(alias) ENTITY(rectangle,black,outdent,alias,FA OUTDENT)
-!define FA_OUTDENT(alias,label) ENTITY(rectangle,black,outdent,label,alias,FA OUTDENT)
-!define FA_OUTDENT(alias,label,shape) ENTITY(shape,black,outdent,label,alias,FA OUTDENT)
+!define FA_OUTDENT(_alias) ENTITY(rectangle,black,outdent,_alias,FA OUTDENT)
+!define FA_OUTDENT(_alias,_label) ENTITY(rectangle,black,outdent,_label,_alias,FA OUTDENT)
+!define FA_OUTDENT(_alias,_label,_shape) ENTITY(_shape,black,outdent,_label,_alias,FA OUTDENT)
+!define FA_OUTDENT(_alias,_label,_shape,_color) ENTITY(_shape,_color,outdent,_label,_alias,FA OUTDENT)
 skinparam folderBackgroundColor<<FA OUTDENT>> White
 @enduml

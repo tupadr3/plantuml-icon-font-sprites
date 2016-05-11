@@ -51,8 +51,9 @@ sprite $viacoin [48x48/16] {
 }
 
 
-!define FA_VIACOIN(alias) ENTITY(rectangle,black,viacoin,alias,FA VIACOIN)
-!define FA_VIACOIN(alias,label) ENTITY(rectangle,black,viacoin,label,alias,FA VIACOIN)
-!define FA_VIACOIN(alias,label,shape) ENTITY(shape,black,viacoin,label,alias,FA VIACOIN)
+!define FA_VIACOIN(_alias) ENTITY(rectangle,black,viacoin,_alias,FA VIACOIN)
+!define FA_VIACOIN(_alias,_label) ENTITY(rectangle,black,viacoin,_label,_alias,FA VIACOIN)
+!define FA_VIACOIN(_alias,_label,_shape) ENTITY(_shape,black,viacoin,_label,_alias,FA VIACOIN)
+!define FA_VIACOIN(_alias,_label,_shape,_color) ENTITY(_shape,_color,viacoin,_label,_alias,FA VIACOIN)
 skinparam folderBackgroundColor<<FA VIACOIN>> White
 @enduml

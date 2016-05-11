@@ -35,8 +35,9 @@ sprite $atlassian [32x32/16] {
 }
 
 
-!define DEV_ATLASSIAN(alias) ENTITY(rectangle,black,atlassian,alias,DEV ATLASSIAN)
-!define DEV_ATLASSIAN(alias,label) ENTITY(rectangle,black,atlassian,label,alias,DEV ATLASSIAN)
-!define DEV_ATLASSIAN(alias,label,shape) ENTITY(shape,black,atlassian,label,alias,DEV ATLASSIAN)
+!define DEV_ATLASSIAN(_alias) ENTITY(rectangle,black,atlassian,_alias,DEV ATLASSIAN)
+!define DEV_ATLASSIAN(_alias,_label) ENTITY(rectangle,black,atlassian,_label,_alias,DEV ATLASSIAN)
+!define DEV_ATLASSIAN(_alias,_label,_shape) ENTITY(_shape,black,atlassian,_label,_alias,DEV ATLASSIAN)
+!define DEV_ATLASSIAN(_alias,_label,_shape,_color) ENTITY(_shape,_color,atlassian,_label,_alias,DEV ATLASSIAN)
 skinparam folderBackgroundColor<<DEV ATLASSIAN>> White
 @enduml

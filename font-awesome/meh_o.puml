@@ -51,8 +51,9 @@ sprite $meh_o [48x48/16] {
 }
 
 
-!define FA_MEH_O(alias) ENTITY(rectangle,black,meh_o,alias,FA MEH_O)
-!define FA_MEH_O(alias,label) ENTITY(rectangle,black,meh_o,label,alias,FA MEH_O)
-!define FA_MEH_O(alias,label,shape) ENTITY(shape,black,meh_o,label,alias,FA MEH_O)
+!define FA_MEH_O(_alias) ENTITY(rectangle,black,meh_o,_alias,FA MEH_O)
+!define FA_MEH_O(_alias,_label) ENTITY(rectangle,black,meh_o,_label,_alias,FA MEH_O)
+!define FA_MEH_O(_alias,_label,_shape) ENTITY(_shape,black,meh_o,_label,_alias,FA MEH_O)
+!define FA_MEH_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,meh_o,_label,_alias,FA MEH_O)
 skinparam folderBackgroundColor<<FA MEH_O>> White
 @enduml

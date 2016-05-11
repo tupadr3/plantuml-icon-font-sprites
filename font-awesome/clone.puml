@@ -51,8 +51,9 @@ sprite $clone [48x48/16] {
 }
 
 
-!define FA_CLONE(alias) ENTITY(rectangle,black,clone,alias,FA CLONE)
-!define FA_CLONE(alias,label) ENTITY(rectangle,black,clone,label,alias,FA CLONE)
-!define FA_CLONE(alias,label,shape) ENTITY(shape,black,clone,label,alias,FA CLONE)
+!define FA_CLONE(_alias) ENTITY(rectangle,black,clone,_alias,FA CLONE)
+!define FA_CLONE(_alias,_label) ENTITY(rectangle,black,clone,_label,_alias,FA CLONE)
+!define FA_CLONE(_alias,_label,_shape) ENTITY(_shape,black,clone,_label,_alias,FA CLONE)
+!define FA_CLONE(_alias,_label,_shape,_color) ENTITY(_shape,_color,clone,_label,_alias,FA CLONE)
 skinparam folderBackgroundColor<<FA CLONE>> White
 @enduml

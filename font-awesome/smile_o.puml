@@ -51,8 +51,9 @@ sprite $smile_o [48x48/16] {
 }
 
 
-!define FA_SMILE_O(alias) ENTITY(rectangle,black,smile_o,alias,FA SMILE_O)
-!define FA_SMILE_O(alias,label) ENTITY(rectangle,black,smile_o,label,alias,FA SMILE_O)
-!define FA_SMILE_O(alias,label,shape) ENTITY(shape,black,smile_o,label,alias,FA SMILE_O)
+!define FA_SMILE_O(_alias) ENTITY(rectangle,black,smile_o,_alias,FA SMILE_O)
+!define FA_SMILE_O(_alias,_label) ENTITY(rectangle,black,smile_o,_label,_alias,FA SMILE_O)
+!define FA_SMILE_O(_alias,_label,_shape) ENTITY(_shape,black,smile_o,_label,_alias,FA SMILE_O)
+!define FA_SMILE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,smile_o,_label,_alias,FA SMILE_O)
 skinparam folderBackgroundColor<<FA SMILE_O>> White
 @enduml

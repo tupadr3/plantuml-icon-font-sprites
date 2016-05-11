@@ -51,8 +51,9 @@ sprite $code_fork [48x48/16] {
 }
 
 
-!define FA_CODE_FORK(alias) ENTITY(rectangle,black,code_fork,alias,FA CODE_FORK)
-!define FA_CODE_FORK(alias,label) ENTITY(rectangle,black,code_fork,label,alias,FA CODE_FORK)
-!define FA_CODE_FORK(alias,label,shape) ENTITY(shape,black,code_fork,label,alias,FA CODE_FORK)
+!define FA_CODE_FORK(_alias) ENTITY(rectangle,black,code_fork,_alias,FA CODE_FORK)
+!define FA_CODE_FORK(_alias,_label) ENTITY(rectangle,black,code_fork,_label,_alias,FA CODE_FORK)
+!define FA_CODE_FORK(_alias,_label,_shape) ENTITY(_shape,black,code_fork,_label,_alias,FA CODE_FORK)
+!define FA_CODE_FORK(_alias,_label,_shape,_color) ENTITY(_shape,_color,code_fork,_label,_alias,FA CODE_FORK)
 skinparam folderBackgroundColor<<FA CODE_FORK>> White
 @enduml

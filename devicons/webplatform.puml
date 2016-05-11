@@ -35,8 +35,9 @@ sprite $webplatform [32x32/16] {
 }
 
 
-!define DEV_WEBPLATFORM(alias) ENTITY(rectangle,black,webplatform,alias,DEV WEBPLATFORM)
-!define DEV_WEBPLATFORM(alias,label) ENTITY(rectangle,black,webplatform,label,alias,DEV WEBPLATFORM)
-!define DEV_WEBPLATFORM(alias,label,shape) ENTITY(shape,black,webplatform,label,alias,DEV WEBPLATFORM)
+!define DEV_WEBPLATFORM(_alias) ENTITY(rectangle,black,webplatform,_alias,DEV WEBPLATFORM)
+!define DEV_WEBPLATFORM(_alias,_label) ENTITY(rectangle,black,webplatform,_label,_alias,DEV WEBPLATFORM)
+!define DEV_WEBPLATFORM(_alias,_label,_shape) ENTITY(_shape,black,webplatform,_label,_alias,DEV WEBPLATFORM)
+!define DEV_WEBPLATFORM(_alias,_label,_shape,_color) ENTITY(_shape,_color,webplatform,_label,_alias,DEV WEBPLATFORM)
 skinparam folderBackgroundColor<<DEV WEBPLATFORM>> White
 @enduml

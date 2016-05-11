@@ -35,8 +35,9 @@ sprite $chrome [32x32/16] {
 }
 
 
-!define DEV_CHROME(alias) ENTITY(rectangle,black,chrome,alias,DEV CHROME)
-!define DEV_CHROME(alias,label) ENTITY(rectangle,black,chrome,label,alias,DEV CHROME)
-!define DEV_CHROME(alias,label,shape) ENTITY(shape,black,chrome,label,alias,DEV CHROME)
+!define DEV_CHROME(_alias) ENTITY(rectangle,black,chrome,_alias,DEV CHROME)
+!define DEV_CHROME(_alias,_label) ENTITY(rectangle,black,chrome,_label,_alias,DEV CHROME)
+!define DEV_CHROME(_alias,_label,_shape) ENTITY(_shape,black,chrome,_label,_alias,DEV CHROME)
+!define DEV_CHROME(_alias,_label,_shape,_color) ENTITY(_shape,_color,chrome,_label,_alias,DEV CHROME)
 skinparam folderBackgroundColor<<DEV CHROME>> White
 @enduml

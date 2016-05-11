@@ -35,8 +35,9 @@ sprite $netbeans [32x32/16] {
 }
 
 
-!define DEV_NETBEANS(alias) ENTITY(rectangle,black,netbeans,alias,DEV NETBEANS)
-!define DEV_NETBEANS(alias,label) ENTITY(rectangle,black,netbeans,label,alias,DEV NETBEANS)
-!define DEV_NETBEANS(alias,label,shape) ENTITY(shape,black,netbeans,label,alias,DEV NETBEANS)
+!define DEV_NETBEANS(_alias) ENTITY(rectangle,black,netbeans,_alias,DEV NETBEANS)
+!define DEV_NETBEANS(_alias,_label) ENTITY(rectangle,black,netbeans,_label,_alias,DEV NETBEANS)
+!define DEV_NETBEANS(_alias,_label,_shape) ENTITY(_shape,black,netbeans,_label,_alias,DEV NETBEANS)
+!define DEV_NETBEANS(_alias,_label,_shape,_color) ENTITY(_shape,_color,netbeans,_label,_alias,DEV NETBEANS)
 skinparam folderBackgroundColor<<DEV NETBEANS>> White
 @enduml

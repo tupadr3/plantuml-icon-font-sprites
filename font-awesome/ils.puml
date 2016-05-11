@@ -51,8 +51,9 @@ sprite $ils [48x48/16] {
 }
 
 
-!define FA_ILS(alias) ENTITY(rectangle,black,ils,alias,FA ILS)
-!define FA_ILS(alias,label) ENTITY(rectangle,black,ils,label,alias,FA ILS)
-!define FA_ILS(alias,label,shape) ENTITY(shape,black,ils,label,alias,FA ILS)
+!define FA_ILS(_alias) ENTITY(rectangle,black,ils,_alias,FA ILS)
+!define FA_ILS(_alias,_label) ENTITY(rectangle,black,ils,_label,_alias,FA ILS)
+!define FA_ILS(_alias,_label,_shape) ENTITY(_shape,black,ils,_label,_alias,FA ILS)
+!define FA_ILS(_alias,_label,_shape,_color) ENTITY(_shape,_color,ils,_label,_alias,FA ILS)
 skinparam folderBackgroundColor<<FA ILS>> White
 @enduml

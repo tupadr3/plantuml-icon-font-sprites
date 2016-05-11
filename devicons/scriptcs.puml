@@ -35,8 +35,9 @@ sprite $scriptcs [34x32/16] {
 }
 
 
-!define DEV_SCRIPTCS(alias) ENTITY(rectangle,black,scriptcs,alias,DEV SCRIPTCS)
-!define DEV_SCRIPTCS(alias,label) ENTITY(rectangle,black,scriptcs,label,alias,DEV SCRIPTCS)
-!define DEV_SCRIPTCS(alias,label,shape) ENTITY(shape,black,scriptcs,label,alias,DEV SCRIPTCS)
+!define DEV_SCRIPTCS(_alias) ENTITY(rectangle,black,scriptcs,_alias,DEV SCRIPTCS)
+!define DEV_SCRIPTCS(_alias,_label) ENTITY(rectangle,black,scriptcs,_label,_alias,DEV SCRIPTCS)
+!define DEV_SCRIPTCS(_alias,_label,_shape) ENTITY(_shape,black,scriptcs,_label,_alias,DEV SCRIPTCS)
+!define DEV_SCRIPTCS(_alias,_label,_shape,_color) ENTITY(_shape,_color,scriptcs,_label,_alias,DEV SCRIPTCS)
 skinparam folderBackgroundColor<<DEV SCRIPTCS>> White
 @enduml

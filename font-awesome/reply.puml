@@ -51,8 +51,9 @@ sprite $reply [48x48/16] {
 }
 
 
-!define FA_REPLY(alias) ENTITY(rectangle,black,reply,alias,FA REPLY)
-!define FA_REPLY(alias,label) ENTITY(rectangle,black,reply,label,alias,FA REPLY)
-!define FA_REPLY(alias,label,shape) ENTITY(shape,black,reply,label,alias,FA REPLY)
+!define FA_REPLY(_alias) ENTITY(rectangle,black,reply,_alias,FA REPLY)
+!define FA_REPLY(_alias,_label) ENTITY(rectangle,black,reply,_label,_alias,FA REPLY)
+!define FA_REPLY(_alias,_label,_shape) ENTITY(_shape,black,reply,_label,_alias,FA REPLY)
+!define FA_REPLY(_alias,_label,_shape,_color) ENTITY(_shape,_color,reply,_label,_alias,FA REPLY)
 skinparam folderBackgroundColor<<FA REPLY>> White
 @enduml

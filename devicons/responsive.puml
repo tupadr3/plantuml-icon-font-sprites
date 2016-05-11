@@ -35,8 +35,9 @@ sprite $responsive [32x32/16] {
 }
 
 
-!define DEV_RESPONSIVE(alias) ENTITY(rectangle,black,responsive,alias,DEV RESPONSIVE)
-!define DEV_RESPONSIVE(alias,label) ENTITY(rectangle,black,responsive,label,alias,DEV RESPONSIVE)
-!define DEV_RESPONSIVE(alias,label,shape) ENTITY(shape,black,responsive,label,alias,DEV RESPONSIVE)
+!define DEV_RESPONSIVE(_alias) ENTITY(rectangle,black,responsive,_alias,DEV RESPONSIVE)
+!define DEV_RESPONSIVE(_alias,_label) ENTITY(rectangle,black,responsive,_label,_alias,DEV RESPONSIVE)
+!define DEV_RESPONSIVE(_alias,_label,_shape) ENTITY(_shape,black,responsive,_label,_alias,DEV RESPONSIVE)
+!define DEV_RESPONSIVE(_alias,_label,_shape,_color) ENTITY(_shape,_color,responsive,_label,_alias,DEV RESPONSIVE)
 skinparam folderBackgroundColor<<DEV RESPONSIVE>> White
 @enduml

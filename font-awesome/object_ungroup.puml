@@ -51,8 +51,9 @@ FFFFFFF000000007FF500000002FFFFFFFF400000003FF90
 }
 
 
-!define FA_OBJECT_UNGROUP(alias) ENTITY(rectangle,black,object_ungroup,alias,FA OBJECT_UNGROUP)
-!define FA_OBJECT_UNGROUP(alias,label) ENTITY(rectangle,black,object_ungroup,label,alias,FA OBJECT_UNGROUP)
-!define FA_OBJECT_UNGROUP(alias,label,shape) ENTITY(shape,black,object_ungroup,label,alias,FA OBJECT_UNGROUP)
+!define FA_OBJECT_UNGROUP(_alias) ENTITY(rectangle,black,object_ungroup,_alias,FA OBJECT_UNGROUP)
+!define FA_OBJECT_UNGROUP(_alias,_label) ENTITY(rectangle,black,object_ungroup,_label,_alias,FA OBJECT_UNGROUP)
+!define FA_OBJECT_UNGROUP(_alias,_label,_shape) ENTITY(_shape,black,object_ungroup,_label,_alias,FA OBJECT_UNGROUP)
+!define FA_OBJECT_UNGROUP(_alias,_label,_shape,_color) ENTITY(_shape,_color,object_ungroup,_label,_alias,FA OBJECT_UNGROUP)
 skinparam folderBackgroundColor<<FA OBJECT_UNGROUP>> White
 @enduml

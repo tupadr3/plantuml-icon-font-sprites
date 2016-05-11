@@ -35,8 +35,9 @@ sprite $firebase [32x32/16] {
 }
 
 
-!define DEV_FIREBASE(alias) ENTITY(rectangle,black,firebase,alias,DEV FIREBASE)
-!define DEV_FIREBASE(alias,label) ENTITY(rectangle,black,firebase,label,alias,DEV FIREBASE)
-!define DEV_FIREBASE(alias,label,shape) ENTITY(shape,black,firebase,label,alias,DEV FIREBASE)
+!define DEV_FIREBASE(_alias) ENTITY(rectangle,black,firebase,_alias,DEV FIREBASE)
+!define DEV_FIREBASE(_alias,_label) ENTITY(rectangle,black,firebase,_label,_alias,DEV FIREBASE)
+!define DEV_FIREBASE(_alias,_label,_shape) ENTITY(_shape,black,firebase,_label,_alias,DEV FIREBASE)
+!define DEV_FIREBASE(_alias,_label,_shape,_color) ENTITY(_shape,_color,firebase,_label,_alias,DEV FIREBASE)
 skinparam folderBackgroundColor<<DEV FIREBASE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $eject [48x48/16] {
 }
 
 
-!define FA_EJECT(alias) ENTITY(rectangle,black,eject,alias,FA EJECT)
-!define FA_EJECT(alias,label) ENTITY(rectangle,black,eject,label,alias,FA EJECT)
-!define FA_EJECT(alias,label,shape) ENTITY(shape,black,eject,label,alias,FA EJECT)
+!define FA_EJECT(_alias) ENTITY(rectangle,black,eject,_alias,FA EJECT)
+!define FA_EJECT(_alias,_label) ENTITY(rectangle,black,eject,_label,_alias,FA EJECT)
+!define FA_EJECT(_alias,_label,_shape) ENTITY(_shape,black,eject,_label,_alias,FA EJECT)
+!define FA_EJECT(_alias,_label,_shape,_color) ENTITY(_shape,_color,eject,_label,_alias,FA EJECT)
 skinparam folderBackgroundColor<<FA EJECT>> White
 @enduml

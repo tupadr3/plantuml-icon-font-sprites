@@ -51,8 +51,9 @@ sprite $flag_o [48x48/16] {
 }
 
 
-!define FA_FLAG_O(alias) ENTITY(rectangle,black,flag_o,alias,FA FLAG_O)
-!define FA_FLAG_O(alias,label) ENTITY(rectangle,black,flag_o,label,alias,FA FLAG_O)
-!define FA_FLAG_O(alias,label,shape) ENTITY(shape,black,flag_o,label,alias,FA FLAG_O)
+!define FA_FLAG_O(_alias) ENTITY(rectangle,black,flag_o,_alias,FA FLAG_O)
+!define FA_FLAG_O(_alias,_label) ENTITY(rectangle,black,flag_o,_label,_alias,FA FLAG_O)
+!define FA_FLAG_O(_alias,_label,_shape) ENTITY(_shape,black,flag_o,_label,_alias,FA FLAG_O)
+!define FA_FLAG_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,flag_o,_label,_alias,FA FLAG_O)
 skinparam folderBackgroundColor<<FA FLAG_O>> White
 @enduml

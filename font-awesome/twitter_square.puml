@@ -51,8 +51,9 @@ sprite $twitter_square [48x48/16] {
 }
 
 
-!define FA_TWITTER_SQUARE(alias) ENTITY(rectangle,black,twitter_square,alias,FA TWITTER_SQUARE)
-!define FA_TWITTER_SQUARE(alias,label) ENTITY(rectangle,black,twitter_square,label,alias,FA TWITTER_SQUARE)
-!define FA_TWITTER_SQUARE(alias,label,shape) ENTITY(shape,black,twitter_square,label,alias,FA TWITTER_SQUARE)
+!define FA_TWITTER_SQUARE(_alias) ENTITY(rectangle,black,twitter_square,_alias,FA TWITTER_SQUARE)
+!define FA_TWITTER_SQUARE(_alias,_label) ENTITY(rectangle,black,twitter_square,_label,_alias,FA TWITTER_SQUARE)
+!define FA_TWITTER_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,twitter_square,_label,_alias,FA TWITTER_SQUARE)
+!define FA_TWITTER_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,twitter_square,_label,_alias,FA TWITTER_SQUARE)
 skinparam folderBackgroundColor<<FA TWITTER_SQUARE>> White
 @enduml

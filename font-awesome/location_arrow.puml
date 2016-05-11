@@ -51,8 +51,9 @@ sprite $location_arrow [48x48/16] {
 }
 
 
-!define FA_LOCATION_ARROW(alias) ENTITY(rectangle,black,location_arrow,alias,FA LOCATION_ARROW)
-!define FA_LOCATION_ARROW(alias,label) ENTITY(rectangle,black,location_arrow,label,alias,FA LOCATION_ARROW)
-!define FA_LOCATION_ARROW(alias,label,shape) ENTITY(shape,black,location_arrow,label,alias,FA LOCATION_ARROW)
+!define FA_LOCATION_ARROW(_alias) ENTITY(rectangle,black,location_arrow,_alias,FA LOCATION_ARROW)
+!define FA_LOCATION_ARROW(_alias,_label) ENTITY(rectangle,black,location_arrow,_label,_alias,FA LOCATION_ARROW)
+!define FA_LOCATION_ARROW(_alias,_label,_shape) ENTITY(_shape,black,location_arrow,_label,_alias,FA LOCATION_ARROW)
+!define FA_LOCATION_ARROW(_alias,_label,_shape,_color) ENTITY(_shape,_color,location_arrow,_label,_alias,FA LOCATION_ARROW)
 skinparam folderBackgroundColor<<FA LOCATION_ARROW>> White
 @enduml

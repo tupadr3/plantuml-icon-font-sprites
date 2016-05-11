@@ -51,8 +51,9 @@ sprite $credit_card [48x48/16] {
 }
 
 
-!define FA_CREDIT_CARD(alias) ENTITY(rectangle,black,credit_card,alias,FA CREDIT_CARD)
-!define FA_CREDIT_CARD(alias,label) ENTITY(rectangle,black,credit_card,label,alias,FA CREDIT_CARD)
-!define FA_CREDIT_CARD(alias,label,shape) ENTITY(shape,black,credit_card,label,alias,FA CREDIT_CARD)
+!define FA_CREDIT_CARD(_alias) ENTITY(rectangle,black,credit_card,_alias,FA CREDIT_CARD)
+!define FA_CREDIT_CARD(_alias,_label) ENTITY(rectangle,black,credit_card,_label,_alias,FA CREDIT_CARD)
+!define FA_CREDIT_CARD(_alias,_label,_shape) ENTITY(_shape,black,credit_card,_label,_alias,FA CREDIT_CARD)
+!define FA_CREDIT_CARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,credit_card,_label,_alias,FA CREDIT_CARD)
 skinparam folderBackgroundColor<<FA CREDIT_CARD>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $python [32x32/16] {
 }
 
 
-!define DEV_PYTHON(alias) ENTITY(rectangle,black,python,alias,DEV PYTHON)
-!define DEV_PYTHON(alias,label) ENTITY(rectangle,black,python,label,alias,DEV PYTHON)
-!define DEV_PYTHON(alias,label,shape) ENTITY(shape,black,python,label,alias,DEV PYTHON)
+!define DEV_PYTHON(_alias) ENTITY(rectangle,black,python,_alias,DEV PYTHON)
+!define DEV_PYTHON(_alias,_label) ENTITY(rectangle,black,python,_label,_alias,DEV PYTHON)
+!define DEV_PYTHON(_alias,_label,_shape) ENTITY(_shape,black,python,_label,_alias,DEV PYTHON)
+!define DEV_PYTHON(_alias,_label,_shape,_color) ENTITY(_shape,_color,python,_label,_alias,DEV PYTHON)
 skinparam folderBackgroundColor<<DEV PYTHON>> White
 @enduml

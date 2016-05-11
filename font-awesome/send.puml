@@ -51,8 +51,9 @@ sprite $send [48x48/16] {
 }
 
 
-!define FA_SEND(alias) ENTITY(rectangle,black,send,alias,FA SEND)
-!define FA_SEND(alias,label) ENTITY(rectangle,black,send,label,alias,FA SEND)
-!define FA_SEND(alias,label,shape) ENTITY(shape,black,send,label,alias,FA SEND)
+!define FA_SEND(_alias) ENTITY(rectangle,black,send,_alias,FA SEND)
+!define FA_SEND(_alias,_label) ENTITY(rectangle,black,send,_label,_alias,FA SEND)
+!define FA_SEND(_alias,_label,_shape) ENTITY(_shape,black,send,_label,_alias,FA SEND)
+!define FA_SEND(_alias,_label,_shape,_color) ENTITY(_shape,_color,send,_label,_alias,FA SEND)
 skinparam folderBackgroundColor<<FA SEND>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $hourglass_end [48x48/16] {
 }
 
 
-!define FA_HOURGLASS_END(alias) ENTITY(rectangle,black,hourglass_end,alias,FA HOURGLASS_END)
-!define FA_HOURGLASS_END(alias,label) ENTITY(rectangle,black,hourglass_end,label,alias,FA HOURGLASS_END)
-!define FA_HOURGLASS_END(alias,label,shape) ENTITY(shape,black,hourglass_end,label,alias,FA HOURGLASS_END)
+!define FA_HOURGLASS_END(_alias) ENTITY(rectangle,black,hourglass_end,_alias,FA HOURGLASS_END)
+!define FA_HOURGLASS_END(_alias,_label) ENTITY(rectangle,black,hourglass_end,_label,_alias,FA HOURGLASS_END)
+!define FA_HOURGLASS_END(_alias,_label,_shape) ENTITY(_shape,black,hourglass_end,_label,_alias,FA HOURGLASS_END)
+!define FA_HOURGLASS_END(_alias,_label,_shape,_color) ENTITY(_shape,_color,hourglass_end,_label,_alias,FA HOURGLASS_END)
 skinparam folderBackgroundColor<<FA HOURGLASS_END>> White
 @enduml

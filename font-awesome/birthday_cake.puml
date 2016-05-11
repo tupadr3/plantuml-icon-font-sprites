@@ -51,8 +51,9 @@ sprite $birthday_cake [48x48/16] {
 }
 
 
-!define FA_BIRTHDAY_CAKE(alias) ENTITY(rectangle,black,birthday_cake,alias,FA BIRTHDAY_CAKE)
-!define FA_BIRTHDAY_CAKE(alias,label) ENTITY(rectangle,black,birthday_cake,label,alias,FA BIRTHDAY_CAKE)
-!define FA_BIRTHDAY_CAKE(alias,label,shape) ENTITY(shape,black,birthday_cake,label,alias,FA BIRTHDAY_CAKE)
+!define FA_BIRTHDAY_CAKE(_alias) ENTITY(rectangle,black,birthday_cake,_alias,FA BIRTHDAY_CAKE)
+!define FA_BIRTHDAY_CAKE(_alias,_label) ENTITY(rectangle,black,birthday_cake,_label,_alias,FA BIRTHDAY_CAKE)
+!define FA_BIRTHDAY_CAKE(_alias,_label,_shape) ENTITY(_shape,black,birthday_cake,_label,_alias,FA BIRTHDAY_CAKE)
+!define FA_BIRTHDAY_CAKE(_alias,_label,_shape,_color) ENTITY(_shape,_color,birthday_cake,_label,_alias,FA BIRTHDAY_CAKE)
 skinparam folderBackgroundColor<<FA BIRTHDAY_CAKE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $book [48x48/16] {
 }
 
 
-!define FA_BOOK(alias) ENTITY(rectangle,black,book,alias,FA BOOK)
-!define FA_BOOK(alias,label) ENTITY(rectangle,black,book,label,alias,FA BOOK)
-!define FA_BOOK(alias,label,shape) ENTITY(shape,black,book,label,alias,FA BOOK)
+!define FA_BOOK(_alias) ENTITY(rectangle,black,book,_alias,FA BOOK)
+!define FA_BOOK(_alias,_label) ENTITY(rectangle,black,book,_label,_alias,FA BOOK)
+!define FA_BOOK(_alias,_label,_shape) ENTITY(_shape,black,book,_label,_alias,FA BOOK)
+!define FA_BOOK(_alias,_label,_shape,_color) ENTITY(_shape,_color,book,_label,_alias,FA BOOK)
 skinparam folderBackgroundColor<<FA BOOK>> White
 @enduml

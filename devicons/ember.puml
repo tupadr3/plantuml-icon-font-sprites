@@ -35,8 +35,9 @@ BCFEC16FF9F9F48E01F5BFC909F9AFF9
 }
 
 
-!define DEV_EMBER(alias) ENTITY(rectangle,black,ember,alias,DEV EMBER)
-!define DEV_EMBER(alias,label) ENTITY(rectangle,black,ember,label,alias,DEV EMBER)
-!define DEV_EMBER(alias,label,shape) ENTITY(shape,black,ember,label,alias,DEV EMBER)
+!define DEV_EMBER(_alias) ENTITY(rectangle,black,ember,_alias,DEV EMBER)
+!define DEV_EMBER(_alias,_label) ENTITY(rectangle,black,ember,_label,_alias,DEV EMBER)
+!define DEV_EMBER(_alias,_label,_shape) ENTITY(_shape,black,ember,_label,_alias,DEV EMBER)
+!define DEV_EMBER(_alias,_label,_shape,_color) ENTITY(_shape,_color,ember,_label,_alias,DEV EMBER)
 skinparam folderBackgroundColor<<DEV EMBER>> White
 @enduml

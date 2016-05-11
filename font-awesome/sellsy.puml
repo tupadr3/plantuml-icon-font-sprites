@@ -51,8 +51,9 @@ sprite $sellsy [48x48/16] {
 }
 
 
-!define FA_SELLSY(alias) ENTITY(rectangle,black,sellsy,alias,FA SELLSY)
-!define FA_SELLSY(alias,label) ENTITY(rectangle,black,sellsy,label,alias,FA SELLSY)
-!define FA_SELLSY(alias,label,shape) ENTITY(shape,black,sellsy,label,alias,FA SELLSY)
+!define FA_SELLSY(_alias) ENTITY(rectangle,black,sellsy,_alias,FA SELLSY)
+!define FA_SELLSY(_alias,_label) ENTITY(rectangle,black,sellsy,_label,_alias,FA SELLSY)
+!define FA_SELLSY(_alias,_label,_shape) ENTITY(_shape,black,sellsy,_label,_alias,FA SELLSY)
+!define FA_SELLSY(_alias,_label,_shape,_color) ENTITY(_shape,_color,sellsy,_label,_alias,FA SELLSY)
 skinparam folderBackgroundColor<<FA SELLSY>> White
 @enduml

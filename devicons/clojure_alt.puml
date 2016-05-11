@@ -35,8 +35,9 @@ sprite $clojure_alt [32x32/16] {
 }
 
 
-!define DEV_CLOJURE_ALT(alias) ENTITY(rectangle,black,clojure_alt,alias,DEV CLOJURE_ALT)
-!define DEV_CLOJURE_ALT(alias,label) ENTITY(rectangle,black,clojure_alt,label,alias,DEV CLOJURE_ALT)
-!define DEV_CLOJURE_ALT(alias,label,shape) ENTITY(shape,black,clojure_alt,label,alias,DEV CLOJURE_ALT)
+!define DEV_CLOJURE_ALT(_alias) ENTITY(rectangle,black,clojure_alt,_alias,DEV CLOJURE_ALT)
+!define DEV_CLOJURE_ALT(_alias,_label) ENTITY(rectangle,black,clojure_alt,_label,_alias,DEV CLOJURE_ALT)
+!define DEV_CLOJURE_ALT(_alias,_label,_shape) ENTITY(_shape,black,clojure_alt,_label,_alias,DEV CLOJURE_ALT)
+!define DEV_CLOJURE_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,clojure_alt,_label,_alias,DEV CLOJURE_ALT)
 skinparam folderBackgroundColor<<DEV CLOJURE_ALT>> White
 @enduml

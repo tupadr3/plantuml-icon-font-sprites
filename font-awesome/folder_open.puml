@@ -51,8 +51,9 @@ sprite $folder_open [48x48/16] {
 }
 
 
-!define FA_FOLDER_OPEN(alias) ENTITY(rectangle,black,folder_open,alias,FA FOLDER_OPEN)
-!define FA_FOLDER_OPEN(alias,label) ENTITY(rectangle,black,folder_open,label,alias,FA FOLDER_OPEN)
-!define FA_FOLDER_OPEN(alias,label,shape) ENTITY(shape,black,folder_open,label,alias,FA FOLDER_OPEN)
+!define FA_FOLDER_OPEN(_alias) ENTITY(rectangle,black,folder_open,_alias,FA FOLDER_OPEN)
+!define FA_FOLDER_OPEN(_alias,_label) ENTITY(rectangle,black,folder_open,_label,_alias,FA FOLDER_OPEN)
+!define FA_FOLDER_OPEN(_alias,_label,_shape) ENTITY(_shape,black,folder_open,_label,_alias,FA FOLDER_OPEN)
+!define FA_FOLDER_OPEN(_alias,_label,_shape,_color) ENTITY(_shape,_color,folder_open,_label,_alias,FA FOLDER_OPEN)
 skinparam folderBackgroundColor<<FA FOLDER_OPEN>> White
 @enduml

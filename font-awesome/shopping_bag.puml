@@ -51,8 +51,9 @@ sprite $shopping_bag [48x48/16] {
 }
 
 
-!define FA_SHOPPING_BAG(alias) ENTITY(rectangle,black,shopping_bag,alias,FA SHOPPING_BAG)
-!define FA_SHOPPING_BAG(alias,label) ENTITY(rectangle,black,shopping_bag,label,alias,FA SHOPPING_BAG)
-!define FA_SHOPPING_BAG(alias,label,shape) ENTITY(shape,black,shopping_bag,label,alias,FA SHOPPING_BAG)
+!define FA_SHOPPING_BAG(_alias) ENTITY(rectangle,black,shopping_bag,_alias,FA SHOPPING_BAG)
+!define FA_SHOPPING_BAG(_alias,_label) ENTITY(rectangle,black,shopping_bag,_label,_alias,FA SHOPPING_BAG)
+!define FA_SHOPPING_BAG(_alias,_label,_shape) ENTITY(_shape,black,shopping_bag,_label,_alias,FA SHOPPING_BAG)
+!define FA_SHOPPING_BAG(_alias,_label,_shape,_color) ENTITY(_shape,_color,shopping_bag,_label,_alias,FA SHOPPING_BAG)
 skinparam folderBackgroundColor<<FA SHOPPING_BAG>> White
 @enduml

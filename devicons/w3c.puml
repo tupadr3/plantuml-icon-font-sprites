@@ -35,8 +35,9 @@ sprite $w3c [32x32/16] {
 }
 
 
-!define DEV_W3C(alias) ENTITY(rectangle,black,w3c,alias,DEV W3C)
-!define DEV_W3C(alias,label) ENTITY(rectangle,black,w3c,label,alias,DEV W3C)
-!define DEV_W3C(alias,label,shape) ENTITY(shape,black,w3c,label,alias,DEV W3C)
+!define DEV_W3C(_alias) ENTITY(rectangle,black,w3c,_alias,DEV W3C)
+!define DEV_W3C(_alias,_label) ENTITY(rectangle,black,w3c,_label,_alias,DEV W3C)
+!define DEV_W3C(_alias,_label,_shape) ENTITY(_shape,black,w3c,_label,_alias,DEV W3C)
+!define DEV_W3C(_alias,_label,_shape,_color) ENTITY(_shape,_color,w3c,_label,_alias,DEV W3C)
 skinparam folderBackgroundColor<<DEV W3C>> White
 @enduml

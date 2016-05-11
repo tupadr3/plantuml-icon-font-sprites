@@ -51,8 +51,9 @@ DFFC100000001CFFC00000000000000CFFC100000001CFFD
 }
 
 
-!define FA_BICYCLE(alias) ENTITY(rectangle,black,bicycle,alias,FA BICYCLE)
-!define FA_BICYCLE(alias,label) ENTITY(rectangle,black,bicycle,label,alias,FA BICYCLE)
-!define FA_BICYCLE(alias,label,shape) ENTITY(shape,black,bicycle,label,alias,FA BICYCLE)
+!define FA_BICYCLE(_alias) ENTITY(rectangle,black,bicycle,_alias,FA BICYCLE)
+!define FA_BICYCLE(_alias,_label) ENTITY(rectangle,black,bicycle,_label,_alias,FA BICYCLE)
+!define FA_BICYCLE(_alias,_label,_shape) ENTITY(_shape,black,bicycle,_label,_alias,FA BICYCLE)
+!define FA_BICYCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,bicycle,_label,_alias,FA BICYCLE)
 skinparam folderBackgroundColor<<FA BICYCLE>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $google_drive [32x32/16] {
 }
 
 
-!define DEV_GOOGLE_DRIVE(alias) ENTITY(rectangle,black,google_drive,alias,DEV GOOGLE_DRIVE)
-!define DEV_GOOGLE_DRIVE(alias,label) ENTITY(rectangle,black,google_drive,label,alias,DEV GOOGLE_DRIVE)
-!define DEV_GOOGLE_DRIVE(alias,label,shape) ENTITY(shape,black,google_drive,label,alias,DEV GOOGLE_DRIVE)
+!define DEV_GOOGLE_DRIVE(_alias) ENTITY(rectangle,black,google_drive,_alias,DEV GOOGLE_DRIVE)
+!define DEV_GOOGLE_DRIVE(_alias,_label) ENTITY(rectangle,black,google_drive,_label,_alias,DEV GOOGLE_DRIVE)
+!define DEV_GOOGLE_DRIVE(_alias,_label,_shape) ENTITY(_shape,black,google_drive,_label,_alias,DEV GOOGLE_DRIVE)
+!define DEV_GOOGLE_DRIVE(_alias,_label,_shape,_color) ENTITY(_shape,_color,google_drive,_label,_alias,DEV GOOGLE_DRIVE)
 skinparam folderBackgroundColor<<DEV GOOGLE_DRIVE>> White
 @enduml

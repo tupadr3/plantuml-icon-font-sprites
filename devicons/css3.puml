@@ -35,8 +35,9 @@ sprite $css3 [32x32/16] {
 }
 
 
-!define DEV_CSS3(alias) ENTITY(rectangle,black,css3,alias,DEV CSS3)
-!define DEV_CSS3(alias,label) ENTITY(rectangle,black,css3,label,alias,DEV CSS3)
-!define DEV_CSS3(alias,label,shape) ENTITY(shape,black,css3,label,alias,DEV CSS3)
+!define DEV_CSS3(_alias) ENTITY(rectangle,black,css3,_alias,DEV CSS3)
+!define DEV_CSS3(_alias,_label) ENTITY(rectangle,black,css3,_label,_alias,DEV CSS3)
+!define DEV_CSS3(_alias,_label,_shape) ENTITY(_shape,black,css3,_label,_alias,DEV CSS3)
+!define DEV_CSS3(_alias,_label,_shape,_color) ENTITY(_shape,_color,css3,_label,_alias,DEV CSS3)
 skinparam folderBackgroundColor<<DEV CSS3>> White
 @enduml

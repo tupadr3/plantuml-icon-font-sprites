@@ -51,8 +51,9 @@ sprite $weibo [48x48/16] {
 }
 
 
-!define FA_WEIBO(alias) ENTITY(rectangle,black,weibo,alias,FA WEIBO)
-!define FA_WEIBO(alias,label) ENTITY(rectangle,black,weibo,label,alias,FA WEIBO)
-!define FA_WEIBO(alias,label,shape) ENTITY(shape,black,weibo,label,alias,FA WEIBO)
+!define FA_WEIBO(_alias) ENTITY(rectangle,black,weibo,_alias,FA WEIBO)
+!define FA_WEIBO(_alias,_label) ENTITY(rectangle,black,weibo,_label,_alias,FA WEIBO)
+!define FA_WEIBO(_alias,_label,_shape) ENTITY(_shape,black,weibo,_label,_alias,FA WEIBO)
+!define FA_WEIBO(_alias,_label,_shape,_color) ENTITY(_shape,_color,weibo,_label,_alias,FA WEIBO)
 skinparam folderBackgroundColor<<FA WEIBO>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $ship [48x48/16] {
 }
 
 
-!define FA_SHIP(alias) ENTITY(rectangle,black,ship,alias,FA SHIP)
-!define FA_SHIP(alias,label) ENTITY(rectangle,black,ship,label,alias,FA SHIP)
-!define FA_SHIP(alias,label,shape) ENTITY(shape,black,ship,label,alias,FA SHIP)
+!define FA_SHIP(_alias) ENTITY(rectangle,black,ship,_alias,FA SHIP)
+!define FA_SHIP(_alias,_label) ENTITY(rectangle,black,ship,_label,_alias,FA SHIP)
+!define FA_SHIP(_alias,_label,_shape) ENTITY(_shape,black,ship,_label,_alias,FA SHIP)
+!define FA_SHIP(_alias,_label,_shape,_color) ENTITY(_shape,_color,ship,_label,_alias,FA SHIP)
 skinparam folderBackgroundColor<<FA SHIP>> White
 @enduml

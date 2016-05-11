@@ -51,8 +51,9 @@ sprite $phone_square [48x48/16] {
 }
 
 
-!define FA_PHONE_SQUARE(alias) ENTITY(rectangle,black,phone_square,alias,FA PHONE_SQUARE)
-!define FA_PHONE_SQUARE(alias,label) ENTITY(rectangle,black,phone_square,label,alias,FA PHONE_SQUARE)
-!define FA_PHONE_SQUARE(alias,label,shape) ENTITY(shape,black,phone_square,label,alias,FA PHONE_SQUARE)
+!define FA_PHONE_SQUARE(_alias) ENTITY(rectangle,black,phone_square,_alias,FA PHONE_SQUARE)
+!define FA_PHONE_SQUARE(_alias,_label) ENTITY(rectangle,black,phone_square,_label,_alias,FA PHONE_SQUARE)
+!define FA_PHONE_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,phone_square,_label,_alias,FA PHONE_SQUARE)
+!define FA_PHONE_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,phone_square,_label,_alias,FA PHONE_SQUARE)
 skinparam folderBackgroundColor<<FA PHONE_SQUARE>> White
 @enduml

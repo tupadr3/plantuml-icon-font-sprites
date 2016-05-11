@@ -51,8 +51,9 @@ sprite $hashtag [48x48/16] {
 }
 
 
-!define FA_HASHTAG(alias) ENTITY(rectangle,black,hashtag,alias,FA HASHTAG)
-!define FA_HASHTAG(alias,label) ENTITY(rectangle,black,hashtag,label,alias,FA HASHTAG)
-!define FA_HASHTAG(alias,label,shape) ENTITY(shape,black,hashtag,label,alias,FA HASHTAG)
+!define FA_HASHTAG(_alias) ENTITY(rectangle,black,hashtag,_alias,FA HASHTAG)
+!define FA_HASHTAG(_alias,_label) ENTITY(rectangle,black,hashtag,_label,_alias,FA HASHTAG)
+!define FA_HASHTAG(_alias,_label,_shape) ENTITY(_shape,black,hashtag,_label,_alias,FA HASHTAG)
+!define FA_HASHTAG(_alias,_label,_shape,_color) ENTITY(_shape,_color,hashtag,_label,_alias,FA HASHTAG)
 skinparam folderBackgroundColor<<FA HASHTAG>> White
 @enduml

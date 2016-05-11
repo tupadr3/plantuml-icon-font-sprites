@@ -35,8 +35,9 @@ sprite $asterisk [34x32/16] {
 }
 
 
-!define DEV_ASTERISK(alias) ENTITY(rectangle,black,asterisk,alias,DEV ASTERISK)
-!define DEV_ASTERISK(alias,label) ENTITY(rectangle,black,asterisk,label,alias,DEV ASTERISK)
-!define DEV_ASTERISK(alias,label,shape) ENTITY(shape,black,asterisk,label,alias,DEV ASTERISK)
+!define DEV_ASTERISK(_alias) ENTITY(rectangle,black,asterisk,_alias,DEV ASTERISK)
+!define DEV_ASTERISK(_alias,_label) ENTITY(rectangle,black,asterisk,_label,_alias,DEV ASTERISK)
+!define DEV_ASTERISK(_alias,_label,_shape) ENTITY(_shape,black,asterisk,_label,_alias,DEV ASTERISK)
+!define DEV_ASTERISK(_alias,_label,_shape,_color) ENTITY(_shape,_color,asterisk,_label,_alias,DEV ASTERISK)
 skinparam folderBackgroundColor<<DEV ASTERISK>> White
 @enduml

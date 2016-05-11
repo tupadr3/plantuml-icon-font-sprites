@@ -51,8 +51,9 @@ sprite $genderless [48x48/16] {
 }
 
 
-!define FA_GENDERLESS(alias) ENTITY(rectangle,black,genderless,alias,FA GENDERLESS)
-!define FA_GENDERLESS(alias,label) ENTITY(rectangle,black,genderless,label,alias,FA GENDERLESS)
-!define FA_GENDERLESS(alias,label,shape) ENTITY(shape,black,genderless,label,alias,FA GENDERLESS)
+!define FA_GENDERLESS(_alias) ENTITY(rectangle,black,genderless,_alias,FA GENDERLESS)
+!define FA_GENDERLESS(_alias,_label) ENTITY(rectangle,black,genderless,_label,_alias,FA GENDERLESS)
+!define FA_GENDERLESS(_alias,_label,_shape) ENTITY(_shape,black,genderless,_label,_alias,FA GENDERLESS)
+!define FA_GENDERLESS(_alias,_label,_shape,_color) ENTITY(_shape,_color,genderless,_label,_alias,FA GENDERLESS)
 skinparam folderBackgroundColor<<FA GENDERLESS>> White
 @enduml

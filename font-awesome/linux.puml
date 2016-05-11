@@ -51,8 +51,9 @@ sprite $linux [48x48/16] {
 }
 
 
-!define FA_LINUX(alias) ENTITY(rectangle,black,linux,alias,FA LINUX)
-!define FA_LINUX(alias,label) ENTITY(rectangle,black,linux,label,alias,FA LINUX)
-!define FA_LINUX(alias,label,shape) ENTITY(shape,black,linux,label,alias,FA LINUX)
+!define FA_LINUX(_alias) ENTITY(rectangle,black,linux,_alias,FA LINUX)
+!define FA_LINUX(_alias,_label) ENTITY(rectangle,black,linux,_label,_alias,FA LINUX)
+!define FA_LINUX(_alias,_label,_shape) ENTITY(_shape,black,linux,_label,_alias,FA LINUX)
+!define FA_LINUX(_alias,_label,_shape,_color) ENTITY(_shape,_color,linux,_label,_alias,FA LINUX)
 skinparam folderBackgroundColor<<FA LINUX>> White
 @enduml

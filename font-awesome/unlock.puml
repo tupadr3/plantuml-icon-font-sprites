@@ -51,8 +51,9 @@ sprite $unlock [48x48/16] {
 }
 
 
-!define FA_UNLOCK(alias) ENTITY(rectangle,black,unlock,alias,FA UNLOCK)
-!define FA_UNLOCK(alias,label) ENTITY(rectangle,black,unlock,label,alias,FA UNLOCK)
-!define FA_UNLOCK(alias,label,shape) ENTITY(shape,black,unlock,label,alias,FA UNLOCK)
+!define FA_UNLOCK(_alias) ENTITY(rectangle,black,unlock,_alias,FA UNLOCK)
+!define FA_UNLOCK(_alias,_label) ENTITY(rectangle,black,unlock,_label,_alias,FA UNLOCK)
+!define FA_UNLOCK(_alias,_label,_shape) ENTITY(_shape,black,unlock,_label,_alias,FA UNLOCK)
+!define FA_UNLOCK(_alias,_label,_shape,_color) ENTITY(_shape,_color,unlock,_label,_alias,FA UNLOCK)
 skinparam folderBackgroundColor<<FA UNLOCK>> White
 @enduml

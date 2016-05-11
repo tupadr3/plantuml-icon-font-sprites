@@ -51,8 +51,9 @@ sprite $contao [48x48/16] {
 }
 
 
-!define FA_CONTAO(alias) ENTITY(rectangle,black,contao,alias,FA CONTAO)
-!define FA_CONTAO(alias,label) ENTITY(rectangle,black,contao,label,alias,FA CONTAO)
-!define FA_CONTAO(alias,label,shape) ENTITY(shape,black,contao,label,alias,FA CONTAO)
+!define FA_CONTAO(_alias) ENTITY(rectangle,black,contao,_alias,FA CONTAO)
+!define FA_CONTAO(_alias,_label) ENTITY(rectangle,black,contao,_label,_alias,FA CONTAO)
+!define FA_CONTAO(_alias,_label,_shape) ENTITY(_shape,black,contao,_label,_alias,FA CONTAO)
+!define FA_CONTAO(_alias,_label,_shape,_color) ENTITY(_shape,_color,contao,_label,_alias,FA CONTAO)
 skinparam folderBackgroundColor<<FA CONTAO>> White
 @enduml

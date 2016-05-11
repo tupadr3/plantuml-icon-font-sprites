@@ -51,8 +51,9 @@ sprite $check_circle [48x48/16] {
 }
 
 
-!define FA_CHECK_CIRCLE(alias) ENTITY(rectangle,black,check_circle,alias,FA CHECK_CIRCLE)
-!define FA_CHECK_CIRCLE(alias,label) ENTITY(rectangle,black,check_circle,label,alias,FA CHECK_CIRCLE)
-!define FA_CHECK_CIRCLE(alias,label,shape) ENTITY(shape,black,check_circle,label,alias,FA CHECK_CIRCLE)
+!define FA_CHECK_CIRCLE(_alias) ENTITY(rectangle,black,check_circle,_alias,FA CHECK_CIRCLE)
+!define FA_CHECK_CIRCLE(_alias,_label) ENTITY(rectangle,black,check_circle,_label,_alias,FA CHECK_CIRCLE)
+!define FA_CHECK_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,check_circle,_label,_alias,FA CHECK_CIRCLE)
+!define FA_CHECK_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,check_circle,_label,_alias,FA CHECK_CIRCLE)
 skinparam folderBackgroundColor<<FA CHECK_CIRCLE>> White
 @enduml

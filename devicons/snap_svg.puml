@@ -35,8 +35,9 @@ sprite $snap_svg [32x32/16] {
 }
 
 
-!define DEV_SNAP_SVG(alias) ENTITY(rectangle,black,snap_svg,alias,DEV SNAP_SVG)
-!define DEV_SNAP_SVG(alias,label) ENTITY(rectangle,black,snap_svg,label,alias,DEV SNAP_SVG)
-!define DEV_SNAP_SVG(alias,label,shape) ENTITY(shape,black,snap_svg,label,alias,DEV SNAP_SVG)
+!define DEV_SNAP_SVG(_alias) ENTITY(rectangle,black,snap_svg,_alias,DEV SNAP_SVG)
+!define DEV_SNAP_SVG(_alias,_label) ENTITY(rectangle,black,snap_svg,_label,_alias,DEV SNAP_SVG)
+!define DEV_SNAP_SVG(_alias,_label,_shape) ENTITY(_shape,black,snap_svg,_label,_alias,DEV SNAP_SVG)
+!define DEV_SNAP_SVG(_alias,_label,_shape,_color) ENTITY(_shape,_color,snap_svg,_label,_alias,DEV SNAP_SVG)
 skinparam folderBackgroundColor<<DEV SNAP_SVG>> White
 @enduml

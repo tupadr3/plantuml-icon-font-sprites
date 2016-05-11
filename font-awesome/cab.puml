@@ -51,8 +51,9 @@ sprite $cab [48x48/16] {
 }
 
 
-!define FA_CAB(alias) ENTITY(rectangle,black,cab,alias,FA CAB)
-!define FA_CAB(alias,label) ENTITY(rectangle,black,cab,label,alias,FA CAB)
-!define FA_CAB(alias,label,shape) ENTITY(shape,black,cab,label,alias,FA CAB)
+!define FA_CAB(_alias) ENTITY(rectangle,black,cab,_alias,FA CAB)
+!define FA_CAB(_alias,_label) ENTITY(rectangle,black,cab,_label,_alias,FA CAB)
+!define FA_CAB(_alias,_label,_shape) ENTITY(_shape,black,cab,_label,_alias,FA CAB)
+!define FA_CAB(_alias,_label,_shape,_color) ENTITY(_shape,_color,cab,_label,_alias,FA CAB)
 skinparam folderBackgroundColor<<FA CAB>> White
 @enduml

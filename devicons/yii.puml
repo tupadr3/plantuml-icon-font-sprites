@@ -35,8 +35,9 @@ sprite $yii [32x32/16] {
 }
 
 
-!define DEV_YII(alias) ENTITY(rectangle,black,yii,alias,DEV YII)
-!define DEV_YII(alias,label) ENTITY(rectangle,black,yii,label,alias,DEV YII)
-!define DEV_YII(alias,label,shape) ENTITY(shape,black,yii,label,alias,DEV YII)
+!define DEV_YII(_alias) ENTITY(rectangle,black,yii,_alias,DEV YII)
+!define DEV_YII(_alias,_label) ENTITY(rectangle,black,yii,_label,_alias,DEV YII)
+!define DEV_YII(_alias,_label,_shape) ENTITY(_shape,black,yii,_label,_alias,DEV YII)
+!define DEV_YII(_alias,_label,_shape,_color) ENTITY(_shape,_color,yii,_label,_alias,DEV YII)
 skinparam folderBackgroundColor<<DEV YII>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $eclipse [32x32/16] {
 }
 
 
-!define DEV_ECLIPSE(alias) ENTITY(rectangle,black,eclipse,alias,DEV ECLIPSE)
-!define DEV_ECLIPSE(alias,label) ENTITY(rectangle,black,eclipse,label,alias,DEV ECLIPSE)
-!define DEV_ECLIPSE(alias,label,shape) ENTITY(shape,black,eclipse,label,alias,DEV ECLIPSE)
+!define DEV_ECLIPSE(_alias) ENTITY(rectangle,black,eclipse,_alias,DEV ECLIPSE)
+!define DEV_ECLIPSE(_alias,_label) ENTITY(rectangle,black,eclipse,_label,_alias,DEV ECLIPSE)
+!define DEV_ECLIPSE(_alias,_label,_shape) ENTITY(_shape,black,eclipse,_label,_alias,DEV ECLIPSE)
+!define DEV_ECLIPSE(_alias,_label,_shape,_color) ENTITY(_shape,_color,eclipse,_label,_alias,DEV ECLIPSE)
 skinparam folderBackgroundColor<<DEV ECLIPSE>> White
 @enduml

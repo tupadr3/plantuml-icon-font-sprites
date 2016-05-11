@@ -51,8 +51,9 @@ sprite $black_tie [48x48/16] {
 }
 
 
-!define FA_BLACK_TIE(alias) ENTITY(rectangle,black,black_tie,alias,FA BLACK_TIE)
-!define FA_BLACK_TIE(alias,label) ENTITY(rectangle,black,black_tie,label,alias,FA BLACK_TIE)
-!define FA_BLACK_TIE(alias,label,shape) ENTITY(shape,black,black_tie,label,alias,FA BLACK_TIE)
+!define FA_BLACK_TIE(_alias) ENTITY(rectangle,black,black_tie,_alias,FA BLACK_TIE)
+!define FA_BLACK_TIE(_alias,_label) ENTITY(rectangle,black,black_tie,_label,_alias,FA BLACK_TIE)
+!define FA_BLACK_TIE(_alias,_label,_shape) ENTITY(_shape,black,black_tie,_label,_alias,FA BLACK_TIE)
+!define FA_BLACK_TIE(_alias,_label,_shape,_color) ENTITY(_shape,_color,black_tie,_label,_alias,FA BLACK_TIE)
 skinparam folderBackgroundColor<<FA BLACK_TIE>> White
 @enduml

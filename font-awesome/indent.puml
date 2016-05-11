@@ -51,8 +51,9 @@ sprite $indent [48x48/16] {
 }
 
 
-!define FA_INDENT(alias) ENTITY(rectangle,black,indent,alias,FA INDENT)
-!define FA_INDENT(alias,label) ENTITY(rectangle,black,indent,label,alias,FA INDENT)
-!define FA_INDENT(alias,label,shape) ENTITY(shape,black,indent,label,alias,FA INDENT)
+!define FA_INDENT(_alias) ENTITY(rectangle,black,indent,_alias,FA INDENT)
+!define FA_INDENT(_alias,_label) ENTITY(rectangle,black,indent,_label,_alias,FA INDENT)
+!define FA_INDENT(_alias,_label,_shape) ENTITY(_shape,black,indent,_label,_alias,FA INDENT)
+!define FA_INDENT(_alias,_label,_shape,_color) ENTITY(_shape,_color,indent,_label,_alias,FA INDENT)
 skinparam folderBackgroundColor<<FA INDENT>> White
 @enduml

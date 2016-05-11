@@ -51,8 +51,9 @@ sprite $try [48x48/16] {
 }
 
 
-!define FA_TRY(alias) ENTITY(rectangle,black,try,alias,FA TRY)
-!define FA_TRY(alias,label) ENTITY(rectangle,black,try,label,alias,FA TRY)
-!define FA_TRY(alias,label,shape) ENTITY(shape,black,try,label,alias,FA TRY)
+!define FA_TRY(_alias) ENTITY(rectangle,black,try,_alias,FA TRY)
+!define FA_TRY(_alias,_label) ENTITY(rectangle,black,try,_label,_alias,FA TRY)
+!define FA_TRY(_alias,_label,_shape) ENTITY(_shape,black,try,_label,_alias,FA TRY)
+!define FA_TRY(_alias,_label,_shape,_color) ENTITY(_shape,_color,try,_label,_alias,FA TRY)
 skinparam folderBackgroundColor<<FA TRY>> White
 @enduml

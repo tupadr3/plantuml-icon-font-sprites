@@ -51,8 +51,9 @@ sprite $venus [48x48/16] {
 }
 
 
-!define FA_VENUS(alias) ENTITY(rectangle,black,venus,alias,FA VENUS)
-!define FA_VENUS(alias,label) ENTITY(rectangle,black,venus,label,alias,FA VENUS)
-!define FA_VENUS(alias,label,shape) ENTITY(shape,black,venus,label,alias,FA VENUS)
+!define FA_VENUS(_alias) ENTITY(rectangle,black,venus,_alias,FA VENUS)
+!define FA_VENUS(_alias,_label) ENTITY(rectangle,black,venus,_label,_alias,FA VENUS)
+!define FA_VENUS(_alias,_label,_shape) ENTITY(_shape,black,venus,_label,_alias,FA VENUS)
+!define FA_VENUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,venus,_label,_alias,FA VENUS)
 skinparam folderBackgroundColor<<FA VENUS>> White
 @enduml

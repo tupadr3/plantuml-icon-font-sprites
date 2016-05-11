@@ -35,8 +35,9 @@ sprite $stylus [32x32/16] {
 }
 
 
-!define DEV_STYLUS(alias) ENTITY(rectangle,black,stylus,alias,DEV STYLUS)
-!define DEV_STYLUS(alias,label) ENTITY(rectangle,black,stylus,label,alias,DEV STYLUS)
-!define DEV_STYLUS(alias,label,shape) ENTITY(shape,black,stylus,label,alias,DEV STYLUS)
+!define DEV_STYLUS(_alias) ENTITY(rectangle,black,stylus,_alias,DEV STYLUS)
+!define DEV_STYLUS(_alias,_label) ENTITY(rectangle,black,stylus,_label,_alias,DEV STYLUS)
+!define DEV_STYLUS(_alias,_label,_shape) ENTITY(_shape,black,stylus,_label,_alias,DEV STYLUS)
+!define DEV_STYLUS(_alias,_label,_shape,_color) ENTITY(_shape,_color,stylus,_label,_alias,DEV STYLUS)
 skinparam folderBackgroundColor<<DEV STYLUS>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $mercury [48x48/16] {
 }
 
 
-!define FA_MERCURY(alias) ENTITY(rectangle,black,mercury,alias,FA MERCURY)
-!define FA_MERCURY(alias,label) ENTITY(rectangle,black,mercury,label,alias,FA MERCURY)
-!define FA_MERCURY(alias,label,shape) ENTITY(shape,black,mercury,label,alias,FA MERCURY)
+!define FA_MERCURY(_alias) ENTITY(rectangle,black,mercury,_alias,FA MERCURY)
+!define FA_MERCURY(_alias,_label) ENTITY(rectangle,black,mercury,_label,_alias,FA MERCURY)
+!define FA_MERCURY(_alias,_label,_shape) ENTITY(_shape,black,mercury,_label,_alias,FA MERCURY)
+!define FA_MERCURY(_alias,_label,_shape,_color) ENTITY(_shape,_color,mercury,_label,_alias,FA MERCURY)
 skinparam folderBackgroundColor<<FA MERCURY>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $meteor [27x32/16] {
 }
 
 
-!define DEV_METEOR(alias) ENTITY(rectangle,black,meteor,alias,DEV METEOR)
-!define DEV_METEOR(alias,label) ENTITY(rectangle,black,meteor,label,alias,DEV METEOR)
-!define DEV_METEOR(alias,label,shape) ENTITY(shape,black,meteor,label,alias,DEV METEOR)
+!define DEV_METEOR(_alias) ENTITY(rectangle,black,meteor,_alias,DEV METEOR)
+!define DEV_METEOR(_alias,_label) ENTITY(rectangle,black,meteor,_label,_alias,DEV METEOR)
+!define DEV_METEOR(_alias,_label,_shape) ENTITY(_shape,black,meteor,_label,_alias,DEV METEOR)
+!define DEV_METEOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,meteor,_label,_alias,DEV METEOR)
 skinparam folderBackgroundColor<<DEV METEOR>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $houzz [48x48/16] {
 }
 
 
-!define FA_HOUZZ(alias) ENTITY(rectangle,black,houzz,alias,FA HOUZZ)
-!define FA_HOUZZ(alias,label) ENTITY(rectangle,black,houzz,label,alias,FA HOUZZ)
-!define FA_HOUZZ(alias,label,shape) ENTITY(shape,black,houzz,label,alias,FA HOUZZ)
+!define FA_HOUZZ(_alias) ENTITY(rectangle,black,houzz,_alias,FA HOUZZ)
+!define FA_HOUZZ(_alias,_label) ENTITY(rectangle,black,houzz,_label,_alias,FA HOUZZ)
+!define FA_HOUZZ(_alias,_label,_shape) ENTITY(_shape,black,houzz,_label,_alias,FA HOUZZ)
+!define FA_HOUZZ(_alias,_label,_shape,_color) ENTITY(_shape,_color,houzz,_label,_alias,FA HOUZZ)
 skinparam folderBackgroundColor<<FA HOUZZ>> White
 @enduml

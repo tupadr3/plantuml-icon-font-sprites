@@ -51,8 +51,9 @@ sprite $text_height [48x48/16] {
 }
 
 
-!define FA_TEXT_HEIGHT(alias) ENTITY(rectangle,black,text_height,alias,FA TEXT_HEIGHT)
-!define FA_TEXT_HEIGHT(alias,label) ENTITY(rectangle,black,text_height,label,alias,FA TEXT_HEIGHT)
-!define FA_TEXT_HEIGHT(alias,label,shape) ENTITY(shape,black,text_height,label,alias,FA TEXT_HEIGHT)
+!define FA_TEXT_HEIGHT(_alias) ENTITY(rectangle,black,text_height,_alias,FA TEXT_HEIGHT)
+!define FA_TEXT_HEIGHT(_alias,_label) ENTITY(rectangle,black,text_height,_label,_alias,FA TEXT_HEIGHT)
+!define FA_TEXT_HEIGHT(_alias,_label,_shape) ENTITY(_shape,black,text_height,_label,_alias,FA TEXT_HEIGHT)
+!define FA_TEXT_HEIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,text_height,_label,_alias,FA TEXT_HEIGHT)
 skinparam folderBackgroundColor<<FA TEXT_HEIGHT>> White
 @enduml

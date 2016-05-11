@@ -51,8 +51,9 @@ sprite $arrow_up [48x48/16] {
 }
 
 
-!define FA_ARROW_UP(alias) ENTITY(rectangle,black,arrow_up,alias,FA ARROW_UP)
-!define FA_ARROW_UP(alias,label) ENTITY(rectangle,black,arrow_up,label,alias,FA ARROW_UP)
-!define FA_ARROW_UP(alias,label,shape) ENTITY(shape,black,arrow_up,label,alias,FA ARROW_UP)
+!define FA_ARROW_UP(_alias) ENTITY(rectangle,black,arrow_up,_alias,FA ARROW_UP)
+!define FA_ARROW_UP(_alias,_label) ENTITY(rectangle,black,arrow_up,_label,_alias,FA ARROW_UP)
+!define FA_ARROW_UP(_alias,_label,_shape) ENTITY(_shape,black,arrow_up,_label,_alias,FA ARROW_UP)
+!define FA_ARROW_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,arrow_up,_label,_alias,FA ARROW_UP)
 skinparam folderBackgroundColor<<FA ARROW_UP>> White
 @enduml

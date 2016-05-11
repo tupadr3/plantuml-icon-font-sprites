@@ -35,8 +35,9 @@ sprite $terminal [32x32/16] {
 }
 
 
-!define DEV_TERMINAL(alias) ENTITY(rectangle,black,terminal,alias,DEV TERMINAL)
-!define DEV_TERMINAL(alias,label) ENTITY(rectangle,black,terminal,label,alias,DEV TERMINAL)
-!define DEV_TERMINAL(alias,label,shape) ENTITY(shape,black,terminal,label,alias,DEV TERMINAL)
+!define DEV_TERMINAL(_alias) ENTITY(rectangle,black,terminal,_alias,DEV TERMINAL)
+!define DEV_TERMINAL(_alias,_label) ENTITY(rectangle,black,terminal,_label,_alias,DEV TERMINAL)
+!define DEV_TERMINAL(_alias,_label,_shape) ENTITY(_shape,black,terminal,_label,_alias,DEV TERMINAL)
+!define DEV_TERMINAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,terminal,_label,_alias,DEV TERMINAL)
 skinparam folderBackgroundColor<<DEV TERMINAL>> White
 @enduml

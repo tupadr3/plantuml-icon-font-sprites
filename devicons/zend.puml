@@ -35,8 +35,9 @@ sprite $zend [32x32/16] {
 }
 
 
-!define DEV_ZEND(alias) ENTITY(rectangle,black,zend,alias,DEV ZEND)
-!define DEV_ZEND(alias,label) ENTITY(rectangle,black,zend,label,alias,DEV ZEND)
-!define DEV_ZEND(alias,label,shape) ENTITY(shape,black,zend,label,alias,DEV ZEND)
+!define DEV_ZEND(_alias) ENTITY(rectangle,black,zend,_alias,DEV ZEND)
+!define DEV_ZEND(_alias,_label) ENTITY(rectangle,black,zend,_label,_alias,DEV ZEND)
+!define DEV_ZEND(_alias,_label,_shape) ENTITY(_shape,black,zend,_label,_alias,DEV ZEND)
+!define DEV_ZEND(_alias,_label,_shape,_color) ENTITY(_shape,_color,zend,_label,_alias,DEV ZEND)
 skinparam folderBackgroundColor<<DEV ZEND>> White
 @enduml

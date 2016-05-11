@@ -35,8 +35,9 @@ sprite $gulp [32x32/16] {
 }
 
 
-!define DEV_GULP(alias) ENTITY(rectangle,black,gulp,alias,DEV GULP)
-!define DEV_GULP(alias,label) ENTITY(rectangle,black,gulp,label,alias,DEV GULP)
-!define DEV_GULP(alias,label,shape) ENTITY(shape,black,gulp,label,alias,DEV GULP)
+!define DEV_GULP(_alias) ENTITY(rectangle,black,gulp,_alias,DEV GULP)
+!define DEV_GULP(_alias,_label) ENTITY(rectangle,black,gulp,_label,_alias,DEV GULP)
+!define DEV_GULP(_alias,_label,_shape) ENTITY(_shape,black,gulp,_label,_alias,DEV GULP)
+!define DEV_GULP(_alias,_label,_shape,_color) ENTITY(_shape,_color,gulp,_label,_alias,DEV GULP)
 skinparam folderBackgroundColor<<DEV GULP>> White
 @enduml

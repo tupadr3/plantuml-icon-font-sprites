@@ -35,8 +35,9 @@ CFFFFFFFFFC000CFFFFFFFFFFFFFFFFC
 }
 
 
-!define DEV_NPM(alias) ENTITY(rectangle,black,npm,alias,DEV NPM)
-!define DEV_NPM(alias,label) ENTITY(rectangle,black,npm,label,alias,DEV NPM)
-!define DEV_NPM(alias,label,shape) ENTITY(shape,black,npm,label,alias,DEV NPM)
+!define DEV_NPM(_alias) ENTITY(rectangle,black,npm,_alias,DEV NPM)
+!define DEV_NPM(_alias,_label) ENTITY(rectangle,black,npm,_label,_alias,DEV NPM)
+!define DEV_NPM(_alias,_label,_shape) ENTITY(_shape,black,npm,_label,_alias,DEV NPM)
+!define DEV_NPM(_alias,_label,_shape,_color) ENTITY(_shape,_color,npm,_label,_alias,DEV NPM)
 skinparam folderBackgroundColor<<DEV NPM>> White
 @enduml

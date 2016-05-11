@@ -51,8 +51,9 @@ sprite $dashboard [48x48/16] {
 }
 
 
-!define FA_DASHBOARD(alias) ENTITY(rectangle,black,dashboard,alias,FA DASHBOARD)
-!define FA_DASHBOARD(alias,label) ENTITY(rectangle,black,dashboard,label,alias,FA DASHBOARD)
-!define FA_DASHBOARD(alias,label,shape) ENTITY(shape,black,dashboard,label,alias,FA DASHBOARD)
+!define FA_DASHBOARD(_alias) ENTITY(rectangle,black,dashboard,_alias,FA DASHBOARD)
+!define FA_DASHBOARD(_alias,_label) ENTITY(rectangle,black,dashboard,_label,_alias,FA DASHBOARD)
+!define FA_DASHBOARD(_alias,_label,_shape) ENTITY(_shape,black,dashboard,_label,_alias,FA DASHBOARD)
+!define FA_DASHBOARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,dashboard,_label,_alias,FA DASHBOARD)
 skinparam folderBackgroundColor<<FA DASHBOARD>> White
 @enduml

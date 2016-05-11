@@ -51,8 +51,9 @@ sprite $chevron_circle_down [48x48/16] {
 }
 
 
-!define FA_CHEVRON_CIRCLE_DOWN(alias) ENTITY(rectangle,black,chevron_circle_down,alias,FA CHEVRON_CIRCLE_DOWN)
-!define FA_CHEVRON_CIRCLE_DOWN(alias,label) ENTITY(rectangle,black,chevron_circle_down,label,alias,FA CHEVRON_CIRCLE_DOWN)
-!define FA_CHEVRON_CIRCLE_DOWN(alias,label,shape) ENTITY(shape,black,chevron_circle_down,label,alias,FA CHEVRON_CIRCLE_DOWN)
+!define FA_CHEVRON_CIRCLE_DOWN(_alias) ENTITY(rectangle,black,chevron_circle_down,_alias,FA CHEVRON_CIRCLE_DOWN)
+!define FA_CHEVRON_CIRCLE_DOWN(_alias,_label) ENTITY(rectangle,black,chevron_circle_down,_label,_alias,FA CHEVRON_CIRCLE_DOWN)
+!define FA_CHEVRON_CIRCLE_DOWN(_alias,_label,_shape) ENTITY(_shape,black,chevron_circle_down,_label,_alias,FA CHEVRON_CIRCLE_DOWN)
+!define FA_CHEVRON_CIRCLE_DOWN(_alias,_label,_shape,_color) ENTITY(_shape,_color,chevron_circle_down,_label,_alias,FA CHEVRON_CIRCLE_DOWN)
 skinparam folderBackgroundColor<<FA CHEVRON_CIRCLE_DOWN>> White
 @enduml

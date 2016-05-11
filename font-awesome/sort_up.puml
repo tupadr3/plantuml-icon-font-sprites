@@ -51,8 +51,9 @@ sprite $sort_up [48x48/16] {
 }
 
 
-!define FA_SORT_UP(alias) ENTITY(rectangle,black,sort_up,alias,FA SORT_UP)
-!define FA_SORT_UP(alias,label) ENTITY(rectangle,black,sort_up,label,alias,FA SORT_UP)
-!define FA_SORT_UP(alias,label,shape) ENTITY(shape,black,sort_up,label,alias,FA SORT_UP)
+!define FA_SORT_UP(_alias) ENTITY(rectangle,black,sort_up,_alias,FA SORT_UP)
+!define FA_SORT_UP(_alias,_label) ENTITY(rectangle,black,sort_up,_label,_alias,FA SORT_UP)
+!define FA_SORT_UP(_alias,_label,_shape) ENTITY(_shape,black,sort_up,_label,_alias,FA SORT_UP)
+!define FA_SORT_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,sort_up,_label,_alias,FA SORT_UP)
 skinparam folderBackgroundColor<<FA SORT_UP>> White
 @enduml

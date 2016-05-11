@@ -51,8 +51,9 @@ sprite $money [48x48/16] {
 }
 
 
-!define FA_MONEY(alias) ENTITY(rectangle,black,money,alias,FA MONEY)
-!define FA_MONEY(alias,label) ENTITY(rectangle,black,money,label,alias,FA MONEY)
-!define FA_MONEY(alias,label,shape) ENTITY(shape,black,money,label,alias,FA MONEY)
+!define FA_MONEY(_alias) ENTITY(rectangle,black,money,_alias,FA MONEY)
+!define FA_MONEY(_alias,_label) ENTITY(rectangle,black,money,_label,_alias,FA MONEY)
+!define FA_MONEY(_alias,_label,_shape) ENTITY(_shape,black,money,_label,_alias,FA MONEY)
+!define FA_MONEY(_alias,_label,_shape,_color) ENTITY(_shape,_color,money,_label,_alias,FA MONEY)
 skinparam folderBackgroundColor<<FA MONEY>> White
 @enduml

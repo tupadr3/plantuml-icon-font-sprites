@@ -51,8 +51,9 @@ sprite $superscript [48x48/16] {
 }
 
 
-!define FA_SUPERSCRIPT(alias) ENTITY(rectangle,black,superscript,alias,FA SUPERSCRIPT)
-!define FA_SUPERSCRIPT(alias,label) ENTITY(rectangle,black,superscript,label,alias,FA SUPERSCRIPT)
-!define FA_SUPERSCRIPT(alias,label,shape) ENTITY(shape,black,superscript,label,alias,FA SUPERSCRIPT)
+!define FA_SUPERSCRIPT(_alias) ENTITY(rectangle,black,superscript,_alias,FA SUPERSCRIPT)
+!define FA_SUPERSCRIPT(_alias,_label) ENTITY(rectangle,black,superscript,_label,_alias,FA SUPERSCRIPT)
+!define FA_SUPERSCRIPT(_alias,_label,_shape) ENTITY(_shape,black,superscript,_label,_alias,FA SUPERSCRIPT)
+!define FA_SUPERSCRIPT(_alias,_label,_shape,_color) ENTITY(_shape,_color,superscript,_label,_alias,FA SUPERSCRIPT)
 skinparam folderBackgroundColor<<FA SUPERSCRIPT>> White
 @enduml

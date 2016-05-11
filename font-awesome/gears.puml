@@ -51,8 +51,9 @@ sprite $gears [48x48/16] {
 }
 
 
-!define FA_GEARS(alias) ENTITY(rectangle,black,gears,alias,FA GEARS)
-!define FA_GEARS(alias,label) ENTITY(rectangle,black,gears,label,alias,FA GEARS)
-!define FA_GEARS(alias,label,shape) ENTITY(shape,black,gears,label,alias,FA GEARS)
+!define FA_GEARS(_alias) ENTITY(rectangle,black,gears,_alias,FA GEARS)
+!define FA_GEARS(_alias,_label) ENTITY(rectangle,black,gears,_label,_alias,FA GEARS)
+!define FA_GEARS(_alias,_label,_shape) ENTITY(_shape,black,gears,_label,_alias,FA GEARS)
+!define FA_GEARS(_alias,_label,_shape,_color) ENTITY(_shape,_color,gears,_label,_alias,FA GEARS)
 skinparam folderBackgroundColor<<FA GEARS>> White
 @enduml

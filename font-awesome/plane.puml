@@ -51,8 +51,9 @@ sprite $plane [48x48/16] {
 }
 
 
-!define FA_PLANE(alias) ENTITY(rectangle,black,plane,alias,FA PLANE)
-!define FA_PLANE(alias,label) ENTITY(rectangle,black,plane,label,alias,FA PLANE)
-!define FA_PLANE(alias,label,shape) ENTITY(shape,black,plane,label,alias,FA PLANE)
+!define FA_PLANE(_alias) ENTITY(rectangle,black,plane,_alias,FA PLANE)
+!define FA_PLANE(_alias,_label) ENTITY(rectangle,black,plane,_label,_alias,FA PLANE)
+!define FA_PLANE(_alias,_label,_shape) ENTITY(_shape,black,plane,_label,_alias,FA PLANE)
+!define FA_PLANE(_alias,_label,_shape,_color) ENTITY(_shape,_color,plane,_label,_alias,FA PLANE)
 skinparam folderBackgroundColor<<FA PLANE>> White
 @enduml

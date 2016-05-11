@@ -35,8 +35,9 @@ sprite $symfony_badge [32x32/16] {
 }
 
 
-!define DEV_SYMFONY_BADGE(alias) ENTITY(rectangle,black,symfony_badge,alias,DEV SYMFONY_BADGE)
-!define DEV_SYMFONY_BADGE(alias,label) ENTITY(rectangle,black,symfony_badge,label,alias,DEV SYMFONY_BADGE)
-!define DEV_SYMFONY_BADGE(alias,label,shape) ENTITY(shape,black,symfony_badge,label,alias,DEV SYMFONY_BADGE)
+!define DEV_SYMFONY_BADGE(_alias) ENTITY(rectangle,black,symfony_badge,_alias,DEV SYMFONY_BADGE)
+!define DEV_SYMFONY_BADGE(_alias,_label) ENTITY(rectangle,black,symfony_badge,_label,_alias,DEV SYMFONY_BADGE)
+!define DEV_SYMFONY_BADGE(_alias,_label,_shape) ENTITY(_shape,black,symfony_badge,_label,_alias,DEV SYMFONY_BADGE)
+!define DEV_SYMFONY_BADGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,symfony_badge,_label,_alias,DEV SYMFONY_BADGE)
 skinparam folderBackgroundColor<<DEV SYMFONY_BADGE>> White
 @enduml

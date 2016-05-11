@@ -51,8 +51,9 @@ sprite $fire_extinguisher [48x48/16] {
 }
 
 
-!define FA_FIRE_EXTINGUISHER(alias) ENTITY(rectangle,black,fire_extinguisher,alias,FA FIRE_EXTINGUISHER)
-!define FA_FIRE_EXTINGUISHER(alias,label) ENTITY(rectangle,black,fire_extinguisher,label,alias,FA FIRE_EXTINGUISHER)
-!define FA_FIRE_EXTINGUISHER(alias,label,shape) ENTITY(shape,black,fire_extinguisher,label,alias,FA FIRE_EXTINGUISHER)
+!define FA_FIRE_EXTINGUISHER(_alias) ENTITY(rectangle,black,fire_extinguisher,_alias,FA FIRE_EXTINGUISHER)
+!define FA_FIRE_EXTINGUISHER(_alias,_label) ENTITY(rectangle,black,fire_extinguisher,_label,_alias,FA FIRE_EXTINGUISHER)
+!define FA_FIRE_EXTINGUISHER(_alias,_label,_shape) ENTITY(_shape,black,fire_extinguisher,_label,_alias,FA FIRE_EXTINGUISHER)
+!define FA_FIRE_EXTINGUISHER(_alias,_label,_shape,_color) ENTITY(_shape,_color,fire_extinguisher,_label,_alias,FA FIRE_EXTINGUISHER)
 skinparam folderBackgroundColor<<FA FIRE_EXTINGUISHER>> White
 @enduml

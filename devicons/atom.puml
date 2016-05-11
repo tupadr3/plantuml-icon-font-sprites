@@ -35,8 +35,9 @@ sprite $atom [32x32/16] {
 }
 
 
-!define DEV_ATOM(alias) ENTITY(rectangle,black,atom,alias,DEV ATOM)
-!define DEV_ATOM(alias,label) ENTITY(rectangle,black,atom,label,alias,DEV ATOM)
-!define DEV_ATOM(alias,label,shape) ENTITY(shape,black,atom,label,alias,DEV ATOM)
+!define DEV_ATOM(_alias) ENTITY(rectangle,black,atom,_alias,DEV ATOM)
+!define DEV_ATOM(_alias,_label) ENTITY(rectangle,black,atom,_label,_alias,DEV ATOM)
+!define DEV_ATOM(_alias,_label,_shape) ENTITY(_shape,black,atom,_label,_alias,DEV ATOM)
+!define DEV_ATOM(_alias,_label,_shape,_color) ENTITY(_shape,_color,atom,_label,_alias,DEV ATOM)
 skinparam folderBackgroundColor<<DEV ATOM>> White
 @enduml

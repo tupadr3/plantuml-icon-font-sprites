@@ -51,8 +51,9 @@ sprite $reorder [48x48/16] {
 }
 
 
-!define FA_REORDER(alias) ENTITY(rectangle,black,reorder,alias,FA REORDER)
-!define FA_REORDER(alias,label) ENTITY(rectangle,black,reorder,label,alias,FA REORDER)
-!define FA_REORDER(alias,label,shape) ENTITY(shape,black,reorder,label,alias,FA REORDER)
+!define FA_REORDER(_alias) ENTITY(rectangle,black,reorder,_alias,FA REORDER)
+!define FA_REORDER(_alias,_label) ENTITY(rectangle,black,reorder,_label,_alias,FA REORDER)
+!define FA_REORDER(_alias,_label,_shape) ENTITY(_shape,black,reorder,_label,_alias,FA REORDER)
+!define FA_REORDER(_alias,_label,_shape,_color) ENTITY(_shape,_color,reorder,_label,_alias,FA REORDER)
 skinparam folderBackgroundColor<<FA REORDER>> White
 @enduml

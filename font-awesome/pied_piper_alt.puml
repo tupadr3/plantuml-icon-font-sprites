@@ -51,8 +51,9 @@ sprite $pied_piper_alt [48x48/16] {
 }
 
 
-!define FA_PIED_PIPER_ALT(alias) ENTITY(rectangle,black,pied_piper_alt,alias,FA PIED_PIPER_ALT)
-!define FA_PIED_PIPER_ALT(alias,label) ENTITY(rectangle,black,pied_piper_alt,label,alias,FA PIED_PIPER_ALT)
-!define FA_PIED_PIPER_ALT(alias,label,shape) ENTITY(shape,black,pied_piper_alt,label,alias,FA PIED_PIPER_ALT)
+!define FA_PIED_PIPER_ALT(_alias) ENTITY(rectangle,black,pied_piper_alt,_alias,FA PIED_PIPER_ALT)
+!define FA_PIED_PIPER_ALT(_alias,_label) ENTITY(rectangle,black,pied_piper_alt,_label,_alias,FA PIED_PIPER_ALT)
+!define FA_PIED_PIPER_ALT(_alias,_label,_shape) ENTITY(_shape,black,pied_piper_alt,_label,_alias,FA PIED_PIPER_ALT)
+!define FA_PIED_PIPER_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,pied_piper_alt,_label,_alias,FA PIED_PIPER_ALT)
 skinparam folderBackgroundColor<<FA PIED_PIPER_ALT>> White
 @enduml

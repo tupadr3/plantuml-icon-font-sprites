@@ -35,8 +35,9 @@ sprite $rasberry_pi [32x32/16] {
 }
 
 
-!define DEV_RASBERRY_PI(alias) ENTITY(rectangle,black,rasberry_pi,alias,DEV RASBERRY_PI)
-!define DEV_RASBERRY_PI(alias,label) ENTITY(rectangle,black,rasberry_pi,label,alias,DEV RASBERRY_PI)
-!define DEV_RASBERRY_PI(alias,label,shape) ENTITY(shape,black,rasberry_pi,label,alias,DEV RASBERRY_PI)
+!define DEV_RASBERRY_PI(_alias) ENTITY(rectangle,black,rasberry_pi,_alias,DEV RASBERRY_PI)
+!define DEV_RASBERRY_PI(_alias,_label) ENTITY(rectangle,black,rasberry_pi,_label,_alias,DEV RASBERRY_PI)
+!define DEV_RASBERRY_PI(_alias,_label,_shape) ENTITY(_shape,black,rasberry_pi,_label,_alias,DEV RASBERRY_PI)
+!define DEV_RASBERRY_PI(_alias,_label,_shape,_color) ENTITY(_shape,_color,rasberry_pi,_label,_alias,DEV RASBERRY_PI)
 skinparam folderBackgroundColor<<DEV RASBERRY_PI>> White
 @enduml

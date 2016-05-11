@@ -51,8 +51,9 @@ sprite $globe [48x48/16] {
 }
 
 
-!define FA_GLOBE(alias) ENTITY(rectangle,black,globe,alias,FA GLOBE)
-!define FA_GLOBE(alias,label) ENTITY(rectangle,black,globe,label,alias,FA GLOBE)
-!define FA_GLOBE(alias,label,shape) ENTITY(shape,black,globe,label,alias,FA GLOBE)
+!define FA_GLOBE(_alias) ENTITY(rectangle,black,globe,_alias,FA GLOBE)
+!define FA_GLOBE(_alias,_label) ENTITY(rectangle,black,globe,_label,_alias,FA GLOBE)
+!define FA_GLOBE(_alias,_label,_shape) ENTITY(_shape,black,globe,_label,_alias,FA GLOBE)
+!define FA_GLOBE(_alias,_label,_shape,_color) ENTITY(_shape,_color,globe,_label,_alias,FA GLOBE)
 skinparam folderBackgroundColor<<FA GLOBE>> White
 @enduml

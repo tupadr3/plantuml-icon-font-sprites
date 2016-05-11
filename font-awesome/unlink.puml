@@ -51,8 +51,9 @@ sprite $unlink [48x48/16] {
 }
 
 
-!define FA_UNLINK(alias) ENTITY(rectangle,black,unlink,alias,FA UNLINK)
-!define FA_UNLINK(alias,label) ENTITY(rectangle,black,unlink,label,alias,FA UNLINK)
-!define FA_UNLINK(alias,label,shape) ENTITY(shape,black,unlink,label,alias,FA UNLINK)
+!define FA_UNLINK(_alias) ENTITY(rectangle,black,unlink,_alias,FA UNLINK)
+!define FA_UNLINK(_alias,_label) ENTITY(rectangle,black,unlink,_label,_alias,FA UNLINK)
+!define FA_UNLINK(_alias,_label,_shape) ENTITY(_shape,black,unlink,_label,_alias,FA UNLINK)
+!define FA_UNLINK(_alias,_label,_shape,_color) ENTITY(_shape,_color,unlink,_label,_alias,FA UNLINK)
 skinparam folderBackgroundColor<<FA UNLINK>> White
 @enduml

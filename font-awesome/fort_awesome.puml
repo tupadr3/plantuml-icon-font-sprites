@@ -51,8 +51,9 @@ sprite $fort_awesome [48x48/16] {
 }
 
 
-!define FA_FORT_AWESOME(alias) ENTITY(rectangle,black,fort_awesome,alias,FA FORT_AWESOME)
-!define FA_FORT_AWESOME(alias,label) ENTITY(rectangle,black,fort_awesome,label,alias,FA FORT_AWESOME)
-!define FA_FORT_AWESOME(alias,label,shape) ENTITY(shape,black,fort_awesome,label,alias,FA FORT_AWESOME)
+!define FA_FORT_AWESOME(_alias) ENTITY(rectangle,black,fort_awesome,_alias,FA FORT_AWESOME)
+!define FA_FORT_AWESOME(_alias,_label) ENTITY(rectangle,black,fort_awesome,_label,_alias,FA FORT_AWESOME)
+!define FA_FORT_AWESOME(_alias,_label,_shape) ENTITY(_shape,black,fort_awesome,_label,_alias,FA FORT_AWESOME)
+!define FA_FORT_AWESOME(_alias,_label,_shape,_color) ENTITY(_shape,_color,fort_awesome,_label,_alias,FA FORT_AWESOME)
 skinparam folderBackgroundColor<<FA FORT_AWESOME>> White
 @enduml

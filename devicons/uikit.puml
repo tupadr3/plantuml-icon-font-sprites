@@ -35,8 +35,9 @@ sprite $uikit [32x32/16] {
 }
 
 
-!define DEV_UIKIT(alias) ENTITY(rectangle,black,uikit,alias,DEV UIKIT)
-!define DEV_UIKIT(alias,label) ENTITY(rectangle,black,uikit,label,alias,DEV UIKIT)
-!define DEV_UIKIT(alias,label,shape) ENTITY(shape,black,uikit,label,alias,DEV UIKIT)
+!define DEV_UIKIT(_alias) ENTITY(rectangle,black,uikit,_alias,DEV UIKIT)
+!define DEV_UIKIT(_alias,_label) ENTITY(rectangle,black,uikit,_label,_alias,DEV UIKIT)
+!define DEV_UIKIT(_alias,_label,_shape) ENTITY(_shape,black,uikit,_label,_alias,DEV UIKIT)
+!define DEV_UIKIT(_alias,_label,_shape,_color) ENTITY(_shape,_color,uikit,_label,_alias,DEV UIKIT)
 skinparam folderBackgroundColor<<DEV UIKIT>> White
 @enduml

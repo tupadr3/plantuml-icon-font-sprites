@@ -51,8 +51,9 @@ sprite $tachometer [48x48/16] {
 }
 
 
-!define FA_TACHOMETER(alias) ENTITY(rectangle,black,tachometer,alias,FA TACHOMETER)
-!define FA_TACHOMETER(alias,label) ENTITY(rectangle,black,tachometer,label,alias,FA TACHOMETER)
-!define FA_TACHOMETER(alias,label,shape) ENTITY(shape,black,tachometer,label,alias,FA TACHOMETER)
+!define FA_TACHOMETER(_alias) ENTITY(rectangle,black,tachometer,_alias,FA TACHOMETER)
+!define FA_TACHOMETER(_alias,_label) ENTITY(rectangle,black,tachometer,_label,_alias,FA TACHOMETER)
+!define FA_TACHOMETER(_alias,_label,_shape) ENTITY(_shape,black,tachometer,_label,_alias,FA TACHOMETER)
+!define FA_TACHOMETER(_alias,_label,_shape,_color) ENTITY(_shape,_color,tachometer,_label,_alias,FA TACHOMETER)
 skinparam folderBackgroundColor<<FA TACHOMETER>> White
 @enduml

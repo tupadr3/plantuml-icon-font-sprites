@@ -35,8 +35,9 @@ sprite $dart [32x32/16] {
 }
 
 
-!define DEV_DART(alias) ENTITY(rectangle,black,dart,alias,DEV DART)
-!define DEV_DART(alias,label) ENTITY(rectangle,black,dart,label,alias,DEV DART)
-!define DEV_DART(alias,label,shape) ENTITY(shape,black,dart,label,alias,DEV DART)
+!define DEV_DART(_alias) ENTITY(rectangle,black,dart,_alias,DEV DART)
+!define DEV_DART(_alias,_label) ENTITY(rectangle,black,dart,_label,_alias,DEV DART)
+!define DEV_DART(_alias,_label,_shape) ENTITY(_shape,black,dart,_label,_alias,DEV DART)
+!define DEV_DART(_alias,_label,_shape,_color) ENTITY(_shape,_color,dart,_label,_alias,DEV DART)
 skinparam folderBackgroundColor<<DEV DART>> White
 @enduml

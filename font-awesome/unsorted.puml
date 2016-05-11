@@ -51,8 +51,9 @@ sprite $unsorted [48x48/16] {
 }
 
 
-!define FA_UNSORTED(alias) ENTITY(rectangle,black,unsorted,alias,FA UNSORTED)
-!define FA_UNSORTED(alias,label) ENTITY(rectangle,black,unsorted,label,alias,FA UNSORTED)
-!define FA_UNSORTED(alias,label,shape) ENTITY(shape,black,unsorted,label,alias,FA UNSORTED)
+!define FA_UNSORTED(_alias) ENTITY(rectangle,black,unsorted,_alias,FA UNSORTED)
+!define FA_UNSORTED(_alias,_label) ENTITY(rectangle,black,unsorted,_label,_alias,FA UNSORTED)
+!define FA_UNSORTED(_alias,_label,_shape) ENTITY(_shape,black,unsorted,_label,_alias,FA UNSORTED)
+!define FA_UNSORTED(_alias,_label,_shape,_color) ENTITY(_shape,_color,unsorted,_label,_alias,FA UNSORTED)
 skinparam folderBackgroundColor<<FA UNSORTED>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $link [48x48/16] {
 }
 
 
-!define FA_LINK(alias) ENTITY(rectangle,black,link,alias,FA LINK)
-!define FA_LINK(alias,label) ENTITY(rectangle,black,link,label,alias,FA LINK)
-!define FA_LINK(alias,label,shape) ENTITY(shape,black,link,label,alias,FA LINK)
+!define FA_LINK(_alias) ENTITY(rectangle,black,link,_alias,FA LINK)
+!define FA_LINK(_alias,_label) ENTITY(rectangle,black,link,_label,_alias,FA LINK)
+!define FA_LINK(_alias,_label,_shape) ENTITY(_shape,black,link,_label,_alias,FA LINK)
+!define FA_LINK(_alias,_label,_shape,_color) ENTITY(_shape,_color,link,_label,_alias,FA LINK)
 skinparam folderBackgroundColor<<FA LINK>> White
 @enduml

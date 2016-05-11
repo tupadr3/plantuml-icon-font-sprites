@@ -51,8 +51,9 @@ sprite $exclamation [48x48/16] {
 }
 
 
-!define FA_EXCLAMATION(alias) ENTITY(rectangle,black,exclamation,alias,FA EXCLAMATION)
-!define FA_EXCLAMATION(alias,label) ENTITY(rectangle,black,exclamation,label,alias,FA EXCLAMATION)
-!define FA_EXCLAMATION(alias,label,shape) ENTITY(shape,black,exclamation,label,alias,FA EXCLAMATION)
+!define FA_EXCLAMATION(_alias) ENTITY(rectangle,black,exclamation,_alias,FA EXCLAMATION)
+!define FA_EXCLAMATION(_alias,_label) ENTITY(rectangle,black,exclamation,_label,_alias,FA EXCLAMATION)
+!define FA_EXCLAMATION(_alias,_label,_shape) ENTITY(_shape,black,exclamation,_label,_alias,FA EXCLAMATION)
+!define FA_EXCLAMATION(_alias,_label,_shape,_color) ENTITY(_shape,_color,exclamation,_label,_alias,FA EXCLAMATION)
 skinparam folderBackgroundColor<<FA EXCLAMATION>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $y_combinator_square [48x48/16] {
 }
 
 
-!define FA_Y_COMBINATOR_SQUARE(alias) ENTITY(rectangle,black,y_combinator_square,alias,FA Y_COMBINATOR_SQUARE)
-!define FA_Y_COMBINATOR_SQUARE(alias,label) ENTITY(rectangle,black,y_combinator_square,label,alias,FA Y_COMBINATOR_SQUARE)
-!define FA_Y_COMBINATOR_SQUARE(alias,label,shape) ENTITY(shape,black,y_combinator_square,label,alias,FA Y_COMBINATOR_SQUARE)
+!define FA_Y_COMBINATOR_SQUARE(_alias) ENTITY(rectangle,black,y_combinator_square,_alias,FA Y_COMBINATOR_SQUARE)
+!define FA_Y_COMBINATOR_SQUARE(_alias,_label) ENTITY(rectangle,black,y_combinator_square,_label,_alias,FA Y_COMBINATOR_SQUARE)
+!define FA_Y_COMBINATOR_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,y_combinator_square,_label,_alias,FA Y_COMBINATOR_SQUARE)
+!define FA_Y_COMBINATOR_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,y_combinator_square,_label,_alias,FA Y_COMBINATOR_SQUARE)
 skinparam folderBackgroundColor<<FA Y_COMBINATOR_SQUARE>> White
 @enduml

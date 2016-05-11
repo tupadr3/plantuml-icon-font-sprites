@@ -51,8 +51,9 @@ sprite $mail_reply_all [48x48/16] {
 }
 
 
-!define FA_MAIL_REPLY_ALL(alias) ENTITY(rectangle,black,mail_reply_all,alias,FA MAIL_REPLY_ALL)
-!define FA_MAIL_REPLY_ALL(alias,label) ENTITY(rectangle,black,mail_reply_all,label,alias,FA MAIL_REPLY_ALL)
-!define FA_MAIL_REPLY_ALL(alias,label,shape) ENTITY(shape,black,mail_reply_all,label,alias,FA MAIL_REPLY_ALL)
+!define FA_MAIL_REPLY_ALL(_alias) ENTITY(rectangle,black,mail_reply_all,_alias,FA MAIL_REPLY_ALL)
+!define FA_MAIL_REPLY_ALL(_alias,_label) ENTITY(rectangle,black,mail_reply_all,_label,_alias,FA MAIL_REPLY_ALL)
+!define FA_MAIL_REPLY_ALL(_alias,_label,_shape) ENTITY(_shape,black,mail_reply_all,_label,_alias,FA MAIL_REPLY_ALL)
+!define FA_MAIL_REPLY_ALL(_alias,_label,_shape,_color) ENTITY(_shape,_color,mail_reply_all,_label,_alias,FA MAIL_REPLY_ALL)
 skinparam folderBackgroundColor<<FA MAIL_REPLY_ALL>> White
 @enduml

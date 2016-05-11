@@ -51,8 +51,9 @@ sprite $compass [48x48/16] {
 }
 
 
-!define FA_COMPASS(alias) ENTITY(rectangle,black,compass,alias,FA COMPASS)
-!define FA_COMPASS(alias,label) ENTITY(rectangle,black,compass,label,alias,FA COMPASS)
-!define FA_COMPASS(alias,label,shape) ENTITY(shape,black,compass,label,alias,FA COMPASS)
+!define FA_COMPASS(_alias) ENTITY(rectangle,black,compass,_alias,FA COMPASS)
+!define FA_COMPASS(_alias,_label) ENTITY(rectangle,black,compass,_label,_alias,FA COMPASS)
+!define FA_COMPASS(_alias,_label,_shape) ENTITY(_shape,black,compass,_label,_alias,FA COMPASS)
+!define FA_COMPASS(_alias,_label,_shape,_color) ENTITY(_shape,_color,compass,_label,_alias,FA COMPASS)
 skinparam folderBackgroundColor<<FA COMPASS>> White
 @enduml

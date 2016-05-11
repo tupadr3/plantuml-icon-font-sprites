@@ -51,8 +51,9 @@ sprite $briefcase [48x48/16] {
 }
 
 
-!define FA_BRIEFCASE(alias) ENTITY(rectangle,black,briefcase,alias,FA BRIEFCASE)
-!define FA_BRIEFCASE(alias,label) ENTITY(rectangle,black,briefcase,label,alias,FA BRIEFCASE)
-!define FA_BRIEFCASE(alias,label,shape) ENTITY(shape,black,briefcase,label,alias,FA BRIEFCASE)
+!define FA_BRIEFCASE(_alias) ENTITY(rectangle,black,briefcase,_alias,FA BRIEFCASE)
+!define FA_BRIEFCASE(_alias,_label) ENTITY(rectangle,black,briefcase,_label,_alias,FA BRIEFCASE)
+!define FA_BRIEFCASE(_alias,_label,_shape) ENTITY(_shape,black,briefcase,_label,_alias,FA BRIEFCASE)
+!define FA_BRIEFCASE(_alias,_label,_shape,_color) ENTITY(_shape,_color,briefcase,_label,_alias,FA BRIEFCASE)
 skinparam folderBackgroundColor<<FA BRIEFCASE>> White
 @enduml

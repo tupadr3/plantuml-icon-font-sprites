@@ -51,8 +51,9 @@ sprite $cut [48x48/16] {
 }
 
 
-!define FA_CUT(alias) ENTITY(rectangle,black,cut,alias,FA CUT)
-!define FA_CUT(alias,label) ENTITY(rectangle,black,cut,label,alias,FA CUT)
-!define FA_CUT(alias,label,shape) ENTITY(shape,black,cut,label,alias,FA CUT)
+!define FA_CUT(_alias) ENTITY(rectangle,black,cut,_alias,FA CUT)
+!define FA_CUT(_alias,_label) ENTITY(rectangle,black,cut,_label,_alias,FA CUT)
+!define FA_CUT(_alias,_label,_shape) ENTITY(_shape,black,cut,_label,_alias,FA CUT)
+!define FA_CUT(_alias,_label,_shape,_color) ENTITY(_shape,_color,cut,_label,_alias,FA CUT)
 skinparam folderBackgroundColor<<FA CUT>> White
 @enduml

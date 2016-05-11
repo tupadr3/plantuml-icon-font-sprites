@@ -51,8 +51,9 @@ sprite $jpy [48x48/16] {
 }
 
 
-!define FA_JPY(alias) ENTITY(rectangle,black,jpy,alias,FA JPY)
-!define FA_JPY(alias,label) ENTITY(rectangle,black,jpy,label,alias,FA JPY)
-!define FA_JPY(alias,label,shape) ENTITY(shape,black,jpy,label,alias,FA JPY)
+!define FA_JPY(_alias) ENTITY(rectangle,black,jpy,_alias,FA JPY)
+!define FA_JPY(_alias,_label) ENTITY(rectangle,black,jpy,_label,_alias,FA JPY)
+!define FA_JPY(_alias,_label,_shape) ENTITY(_shape,black,jpy,_label,_alias,FA JPY)
+!define FA_JPY(_alias,_label,_shape,_color) ENTITY(_shape,_color,jpy,_label,_alias,FA JPY)
 skinparam folderBackgroundColor<<FA JPY>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $user [48x48/16] {
 }
 
 
-!define FA_USER(alias) ENTITY(rectangle,black,user,alias,FA USER)
-!define FA_USER(alias,label) ENTITY(rectangle,black,user,label,alias,FA USER)
-!define FA_USER(alias,label,shape) ENTITY(shape,black,user,label,alias,FA USER)
+!define FA_USER(_alias) ENTITY(rectangle,black,user,_alias,FA USER)
+!define FA_USER(_alias,_label) ENTITY(rectangle,black,user,_label,_alias,FA USER)
+!define FA_USER(_alias,_label,_shape) ENTITY(_shape,black,user,_label,_alias,FA USER)
+!define FA_USER(_alias,_label,_shape,_color) ENTITY(_shape,_color,user,_label,_alias,FA USER)
 skinparam folderBackgroundColor<<FA USER>> White
 @enduml

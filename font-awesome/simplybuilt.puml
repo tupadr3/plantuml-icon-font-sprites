@@ -51,8 +51,9 @@ sprite $simplybuilt [48x48/16] {
 }
 
 
-!define FA_SIMPLYBUILT(alias) ENTITY(rectangle,black,simplybuilt,alias,FA SIMPLYBUILT)
-!define FA_SIMPLYBUILT(alias,label) ENTITY(rectangle,black,simplybuilt,label,alias,FA SIMPLYBUILT)
-!define FA_SIMPLYBUILT(alias,label,shape) ENTITY(shape,black,simplybuilt,label,alias,FA SIMPLYBUILT)
+!define FA_SIMPLYBUILT(_alias) ENTITY(rectangle,black,simplybuilt,_alias,FA SIMPLYBUILT)
+!define FA_SIMPLYBUILT(_alias,_label) ENTITY(rectangle,black,simplybuilt,_label,_alias,FA SIMPLYBUILT)
+!define FA_SIMPLYBUILT(_alias,_label,_shape) ENTITY(_shape,black,simplybuilt,_label,_alias,FA SIMPLYBUILT)
+!define FA_SIMPLYBUILT(_alias,_label,_shape,_color) ENTITY(_shape,_color,simplybuilt,_label,_alias,FA SIMPLYBUILT)
 skinparam folderBackgroundColor<<FA SIMPLYBUILT>> White
 @enduml

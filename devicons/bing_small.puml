@@ -35,8 +35,9 @@ sprite $bing_small [32x32/16] {
 }
 
 
-!define DEV_BING_SMALL(alias) ENTITY(rectangle,black,bing_small,alias,DEV BING_SMALL)
-!define DEV_BING_SMALL(alias,label) ENTITY(rectangle,black,bing_small,label,alias,DEV BING_SMALL)
-!define DEV_BING_SMALL(alias,label,shape) ENTITY(shape,black,bing_small,label,alias,DEV BING_SMALL)
+!define DEV_BING_SMALL(_alias) ENTITY(rectangle,black,bing_small,_alias,DEV BING_SMALL)
+!define DEV_BING_SMALL(_alias,_label) ENTITY(rectangle,black,bing_small,_label,_alias,DEV BING_SMALL)
+!define DEV_BING_SMALL(_alias,_label,_shape) ENTITY(_shape,black,bing_small,_label,_alias,DEV BING_SMALL)
+!define DEV_BING_SMALL(_alias,_label,_shape,_color) ENTITY(_shape,_color,bing_small,_label,_alias,DEV BING_SMALL)
 skinparam folderBackgroundColor<<DEV BING_SMALL>> White
 @enduml

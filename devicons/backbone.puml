@@ -35,8 +35,9 @@ sprite $backbone [32x32/16] {
 }
 
 
-!define DEV_BACKBONE(alias) ENTITY(rectangle,black,backbone,alias,DEV BACKBONE)
-!define DEV_BACKBONE(alias,label) ENTITY(rectangle,black,backbone,label,alias,DEV BACKBONE)
-!define DEV_BACKBONE(alias,label,shape) ENTITY(shape,black,backbone,label,alias,DEV BACKBONE)
+!define DEV_BACKBONE(_alias) ENTITY(rectangle,black,backbone,_alias,DEV BACKBONE)
+!define DEV_BACKBONE(_alias,_label) ENTITY(rectangle,black,backbone,_label,_alias,DEV BACKBONE)
+!define DEV_BACKBONE(_alias,_label,_shape) ENTITY(_shape,black,backbone,_label,_alias,DEV BACKBONE)
+!define DEV_BACKBONE(_alias,_label,_shape,_color) ENTITY(_shape,_color,backbone,_label,_alias,DEV BACKBONE)
 skinparam folderBackgroundColor<<DEV BACKBONE>> White
 @enduml

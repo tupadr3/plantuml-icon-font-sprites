@@ -35,8 +35,9 @@ sprite $ror [32x32/16] {
 }
 
 
-!define DEV_ROR(alias) ENTITY(rectangle,black,ror,alias,DEV ROR)
-!define DEV_ROR(alias,label) ENTITY(rectangle,black,ror,label,alias,DEV ROR)
-!define DEV_ROR(alias,label,shape) ENTITY(shape,black,ror,label,alias,DEV ROR)
+!define DEV_ROR(_alias) ENTITY(rectangle,black,ror,_alias,DEV ROR)
+!define DEV_ROR(_alias,_label) ENTITY(rectangle,black,ror,_label,_alias,DEV ROR)
+!define DEV_ROR(_alias,_label,_shape) ENTITY(_shape,black,ror,_label,_alias,DEV ROR)
+!define DEV_ROR(_alias,_label,_shape,_color) ENTITY(_shape,_color,ror,_label,_alias,DEV ROR)
 skinparam folderBackgroundColor<<DEV ROR>> White
 @enduml

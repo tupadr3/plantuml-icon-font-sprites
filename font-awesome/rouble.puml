@@ -51,8 +51,9 @@ sprite $rouble [48x48/16] {
 }
 
 
-!define FA_ROUBLE(alias) ENTITY(rectangle,black,rouble,alias,FA ROUBLE)
-!define FA_ROUBLE(alias,label) ENTITY(rectangle,black,rouble,label,alias,FA ROUBLE)
-!define FA_ROUBLE(alias,label,shape) ENTITY(shape,black,rouble,label,alias,FA ROUBLE)
+!define FA_ROUBLE(_alias) ENTITY(rectangle,black,rouble,_alias,FA ROUBLE)
+!define FA_ROUBLE(_alias,_label) ENTITY(rectangle,black,rouble,_label,_alias,FA ROUBLE)
+!define FA_ROUBLE(_alias,_label,_shape) ENTITY(_shape,black,rouble,_label,_alias,FA ROUBLE)
+!define FA_ROUBLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,rouble,_label,_alias,FA ROUBLE)
 skinparam folderBackgroundColor<<FA ROUBLE>> White
 @enduml

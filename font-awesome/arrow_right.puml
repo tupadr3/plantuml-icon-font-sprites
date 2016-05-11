@@ -51,8 +51,9 @@ sprite $arrow_right [48x48/16] {
 }
 
 
-!define FA_ARROW_RIGHT(alias) ENTITY(rectangle,black,arrow_right,alias,FA ARROW_RIGHT)
-!define FA_ARROW_RIGHT(alias,label) ENTITY(rectangle,black,arrow_right,label,alias,FA ARROW_RIGHT)
-!define FA_ARROW_RIGHT(alias,label,shape) ENTITY(shape,black,arrow_right,label,alias,FA ARROW_RIGHT)
+!define FA_ARROW_RIGHT(_alias) ENTITY(rectangle,black,arrow_right,_alias,FA ARROW_RIGHT)
+!define FA_ARROW_RIGHT(_alias,_label) ENTITY(rectangle,black,arrow_right,_label,_alias,FA ARROW_RIGHT)
+!define FA_ARROW_RIGHT(_alias,_label,_shape) ENTITY(_shape,black,arrow_right,_label,_alias,FA ARROW_RIGHT)
+!define FA_ARROW_RIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,arrow_right,_label,_alias,FA ARROW_RIGHT)
 skinparam folderBackgroundColor<<FA ARROW_RIGHT>> White
 @enduml

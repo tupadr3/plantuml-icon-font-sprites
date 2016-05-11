@@ -51,8 +51,9 @@ sprite $volume_up [48x48/16] {
 }
 
 
-!define FA_VOLUME_UP(alias) ENTITY(rectangle,black,volume_up,alias,FA VOLUME_UP)
-!define FA_VOLUME_UP(alias,label) ENTITY(rectangle,black,volume_up,label,alias,FA VOLUME_UP)
-!define FA_VOLUME_UP(alias,label,shape) ENTITY(shape,black,volume_up,label,alias,FA VOLUME_UP)
+!define FA_VOLUME_UP(_alias) ENTITY(rectangle,black,volume_up,_alias,FA VOLUME_UP)
+!define FA_VOLUME_UP(_alias,_label) ENTITY(rectangle,black,volume_up,_label,_alias,FA VOLUME_UP)
+!define FA_VOLUME_UP(_alias,_label,_shape) ENTITY(_shape,black,volume_up,_label,_alias,FA VOLUME_UP)
+!define FA_VOLUME_UP(_alias,_label,_shape,_color) ENTITY(_shape,_color,volume_up,_label,_alias,FA VOLUME_UP)
 skinparam folderBackgroundColor<<FA VOLUME_UP>> White
 @enduml

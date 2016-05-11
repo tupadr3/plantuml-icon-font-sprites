@@ -51,8 +51,9 @@ BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEB
 }
 
 
-!define FA_CC_JCB(alias) ENTITY(rectangle,black,cc_jcb,alias,FA CC_JCB)
-!define FA_CC_JCB(alias,label) ENTITY(rectangle,black,cc_jcb,label,alias,FA CC_JCB)
-!define FA_CC_JCB(alias,label,shape) ENTITY(shape,black,cc_jcb,label,alias,FA CC_JCB)
+!define FA_CC_JCB(_alias) ENTITY(rectangle,black,cc_jcb,_alias,FA CC_JCB)
+!define FA_CC_JCB(_alias,_label) ENTITY(rectangle,black,cc_jcb,_label,_alias,FA CC_JCB)
+!define FA_CC_JCB(_alias,_label,_shape) ENTITY(_shape,black,cc_jcb,_label,_alias,FA CC_JCB)
+!define FA_CC_JCB(_alias,_label,_shape,_color) ENTITY(_shape,_color,cc_jcb,_label,_alias,FA CC_JCB)
 skinparam folderBackgroundColor<<FA CC_JCB>> White
 @enduml

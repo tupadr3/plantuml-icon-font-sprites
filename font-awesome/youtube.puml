@@ -51,8 +51,9 @@ sprite $youtube [48x48/16] {
 }
 
 
-!define FA_YOUTUBE(alias) ENTITY(rectangle,black,youtube,alias,FA YOUTUBE)
-!define FA_YOUTUBE(alias,label) ENTITY(rectangle,black,youtube,label,alias,FA YOUTUBE)
-!define FA_YOUTUBE(alias,label,shape) ENTITY(shape,black,youtube,label,alias,FA YOUTUBE)
+!define FA_YOUTUBE(_alias) ENTITY(rectangle,black,youtube,_alias,FA YOUTUBE)
+!define FA_YOUTUBE(_alias,_label) ENTITY(rectangle,black,youtube,_label,_alias,FA YOUTUBE)
+!define FA_YOUTUBE(_alias,_label,_shape) ENTITY(_shape,black,youtube,_label,_alias,FA YOUTUBE)
+!define FA_YOUTUBE(_alias,_label,_shape,_color) ENTITY(_shape,_color,youtube,_label,_alias,FA YOUTUBE)
 skinparam folderBackgroundColor<<FA YOUTUBE>> White
 @enduml

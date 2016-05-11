@@ -51,8 +51,9 @@ sprite $lock [48x48/16] {
 }
 
 
-!define FA_LOCK(alias) ENTITY(rectangle,black,lock,alias,FA LOCK)
-!define FA_LOCK(alias,label) ENTITY(rectangle,black,lock,label,alias,FA LOCK)
-!define FA_LOCK(alias,label,shape) ENTITY(shape,black,lock,label,alias,FA LOCK)
+!define FA_LOCK(_alias) ENTITY(rectangle,black,lock,_alias,FA LOCK)
+!define FA_LOCK(_alias,_label) ENTITY(rectangle,black,lock,_label,_alias,FA LOCK)
+!define FA_LOCK(_alias,_label,_shape) ENTITY(_shape,black,lock,_label,_alias,FA LOCK)
+!define FA_LOCK(_alias,_label,_shape,_color) ENTITY(_shape,_color,lock,_label,_alias,FA LOCK)
 skinparam folderBackgroundColor<<FA LOCK>> White
 @enduml

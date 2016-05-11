@@ -35,8 +35,9 @@ sprite $angular_simple [32x32/16] {
 }
 
 
-!define DEV_ANGULAR_SIMPLE(alias) ENTITY(rectangle,black,angular_simple,alias,DEV ANGULAR_SIMPLE)
-!define DEV_ANGULAR_SIMPLE(alias,label) ENTITY(rectangle,black,angular_simple,label,alias,DEV ANGULAR_SIMPLE)
-!define DEV_ANGULAR_SIMPLE(alias,label,shape) ENTITY(shape,black,angular_simple,label,alias,DEV ANGULAR_SIMPLE)
+!define DEV_ANGULAR_SIMPLE(_alias) ENTITY(rectangle,black,angular_simple,_alias,DEV ANGULAR_SIMPLE)
+!define DEV_ANGULAR_SIMPLE(_alias,_label) ENTITY(rectangle,black,angular_simple,_label,_alias,DEV ANGULAR_SIMPLE)
+!define DEV_ANGULAR_SIMPLE(_alias,_label,_shape) ENTITY(_shape,black,angular_simple,_label,_alias,DEV ANGULAR_SIMPLE)
+!define DEV_ANGULAR_SIMPLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,angular_simple,_label,_alias,DEV ANGULAR_SIMPLE)
 skinparam folderBackgroundColor<<DEV ANGULAR_SIMPLE>> White
 @enduml

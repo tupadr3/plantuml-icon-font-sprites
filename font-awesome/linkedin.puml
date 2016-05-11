@@ -51,8 +51,9 @@ sprite $linkedin [48x48/16] {
 }
 
 
-!define FA_LINKEDIN(alias) ENTITY(rectangle,black,linkedin,alias,FA LINKEDIN)
-!define FA_LINKEDIN(alias,label) ENTITY(rectangle,black,linkedin,label,alias,FA LINKEDIN)
-!define FA_LINKEDIN(alias,label,shape) ENTITY(shape,black,linkedin,label,alias,FA LINKEDIN)
+!define FA_LINKEDIN(_alias) ENTITY(rectangle,black,linkedin,_alias,FA LINKEDIN)
+!define FA_LINKEDIN(_alias,_label) ENTITY(rectangle,black,linkedin,_label,_alias,FA LINKEDIN)
+!define FA_LINKEDIN(_alias,_label,_shape) ENTITY(_shape,black,linkedin,_label,_alias,FA LINKEDIN)
+!define FA_LINKEDIN(_alias,_label,_shape,_color) ENTITY(_shape,_color,linkedin,_label,_alias,FA LINKEDIN)
 skinparam folderBackgroundColor<<FA LINKEDIN>> White
 @enduml

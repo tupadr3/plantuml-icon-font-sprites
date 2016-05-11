@@ -51,8 +51,9 @@ sprite $stop_circle_o [48x48/16] {
 }
 
 
-!define FA_STOP_CIRCLE_O(alias) ENTITY(rectangle,black,stop_circle_o,alias,FA STOP_CIRCLE_O)
-!define FA_STOP_CIRCLE_O(alias,label) ENTITY(rectangle,black,stop_circle_o,label,alias,FA STOP_CIRCLE_O)
-!define FA_STOP_CIRCLE_O(alias,label,shape) ENTITY(shape,black,stop_circle_o,label,alias,FA STOP_CIRCLE_O)
+!define FA_STOP_CIRCLE_O(_alias) ENTITY(rectangle,black,stop_circle_o,_alias,FA STOP_CIRCLE_O)
+!define FA_STOP_CIRCLE_O(_alias,_label) ENTITY(rectangle,black,stop_circle_o,_label,_alias,FA STOP_CIRCLE_O)
+!define FA_STOP_CIRCLE_O(_alias,_label,_shape) ENTITY(_shape,black,stop_circle_o,_label,_alias,FA STOP_CIRCLE_O)
+!define FA_STOP_CIRCLE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,stop_circle_o,_label,_alias,FA STOP_CIRCLE_O)
 skinparam folderBackgroundColor<<FA STOP_CIRCLE_O>> White
 @enduml

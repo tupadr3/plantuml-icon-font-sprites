@@ -51,8 +51,9 @@ sprite $chain [48x48/16] {
 }
 
 
-!define FA_CHAIN(alias) ENTITY(rectangle,black,chain,alias,FA CHAIN)
-!define FA_CHAIN(alias,label) ENTITY(rectangle,black,chain,label,alias,FA CHAIN)
-!define FA_CHAIN(alias,label,shape) ENTITY(shape,black,chain,label,alias,FA CHAIN)
+!define FA_CHAIN(_alias) ENTITY(rectangle,black,chain,_alias,FA CHAIN)
+!define FA_CHAIN(_alias,_label) ENTITY(rectangle,black,chain,_label,_alias,FA CHAIN)
+!define FA_CHAIN(_alias,_label,_shape) ENTITY(_shape,black,chain,_label,_alias,FA CHAIN)
+!define FA_CHAIN(_alias,_label,_shape,_color) ENTITY(_shape,_color,chain,_label,_alias,FA CHAIN)
 skinparam folderBackgroundColor<<FA CHAIN>> White
 @enduml

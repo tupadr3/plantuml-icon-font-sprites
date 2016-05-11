@@ -51,8 +51,9 @@ sprite $asterisk [48x48/16] {
 }
 
 
-!define FA_ASTERISK(alias) ENTITY(rectangle,black,asterisk,alias,FA ASTERISK)
-!define FA_ASTERISK(alias,label) ENTITY(rectangle,black,asterisk,label,alias,FA ASTERISK)
-!define FA_ASTERISK(alias,label,shape) ENTITY(shape,black,asterisk,label,alias,FA ASTERISK)
+!define FA_ASTERISK(_alias) ENTITY(rectangle,black,asterisk,_alias,FA ASTERISK)
+!define FA_ASTERISK(_alias,_label) ENTITY(rectangle,black,asterisk,_label,_alias,FA ASTERISK)
+!define FA_ASTERISK(_alias,_label,_shape) ENTITY(_shape,black,asterisk,_label,_alias,FA ASTERISK)
+!define FA_ASTERISK(_alias,_label,_shape,_color) ENTITY(_shape,_color,asterisk,_label,_alias,FA ASTERISK)
 skinparam folderBackgroundColor<<FA ASTERISK>> White
 @enduml

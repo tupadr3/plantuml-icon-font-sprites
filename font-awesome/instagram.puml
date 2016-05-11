@@ -51,8 +51,9 @@ sprite $instagram [48x48/16] {
 }
 
 
-!define FA_INSTAGRAM(alias) ENTITY(rectangle,black,instagram,alias,FA INSTAGRAM)
-!define FA_INSTAGRAM(alias,label) ENTITY(rectangle,black,instagram,label,alias,FA INSTAGRAM)
-!define FA_INSTAGRAM(alias,label,shape) ENTITY(shape,black,instagram,label,alias,FA INSTAGRAM)
+!define FA_INSTAGRAM(_alias) ENTITY(rectangle,black,instagram,_alias,FA INSTAGRAM)
+!define FA_INSTAGRAM(_alias,_label) ENTITY(rectangle,black,instagram,_label,_alias,FA INSTAGRAM)
+!define FA_INSTAGRAM(_alias,_label,_shape) ENTITY(_shape,black,instagram,_label,_alias,FA INSTAGRAM)
+!define FA_INSTAGRAM(_alias,_label,_shape,_color) ENTITY(_shape,_color,instagram,_label,_alias,FA INSTAGRAM)
 skinparam folderBackgroundColor<<FA INSTAGRAM>> White
 @enduml

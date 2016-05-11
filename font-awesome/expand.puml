@@ -51,8 +51,9 @@ sprite $expand [48x48/16] {
 }
 
 
-!define FA_EXPAND(alias) ENTITY(rectangle,black,expand,alias,FA EXPAND)
-!define FA_EXPAND(alias,label) ENTITY(rectangle,black,expand,label,alias,FA EXPAND)
-!define FA_EXPAND(alias,label,shape) ENTITY(shape,black,expand,label,alias,FA EXPAND)
+!define FA_EXPAND(_alias) ENTITY(rectangle,black,expand,_alias,FA EXPAND)
+!define FA_EXPAND(_alias,_label) ENTITY(rectangle,black,expand,_label,_alias,FA EXPAND)
+!define FA_EXPAND(_alias,_label,_shape) ENTITY(_shape,black,expand,_label,_alias,FA EXPAND)
+!define FA_EXPAND(_alias,_label,_shape,_color) ENTITY(_shape,_color,expand,_label,_alias,FA EXPAND)
 skinparam folderBackgroundColor<<FA EXPAND>> White
 @enduml

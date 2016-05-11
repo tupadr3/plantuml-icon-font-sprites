@@ -35,8 +35,9 @@ sprite $java [32x32/16] {
 }
 
 
-!define DEV_JAVA(alias) ENTITY(rectangle,black,java,alias,DEV JAVA)
-!define DEV_JAVA(alias,label) ENTITY(rectangle,black,java,label,alias,DEV JAVA)
-!define DEV_JAVA(alias,label,shape) ENTITY(shape,black,java,label,alias,DEV JAVA)
+!define DEV_JAVA(_alias) ENTITY(rectangle,black,java,_alias,DEV JAVA)
+!define DEV_JAVA(_alias,_label) ENTITY(rectangle,black,java,_label,_alias,DEV JAVA)
+!define DEV_JAVA(_alias,_label,_shape) ENTITY(_shape,black,java,_label,_alias,DEV JAVA)
+!define DEV_JAVA(_alias,_label,_shape,_color) ENTITY(_shape,_color,java,_label,_alias,DEV JAVA)
 skinparam folderBackgroundColor<<DEV JAVA>> White
 @enduml

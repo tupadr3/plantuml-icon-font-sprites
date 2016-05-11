@@ -35,8 +35,9 @@ sprite $android [32x32/16] {
 }
 
 
-!define DEV_ANDROID(alias) ENTITY(rectangle,black,android,alias,DEV ANDROID)
-!define DEV_ANDROID(alias,label) ENTITY(rectangle,black,android,label,alias,DEV ANDROID)
-!define DEV_ANDROID(alias,label,shape) ENTITY(shape,black,android,label,alias,DEV ANDROID)
+!define DEV_ANDROID(_alias) ENTITY(rectangle,black,android,_alias,DEV ANDROID)
+!define DEV_ANDROID(_alias,_label) ENTITY(rectangle,black,android,_label,_alias,DEV ANDROID)
+!define DEV_ANDROID(_alias,_label,_shape) ENTITY(_shape,black,android,_label,_alias,DEV ANDROID)
+!define DEV_ANDROID(_alias,_label,_shape,_color) ENTITY(_shape,_color,android,_label,_alias,DEV ANDROID)
 skinparam folderBackgroundColor<<DEV ANDROID>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $bookmark [48x48/16] {
 }
 
 
-!define FA_BOOKMARK(alias) ENTITY(rectangle,black,bookmark,alias,FA BOOKMARK)
-!define FA_BOOKMARK(alias,label) ENTITY(rectangle,black,bookmark,label,alias,FA BOOKMARK)
-!define FA_BOOKMARK(alias,label,shape) ENTITY(shape,black,bookmark,label,alias,FA BOOKMARK)
+!define FA_BOOKMARK(_alias) ENTITY(rectangle,black,bookmark,_alias,FA BOOKMARK)
+!define FA_BOOKMARK(_alias,_label) ENTITY(rectangle,black,bookmark,_label,_alias,FA BOOKMARK)
+!define FA_BOOKMARK(_alias,_label,_shape) ENTITY(_shape,black,bookmark,_label,_alias,FA BOOKMARK)
+!define FA_BOOKMARK(_alias,_label,_shape,_color) ENTITY(_shape,_color,bookmark,_label,_alias,FA BOOKMARK)
 skinparam folderBackgroundColor<<FA BOOKMARK>> White
 @enduml

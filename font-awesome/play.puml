@@ -51,8 +51,9 @@ sprite $play [48x48/16] {
 }
 
 
-!define FA_PLAY(alias) ENTITY(rectangle,black,play,alias,FA PLAY)
-!define FA_PLAY(alias,label) ENTITY(rectangle,black,play,label,alias,FA PLAY)
-!define FA_PLAY(alias,label,shape) ENTITY(shape,black,play,label,alias,FA PLAY)
+!define FA_PLAY(_alias) ENTITY(rectangle,black,play,_alias,FA PLAY)
+!define FA_PLAY(_alias,_label) ENTITY(rectangle,black,play,_label,_alias,FA PLAY)
+!define FA_PLAY(_alias,_label,_shape) ENTITY(_shape,black,play,_label,_alias,FA PLAY)
+!define FA_PLAY(_alias,_label,_shape,_color) ENTITY(_shape,_color,play,_label,_alias,FA PLAY)
 skinparam folderBackgroundColor<<FA PLAY>> White
 @enduml

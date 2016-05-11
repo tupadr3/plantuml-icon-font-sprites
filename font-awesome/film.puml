@@ -51,8 +51,9 @@ sprite $film [48x48/16] {
 }
 
 
-!define FA_FILM(alias) ENTITY(rectangle,black,film,alias,FA FILM)
-!define FA_FILM(alias,label) ENTITY(rectangle,black,film,label,alias,FA FILM)
-!define FA_FILM(alias,label,shape) ENTITY(shape,black,film,label,alias,FA FILM)
+!define FA_FILM(_alias) ENTITY(rectangle,black,film,_alias,FA FILM)
+!define FA_FILM(_alias,_label) ENTITY(rectangle,black,film,_label,_alias,FA FILM)
+!define FA_FILM(_alias,_label,_shape) ENTITY(_shape,black,film,_label,_alias,FA FILM)
+!define FA_FILM(_alias,_label,_shape,_color) ENTITY(_shape,_color,film,_label,_alias,FA FILM)
 skinparam folderBackgroundColor<<FA FILM>> White
 @enduml

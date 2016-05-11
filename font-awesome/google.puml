@@ -51,8 +51,9 @@ sprite $google [48x48/16] {
 }
 
 
-!define FA_GOOGLE(alias) ENTITY(rectangle,black,google,alias,FA GOOGLE)
-!define FA_GOOGLE(alias,label) ENTITY(rectangle,black,google,label,alias,FA GOOGLE)
-!define FA_GOOGLE(alias,label,shape) ENTITY(shape,black,google,label,alias,FA GOOGLE)
+!define FA_GOOGLE(_alias) ENTITY(rectangle,black,google,_alias,FA GOOGLE)
+!define FA_GOOGLE(_alias,_label) ENTITY(rectangle,black,google,_label,_alias,FA GOOGLE)
+!define FA_GOOGLE(_alias,_label,_shape) ENTITY(_shape,black,google,_label,_alias,FA GOOGLE)
+!define FA_GOOGLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,google,_label,_alias,FA GOOGLE)
 skinparam folderBackgroundColor<<FA GOOGLE>> White
 @enduml

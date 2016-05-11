@@ -35,8 +35,9 @@ sprite $rust [27x32/16] {
 }
 
 
-!define DEV_RUST(alias) ENTITY(rectangle,black,rust,alias,DEV RUST)
-!define DEV_RUST(alias,label) ENTITY(rectangle,black,rust,label,alias,DEV RUST)
-!define DEV_RUST(alias,label,shape) ENTITY(shape,black,rust,label,alias,DEV RUST)
+!define DEV_RUST(_alias) ENTITY(rectangle,black,rust,_alias,DEV RUST)
+!define DEV_RUST(_alias,_label) ENTITY(rectangle,black,rust,_label,_alias,DEV RUST)
+!define DEV_RUST(_alias,_label,_shape) ENTITY(_shape,black,rust,_label,_alias,DEV RUST)
+!define DEV_RUST(_alias,_label,_shape,_color) ENTITY(_shape,_color,rust,_label,_alias,DEV RUST)
 skinparam folderBackgroundColor<<DEV RUST>> White
 @enduml

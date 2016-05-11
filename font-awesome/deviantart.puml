@@ -51,8 +51,9 @@ sprite $deviantart [48x48/16] {
 }
 
 
-!define FA_DEVIANTART(alias) ENTITY(rectangle,black,deviantart,alias,FA DEVIANTART)
-!define FA_DEVIANTART(alias,label) ENTITY(rectangle,black,deviantart,label,alias,FA DEVIANTART)
-!define FA_DEVIANTART(alias,label,shape) ENTITY(shape,black,deviantart,label,alias,FA DEVIANTART)
+!define FA_DEVIANTART(_alias) ENTITY(rectangle,black,deviantart,_alias,FA DEVIANTART)
+!define FA_DEVIANTART(_alias,_label) ENTITY(rectangle,black,deviantart,_label,_alias,FA DEVIANTART)
+!define FA_DEVIANTART(_alias,_label,_shape) ENTITY(_shape,black,deviantart,_label,_alias,FA DEVIANTART)
+!define FA_DEVIANTART(_alias,_label,_shape,_color) ENTITY(_shape,_color,deviantart,_label,_alias,FA DEVIANTART)
 skinparam folderBackgroundColor<<FA DEVIANTART>> White
 @enduml

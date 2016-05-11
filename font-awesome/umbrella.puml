@@ -51,8 +51,9 @@ sprite $umbrella [48x48/16] {
 }
 
 
-!define FA_UMBRELLA(alias) ENTITY(rectangle,black,umbrella,alias,FA UMBRELLA)
-!define FA_UMBRELLA(alias,label) ENTITY(rectangle,black,umbrella,label,alias,FA UMBRELLA)
-!define FA_UMBRELLA(alias,label,shape) ENTITY(shape,black,umbrella,label,alias,FA UMBRELLA)
+!define FA_UMBRELLA(_alias) ENTITY(rectangle,black,umbrella,_alias,FA UMBRELLA)
+!define FA_UMBRELLA(_alias,_label) ENTITY(rectangle,black,umbrella,_label,_alias,FA UMBRELLA)
+!define FA_UMBRELLA(_alias,_label,_shape) ENTITY(_shape,black,umbrella,_label,_alias,FA UMBRELLA)
+!define FA_UMBRELLA(_alias,_label,_shape,_color) ENTITY(_shape,_color,umbrella,_label,_alias,FA UMBRELLA)
 skinparam folderBackgroundColor<<FA UMBRELLA>> White
 @enduml

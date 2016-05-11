@@ -51,8 +51,9 @@ sprite $tag [48x48/16] {
 }
 
 
-!define FA_TAG(alias) ENTITY(rectangle,black,tag,alias,FA TAG)
-!define FA_TAG(alias,label) ENTITY(rectangle,black,tag,label,alias,FA TAG)
-!define FA_TAG(alias,label,shape) ENTITY(shape,black,tag,label,alias,FA TAG)
+!define FA_TAG(_alias) ENTITY(rectangle,black,tag,_alias,FA TAG)
+!define FA_TAG(_alias,_label) ENTITY(rectangle,black,tag,_label,_alias,FA TAG)
+!define FA_TAG(_alias,_label,_shape) ENTITY(_shape,black,tag,_label,_alias,FA TAG)
+!define FA_TAG(_alias,_label,_shape,_color) ENTITY(_shape,_color,tag,_label,_alias,FA TAG)
 skinparam folderBackgroundColor<<FA TAG>> White
 @enduml

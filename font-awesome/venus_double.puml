@@ -51,8 +51,9 @@ sprite $venus_double [48x48/16] {
 }
 
 
-!define FA_VENUS_DOUBLE(alias) ENTITY(rectangle,black,venus_double,alias,FA VENUS_DOUBLE)
-!define FA_VENUS_DOUBLE(alias,label) ENTITY(rectangle,black,venus_double,label,alias,FA VENUS_DOUBLE)
-!define FA_VENUS_DOUBLE(alias,label,shape) ENTITY(shape,black,venus_double,label,alias,FA VENUS_DOUBLE)
+!define FA_VENUS_DOUBLE(_alias) ENTITY(rectangle,black,venus_double,_alias,FA VENUS_DOUBLE)
+!define FA_VENUS_DOUBLE(_alias,_label) ENTITY(rectangle,black,venus_double,_label,_alias,FA VENUS_DOUBLE)
+!define FA_VENUS_DOUBLE(_alias,_label,_shape) ENTITY(_shape,black,venus_double,_label,_alias,FA VENUS_DOUBLE)
+!define FA_VENUS_DOUBLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,venus_double,_label,_alias,FA VENUS_DOUBLE)
 skinparam folderBackgroundColor<<FA VENUS_DOUBLE>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $lemon_o [48x48/16] {
 }
 
 
-!define FA_LEMON_O(alias) ENTITY(rectangle,black,lemon_o,alias,FA LEMON_O)
-!define FA_LEMON_O(alias,label) ENTITY(rectangle,black,lemon_o,label,alias,FA LEMON_O)
-!define FA_LEMON_O(alias,label,shape) ENTITY(shape,black,lemon_o,label,alias,FA LEMON_O)
+!define FA_LEMON_O(_alias) ENTITY(rectangle,black,lemon_o,_alias,FA LEMON_O)
+!define FA_LEMON_O(_alias,_label) ENTITY(rectangle,black,lemon_o,_label,_alias,FA LEMON_O)
+!define FA_LEMON_O(_alias,_label,_shape) ENTITY(_shape,black,lemon_o,_label,_alias,FA LEMON_O)
+!define FA_LEMON_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,lemon_o,_label,_alias,FA LEMON_O)
 skinparam folderBackgroundColor<<FA LEMON_O>> White
 @enduml

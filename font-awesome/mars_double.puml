@@ -51,8 +51,9 @@ sprite $mars_double [48x48/16] {
 }
 
 
-!define FA_MARS_DOUBLE(alias) ENTITY(rectangle,black,mars_double,alias,FA MARS_DOUBLE)
-!define FA_MARS_DOUBLE(alias,label) ENTITY(rectangle,black,mars_double,label,alias,FA MARS_DOUBLE)
-!define FA_MARS_DOUBLE(alias,label,shape) ENTITY(shape,black,mars_double,label,alias,FA MARS_DOUBLE)
+!define FA_MARS_DOUBLE(_alias) ENTITY(rectangle,black,mars_double,_alias,FA MARS_DOUBLE)
+!define FA_MARS_DOUBLE(_alias,_label) ENTITY(rectangle,black,mars_double,_label,_alias,FA MARS_DOUBLE)
+!define FA_MARS_DOUBLE(_alias,_label,_shape) ENTITY(_shape,black,mars_double,_label,_alias,FA MARS_DOUBLE)
+!define FA_MARS_DOUBLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,mars_double,_label,_alias,FA MARS_DOUBLE)
 skinparam folderBackgroundColor<<FA MARS_DOUBLE>> White
 @enduml

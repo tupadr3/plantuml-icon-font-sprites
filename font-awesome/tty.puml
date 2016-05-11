@@ -51,8 +51,9 @@ sprite $tty [48x48/16] {
 }
 
 
-!define FA_TTY(alias) ENTITY(rectangle,black,tty,alias,FA TTY)
-!define FA_TTY(alias,label) ENTITY(rectangle,black,tty,label,alias,FA TTY)
-!define FA_TTY(alias,label,shape) ENTITY(shape,black,tty,label,alias,FA TTY)
+!define FA_TTY(_alias) ENTITY(rectangle,black,tty,_alias,FA TTY)
+!define FA_TTY(_alias,_label) ENTITY(rectangle,black,tty,_label,_alias,FA TTY)
+!define FA_TTY(_alias,_label,_shape) ENTITY(_shape,black,tty,_label,_alias,FA TTY)
+!define FA_TTY(_alias,_label,_shape,_color) ENTITY(_shape,_color,tty,_label,_alias,FA TTY)
 skinparam folderBackgroundColor<<FA TTY>> White
 @enduml

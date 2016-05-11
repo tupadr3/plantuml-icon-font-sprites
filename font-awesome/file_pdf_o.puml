@@ -51,8 +51,9 @@ sprite $file_pdf_o [48x48/16] {
 }
 
 
-!define FA_FILE_PDF_O(alias) ENTITY(rectangle,black,file_pdf_o,alias,FA FILE_PDF_O)
-!define FA_FILE_PDF_O(alias,label) ENTITY(rectangle,black,file_pdf_o,label,alias,FA FILE_PDF_O)
-!define FA_FILE_PDF_O(alias,label,shape) ENTITY(shape,black,file_pdf_o,label,alias,FA FILE_PDF_O)
+!define FA_FILE_PDF_O(_alias) ENTITY(rectangle,black,file_pdf_o,_alias,FA FILE_PDF_O)
+!define FA_FILE_PDF_O(_alias,_label) ENTITY(rectangle,black,file_pdf_o,_label,_alias,FA FILE_PDF_O)
+!define FA_FILE_PDF_O(_alias,_label,_shape) ENTITY(_shape,black,file_pdf_o,_label,_alias,FA FILE_PDF_O)
+!define FA_FILE_PDF_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,file_pdf_o,_label,_alias,FA FILE_PDF_O)
 skinparam folderBackgroundColor<<FA FILE_PDF_O>> White
 @enduml

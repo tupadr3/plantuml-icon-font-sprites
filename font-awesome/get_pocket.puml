@@ -51,8 +51,9 @@ sprite $get_pocket [48x48/16] {
 }
 
 
-!define FA_GET_POCKET(alias) ENTITY(rectangle,black,get_pocket,alias,FA GET_POCKET)
-!define FA_GET_POCKET(alias,label) ENTITY(rectangle,black,get_pocket,label,alias,FA GET_POCKET)
-!define FA_GET_POCKET(alias,label,shape) ENTITY(shape,black,get_pocket,label,alias,FA GET_POCKET)
+!define FA_GET_POCKET(_alias) ENTITY(rectangle,black,get_pocket,_alias,FA GET_POCKET)
+!define FA_GET_POCKET(_alias,_label) ENTITY(rectangle,black,get_pocket,_label,_alias,FA GET_POCKET)
+!define FA_GET_POCKET(_alias,_label,_shape) ENTITY(_shape,black,get_pocket,_label,_alias,FA GET_POCKET)
+!define FA_GET_POCKET(_alias,_label,_shape,_color) ENTITY(_shape,_color,get_pocket,_label,_alias,FA GET_POCKET)
 skinparam folderBackgroundColor<<FA GET_POCKET>> White
 @enduml

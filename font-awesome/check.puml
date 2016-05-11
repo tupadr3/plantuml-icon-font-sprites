@@ -51,8 +51,9 @@ sprite $check [48x48/16] {
 }
 
 
-!define FA_CHECK(alias) ENTITY(rectangle,black,check,alias,FA CHECK)
-!define FA_CHECK(alias,label) ENTITY(rectangle,black,check,label,alias,FA CHECK)
-!define FA_CHECK(alias,label,shape) ENTITY(shape,black,check,label,alias,FA CHECK)
+!define FA_CHECK(_alias) ENTITY(rectangle,black,check,_alias,FA CHECK)
+!define FA_CHECK(_alias,_label) ENTITY(rectangle,black,check,_label,_alias,FA CHECK)
+!define FA_CHECK(_alias,_label,_shape) ENTITY(_shape,black,check,_label,_alias,FA CHECK)
+!define FA_CHECK(_alias,_label,_shape,_color) ENTITY(_shape,_color,check,_label,_alias,FA CHECK)
 skinparam folderBackgroundColor<<FA CHECK>> White
 @enduml

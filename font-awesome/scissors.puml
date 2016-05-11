@@ -51,8 +51,9 @@ sprite $scissors [48x48/16] {
 }
 
 
-!define FA_SCISSORS(alias) ENTITY(rectangle,black,scissors,alias,FA SCISSORS)
-!define FA_SCISSORS(alias,label) ENTITY(rectangle,black,scissors,label,alias,FA SCISSORS)
-!define FA_SCISSORS(alias,label,shape) ENTITY(shape,black,scissors,label,alias,FA SCISSORS)
+!define FA_SCISSORS(_alias) ENTITY(rectangle,black,scissors,_alias,FA SCISSORS)
+!define FA_SCISSORS(_alias,_label) ENTITY(rectangle,black,scissors,_label,_alias,FA SCISSORS)
+!define FA_SCISSORS(_alias,_label,_shape) ENTITY(_shape,black,scissors,_label,_alias,FA SCISSORS)
+!define FA_SCISSORS(_alias,_label,_shape,_color) ENTITY(_shape,_color,scissors,_label,_alias,FA SCISSORS)
 skinparam folderBackgroundColor<<FA SCISSORS>> White
 @enduml

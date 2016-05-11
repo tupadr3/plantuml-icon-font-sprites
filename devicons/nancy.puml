@@ -35,8 +35,9 @@ sprite $nancy [32x32/16] {
 }
 
 
-!define DEV_NANCY(alias) ENTITY(rectangle,black,nancy,alias,DEV NANCY)
-!define DEV_NANCY(alias,label) ENTITY(rectangle,black,nancy,label,alias,DEV NANCY)
-!define DEV_NANCY(alias,label,shape) ENTITY(shape,black,nancy,label,alias,DEV NANCY)
+!define DEV_NANCY(_alias) ENTITY(rectangle,black,nancy,_alias,DEV NANCY)
+!define DEV_NANCY(_alias,_label) ENTITY(rectangle,black,nancy,_label,_alias,DEV NANCY)
+!define DEV_NANCY(_alias,_label,_shape) ENTITY(_shape,black,nancy,_label,_alias,DEV NANCY)
+!define DEV_NANCY(_alias,_label,_shape,_color) ENTITY(_shape,_color,nancy,_label,_alias,DEV NANCY)
 skinparam folderBackgroundColor<<DEV NANCY>> White
 @enduml

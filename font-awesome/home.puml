@@ -51,8 +51,9 @@ sprite $home [48x48/16] {
 }
 
 
-!define FA_HOME(alias) ENTITY(rectangle,black,home,alias,FA HOME)
-!define FA_HOME(alias,label) ENTITY(rectangle,black,home,label,alias,FA HOME)
-!define FA_HOME(alias,label,shape) ENTITY(shape,black,home,label,alias,FA HOME)
+!define FA_HOME(_alias) ENTITY(rectangle,black,home,_alias,FA HOME)
+!define FA_HOME(_alias,_label) ENTITY(rectangle,black,home,_label,_alias,FA HOME)
+!define FA_HOME(_alias,_label,_shape) ENTITY(_shape,black,home,_label,_alias,FA HOME)
+!define FA_HOME(_alias,_label,_shape,_color) ENTITY(_shape,_color,home,_label,_alias,FA HOME)
 skinparam folderBackgroundColor<<FA HOME>> White
 @enduml

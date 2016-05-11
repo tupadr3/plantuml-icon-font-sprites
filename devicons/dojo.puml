@@ -35,8 +35,9 @@ AC000000ECAC000000E7C87F000000B9
 }
 
 
-!define DEV_DOJO(alias) ENTITY(rectangle,black,dojo,alias,DEV DOJO)
-!define DEV_DOJO(alias,label) ENTITY(rectangle,black,dojo,label,alias,DEV DOJO)
-!define DEV_DOJO(alias,label,shape) ENTITY(shape,black,dojo,label,alias,DEV DOJO)
+!define DEV_DOJO(_alias) ENTITY(rectangle,black,dojo,_alias,DEV DOJO)
+!define DEV_DOJO(_alias,_label) ENTITY(rectangle,black,dojo,_label,_alias,DEV DOJO)
+!define DEV_DOJO(_alias,_label,_shape) ENTITY(_shape,black,dojo,_label,_alias,DEV DOJO)
+!define DEV_DOJO(_alias,_label,_shape,_color) ENTITY(_shape,_color,dojo,_label,_alias,DEV DOJO)
 skinparam folderBackgroundColor<<DEV DOJO>> White
 @enduml

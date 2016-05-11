@@ -51,8 +51,9 @@ sprite $angle_double_right [48x48/16] {
 }
 
 
-!define FA_ANGLE_DOUBLE_RIGHT(alias) ENTITY(rectangle,black,angle_double_right,alias,FA ANGLE_DOUBLE_RIGHT)
-!define FA_ANGLE_DOUBLE_RIGHT(alias,label) ENTITY(rectangle,black,angle_double_right,label,alias,FA ANGLE_DOUBLE_RIGHT)
-!define FA_ANGLE_DOUBLE_RIGHT(alias,label,shape) ENTITY(shape,black,angle_double_right,label,alias,FA ANGLE_DOUBLE_RIGHT)
+!define FA_ANGLE_DOUBLE_RIGHT(_alias) ENTITY(rectangle,black,angle_double_right,_alias,FA ANGLE_DOUBLE_RIGHT)
+!define FA_ANGLE_DOUBLE_RIGHT(_alias,_label) ENTITY(rectangle,black,angle_double_right,_label,_alias,FA ANGLE_DOUBLE_RIGHT)
+!define FA_ANGLE_DOUBLE_RIGHT(_alias,_label,_shape) ENTITY(_shape,black,angle_double_right,_label,_alias,FA ANGLE_DOUBLE_RIGHT)
+!define FA_ANGLE_DOUBLE_RIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,angle_double_right,_label,_alias,FA ANGLE_DOUBLE_RIGHT)
 skinparam folderBackgroundColor<<FA ANGLE_DOUBLE_RIGHT>> White
 @enduml

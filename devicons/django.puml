@@ -35,8 +35,9 @@ AFB8FC6F5FC3CC8F44F8AFB9F88F88F8
 }
 
 
-!define DEV_DJANGO(alias) ENTITY(rectangle,black,django,alias,DEV DJANGO)
-!define DEV_DJANGO(alias,label) ENTITY(rectangle,black,django,label,alias,DEV DJANGO)
-!define DEV_DJANGO(alias,label,shape) ENTITY(shape,black,django,label,alias,DEV DJANGO)
+!define DEV_DJANGO(_alias) ENTITY(rectangle,black,django,_alias,DEV DJANGO)
+!define DEV_DJANGO(_alias,_label) ENTITY(rectangle,black,django,_label,_alias,DEV DJANGO)
+!define DEV_DJANGO(_alias,_label,_shape) ENTITY(_shape,black,django,_label,_alias,DEV DJANGO)
+!define DEV_DJANGO(_alias,_label,_shape,_color) ENTITY(_shape,_color,django,_label,_alias,DEV DJANGO)
 skinparam folderBackgroundColor<<DEV DJANGO>> White
 @enduml

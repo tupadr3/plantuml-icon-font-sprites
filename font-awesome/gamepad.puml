@@ -51,8 +51,9 @@ sprite $gamepad [48x48/16] {
 }
 
 
-!define FA_GAMEPAD(alias) ENTITY(rectangle,black,gamepad,alias,FA GAMEPAD)
-!define FA_GAMEPAD(alias,label) ENTITY(rectangle,black,gamepad,label,alias,FA GAMEPAD)
-!define FA_GAMEPAD(alias,label,shape) ENTITY(shape,black,gamepad,label,alias,FA GAMEPAD)
+!define FA_GAMEPAD(_alias) ENTITY(rectangle,black,gamepad,_alias,FA GAMEPAD)
+!define FA_GAMEPAD(_alias,_label) ENTITY(rectangle,black,gamepad,_label,_alias,FA GAMEPAD)
+!define FA_GAMEPAD(_alias,_label,_shape) ENTITY(_shape,black,gamepad,_label,_alias,FA GAMEPAD)
+!define FA_GAMEPAD(_alias,_label,_shape,_color) ENTITY(_shape,_color,gamepad,_label,_alias,FA GAMEPAD)
 skinparam folderBackgroundColor<<FA GAMEPAD>> White
 @enduml

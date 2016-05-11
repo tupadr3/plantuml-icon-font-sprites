@@ -51,8 +51,9 @@ sprite $leanpub [48x48/16] {
 }
 
 
-!define FA_LEANPUB(alias) ENTITY(rectangle,black,leanpub,alias,FA LEANPUB)
-!define FA_LEANPUB(alias,label) ENTITY(rectangle,black,leanpub,label,alias,FA LEANPUB)
-!define FA_LEANPUB(alias,label,shape) ENTITY(shape,black,leanpub,label,alias,FA LEANPUB)
+!define FA_LEANPUB(_alias) ENTITY(rectangle,black,leanpub,_alias,FA LEANPUB)
+!define FA_LEANPUB(_alias,_label) ENTITY(rectangle,black,leanpub,_label,_alias,FA LEANPUB)
+!define FA_LEANPUB(_alias,_label,_shape) ENTITY(_shape,black,leanpub,_label,_alias,FA LEANPUB)
+!define FA_LEANPUB(_alias,_label,_shape,_color) ENTITY(_shape,_color,leanpub,_label,_alias,FA LEANPUB)
 skinparam folderBackgroundColor<<FA LEANPUB>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $warning [48x48/16] {
 }
 
 
-!define FA_WARNING(alias) ENTITY(rectangle,black,warning,alias,FA WARNING)
-!define FA_WARNING(alias,label) ENTITY(rectangle,black,warning,label,alias,FA WARNING)
-!define FA_WARNING(alias,label,shape) ENTITY(shape,black,warning,label,alias,FA WARNING)
+!define FA_WARNING(_alias) ENTITY(rectangle,black,warning,_alias,FA WARNING)
+!define FA_WARNING(_alias,_label) ENTITY(rectangle,black,warning,_label,_alias,FA WARNING)
+!define FA_WARNING(_alias,_label,_shape) ENTITY(_shape,black,warning,_label,_alias,FA WARNING)
+!define FA_WARNING(_alias,_label,_shape,_color) ENTITY(_shape,_color,warning,_label,_alias,FA WARNING)
 skinparam folderBackgroundColor<<FA WARNING>> White
 @enduml

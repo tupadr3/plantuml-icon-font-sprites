@@ -51,8 +51,9 @@ sprite $terminal [48x48/16] {
 }
 
 
-!define FA_TERMINAL(alias) ENTITY(rectangle,black,terminal,alias,FA TERMINAL)
-!define FA_TERMINAL(alias,label) ENTITY(rectangle,black,terminal,label,alias,FA TERMINAL)
-!define FA_TERMINAL(alias,label,shape) ENTITY(shape,black,terminal,label,alias,FA TERMINAL)
+!define FA_TERMINAL(_alias) ENTITY(rectangle,black,terminal,_alias,FA TERMINAL)
+!define FA_TERMINAL(_alias,_label) ENTITY(rectangle,black,terminal,_label,_alias,FA TERMINAL)
+!define FA_TERMINAL(_alias,_label,_shape) ENTITY(_shape,black,terminal,_label,_alias,FA TERMINAL)
+!define FA_TERMINAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,terminal,_label,_alias,FA TERMINAL)
 skinparam folderBackgroundColor<<FA TERMINAL>> White
 @enduml

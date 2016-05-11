@@ -51,8 +51,9 @@ sprite $play_circle_o [48x48/16] {
 }
 
 
-!define FA_PLAY_CIRCLE_O(alias) ENTITY(rectangle,black,play_circle_o,alias,FA PLAY_CIRCLE_O)
-!define FA_PLAY_CIRCLE_O(alias,label) ENTITY(rectangle,black,play_circle_o,label,alias,FA PLAY_CIRCLE_O)
-!define FA_PLAY_CIRCLE_O(alias,label,shape) ENTITY(shape,black,play_circle_o,label,alias,FA PLAY_CIRCLE_O)
+!define FA_PLAY_CIRCLE_O(_alias) ENTITY(rectangle,black,play_circle_o,_alias,FA PLAY_CIRCLE_O)
+!define FA_PLAY_CIRCLE_O(_alias,_label) ENTITY(rectangle,black,play_circle_o,_label,_alias,FA PLAY_CIRCLE_O)
+!define FA_PLAY_CIRCLE_O(_alias,_label,_shape) ENTITY(_shape,black,play_circle_o,_label,_alias,FA PLAY_CIRCLE_O)
+!define FA_PLAY_CIRCLE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,play_circle_o,_label,_alias,FA PLAY_CIRCLE_O)
 skinparam folderBackgroundColor<<FA PLAY_CIRCLE_O>> White
 @enduml

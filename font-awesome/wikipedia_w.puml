@@ -51,8 +51,9 @@ FFFFFFFFFFE503CEFFFFFFFFC008DFFFFFFFC009EFFFFFFF
 }
 
 
-!define FA_WIKIPEDIA_W(alias) ENTITY(rectangle,black,wikipedia_w,alias,FA WIKIPEDIA_W)
-!define FA_WIKIPEDIA_W(alias,label) ENTITY(rectangle,black,wikipedia_w,label,alias,FA WIKIPEDIA_W)
-!define FA_WIKIPEDIA_W(alias,label,shape) ENTITY(shape,black,wikipedia_w,label,alias,FA WIKIPEDIA_W)
+!define FA_WIKIPEDIA_W(_alias) ENTITY(rectangle,black,wikipedia_w,_alias,FA WIKIPEDIA_W)
+!define FA_WIKIPEDIA_W(_alias,_label) ENTITY(rectangle,black,wikipedia_w,_label,_alias,FA WIKIPEDIA_W)
+!define FA_WIKIPEDIA_W(_alias,_label,_shape) ENTITY(_shape,black,wikipedia_w,_label,_alias,FA WIKIPEDIA_W)
+!define FA_WIKIPEDIA_W(_alias,_label,_shape,_color) ENTITY(_shape,_color,wikipedia_w,_label,_alias,FA WIKIPEDIA_W)
 skinparam folderBackgroundColor<<FA WIKIPEDIA_W>> White
 @enduml

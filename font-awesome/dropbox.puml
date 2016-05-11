@@ -51,8 +51,9 @@ sprite $dropbox [48x48/16] {
 }
 
 
-!define FA_DROPBOX(alias) ENTITY(rectangle,black,dropbox,alias,FA DROPBOX)
-!define FA_DROPBOX(alias,label) ENTITY(rectangle,black,dropbox,label,alias,FA DROPBOX)
-!define FA_DROPBOX(alias,label,shape) ENTITY(shape,black,dropbox,label,alias,FA DROPBOX)
+!define FA_DROPBOX(_alias) ENTITY(rectangle,black,dropbox,_alias,FA DROPBOX)
+!define FA_DROPBOX(_alias,_label) ENTITY(rectangle,black,dropbox,_label,_alias,FA DROPBOX)
+!define FA_DROPBOX(_alias,_label,_shape) ENTITY(_shape,black,dropbox,_label,_alias,FA DROPBOX)
+!define FA_DROPBOX(_alias,_label,_shape,_color) ENTITY(_shape,_color,dropbox,_label,_alias,FA DROPBOX)
 skinparam folderBackgroundColor<<FA DROPBOX>> White
 @enduml

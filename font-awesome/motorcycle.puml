@@ -51,8 +51,9 @@ DFFC100000001CFFC00000000000000CFFC100000001CFFD
 }
 
 
-!define FA_MOTORCYCLE(alias) ENTITY(rectangle,black,motorcycle,alias,FA MOTORCYCLE)
-!define FA_MOTORCYCLE(alias,label) ENTITY(rectangle,black,motorcycle,label,alias,FA MOTORCYCLE)
-!define FA_MOTORCYCLE(alias,label,shape) ENTITY(shape,black,motorcycle,label,alias,FA MOTORCYCLE)
+!define FA_MOTORCYCLE(_alias) ENTITY(rectangle,black,motorcycle,_alias,FA MOTORCYCLE)
+!define FA_MOTORCYCLE(_alias,_label) ENTITY(rectangle,black,motorcycle,_label,_alias,FA MOTORCYCLE)
+!define FA_MOTORCYCLE(_alias,_label,_shape) ENTITY(_shape,black,motorcycle,_label,_alias,FA MOTORCYCLE)
+!define FA_MOTORCYCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,motorcycle,_label,_alias,FA MOTORCYCLE)
 skinparam folderBackgroundColor<<FA MOTORCYCLE>> White
 @enduml

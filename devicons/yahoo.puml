@@ -35,8 +35,9 @@ sprite $yahoo [32x32/16] {
 }
 
 
-!define DEV_YAHOO(alias) ENTITY(rectangle,black,yahoo,alias,DEV YAHOO)
-!define DEV_YAHOO(alias,label) ENTITY(rectangle,black,yahoo,label,alias,DEV YAHOO)
-!define DEV_YAHOO(alias,label,shape) ENTITY(shape,black,yahoo,label,alias,DEV YAHOO)
+!define DEV_YAHOO(_alias) ENTITY(rectangle,black,yahoo,_alias,DEV YAHOO)
+!define DEV_YAHOO(_alias,_label) ENTITY(rectangle,black,yahoo,_label,_alias,DEV YAHOO)
+!define DEV_YAHOO(_alias,_label,_shape) ENTITY(_shape,black,yahoo,_label,_alias,DEV YAHOO)
+!define DEV_YAHOO(_alias,_label,_shape,_color) ENTITY(_shape,_color,yahoo,_label,_alias,DEV YAHOO)
 skinparam folderBackgroundColor<<DEV YAHOO>> White
 @enduml

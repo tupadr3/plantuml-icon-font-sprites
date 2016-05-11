@@ -51,8 +51,9 @@ BA0000000000000000000000000000000000000000000000
 }
 
 
-!define FA_OPENCART(alias) ENTITY(rectangle,black,opencart,alias,FA OPENCART)
-!define FA_OPENCART(alias,label) ENTITY(rectangle,black,opencart,label,alias,FA OPENCART)
-!define FA_OPENCART(alias,label,shape) ENTITY(shape,black,opencart,label,alias,FA OPENCART)
+!define FA_OPENCART(_alias) ENTITY(rectangle,black,opencart,_alias,FA OPENCART)
+!define FA_OPENCART(_alias,_label) ENTITY(rectangle,black,opencart,_label,_alias,FA OPENCART)
+!define FA_OPENCART(_alias,_label,_shape) ENTITY(_shape,black,opencart,_label,_alias,FA OPENCART)
+!define FA_OPENCART(_alias,_label,_shape,_color) ENTITY(_shape,_color,opencart,_label,_alias,FA OPENCART)
 skinparam folderBackgroundColor<<FA OPENCART>> White
 @enduml

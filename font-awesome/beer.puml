@@ -51,8 +51,9 @@ sprite $beer [48x48/16] {
 }
 
 
-!define FA_BEER(alias) ENTITY(rectangle,black,beer,alias,FA BEER)
-!define FA_BEER(alias,label) ENTITY(rectangle,black,beer,label,alias,FA BEER)
-!define FA_BEER(alias,label,shape) ENTITY(shape,black,beer,label,alias,FA BEER)
+!define FA_BEER(_alias) ENTITY(rectangle,black,beer,_alias,FA BEER)
+!define FA_BEER(_alias,_label) ENTITY(rectangle,black,beer,_label,_alias,FA BEER)
+!define FA_BEER(_alias,_label,_shape) ENTITY(_shape,black,beer,_label,_alias,FA BEER)
+!define FA_BEER(_alias,_label,_shape,_color) ENTITY(_shape,_color,beer,_label,_alias,FA BEER)
 skinparam folderBackgroundColor<<FA BEER>> White
 @enduml

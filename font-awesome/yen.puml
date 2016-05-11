@@ -51,8 +51,9 @@ sprite $yen [48x48/16] {
 }
 
 
-!define FA_YEN(alias) ENTITY(rectangle,black,yen,alias,FA YEN)
-!define FA_YEN(alias,label) ENTITY(rectangle,black,yen,label,alias,FA YEN)
-!define FA_YEN(alias,label,shape) ENTITY(shape,black,yen,label,alias,FA YEN)
+!define FA_YEN(_alias) ENTITY(rectangle,black,yen,_alias,FA YEN)
+!define FA_YEN(_alias,_label) ENTITY(rectangle,black,yen,_label,_alias,FA YEN)
+!define FA_YEN(_alias,_label,_shape) ENTITY(_shape,black,yen,_label,_alias,FA YEN)
+!define FA_YEN(_alias,_label,_shape,_color) ENTITY(_shape,_color,yen,_label,_alias,FA YEN)
 skinparam folderBackgroundColor<<FA YEN>> White
 @enduml

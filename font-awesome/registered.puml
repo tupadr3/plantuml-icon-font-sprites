@@ -51,8 +51,9 @@ sprite $registered [48x48/16] {
 }
 
 
-!define FA_REGISTERED(alias) ENTITY(rectangle,black,registered,alias,FA REGISTERED)
-!define FA_REGISTERED(alias,label) ENTITY(rectangle,black,registered,label,alias,FA REGISTERED)
-!define FA_REGISTERED(alias,label,shape) ENTITY(shape,black,registered,label,alias,FA REGISTERED)
+!define FA_REGISTERED(_alias) ENTITY(rectangle,black,registered,_alias,FA REGISTERED)
+!define FA_REGISTERED(_alias,_label) ENTITY(rectangle,black,registered,_label,_alias,FA REGISTERED)
+!define FA_REGISTERED(_alias,_label,_shape) ENTITY(_shape,black,registered,_label,_alias,FA REGISTERED)
+!define FA_REGISTERED(_alias,_label,_shape,_color) ENTITY(_shape,_color,registered,_label,_alias,FA REGISTERED)
 skinparam folderBackgroundColor<<FA REGISTERED>> White
 @enduml

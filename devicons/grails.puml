@@ -35,8 +35,9 @@ sprite $grails [34x32/16] {
 }
 
 
-!define DEV_GRAILS(alias) ENTITY(rectangle,black,grails,alias,DEV GRAILS)
-!define DEV_GRAILS(alias,label) ENTITY(rectangle,black,grails,label,alias,DEV GRAILS)
-!define DEV_GRAILS(alias,label,shape) ENTITY(shape,black,grails,label,alias,DEV GRAILS)
+!define DEV_GRAILS(_alias) ENTITY(rectangle,black,grails,_alias,DEV GRAILS)
+!define DEV_GRAILS(_alias,_label) ENTITY(rectangle,black,grails,_label,_alias,DEV GRAILS)
+!define DEV_GRAILS(_alias,_label,_shape) ENTITY(_shape,black,grails,_label,_alias,DEV GRAILS)
+!define DEV_GRAILS(_alias,_label,_shape,_color) ENTITY(_shape,_color,grails,_label,_alias,DEV GRAILS)
 skinparam folderBackgroundColor<<DEV GRAILS>> White
 @enduml

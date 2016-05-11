@@ -51,8 +51,9 @@ sprite $html5 [48x48/16] {
 }
 
 
-!define FA_HTML5(alias) ENTITY(rectangle,black,html5,alias,FA HTML5)
-!define FA_HTML5(alias,label) ENTITY(rectangle,black,html5,label,alias,FA HTML5)
-!define FA_HTML5(alias,label,shape) ENTITY(shape,black,html5,label,alias,FA HTML5)
+!define FA_HTML5(_alias) ENTITY(rectangle,black,html5,_alias,FA HTML5)
+!define FA_HTML5(_alias,_label) ENTITY(rectangle,black,html5,_label,_alias,FA HTML5)
+!define FA_HTML5(_alias,_label,_shape) ENTITY(_shape,black,html5,_label,_alias,FA HTML5)
+!define FA_HTML5(_alias,_label,_shape,_color) ENTITY(_shape,_color,html5,_label,_alias,FA HTML5)
 skinparam folderBackgroundColor<<FA HTML5>> White
 @enduml

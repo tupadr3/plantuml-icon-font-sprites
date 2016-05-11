@@ -51,8 +51,9 @@ sprite $i_cursor [48x48/16] {
 }
 
 
-!define FA_I_CURSOR(alias) ENTITY(rectangle,black,i_cursor,alias,FA I_CURSOR)
-!define FA_I_CURSOR(alias,label) ENTITY(rectangle,black,i_cursor,label,alias,FA I_CURSOR)
-!define FA_I_CURSOR(alias,label,shape) ENTITY(shape,black,i_cursor,label,alias,FA I_CURSOR)
+!define FA_I_CURSOR(_alias) ENTITY(rectangle,black,i_cursor,_alias,FA I_CURSOR)
+!define FA_I_CURSOR(_alias,_label) ENTITY(rectangle,black,i_cursor,_label,_alias,FA I_CURSOR)
+!define FA_I_CURSOR(_alias,_label,_shape) ENTITY(_shape,black,i_cursor,_label,_alias,FA I_CURSOR)
+!define FA_I_CURSOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,i_cursor,_label,_alias,FA I_CURSOR)
 skinparam folderBackgroundColor<<FA I_CURSOR>> White
 @enduml

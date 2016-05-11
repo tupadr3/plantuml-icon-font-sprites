@@ -51,8 +51,9 @@ sprite $gg [48x48/16] {
 }
 
 
-!define FA_GG(alias) ENTITY(rectangle,black,gg,alias,FA GG)
-!define FA_GG(alias,label) ENTITY(rectangle,black,gg,label,alias,FA GG)
-!define FA_GG(alias,label,shape) ENTITY(shape,black,gg,label,alias,FA GG)
+!define FA_GG(_alias) ENTITY(rectangle,black,gg,_alias,FA GG)
+!define FA_GG(_alias,_label) ENTITY(rectangle,black,gg,_label,_alias,FA GG)
+!define FA_GG(_alias,_label,_shape) ENTITY(_shape,black,gg,_label,_alias,FA GG)
+!define FA_GG(_alias,_label,_shape,_color) ENTITY(_shape,_color,gg,_label,_alias,FA GG)
 skinparam folderBackgroundColor<<FA GG>> White
 @enduml

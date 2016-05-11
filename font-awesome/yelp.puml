@@ -51,8 +51,9 @@ sprite $yelp [48x48/16] {
 }
 
 
-!define FA_YELP(alias) ENTITY(rectangle,black,yelp,alias,FA YELP)
-!define FA_YELP(alias,label) ENTITY(rectangle,black,yelp,label,alias,FA YELP)
-!define FA_YELP(alias,label,shape) ENTITY(shape,black,yelp,label,alias,FA YELP)
+!define FA_YELP(_alias) ENTITY(rectangle,black,yelp,_alias,FA YELP)
+!define FA_YELP(_alias,_label) ENTITY(rectangle,black,yelp,_label,_alias,FA YELP)
+!define FA_YELP(_alias,_label,_shape) ENTITY(_shape,black,yelp,_label,_alias,FA YELP)
+!define FA_YELP(_alias,_label,_shape,_color) ENTITY(_shape,_color,yelp,_label,_alias,FA YELP)
 skinparam folderBackgroundColor<<FA YELP>> White
 @enduml

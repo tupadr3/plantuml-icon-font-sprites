@@ -51,8 +51,9 @@ sprite $area_chart [48x48/16] {
 }
 
 
-!define FA_AREA_CHART(alias) ENTITY(rectangle,black,area_chart,alias,FA AREA_CHART)
-!define FA_AREA_CHART(alias,label) ENTITY(rectangle,black,area_chart,label,alias,FA AREA_CHART)
-!define FA_AREA_CHART(alias,label,shape) ENTITY(shape,black,area_chart,label,alias,FA AREA_CHART)
+!define FA_AREA_CHART(_alias) ENTITY(rectangle,black,area_chart,_alias,FA AREA_CHART)
+!define FA_AREA_CHART(_alias,_label) ENTITY(rectangle,black,area_chart,_label,_alias,FA AREA_CHART)
+!define FA_AREA_CHART(_alias,_label,_shape) ENTITY(_shape,black,area_chart,_label,_alias,FA AREA_CHART)
+!define FA_AREA_CHART(_alias,_label,_shape,_color) ENTITY(_shape,_color,area_chart,_label,_alias,FA AREA_CHART)
 skinparam folderBackgroundColor<<FA AREA_CHART>> White
 @enduml

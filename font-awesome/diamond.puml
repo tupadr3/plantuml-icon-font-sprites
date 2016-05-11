@@ -51,8 +51,9 @@ sprite $diamond [48x48/16] {
 }
 
 
-!define FA_DIAMOND(alias) ENTITY(rectangle,black,diamond,alias,FA DIAMOND)
-!define FA_DIAMOND(alias,label) ENTITY(rectangle,black,diamond,label,alias,FA DIAMOND)
-!define FA_DIAMOND(alias,label,shape) ENTITY(shape,black,diamond,label,alias,FA DIAMOND)
+!define FA_DIAMOND(_alias) ENTITY(rectangle,black,diamond,_alias,FA DIAMOND)
+!define FA_DIAMOND(_alias,_label) ENTITY(rectangle,black,diamond,_label,_alias,FA DIAMOND)
+!define FA_DIAMOND(_alias,_label,_shape) ENTITY(_shape,black,diamond,_label,_alias,FA DIAMOND)
+!define FA_DIAMOND(_alias,_label,_shape,_color) ENTITY(_shape,_color,diamond,_label,_alias,FA DIAMOND)
 skinparam folderBackgroundColor<<FA DIAMOND>> White
 @enduml

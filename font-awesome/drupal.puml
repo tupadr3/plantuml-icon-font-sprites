@@ -51,8 +51,9 @@ sprite $drupal [48x48/16] {
 }
 
 
-!define FA_DRUPAL(alias) ENTITY(rectangle,black,drupal,alias,FA DRUPAL)
-!define FA_DRUPAL(alias,label) ENTITY(rectangle,black,drupal,label,alias,FA DRUPAL)
-!define FA_DRUPAL(alias,label,shape) ENTITY(shape,black,drupal,label,alias,FA DRUPAL)
+!define FA_DRUPAL(_alias) ENTITY(rectangle,black,drupal,_alias,FA DRUPAL)
+!define FA_DRUPAL(_alias,_label) ENTITY(rectangle,black,drupal,_label,_alias,FA DRUPAL)
+!define FA_DRUPAL(_alias,_label,_shape) ENTITY(_shape,black,drupal,_label,_alias,FA DRUPAL)
+!define FA_DRUPAL(_alias,_label,_shape,_color) ENTITY(_shape,_color,drupal,_label,_alias,FA DRUPAL)
 skinparam folderBackgroundColor<<FA DRUPAL>> White
 @enduml

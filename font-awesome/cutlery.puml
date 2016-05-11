@@ -51,8 +51,9 @@ sprite $cutlery [48x48/16] {
 }
 
 
-!define FA_CUTLERY(alias) ENTITY(rectangle,black,cutlery,alias,FA CUTLERY)
-!define FA_CUTLERY(alias,label) ENTITY(rectangle,black,cutlery,label,alias,FA CUTLERY)
-!define FA_CUTLERY(alias,label,shape) ENTITY(shape,black,cutlery,label,alias,FA CUTLERY)
+!define FA_CUTLERY(_alias) ENTITY(rectangle,black,cutlery,_alias,FA CUTLERY)
+!define FA_CUTLERY(_alias,_label) ENTITY(rectangle,black,cutlery,_label,_alias,FA CUTLERY)
+!define FA_CUTLERY(_alias,_label,_shape) ENTITY(_shape,black,cutlery,_label,_alias,FA CUTLERY)
+!define FA_CUTLERY(_alias,_label,_shape,_color) ENTITY(_shape,_color,cutlery,_label,_alias,FA CUTLERY)
 skinparam folderBackgroundColor<<FA CUTLERY>> White
 @enduml

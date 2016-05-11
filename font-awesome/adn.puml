@@ -51,8 +51,9 @@ sprite $adn [48x48/16] {
 }
 
 
-!define FA_ADN(alias) ENTITY(rectangle,black,adn,alias,FA ADN)
-!define FA_ADN(alias,label) ENTITY(rectangle,black,adn,label,alias,FA ADN)
-!define FA_ADN(alias,label,shape) ENTITY(shape,black,adn,label,alias,FA ADN)
+!define FA_ADN(_alias) ENTITY(rectangle,black,adn,_alias,FA ADN)
+!define FA_ADN(_alias,_label) ENTITY(rectangle,black,adn,_label,_alias,FA ADN)
+!define FA_ADN(_alias,_label,_shape) ENTITY(_shape,black,adn,_label,_alias,FA ADN)
+!define FA_ADN(_alias,_label,_shape,_color) ENTITY(_shape,_color,adn,_label,_alias,FA ADN)
 skinparam folderBackgroundColor<<FA ADN>> White
 @enduml

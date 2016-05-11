@@ -35,8 +35,9 @@ sprite $opensource [32x32/16] {
 }
 
 
-!define DEV_OPENSOURCE(alias) ENTITY(rectangle,black,opensource,alias,DEV OPENSOURCE)
-!define DEV_OPENSOURCE(alias,label) ENTITY(rectangle,black,opensource,label,alias,DEV OPENSOURCE)
-!define DEV_OPENSOURCE(alias,label,shape) ENTITY(shape,black,opensource,label,alias,DEV OPENSOURCE)
+!define DEV_OPENSOURCE(_alias) ENTITY(rectangle,black,opensource,_alias,DEV OPENSOURCE)
+!define DEV_OPENSOURCE(_alias,_label) ENTITY(rectangle,black,opensource,_label,_alias,DEV OPENSOURCE)
+!define DEV_OPENSOURCE(_alias,_label,_shape) ENTITY(_shape,black,opensource,_label,_alias,DEV OPENSOURCE)
+!define DEV_OPENSOURCE(_alias,_label,_shape,_color) ENTITY(_shape,_color,opensource,_label,_alias,DEV OPENSOURCE)
 skinparam folderBackgroundColor<<DEV OPENSOURCE>> White
 @enduml

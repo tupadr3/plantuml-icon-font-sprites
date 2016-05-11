@@ -51,8 +51,9 @@ AFF5000002453000000AFFFFFFFFA0000003540000005FFA
 }
 
 
-!define FA_TRIPADVISOR(alias) ENTITY(rectangle,black,tripadvisor,alias,FA TRIPADVISOR)
-!define FA_TRIPADVISOR(alias,label) ENTITY(rectangle,black,tripadvisor,label,alias,FA TRIPADVISOR)
-!define FA_TRIPADVISOR(alias,label,shape) ENTITY(shape,black,tripadvisor,label,alias,FA TRIPADVISOR)
+!define FA_TRIPADVISOR(_alias) ENTITY(rectangle,black,tripadvisor,_alias,FA TRIPADVISOR)
+!define FA_TRIPADVISOR(_alias,_label) ENTITY(rectangle,black,tripadvisor,_label,_alias,FA TRIPADVISOR)
+!define FA_TRIPADVISOR(_alias,_label,_shape) ENTITY(_shape,black,tripadvisor,_label,_alias,FA TRIPADVISOR)
+!define FA_TRIPADVISOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,tripadvisor,_label,_alias,FA TRIPADVISOR)
 skinparam folderBackgroundColor<<FA TRIPADVISOR>> White
 @enduml

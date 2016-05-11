@@ -51,8 +51,9 @@ sprite $video_camera [48x48/16] {
 }
 
 
-!define FA_VIDEO_CAMERA(alias) ENTITY(rectangle,black,video_camera,alias,FA VIDEO_CAMERA)
-!define FA_VIDEO_CAMERA(alias,label) ENTITY(rectangle,black,video_camera,label,alias,FA VIDEO_CAMERA)
-!define FA_VIDEO_CAMERA(alias,label,shape) ENTITY(shape,black,video_camera,label,alias,FA VIDEO_CAMERA)
+!define FA_VIDEO_CAMERA(_alias) ENTITY(rectangle,black,video_camera,_alias,FA VIDEO_CAMERA)
+!define FA_VIDEO_CAMERA(_alias,_label) ENTITY(rectangle,black,video_camera,_label,_alias,FA VIDEO_CAMERA)
+!define FA_VIDEO_CAMERA(_alias,_label,_shape) ENTITY(_shape,black,video_camera,_label,_alias,FA VIDEO_CAMERA)
+!define FA_VIDEO_CAMERA(_alias,_label,_shape,_color) ENTITY(_shape,_color,video_camera,_label,_alias,FA VIDEO_CAMERA)
 skinparam folderBackgroundColor<<FA VIDEO_CAMERA>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $print [48x48/16] {
 }
 
 
-!define FA_PRINT(alias) ENTITY(rectangle,black,print,alias,FA PRINT)
-!define FA_PRINT(alias,label) ENTITY(rectangle,black,print,label,alias,FA PRINT)
-!define FA_PRINT(alias,label,shape) ENTITY(shape,black,print,label,alias,FA PRINT)
+!define FA_PRINT(_alias) ENTITY(rectangle,black,print,_alias,FA PRINT)
+!define FA_PRINT(_alias,_label) ENTITY(rectangle,black,print,_label,_alias,FA PRINT)
+!define FA_PRINT(_alias,_label,_shape) ENTITY(_shape,black,print,_label,_alias,FA PRINT)
+!define FA_PRINT(_alias,_label,_shape,_color) ENTITY(_shape,_color,print,_label,_alias,FA PRINT)
 skinparam folderBackgroundColor<<FA PRINT>> White
 @enduml

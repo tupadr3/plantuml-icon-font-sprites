@@ -51,8 +51,9 @@ sprite $stop [48x48/16] {
 }
 
 
-!define FA_STOP(alias) ENTITY(rectangle,black,stop,alias,FA STOP)
-!define FA_STOP(alias,label) ENTITY(rectangle,black,stop,label,alias,FA STOP)
-!define FA_STOP(alias,label,shape) ENTITY(shape,black,stop,label,alias,FA STOP)
+!define FA_STOP(_alias) ENTITY(rectangle,black,stop,_alias,FA STOP)
+!define FA_STOP(_alias,_label) ENTITY(rectangle,black,stop,_label,_alias,FA STOP)
+!define FA_STOP(_alias,_label,_shape) ENTITY(_shape,black,stop,_label,_alias,FA STOP)
+!define FA_STOP(_alias,_label,_shape,_color) ENTITY(_shape,_color,stop,_label,_alias,FA STOP)
 skinparam folderBackgroundColor<<FA STOP>> White
 @enduml

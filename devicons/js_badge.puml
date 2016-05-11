@@ -35,8 +35,9 @@ sprite $js_badge [32x32/16] {
 }
 
 
-!define DEV_JS_BADGE(alias) ENTITY(rectangle,black,js_badge,alias,DEV JS_BADGE)
-!define DEV_JS_BADGE(alias,label) ENTITY(rectangle,black,js_badge,label,alias,DEV JS_BADGE)
-!define DEV_JS_BADGE(alias,label,shape) ENTITY(shape,black,js_badge,label,alias,DEV JS_BADGE)
+!define DEV_JS_BADGE(_alias) ENTITY(rectangle,black,js_badge,_alias,DEV JS_BADGE)
+!define DEV_JS_BADGE(_alias,_label) ENTITY(rectangle,black,js_badge,_label,_alias,DEV JS_BADGE)
+!define DEV_JS_BADGE(_alias,_label,_shape) ENTITY(_shape,black,js_badge,_label,_alias,DEV JS_BADGE)
+!define DEV_JS_BADGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,js_badge,_label,_alias,DEV JS_BADGE)
 skinparam folderBackgroundColor<<DEV JS_BADGE>> White
 @enduml

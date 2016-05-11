@@ -51,8 +51,9 @@ sprite $exclamation_circle [48x48/16] {
 }
 
 
-!define FA_EXCLAMATION_CIRCLE(alias) ENTITY(rectangle,black,exclamation_circle,alias,FA EXCLAMATION_CIRCLE)
-!define FA_EXCLAMATION_CIRCLE(alias,label) ENTITY(rectangle,black,exclamation_circle,label,alias,FA EXCLAMATION_CIRCLE)
-!define FA_EXCLAMATION_CIRCLE(alias,label,shape) ENTITY(shape,black,exclamation_circle,label,alias,FA EXCLAMATION_CIRCLE)
+!define FA_EXCLAMATION_CIRCLE(_alias) ENTITY(rectangle,black,exclamation_circle,_alias,FA EXCLAMATION_CIRCLE)
+!define FA_EXCLAMATION_CIRCLE(_alias,_label) ENTITY(rectangle,black,exclamation_circle,_label,_alias,FA EXCLAMATION_CIRCLE)
+!define FA_EXCLAMATION_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,exclamation_circle,_label,_alias,FA EXCLAMATION_CIRCLE)
+!define FA_EXCLAMATION_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,exclamation_circle,_label,_alias,FA EXCLAMATION_CIRCLE)
 skinparam folderBackgroundColor<<FA EXCLAMATION_CIRCLE>> White
 @enduml

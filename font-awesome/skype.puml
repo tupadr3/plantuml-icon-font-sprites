@@ -51,8 +51,9 @@ sprite $skype [48x48/16] {
 }
 
 
-!define FA_SKYPE(alias) ENTITY(rectangle,black,skype,alias,FA SKYPE)
-!define FA_SKYPE(alias,label) ENTITY(rectangle,black,skype,label,alias,FA SKYPE)
-!define FA_SKYPE(alias,label,shape) ENTITY(shape,black,skype,label,alias,FA SKYPE)
+!define FA_SKYPE(_alias) ENTITY(rectangle,black,skype,_alias,FA SKYPE)
+!define FA_SKYPE(_alias,_label) ENTITY(rectangle,black,skype,_label,_alias,FA SKYPE)
+!define FA_SKYPE(_alias,_label,_shape) ENTITY(_shape,black,skype,_label,_alias,FA SKYPE)
+!define FA_SKYPE(_alias,_label,_shape,_color) ENTITY(_shape,_color,skype,_label,_alias,FA SKYPE)
 skinparam folderBackgroundColor<<FA SKYPE>> White
 @enduml

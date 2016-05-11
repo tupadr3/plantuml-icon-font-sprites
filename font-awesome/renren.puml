@@ -51,8 +51,9 @@ sprite $renren [48x48/16] {
 }
 
 
-!define FA_RENREN(alias) ENTITY(rectangle,black,renren,alias,FA RENREN)
-!define FA_RENREN(alias,label) ENTITY(rectangle,black,renren,label,alias,FA RENREN)
-!define FA_RENREN(alias,label,shape) ENTITY(shape,black,renren,label,alias,FA RENREN)
+!define FA_RENREN(_alias) ENTITY(rectangle,black,renren,_alias,FA RENREN)
+!define FA_RENREN(_alias,_label) ENTITY(rectangle,black,renren,_label,_alias,FA RENREN)
+!define FA_RENREN(_alias,_label,_shape) ENTITY(_shape,black,renren,_label,_alias,FA RENREN)
+!define FA_RENREN(_alias,_label,_shape,_color) ENTITY(_shape,_color,renren,_label,_alias,FA RENREN)
 skinparam folderBackgroundColor<<FA RENREN>> White
 @enduml

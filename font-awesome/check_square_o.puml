@@ -51,8 +51,9 @@ sprite $check_square_o [48x48/16] {
 }
 
 
-!define FA_CHECK_SQUARE_O(alias) ENTITY(rectangle,black,check_square_o,alias,FA CHECK_SQUARE_O)
-!define FA_CHECK_SQUARE_O(alias,label) ENTITY(rectangle,black,check_square_o,label,alias,FA CHECK_SQUARE_O)
-!define FA_CHECK_SQUARE_O(alias,label,shape) ENTITY(shape,black,check_square_o,label,alias,FA CHECK_SQUARE_O)
+!define FA_CHECK_SQUARE_O(_alias) ENTITY(rectangle,black,check_square_o,_alias,FA CHECK_SQUARE_O)
+!define FA_CHECK_SQUARE_O(_alias,_label) ENTITY(rectangle,black,check_square_o,_label,_alias,FA CHECK_SQUARE_O)
+!define FA_CHECK_SQUARE_O(_alias,_label,_shape) ENTITY(_shape,black,check_square_o,_label,_alias,FA CHECK_SQUARE_O)
+!define FA_CHECK_SQUARE_O(_alias,_label,_shape,_color) ENTITY(_shape,_color,check_square_o,_label,_alias,FA CHECK_SQUARE_O)
 skinparam folderBackgroundColor<<FA CHECK_SQUARE_O>> White
 @enduml

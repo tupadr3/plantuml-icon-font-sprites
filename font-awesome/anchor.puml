@@ -51,8 +51,9 @@ sprite $anchor [48x48/16] {
 }
 
 
-!define FA_ANCHOR(alias) ENTITY(rectangle,black,anchor,alias,FA ANCHOR)
-!define FA_ANCHOR(alias,label) ENTITY(rectangle,black,anchor,label,alias,FA ANCHOR)
-!define FA_ANCHOR(alias,label,shape) ENTITY(shape,black,anchor,label,alias,FA ANCHOR)
+!define FA_ANCHOR(_alias) ENTITY(rectangle,black,anchor,_alias,FA ANCHOR)
+!define FA_ANCHOR(_alias,_label) ENTITY(rectangle,black,anchor,_label,_alias,FA ANCHOR)
+!define FA_ANCHOR(_alias,_label,_shape) ENTITY(_shape,black,anchor,_label,_alias,FA ANCHOR)
+!define FA_ANCHOR(_alias,_label,_shape,_color) ENTITY(_shape,_color,anchor,_label,_alias,FA ANCHOR)
 skinparam folderBackgroundColor<<FA ANCHOR>> White
 @enduml

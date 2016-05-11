@@ -51,8 +51,9 @@ sprite $pagelines [48x48/16] {
 }
 
 
-!define FA_PAGELINES(alias) ENTITY(rectangle,black,pagelines,alias,FA PAGELINES)
-!define FA_PAGELINES(alias,label) ENTITY(rectangle,black,pagelines,label,alias,FA PAGELINES)
-!define FA_PAGELINES(alias,label,shape) ENTITY(shape,black,pagelines,label,alias,FA PAGELINES)
+!define FA_PAGELINES(_alias) ENTITY(rectangle,black,pagelines,_alias,FA PAGELINES)
+!define FA_PAGELINES(_alias,_label) ENTITY(rectangle,black,pagelines,_label,_alias,FA PAGELINES)
+!define FA_PAGELINES(_alias,_label,_shape) ENTITY(_shape,black,pagelines,_label,_alias,FA PAGELINES)
+!define FA_PAGELINES(_alias,_label,_shape,_color) ENTITY(_shape,_color,pagelines,_label,_alias,FA PAGELINES)
 skinparam folderBackgroundColor<<FA PAGELINES>> White
 @enduml

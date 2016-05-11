@@ -35,8 +35,9 @@ sprite $jquery_ui_logo [32x32/16] {
 }
 
 
-!define DEV_JQUERY_UI_LOGO(alias) ENTITY(rectangle,black,jquery_ui_logo,alias,DEV JQUERY_UI_LOGO)
-!define DEV_JQUERY_UI_LOGO(alias,label) ENTITY(rectangle,black,jquery_ui_logo,label,alias,DEV JQUERY_UI_LOGO)
-!define DEV_JQUERY_UI_LOGO(alias,label,shape) ENTITY(shape,black,jquery_ui_logo,label,alias,DEV JQUERY_UI_LOGO)
+!define DEV_JQUERY_UI_LOGO(_alias) ENTITY(rectangle,black,jquery_ui_logo,_alias,DEV JQUERY_UI_LOGO)
+!define DEV_JQUERY_UI_LOGO(_alias,_label) ENTITY(rectangle,black,jquery_ui_logo,_label,_alias,DEV JQUERY_UI_LOGO)
+!define DEV_JQUERY_UI_LOGO(_alias,_label,_shape) ENTITY(_shape,black,jquery_ui_logo,_label,_alias,DEV JQUERY_UI_LOGO)
+!define DEV_JQUERY_UI_LOGO(_alias,_label,_shape,_color) ENTITY(_shape,_color,jquery_ui_logo,_label,_alias,DEV JQUERY_UI_LOGO)
 skinparam folderBackgroundColor<<DEV JQUERY_UI_LOGO>> White
 @enduml

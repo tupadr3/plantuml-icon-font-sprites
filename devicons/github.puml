@@ -35,8 +35,9 @@ sprite $github [32x32/16] {
 }
 
 
-!define DEV_GITHUB(alias) ENTITY(rectangle,black,github,alias,DEV GITHUB)
-!define DEV_GITHUB(alias,label) ENTITY(rectangle,black,github,label,alias,DEV GITHUB)
-!define DEV_GITHUB(alias,label,shape) ENTITY(shape,black,github,label,alias,DEV GITHUB)
+!define DEV_GITHUB(_alias) ENTITY(rectangle,black,github,_alias,DEV GITHUB)
+!define DEV_GITHUB(_alias,_label) ENTITY(rectangle,black,github,_label,_alias,DEV GITHUB)
+!define DEV_GITHUB(_alias,_label,_shape) ENTITY(_shape,black,github,_label,_alias,DEV GITHUB)
+!define DEV_GITHUB(_alias,_label,_shape,_color) ENTITY(_shape,_color,github,_label,_alias,DEV GITHUB)
 skinparam folderBackgroundColor<<DEV GITHUB>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $vimeo_square [48x48/16] {
 }
 
 
-!define FA_VIMEO_SQUARE(alias) ENTITY(rectangle,black,vimeo_square,alias,FA VIMEO_SQUARE)
-!define FA_VIMEO_SQUARE(alias,label) ENTITY(rectangle,black,vimeo_square,label,alias,FA VIMEO_SQUARE)
-!define FA_VIMEO_SQUARE(alias,label,shape) ENTITY(shape,black,vimeo_square,label,alias,FA VIMEO_SQUARE)
+!define FA_VIMEO_SQUARE(_alias) ENTITY(rectangle,black,vimeo_square,_alias,FA VIMEO_SQUARE)
+!define FA_VIMEO_SQUARE(_alias,_label) ENTITY(rectangle,black,vimeo_square,_label,_alias,FA VIMEO_SQUARE)
+!define FA_VIMEO_SQUARE(_alias,_label,_shape) ENTITY(_shape,black,vimeo_square,_label,_alias,FA VIMEO_SQUARE)
+!define FA_VIMEO_SQUARE(_alias,_label,_shape,_color) ENTITY(_shape,_color,vimeo_square,_label,_alias,FA VIMEO_SQUARE)
 skinparam folderBackgroundColor<<FA VIMEO_SQUARE>> White
 @enduml

@@ -35,8 +35,9 @@ sprite $fsharp [27x32/16] {
 }
 
 
-!define DEV_FSHARP(alias) ENTITY(rectangle,black,fsharp,alias,DEV FSHARP)
-!define DEV_FSHARP(alias,label) ENTITY(rectangle,black,fsharp,label,alias,DEV FSHARP)
-!define DEV_FSHARP(alias,label,shape) ENTITY(shape,black,fsharp,label,alias,DEV FSHARP)
+!define DEV_FSHARP(_alias) ENTITY(rectangle,black,fsharp,_alias,DEV FSHARP)
+!define DEV_FSHARP(_alias,_label) ENTITY(rectangle,black,fsharp,_label,_alias,DEV FSHARP)
+!define DEV_FSHARP(_alias,_label,_shape) ENTITY(_shape,black,fsharp,_label,_alias,DEV FSHARP)
+!define DEV_FSHARP(_alias,_label,_shape,_color) ENTITY(_shape,_color,fsharp,_label,_alias,DEV FSHARP)
 skinparam folderBackgroundColor<<DEV FSHARP>> White
 @enduml

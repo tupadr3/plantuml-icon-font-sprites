@@ -35,8 +35,9 @@ sprite $mootools_badge [32x32/16] {
 }
 
 
-!define DEV_MOOTOOLS_BADGE(alias) ENTITY(rectangle,black,mootools_badge,alias,DEV MOOTOOLS_BADGE)
-!define DEV_MOOTOOLS_BADGE(alias,label) ENTITY(rectangle,black,mootools_badge,label,alias,DEV MOOTOOLS_BADGE)
-!define DEV_MOOTOOLS_BADGE(alias,label,shape) ENTITY(shape,black,mootools_badge,label,alias,DEV MOOTOOLS_BADGE)
+!define DEV_MOOTOOLS_BADGE(_alias) ENTITY(rectangle,black,mootools_badge,_alias,DEV MOOTOOLS_BADGE)
+!define DEV_MOOTOOLS_BADGE(_alias,_label) ENTITY(rectangle,black,mootools_badge,_label,_alias,DEV MOOTOOLS_BADGE)
+!define DEV_MOOTOOLS_BADGE(_alias,_label,_shape) ENTITY(_shape,black,mootools_badge,_label,_alias,DEV MOOTOOLS_BADGE)
+!define DEV_MOOTOOLS_BADGE(_alias,_label,_shape,_color) ENTITY(_shape,_color,mootools_badge,_label,_alias,DEV MOOTOOLS_BADGE)
 skinparam folderBackgroundColor<<DEV MOOTOOLS_BADGE>> White
 @enduml

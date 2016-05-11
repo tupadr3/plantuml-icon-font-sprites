@@ -51,8 +51,9 @@ sprite $random [48x48/16] {
 }
 
 
-!define FA_RANDOM(alias) ENTITY(rectangle,black,random,alias,FA RANDOM)
-!define FA_RANDOM(alias,label) ENTITY(rectangle,black,random,label,alias,FA RANDOM)
-!define FA_RANDOM(alias,label,shape) ENTITY(shape,black,random,label,alias,FA RANDOM)
+!define FA_RANDOM(_alias) ENTITY(rectangle,black,random,_alias,FA RANDOM)
+!define FA_RANDOM(_alias,_label) ENTITY(rectangle,black,random,_label,_alias,FA RANDOM)
+!define FA_RANDOM(_alias,_label,_shape) ENTITY(_shape,black,random,_label,_alias,FA RANDOM)
+!define FA_RANDOM(_alias,_label,_shape,_color) ENTITY(_shape,_color,random,_label,_alias,FA RANDOM)
 skinparam folderBackgroundColor<<FA RANDOM>> White
 @enduml

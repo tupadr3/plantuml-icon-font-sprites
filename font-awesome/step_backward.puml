@@ -51,8 +51,9 @@ sprite $step_backward [48x48/16] {
 }
 
 
-!define FA_STEP_BACKWARD(alias) ENTITY(rectangle,black,step_backward,alias,FA STEP_BACKWARD)
-!define FA_STEP_BACKWARD(alias,label) ENTITY(rectangle,black,step_backward,label,alias,FA STEP_BACKWARD)
-!define FA_STEP_BACKWARD(alias,label,shape) ENTITY(shape,black,step_backward,label,alias,FA STEP_BACKWARD)
+!define FA_STEP_BACKWARD(_alias) ENTITY(rectangle,black,step_backward,_alias,FA STEP_BACKWARD)
+!define FA_STEP_BACKWARD(_alias,_label) ENTITY(rectangle,black,step_backward,_label,_alias,FA STEP_BACKWARD)
+!define FA_STEP_BACKWARD(_alias,_label,_shape) ENTITY(_shape,black,step_backward,_label,_alias,FA STEP_BACKWARD)
+!define FA_STEP_BACKWARD(_alias,_label,_shape,_color) ENTITY(_shape,_color,step_backward,_label,_alias,FA STEP_BACKWARD)
 skinparam folderBackgroundColor<<FA STEP_BACKWARD>> White
 @enduml

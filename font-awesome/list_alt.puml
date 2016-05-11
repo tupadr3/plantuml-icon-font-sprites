@@ -51,8 +51,9 @@ sprite $list_alt [48x48/16] {
 }
 
 
-!define FA_LIST_ALT(alias) ENTITY(rectangle,black,list_alt,alias,FA LIST_ALT)
-!define FA_LIST_ALT(alias,label) ENTITY(rectangle,black,list_alt,label,alias,FA LIST_ALT)
-!define FA_LIST_ALT(alias,label,shape) ENTITY(shape,black,list_alt,label,alias,FA LIST_ALT)
+!define FA_LIST_ALT(_alias) ENTITY(rectangle,black,list_alt,_alias,FA LIST_ALT)
+!define FA_LIST_ALT(_alias,_label) ENTITY(rectangle,black,list_alt,_label,_alias,FA LIST_ALT)
+!define FA_LIST_ALT(_alias,_label,_shape) ENTITY(_shape,black,list_alt,_label,_alias,FA LIST_ALT)
+!define FA_LIST_ALT(_alias,_label,_shape,_color) ENTITY(_shape,_color,list_alt,_label,_alias,FA LIST_ALT)
 skinparam folderBackgroundColor<<FA LIST_ALT>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $paw [48x48/16] {
 }
 
 
-!define FA_PAW(alias) ENTITY(rectangle,black,paw,alias,FA PAW)
-!define FA_PAW(alias,label) ENTITY(rectangle,black,paw,label,alias,FA PAW)
-!define FA_PAW(alias,label,shape) ENTITY(shape,black,paw,label,alias,FA PAW)
+!define FA_PAW(_alias) ENTITY(rectangle,black,paw,_alias,FA PAW)
+!define FA_PAW(_alias,_label) ENTITY(rectangle,black,paw,_label,_alias,FA PAW)
+!define FA_PAW(_alias,_label,_shape) ENTITY(_shape,black,paw,_label,_alias,FA PAW)
+!define FA_PAW(_alias,_label,_shape,_color) ENTITY(_shape,_color,paw,_label,_alias,FA PAW)
 skinparam folderBackgroundColor<<FA PAW>> White
 @enduml

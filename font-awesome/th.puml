@@ -51,8 +51,9 @@ sprite $th [48x48/16] {
 }
 
 
-!define FA_TH(alias) ENTITY(rectangle,black,th,alias,FA TH)
-!define FA_TH(alias,label) ENTITY(rectangle,black,th,label,alias,FA TH)
-!define FA_TH(alias,label,shape) ENTITY(shape,black,th,label,alias,FA TH)
+!define FA_TH(_alias) ENTITY(rectangle,black,th,_alias,FA TH)
+!define FA_TH(_alias,_label) ENTITY(rectangle,black,th,_label,_alias,FA TH)
+!define FA_TH(_alias,_label,_shape) ENTITY(_shape,black,th,_label,_alias,FA TH)
+!define FA_TH(_alias,_label,_shape,_color) ENTITY(_shape,_color,th,_label,_alias,FA TH)
 skinparam folderBackgroundColor<<FA TH>> White
 @enduml

@@ -51,8 +51,9 @@ sprite $pause_circle [48x48/16] {
 }
 
 
-!define FA_PAUSE_CIRCLE(alias) ENTITY(rectangle,black,pause_circle,alias,FA PAUSE_CIRCLE)
-!define FA_PAUSE_CIRCLE(alias,label) ENTITY(rectangle,black,pause_circle,label,alias,FA PAUSE_CIRCLE)
-!define FA_PAUSE_CIRCLE(alias,label,shape) ENTITY(shape,black,pause_circle,label,alias,FA PAUSE_CIRCLE)
+!define FA_PAUSE_CIRCLE(_alias) ENTITY(rectangle,black,pause_circle,_alias,FA PAUSE_CIRCLE)
+!define FA_PAUSE_CIRCLE(_alias,_label) ENTITY(rectangle,black,pause_circle,_label,_alias,FA PAUSE_CIRCLE)
+!define FA_PAUSE_CIRCLE(_alias,_label,_shape) ENTITY(_shape,black,pause_circle,_label,_alias,FA PAUSE_CIRCLE)
+!define FA_PAUSE_CIRCLE(_alias,_label,_shape,_color) ENTITY(_shape,_color,pause_circle,_label,_alias,FA PAUSE_CIRCLE)
 skinparam folderBackgroundColor<<FA PAUSE_CIRCLE>> White
 @enduml

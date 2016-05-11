@@ -51,8 +51,9 @@ sprite $buysellads [48x48/16] {
 }
 
 
-!define FA_BUYSELLADS(alias) ENTITY(rectangle,black,buysellads,alias,FA BUYSELLADS)
-!define FA_BUYSELLADS(alias,label) ENTITY(rectangle,black,buysellads,label,alias,FA BUYSELLADS)
-!define FA_BUYSELLADS(alias,label,shape) ENTITY(shape,black,buysellads,label,alias,FA BUYSELLADS)
+!define FA_BUYSELLADS(_alias) ENTITY(rectangle,black,buysellads,_alias,FA BUYSELLADS)
+!define FA_BUYSELLADS(_alias,_label) ENTITY(rectangle,black,buysellads,_label,_alias,FA BUYSELLADS)
+!define FA_BUYSELLADS(_alias,_label,_shape) ENTITY(_shape,black,buysellads,_label,_alias,FA BUYSELLADS)
+!define FA_BUYSELLADS(_alias,_label,_shape,_color) ENTITY(_shape,_color,buysellads,_label,_alias,FA BUYSELLADS)
 skinparam folderBackgroundColor<<FA BUYSELLADS>> White
 @enduml

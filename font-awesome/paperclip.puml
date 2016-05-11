@@ -51,8 +51,9 @@ sprite $paperclip [48x48/16] {
 }
 
 
-!define FA_PAPERCLIP(alias) ENTITY(rectangle,black,paperclip,alias,FA PAPERCLIP)
-!define FA_PAPERCLIP(alias,label) ENTITY(rectangle,black,paperclip,label,alias,FA PAPERCLIP)
-!define FA_PAPERCLIP(alias,label,shape) ENTITY(shape,black,paperclip,label,alias,FA PAPERCLIP)
+!define FA_PAPERCLIP(_alias) ENTITY(rectangle,black,paperclip,_alias,FA PAPERCLIP)
+!define FA_PAPERCLIP(_alias,_label) ENTITY(rectangle,black,paperclip,_label,_alias,FA PAPERCLIP)
+!define FA_PAPERCLIP(_alias,_label,_shape) ENTITY(_shape,black,paperclip,_label,_alias,FA PAPERCLIP)
+!define FA_PAPERCLIP(_alias,_label,_shape,_color) ENTITY(_shape,_color,paperclip,_label,_alias,FA PAPERCLIP)
 skinparam folderBackgroundColor<<FA PAPERCLIP>> White
 @enduml

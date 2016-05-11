@@ -51,8 +51,9 @@ sprite $copyright [48x48/16] {
 }
 
 
-!define FA_COPYRIGHT(alias) ENTITY(rectangle,black,copyright,alias,FA COPYRIGHT)
-!define FA_COPYRIGHT(alias,label) ENTITY(rectangle,black,copyright,label,alias,FA COPYRIGHT)
-!define FA_COPYRIGHT(alias,label,shape) ENTITY(shape,black,copyright,label,alias,FA COPYRIGHT)
+!define FA_COPYRIGHT(_alias) ENTITY(rectangle,black,copyright,_alias,FA COPYRIGHT)
+!define FA_COPYRIGHT(_alias,_label) ENTITY(rectangle,black,copyright,_label,_alias,FA COPYRIGHT)
+!define FA_COPYRIGHT(_alias,_label,_shape) ENTITY(_shape,black,copyright,_label,_alias,FA COPYRIGHT)
+!define FA_COPYRIGHT(_alias,_label,_shape,_color) ENTITY(_shape,_color,copyright,_label,_alias,FA COPYRIGHT)
 skinparam folderBackgroundColor<<FA COPYRIGHT>> White
 @enduml
