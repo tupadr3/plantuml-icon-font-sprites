@@ -19,4 +19,3 @@
 !define ENTITY(e_type,e_color,e_sprite,e_label,e_alias,e_stereo) e_type "<color:e_color><$e_sprite></color>\r e_label" as e_alias <<e_stereo>>
 
 hide stereotype
-skinparam cloudBackgroundColor<<AWS>> White

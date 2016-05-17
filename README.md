@@ -40,8 +40,12 @@ Using the icon from devicons for mysql
 
 ## Icon Sets
 
-* [Font-Awesome](http://fontawesome.io/)
-* [Devicons](http://vorillaz.github.io/devicons)
+The following icon sets are included:
+
+| Name | Index |
+|------|-------|
+|[Font-Awesome](http://fontawesome.io/) | [List of macros](font-awesome/index.md) |
+|[Devicons](http://vorillaz.github.io/devicons) | [List of macros](devicons/index.md) |
 
 ## Example 
 
