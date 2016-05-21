@@ -6,7 +6,8 @@ The common.puml is required for the rest to work.
 	
 	!include ../common.puml
 	or via url 
-	!includeurl https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/common.puml
+	!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v1.0.0
+	!includeurl ICONURL/common.puml
 
 Import the sprites that you want
 
@@ -15,8 +16,9 @@ Import the sprites that you want
 
 	or via url
 
-	!includeurl https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/mysql.puml
-	!includeurl https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome/database.puml
+	!includeurl ICONURL/common.puml
+	!includeurl ICONURL/devicons/mysql.puml
+	!includeurl ICONURL/font-awesome/database.puml
 
 To use the sprites add one of the macros
 
@@ -51,9 +53,11 @@ The following icon sets are included:
 
 	@startuml
 
-	!includeurl https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/common.puml
-	!includeurl https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome/server.puml
-	!includeurl https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome/database.puml
+	!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v1.0.0
+	
+	!includeurl ICONURL/common.puml
+	!includeurl ICONURL/font-awesome/server.puml
+	!includeurl ICONURL/font-awesome/database.puml
 	
 	title Styling example
 
