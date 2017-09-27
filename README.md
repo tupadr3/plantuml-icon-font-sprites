@@ -83,7 +83,7 @@ The following icon sets are included:
 
 ## Note
 * All brand icons are trademarks of their respective owners. 
-* Blog post with a more complex example can be found @ ![plantuml-icon-font-sprites](https://tupadr3.de/plantuml-icon-font-sprites/)
+* Blog post with a more complex example can be found @ [plantuml-icon-font-sprites](https://tupadr3.de/plantuml-icon-font-sprites/)
 
 Enjoy!
 
