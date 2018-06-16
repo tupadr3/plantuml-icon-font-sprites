@@ -1,8 +1,11 @@
 @startuml
 
+skinparam defaultTextAlignment center
+
 !include ../common.puml
+!include ../devicons/mysql.puml
 !include ../font-awesome/server.puml
-!include ../font-awesome/database.puml
+!include ../font-awesome-5/database.puml
 
 title Styling example
 
@@ -11,8 +14,8 @@ FA_SERVER(web2,WEB1) #Yellow
 FA_SERVER(web3,WEB1) #Blue
 FA_SERVER(web4,WEB1) #YellowGreen
 
-FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
-FA_DATABASE(db2,SPARE,database) #Red
+FA5_DATABASE(db1,LIVE,database,white) #RoyalBlue
+DEV_MYSQL(db2,SPARE,database) #Red
 
 db1 <--> db2
 

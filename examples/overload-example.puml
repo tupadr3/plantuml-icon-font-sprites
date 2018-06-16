@@ -1,5 +1,7 @@
 @startuml
 
+skinparam defaultTextAlignment center
+
 !include ../common.puml
 !include ../devicons/mysql.puml
 

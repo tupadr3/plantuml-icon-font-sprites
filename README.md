@@ -3,40 +3,55 @@
 ## Getting Started
 
 The common.puml is required for the rest to work. 
-	
-	!include ../common.puml
-	or via url 
-	!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v1.0.0
-	!includeurl ICONURL/common.puml
+
+```puml	
+!include ../common.puml
+```
+or via url 
+```puml	
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
+!includeurl ICONURL/common.puml
+```
 
 Import the sprites that you want
 
-	!include ../devicons/mysql.puml
-	!include ../font-awesome/database.puml
+```puml
+!include ../devicons/mysql.puml
+!include ../font-awesome/database.puml
+!include ../font-awesome-5/database.puml
+```
+or via url
 
-	or via url
-
-	!includeurl ICONURL/common.puml
-	!includeurl ICONURL/devicons/mysql.puml
-	!includeurl ICONURL/font-awesome/database.puml
+```puml
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/mysql.puml
+!includeurl ICONURL/font-awesome/database.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+```
 
 To use the sprites add one of the macros
 
-	 DEV_MYSQL(db)
+```puml
+DEV_MYSQL(db)
+```
 
 The macros are prefixed with the set and the name of the icon
 
-	<prefix>_<name>(alias)
-	<prefix>_<name>(alias,label)
-	<prefix>_<name>(alias,label,shape)
-	<prefix>_<name>(alias,label,shape,color)
-	
+```puml
+<prefix>_<name>(alias)
+<prefix>_<name>(alias,label)
+<prefix>_<name>(alias,label,shape)
+<prefix>_<name>(alias,label,shape,color)
+```
+
 Using the icon from devicons for mysql
 	
-	DEV_MYSQL(db1)
-	DEV_MYSQL(db2,label of db2)
-	DEV_MYSQL(db3,label of db3,database)
-	DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
+```puml
+DEV_MYSQL(db1)
+DEV_MYSQL(db2,label of db2)
+DEV_MYSQL(db3,label of db3,database)
+DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
+```
 
 ![overload-example](examples/overload-example.png)
 
@@ -44,46 +59,65 @@ Using the icon from devicons for mysql
 
 The following icon sets are included:
 
-| Name | Index |
-|------|-------|
-|[Font-Awesome](http://fontawesome.io/) | [List of macros](font-awesome/index.md) |
-|[Devicons](http://vorillaz.github.io/devicons) | [List of macros](devicons/index.md) |
+| Name                                              | Index                                     |
+| ------------------------------------------------- | ----------------------------------------- |
+| [Font-Awesome 4](https://fontawesome.com/v4.7.0/) | [List of macros](font-awesome-5/index.md) |
+| [Font-Awesome 5](http://fontawesome.io/)          | [List of macros](font-awesome/index.md)   |
+| [Devicons](http://vorillaz.github.io/devicons)    | [List of macros](devicons/index.md)       |
 
 ## Example 
 
-	@startuml
+```puml
+@startuml
 
-	!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v1.0.0
-	
-	!includeurl ICONURL/common.puml
-	!includeurl ICONURL/font-awesome/server.puml
-	!includeurl ICONURL/font-awesome/database.puml
-	
-	title Styling example
+skinparam defaultTextAlignment center
 
-	FA_SERVER(web1,web1) #Green
-	FA_SERVER(web2,web2) #Yellow
-	FA_SERVER(web3,web3) #Blue
-	FA_SERVER(web4,web4) #YellowGreen
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
 
-	FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
-	FA_DATABASE(db2,SPARE,database) #Red
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome/server.puml
+!includeurl ICONURL/font-awesome-5/database.puml
 
-	db1 <--> db2
+title Styling example
 
-	web1 <--> db1
-	web2 <--> db1
-	web3 <--> db1
-	web4 <--> db1
+FA_SERVER(web1,WEB1) #Green
+FA_SERVER(web2,WEB1) #Yellow
+FA_SERVER(web3,WEB1) #Blue
+FA_SERVER(web4,WEB1) #YellowGreen
 
-	@enduml
+FA5_DATABASE(db1,LIVE,database,white) #RoyalBlue
+DEV_MYSQL(db2,SPARE,database) #Red
+
+db1 <--> db2
+
+web1 <--> db1
+web2 <--> db1
+web3 <--> db1
+web4 <--> db1
+
+@enduml
+```
 
 ![styling-example](examples/styling-example.png)
 
+More examples can be found [here](examples/)
 
 ## Note
 * All brand icons are trademarks of their respective owners. 
-* Blog post with a more complex example can be found @ [plantuml-icon-font-sprites](https://tupadr3.de/plantuml-icon-font-sprites/)
+* Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
+
+## Changelog
+
+####  v2.0.0
+
+* Added fa5
+* Updated dev and fa to latest version
+* Fixed aspect ratios
+
+#### v1.0.0
+
+* Intital release
+
 
 Enjoy!
 
