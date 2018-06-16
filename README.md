@@ -75,6 +75,7 @@ skinparam defaultTextAlignment center
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
 
 !includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/mysql.puml
 !includeurl ICONURL/font-awesome/server.puml
 !includeurl ICONURL/font-awesome-5/database.puml
 
