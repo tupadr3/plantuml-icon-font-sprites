@@ -106,6 +106,19 @@ More examples can be found [here](examples/)
 * All brand icons are trademarks of their respective owners. 
 * Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
 
+## Changelog
+
+####  v2.0.0
+
+* Added fa5
+* Updated dev and fa to latest version
+* Fixed aspect ratios
+
+#### v1.0.0
+
+* Intital release
+
+
 Enjoy!
 
 
