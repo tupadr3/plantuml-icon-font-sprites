@@ -1,0 +1,52 @@
+@startuml
+
+skinparam defaultTextAlignment center
+
+!include ../common.puml
+!include ../font-awesome-5/server.puml
+!include ../font-awesome-5/gitlab.puml
+!include ../font-awesome/gears.puml
+!include ../font-awesome/fire.puml
+!include ../font-awesome/clock_o.puml
+!include ../font-awesome/lock.puml
+!include ../font-awesome/cloud.puml
+
+!include ../devicons/nginx.puml
+!include ../devicons/mysql.puml
+!include ../devicons/redis.puml
+!include ../devicons/docker.puml
+!include ../devicons/linux.puml
+
+FA_CLOUD(internet,internet,cloud) #White {
+
+}
+
+DEV_LINUX(debian,Linux,node){
+
+	FA_CLOCK_O(crond,crond) #White
+	FA_FIRE(iptables,iptables) #White
+
+	DEV_DOCKER(docker,docker,node)  {
+		DEV_NGINX(nginx,nginx,node) #White
+		DEV_MYSQL(mysql,mysql,node) #White
+		DEV_REDIS(redis,redis,node) #White
+		FA5_SERVER(nexus,nexus3,node) #White
+		FA5_GITLAB(gitlab,gitlab,node) #White
+		FA_GEARS(gitlabci,gitlab-ci-runner,node) #White
+
+		FA_LOCK(letsencrypt,letsencrypt-client,node) #White
+	}
+}
+
+internet ..> iptables : http
+
+iptables ..> nginx : http
+nginx ..> nexus : http
+nginx ..> gitlab : http
+gitlabci ..> gitlab : http
+gitlab ..> mysql : tcp/ip
+gitlab ..> redis : tcp/ip
+
+crond --> letsencrypt : starts every month
+
+@enduml
