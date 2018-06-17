@@ -59,11 +59,14 @@ DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
 
 The following icon sets are included:
 
-| Name                                              | Index                                     |
-| ------------------------------------------------- | ----------------------------------------- |
-| [Font-Awesome 4](https://fontawesome.com/v4.7.0/) | [List of macros](font-awesome-5/index.md) |
-| [Font-Awesome 5](http://fontawesome.io/)          | [List of macros](font-awesome/index.md)   |
-| [Devicons](http://vorillaz.github.io/devicons)    | [List of macros](devicons/index.md)       |
+| Name                                                       | Index                                     |
+| -------------------------------------------------          | ----------------------------------------- |
+| [Font-Awesome 4](https://fontawesome.com/v4.7.0/)          | [List of macros](font-awesome-5/index.md) |
+| [Font-Awesome 5](http://fontawesome.io/)                   | [List of macros](font-awesome/index.md)   |
+| [Devicons](http://vorillaz.github.io/devicons)             | [List of macros](devicons/index.md)       |
+| [Govicons](http://govicons.io/)                            | [List of macros](govicons/index.md)       |
+| [Weather](https://erikflowers.github.io/weather-icons/)    | [List of macros](weather/index.md)        |
+| [Material](http://google.github.io/material-design-icons/) | [List of macros](material/index.md)       |
 
 ## Example 
 
@@ -111,7 +114,7 @@ More examples can be found [here](examples/)
 
 ####  v2.0.0
 
-* Added fa5
+* Added fa5, weather, gov and material
 * Updated dev and fa to latest version
 * Fixed aspect ratios
 
