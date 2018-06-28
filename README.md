@@ -61,8 +61,8 @@ The following icon sets are included:
 
 | Name                                                       | Index                                     |
 | -------------------------------------------------          | ----------------------------------------- |
-| [Font-Awesome 4](https://fontawesome.com/v4.7.0/)          | [List of macros](font-awesome-5/index.md) |
-| [Font-Awesome 5](http://fontawesome.io/)                   | [List of macros](font-awesome/index.md)   |
+| [Font-Awesome 4](https://fontawesome.com/v4.7.0/)          | [List of macros](font-awesome/index.md) |
+| [Font-Awesome 5](http://fontawesome.io/)                   | [List of macros](font-awesome-5/index.md)   |
 | [Devicons](http://vorillaz.github.io/devicons)             | [List of macros](devicons/index.md)       |
 | [Govicons](http://govicons.io/)                            | [List of macros](govicons/index.md)       |
 | [Weather](https://erikflowers.github.io/weather-icons/)    | [List of macros](weather/index.md)        |
