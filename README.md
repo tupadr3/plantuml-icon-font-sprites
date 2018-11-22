@@ -2,13 +2,15 @@
 
 ## Getting Started
 
-The common.puml is required for the rest to work. 
+The common.puml is required for the rest to work.
 
-```puml	
+```puml
 !include ../common.puml
 ```
-or via url 
-```puml	
+
+or via url
+
+```puml
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
 !includeurl ICONURL/common.puml
 ```
@@ -20,6 +22,7 @@ Import the sprites that you want
 !include ../font-awesome/database.puml
 !include ../font-awesome-5/database.puml
 ```
+
 or via url
 
 ```puml
@@ -45,7 +48,7 @@ The macros are prefixed with the set and the name of the icon
 ```
 
 Using the icon from devicons for mysql
-	
+
 ```puml
 DEV_MYSQL(db1)
 DEV_MYSQL(db2,label of db2)
@@ -60,15 +63,15 @@ DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
 The following icon sets are included:
 
 | Name                                                       | Index                                     |
-| -------------------------------------------------          | ----------------------------------------- |
-| [Font-Awesome 4](https://fontawesome.com/v4.7.0/)          | [List of macros](font-awesome/index.md) |
-| [Font-Awesome 5](http://fontawesome.io/)                   | [List of macros](font-awesome-5/index.md)   |
+| ---------------------------------------------------------- | ----------------------------------------- |
+| [Font-Awesome 4](https://fontawesome.com/v4.7.0/)          | [List of macros](font-awesome/index.md)   |
+| [Font-Awesome 5](http://fontawesome.io/)                   | [List of macros](font-awesome-5/index.md) |
 | [Devicons](http://vorillaz.github.io/devicons)             | [List of macros](devicons/index.md)       |
 | [Govicons](http://govicons.io/)                            | [List of macros](govicons/index.md)       |
 | [Weather](https://erikflowers.github.io/weather-icons/)    | [List of macros](weather/index.md)        |
 | [Material](http://google.github.io/material-design-icons/) | [List of macros](material/index.md)       |
 
-## Example 
+## Example
 
 ```puml
 @startuml
@@ -106,25 +109,25 @@ web4 <--> db1
 
 More examples can be found [here](examples/)
 
+## Build
+
+Icons are generated with [font-icon-generator](https://github.com/tupadr3/font-icon-generator)
+
 ## Note
-* All brand icons are trademarks of their respective owners. 
-* Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
+
+-   All brand icons are trademarks of their respective owners.
+-   Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
 
 ## Changelog
 
-####  v2.0.0
+#### v2.0.0
 
-* Added fa5, weather, gov and material
-* Updated dev and fa to latest version
-* Fixed aspect ratios
+-   Added fa5, weather, gov and material
+-   Updated dev and fa to latest version
+-   Fixed aspect ratios
 
 #### v1.0.0
 
-* Intital release
-
+-   Intital release
 
 Enjoy!
-
-
-
-
