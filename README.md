@@ -70,6 +70,7 @@ The following icon sets are included:
 | [Govicons](http://govicons.io/)                            | [List of macros](govicons/index.md)       |
 | [Weather](https://erikflowers.github.io/weather-icons/)    | [List of macros](weather/index.md)        |
 | [Material](http://google.github.io/material-design-icons/) | [List of macros](material/index.md)       |
+| [Devicon 2](https://konpa.github.io/devicon/)               | [List of macros](dev2/index.md)           |
 
 ## Example
 
@@ -119,6 +120,9 @@ Icons are generated with [font-icon-generator](https://github.com/tupadr3/font-i
 -   Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
 
 ## Changelog
+
+#### v2.1.0
+-   Added Devicon 2
 
 #### v2.0.0
 
