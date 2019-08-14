@@ -11,7 +11,7 @@ The common.puml is required for the rest to work.
 or via url
 
 ```puml
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
 !includeurl ICONURL/common.puml
 ```
 
@@ -70,7 +70,7 @@ The following icon sets are included:
 | [Govicons](http://govicons.io/)                            | [List of macros](govicons/index.md)       |
 | [Weather](https://erikflowers.github.io/weather-icons/)    | [List of macros](weather/index.md)        |
 | [Material](http://google.github.io/material-design-icons/) | [List of macros](material/index.md)       |
-| [Devicon 2](https://konpa.github.io/devicon/)               | [List of macros](dev2/index.md)           |
+| [Devicon 2](https://konpa.github.io/devicon/)              | [List of macros](dev2/index.md)           |
 
 ## Example
 
@@ -79,7 +79,7 @@ The following icon sets are included:
 
 skinparam defaultTextAlignment center
 
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
 
 !includeurl ICONURL/common.puml
 !includeurl ICONURL/devicons/mysql.puml
@@ -116,22 +116,24 @@ Icons are generated with [font-icon-generator](https://github.com/tupadr3/font-i
 
 ## Note
 
--   All brand icons are trademarks of their respective owners.
--   Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
+- All brand icons are trademarks of their respective owners.
+- Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
+- Thanks to [yuri-becker](https://github.com/yuri-becker) for the integration of [Devicon 2](https://konpa.github.io/devicon/)
 
 ## Changelog
 
 #### v2.1.0
--   Added Devicon 2
+
+- Added Devicon 2
 
 #### v2.0.0
 
--   Added fa5, weather, gov and material
--   Updated dev and fa to latest version
--   Fixed aspect ratios
+- Added fa5, weather, gov and material
+- Updated dev and fa to latest version
+- Fixed aspect ratios
 
 #### v1.0.0
 
--   Intital release
+- Intital release
 
 Enjoy!
