@@ -122,17 +122,22 @@ Icons are generated with [font-icon-generator](https://github.com/tupadr3/font-i
 
 ## Changelog
 
-#### v2.1.0
+### v2.2.0
+
+- Updated all except material to latest version
+- Updated material to 3.0.2
+
+### v2.1.0
 
 - Added Devicon 2
 
-#### v2.0.0
+### v2.0.0
 
 - Added fa5, weather, gov and material
 - Updated dev and fa to latest version
 - Fixed aspect ratios
 
-#### v1.0.0
+### v1.0.0
 
 - Intital release
 
