@@ -11,7 +11,7 @@ The common.puml is required for the rest to work.
 or via url
 
 ```puml
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.2.0
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
 !includeurl ICONURL/common.puml
 ```
 
@@ -70,7 +70,7 @@ The following icon sets are included:
 | [Govicons](http://govicons.io/)                            | [List of macros](govicons/index.md)       |
 | [Weather](https://erikflowers.github.io/weather-icons/)    | [List of macros](weather/index.md)        |
 | [Material](http://google.github.io/material-design-icons/) | [List of macros](material/index.md)       |
-| [Devicon 2](https://konpa.github.io/devicon/)              | [List of macros](dev2/index.md)           |
+| [Devicon 2](https://github.com/devicons/devicon.git)       | [List of macros](devicons2/index.md)      |
 
 ## Example
 
@@ -79,7 +79,7 @@ The following icon sets are included:
 
 skinparam defaultTextAlignment center
 
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.2.0
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
 
 !includeurl ICONURL/common.puml
 !includeurl ICONURL/devicons/mysql.puml
@@ -112,7 +112,7 @@ More examples can be found [here](examples/)
 
 ## Build
 
-Icons are generated with [font-icon-generator](https://github.com/tupadr3/font-icon-generator)
+Icons are all generated with [font-icon-generator](https://github.com/tupadr3/font-icon-generator)
 
 ## Note
 
@@ -121,6 +121,15 @@ Icons are generated with [font-icon-generator](https://github.com/tupadr3/font-i
 - Thanks to [yuri-becker](https://github.com/yuri-becker) for the integration of [Devicon 2](https://konpa.github.io/devicon/)
 
 ## Changelog
+
+### v2.3.0
+
+- Fixed wrong link in readme to devicons2
+- Changed Repo for devicons2 to <https://github.com/devicons/devicon.git>
+- Removed old dir "dev2"
+- Updated FA5 to latest v5.15.3
+- Updated devicons2 to latest version
+- Pinned gov to 5.15.3
 
 ### v2.2.0
 

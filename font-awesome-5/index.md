@@ -13,7 +13,6 @@ address_book |FA5_ADDRESS_BOOK |![image-address_book](address_book.png) |address
 address_card |FA5_ADDRESS_CARD |![image-address_card](address_card.png) |address_card.puml |
 adjust |FA5_ADJUST |![image-adjust](adjust.png) |adjust.puml |
 adn |FA5_ADN |![image-adn](adn.png) |adn.puml |
-adobe |FA5_ADOBE |![image-adobe](adobe.png) |adobe.puml |
 adversal |FA5_ADVERSAL |![image-adversal](adversal.png) |adversal.puml |
 affiliatetheme |FA5_AFFILIATETHEME |![image-affiliatetheme](affiliatetheme.png) |affiliatetheme.puml |
 air_freshener |FA5_AIR_FRESHENER |![image-air_freshener](air_freshener.png) |air_freshener.puml |
@@ -277,6 +276,7 @@ cloud_showers_heavy |FA5_CLOUD_SHOWERS_HEAVY |![image-cloud_showers_heavy](cloud
 cloud_sun |FA5_CLOUD_SUN |![image-cloud_sun](cloud_sun.png) |cloud_sun.puml |
 cloud_sun_rain |FA5_CLOUD_SUN_RAIN |![image-cloud_sun_rain](cloud_sun_rain.png) |cloud_sun_rain.puml |
 cloud_upload_alt |FA5_CLOUD_UPLOAD_ALT |![image-cloud_upload_alt](cloud_upload_alt.png) |cloud_upload_alt.puml |
+cloudflare |FA5_CLOUDFLARE |![image-cloudflare](cloudflare.png) |cloudflare.puml |
 cloudscale |FA5_CLOUDSCALE |![image-cloudscale](cloudscale.png) |cloudscale.puml |
 cloudsmith |FA5_CLOUDSMITH |![image-cloudsmith](cloudsmith.png) |cloudsmith.puml |
 cloudversify |FA5_CLOUDVERSIFY |![image-cloudversify](cloudversify.png) |cloudversify.puml |
@@ -607,6 +607,7 @@ grip_lines_vertical |FA5_GRIP_LINES_VERTICAL |![image-grip_lines_vertical](grip_
 grip_vertical |FA5_GRIP_VERTICAL |![image-grip_vertical](grip_vertical.png) |grip_vertical.puml |
 gripfire |FA5_GRIPFIRE |![image-gripfire](gripfire.png) |gripfire.puml |
 grunt |FA5_GRUNT |![image-grunt](grunt.png) |grunt.puml |
+guilded |FA5_GUILDED |![image-guilded](guilded.png) |guilded.puml |
 guitar |FA5_GUITAR |![image-guitar](guitar.png) |guitar.puml |
 gulp |FA5_GULP |![image-gulp](gulp.png) |gulp.puml |
 h_square |FA5_H_SQUARE |![image-h_square](h_square.png) |h_square.puml |
@@ -665,6 +666,7 @@ hippo |FA5_HIPPO |![image-hippo](hippo.png) |hippo.puml |
 hips |FA5_HIPS |![image-hips](hips.png) |hips.puml |
 hire_a_helper |FA5_HIRE_A_HELPER |![image-hire_a_helper](hire_a_helper.png) |hire_a_helper.puml |
 history |FA5_HISTORY |![image-history](history.png) |history.puml |
+hive |FA5_HIVE |![image-hive](hive.png) |hive.puml |
 hockey_puck |FA5_HOCKEY_PUCK |![image-hockey_puck](hockey_puck.png) |hockey_puck.puml |
 holly_berry |FA5_HOLLY_BERRY |![image-holly_berry](holly_berry.png) |holly_berry.puml |
 home |FA5_HOME |![image-home](home.png) |home.puml |
@@ -708,8 +710,10 @@ industry |FA5_INDUSTRY |![image-industry](industry.png) |industry.puml |
 infinity |FA5_INFINITY |![image-infinity](infinity.png) |infinity.puml |
 info |FA5_INFO |![image-info](info.png) |info.puml |
 info_circle |FA5_INFO_CIRCLE |![image-info_circle](info_circle.png) |info_circle.puml |
+innosoft |FA5_INNOSOFT |![image-innosoft](innosoft.png) |innosoft.puml |
 instagram |FA5_INSTAGRAM |![image-instagram](instagram.png) |instagram.puml |
 instagram_square |FA5_INSTAGRAM_SQUARE |![image-instagram_square](instagram_square.png) |instagram_square.puml |
+instalod |FA5_INSTALOD |![image-instalod](instalod.png) |instalod.puml |
 intercom |FA5_INTERCOM |![image-intercom](intercom.png) |intercom.puml |
 internet_explorer |FA5_INTERNET_EXPLORER |![image-internet_explorer](internet_explorer.png) |internet_explorer.puml |
 invision |FA5_INVISION |![image-invision](invision.png) |invision.puml |
@@ -883,6 +887,7 @@ ns8 |FA5_NS8 |![image-ns8](ns8.png) |ns8.puml |
 nutritionix |FA5_NUTRITIONIX |![image-nutritionix](nutritionix.png) |nutritionix.puml |
 object_group |FA5_OBJECT_GROUP |![image-object_group](object_group.png) |object_group.puml |
 object_ungroup |FA5_OBJECT_UNGROUP |![image-object_ungroup](object_ungroup.png) |object_ungroup.puml |
+octopus_deploy |FA5_OCTOPUS_DEPLOY |![image-octopus_deploy](octopus_deploy.png) |octopus_deploy.puml |
 odnoklassniki |FA5_ODNOKLASSNIKI |![image-odnoklassniki](odnoklassniki.png) |odnoklassniki.puml |
 odnoklassniki_square |FA5_ODNOKLASSNIKI_SQUARE |![image-odnoklassniki_square](odnoklassniki_square.png) |odnoklassniki_square.puml |
 oil_can |FA5_OIL_CAN |![image-oil_can](oil_can.png) |oil_can.puml |
@@ -929,6 +934,7 @@ penny_arcade |FA5_PENNY_ARCADE |![image-penny_arcade](penny_arcade.png) |penny_a
 people_arrows |FA5_PEOPLE_ARROWS |![image-people_arrows](people_arrows.png) |people_arrows.puml |
 people_carry |FA5_PEOPLE_CARRY |![image-people_carry](people_carry.png) |people_carry.puml |
 pepper_hot |FA5_PEPPER_HOT |![image-pepper_hot](pepper_hot.png) |pepper_hot.puml |
+perbyte |FA5_PERBYTE |![image-perbyte](perbyte.png) |perbyte.puml |
 percent |FA5_PERCENT |![image-percent](percent.png) |percent.puml |
 percentage |FA5_PERCENTAGE |![image-percentage](percentage.png) |percentage.puml |
 periscope |FA5_PERISCOPE |![image-periscope](periscope.png) |periscope.puml |
@@ -1319,6 +1325,7 @@ uikit |FA5_UIKIT |![image-uikit](uikit.png) |uikit.puml |
 umbraco |FA5_UMBRACO |![image-umbraco](umbraco.png) |umbraco.puml |
 umbrella |FA5_UMBRELLA |![image-umbrella](umbrella.png) |umbrella.puml |
 umbrella_beach |FA5_UMBRELLA_BEACH |![image-umbrella_beach](umbrella_beach.png) |umbrella_beach.puml |
+uncharted |FA5_UNCHARTED |![image-uncharted](uncharted.png) |uncharted.puml |
 underline |FA5_UNDERLINE |![image-underline](underline.png) |underline.puml |
 undo |FA5_UNDO |![image-undo](undo.png) |undo.puml |
 undo_alt |FA5_UNDO_ALT |![image-undo_alt](undo_alt.png) |undo_alt.puml |
@@ -1370,6 +1377,8 @@ vector_square |FA5_VECTOR_SQUARE |![image-vector_square](vector_square.png) |vec
 venus |FA5_VENUS |![image-venus](venus.png) |venus.puml |
 venus_double |FA5_VENUS_DOUBLE |![image-venus_double](venus_double.png) |venus_double.puml |
 venus_mars |FA5_VENUS_MARS |![image-venus_mars](venus_mars.png) |venus_mars.puml |
+vest |FA5_VEST |![image-vest](vest.png) |vest.puml |
+vest_patches |FA5_VEST_PATCHES |![image-vest_patches](vest_patches.png) |vest_patches.puml |
 viacoin |FA5_VIACOIN |![image-viacoin](viacoin.png) |viacoin.puml |
 viadeo |FA5_VIADEO |![image-viadeo](viadeo.png) |viadeo.puml |
 viadeo_square |FA5_VIADEO_SQUARE |![image-viadeo_square](viadeo_square.png) |viadeo_square.puml |
@@ -1400,6 +1409,7 @@ vuejs |FA5_VUEJS |![image-vuejs](vuejs.png) |vuejs.puml |
 walking |FA5_WALKING |![image-walking](walking.png) |walking.puml |
 wallet |FA5_WALLET |![image-wallet](wallet.png) |wallet.puml |
 warehouse |FA5_WAREHOUSE |![image-warehouse](warehouse.png) |warehouse.puml |
+watchman_monitoring |FA5_WATCHMAN_MONITORING |![image-watchman_monitoring](watchman_monitoring.png) |watchman_monitoring.puml |
 water |FA5_WATER |![image-water](water.png) |water.puml |
 wave_square |FA5_WAVE_SQUARE |![image-wave_square](wave_square.png) |wave_square.puml |
 waze |FA5_WAZE |![image-waze](waze.png) |waze.puml |
@@ -1425,6 +1435,7 @@ wine_glass |FA5_WINE_GLASS |![image-wine_glass](wine_glass.png) |wine_glass.puml
 wine_glass_alt |FA5_WINE_GLASS_ALT |![image-wine_glass_alt](wine_glass_alt.png) |wine_glass_alt.puml |
 wix |FA5_WIX |![image-wix](wix.png) |wix.puml |
 wizards_of_the_coast |FA5_WIZARDS_OF_THE_COAST |![image-wizards_of_the_coast](wizards_of_the_coast.png) |wizards_of_the_coast.puml |
+wodu |FA5_WODU |![image-wodu](wodu.png) |wodu.puml |
 wolf_pack_battalion |FA5_WOLF_PACK_BATTALION |![image-wolf_pack_battalion](wolf_pack_battalion.png) |wolf_pack_battalion.puml |
 won_sign |FA5_WON_SIGN |![image-won_sign](won_sign.png) |won_sign.puml |
 wordpress |FA5_WORDPRESS |![image-wordpress](wordpress.png) |wordpress.puml |
