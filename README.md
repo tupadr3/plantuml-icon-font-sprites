@@ -122,6 +122,8 @@ Icons are all generated with [font-icon-generator](https://github.com/tupadr3/fo
 
 ## Changelog
 
+- Added Apache Kafka to Devicon 2
+
 ### v2.3.0
 
 - Fixed wrong link in readme to devicons2
