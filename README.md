@@ -11,7 +11,7 @@ The common.puml is required for the rest to work.
 or via url
 
 ```puml
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
 !includeurl ICONURL/common.puml
 ```
 
@@ -79,7 +79,7 @@ The following icon sets are included:
 
 skinparam defaultTextAlignment center
 
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
 
 !includeurl ICONURL/common.puml
 !includeurl ICONURL/devicons/mysql.puml
