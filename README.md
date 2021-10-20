@@ -112,7 +112,21 @@ More examples can be found [here](examples/)
 
 ## Build
 
-Icons are all generated with [font-icon-generator](https://github.com/tupadr3/font-icon-generator)
+### Windows
+
+```bash
+npm install --global --production windows-build-tools
+yarn install
+yarn build
+```
+
+### Linux
+
+```bash
+apt install librsvg2-bin openjdk-11-jre graphviz
+yarn install
+yarn build
+```
 
 ## Note
 
@@ -120,7 +134,16 @@ Icons are all generated with [font-icon-generator](https://github.com/tupadr3/fo
 - Thanks to milo-minderbinder for [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML)
 - Thanks to [yuri-becker](https://github.com/yuri-becker) for the integration of [Devicon 2](https://konpa.github.io/devicon/)
 
+## Contributing
+
+Contribution is welcome. In order to update an existing font or to add a new font please fork the repository and use a feature branch.
+
 ## Changelog
+
+### v2.4.0
+
+- Updated devicons2 & pinned to v2.12.0
+- Integrated project [font-icon-generator](https://github.com/tupadr3/font-icon-generator) into this project to make it easier to contribute
 
 ### v2.3.0
 
