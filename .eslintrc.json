@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"extends": "eslint:recommended",
+	"parserOptions": {
+		"ecmaVersion": 2017
+	},
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"rules": {
+		"no-console": 0
+	},
+	"globals": {
+		"console": true,
+		"log": true
+	}
+}

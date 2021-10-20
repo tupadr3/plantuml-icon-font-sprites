@@ -1,2 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-testing
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# npm, yarn, build etc
+.vscode
+.sass-cache
+yarn.lock
+package-lock.json
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional eslint cache
+.eslintcache
+
+# Os
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.directory
+*~
+.DS_Store
+
+# maven & eclipse
+target/
+.classpath
+.project
+
+# project specific
+.tmp

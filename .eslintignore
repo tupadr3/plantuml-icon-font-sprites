@@ -1,0 +1,4 @@
+#  and /bower_components/* ignored by default
+
+# Ignore built files except build/index.js
+/node_modules/*
