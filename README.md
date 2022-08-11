@@ -12,7 +12,7 @@ or via url
 
 ```puml
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
-!includeurl ICONURL/common.puml
+!include ICONURL/common.puml
 ```
 
 Import the sprites that you want
@@ -26,10 +26,10 @@ Import the sprites that you want
 or via url
 
 ```puml
-!includeurl ICONURL/common.puml
-!includeurl ICONURL/devicons/mysql.puml
-!includeurl ICONURL/font-awesome/database.puml
-!includeurl ICONURL/font-awesome-5/database.puml
+!include ICONURL/common.puml
+!include ICONURL/devicons/mysql.puml
+!include ICONURL/font-awesome/database.puml
+!include ICONURL/font-awesome-5/database.puml
 ```
 
 To use the sprites add one of the macros
@@ -81,10 +81,10 @@ skinparam defaultTextAlignment center
 
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
 
-!includeurl ICONURL/common.puml
-!includeurl ICONURL/devicons/mysql.puml
-!includeurl ICONURL/font-awesome/server.puml
-!includeurl ICONURL/font-awesome-5/database.puml
+!include ICONURL/common.puml
+!include ICONURL/devicons/mysql.puml
+!include ICONURL/font-awesome/server.puml
+!include ICONURL/font-awesome-5/database.puml
 
 title Styling example
 
