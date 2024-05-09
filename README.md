@@ -55,7 +55,7 @@ DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
 
 An overview of all icons can be here:
 
-[Overview](icons/index.html)
+[Overview](https://html-preview.github.io/?url=https://github.com/tupadr3/plantuml-icon-font-sprites/blob/v3.0.0/icons/index.html)
 
 The following icon sets are included:
 
