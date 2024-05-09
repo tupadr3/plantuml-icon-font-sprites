@@ -2,20 +2,20 @@
 
 skinparam defaultTextAlignment center
 
-!include ../common.puml
-!include ../font-awesome-5/server.puml
-!include ../font-awesome-5/gitlab.puml
-!include ../font-awesome/gears.puml
-!include ../font-awesome/fire.puml
-!include ../font-awesome/clock_o.puml
-!include ../font-awesome/lock.puml
-!include ../font-awesome/cloud.puml
+!include ../icons/common.puml
+!include ../icons/font-awesome-5/server.puml
+!include ../icons/font-awesome-6/gitlab.puml
+!include ../icons/font-awesome/gears.puml
+!include ../icons/font-awesome/fire.puml
+!include ../icons/font-awesome/clock_o.puml
+!include ../icons/font-awesome/lock.puml
+!include ../icons/font-awesome/cloud.puml
 
-!include ../devicons/nginx.puml
-!include ../devicons/mysql.puml
-!include ../devicons/redis.puml
-!include ../devicons/docker.puml
-!include ../devicons/linux.puml
+!include ../icons/devicons/nginx.puml
+!include ../icons/devicons/mysql.puml
+!include ../icons/devicons/redis.puml
+!include ../icons/devicons2/docker.puml
+!include ../icons/devicons/linux.puml
 
 FA_CLOUD(internet,internet,cloud) #White {
 
@@ -26,12 +26,12 @@ DEV_LINUX(debian,Linux,node){
 	FA_CLOCK_O(crond,crond) #White
 	FA_FIRE(iptables,iptables) #White
 
-	DEV_DOCKER(docker,docker,node)  {
+	DEV2_DOCKER(docker,docker,node)  {
 		DEV_NGINX(nginx,nginx,node) #White
 		DEV_MYSQL(mysql,mysql,node) #White
 		DEV_REDIS(redis,redis,node) #White
 		FA5_SERVER(nexus,nexus3,node) #White
-		FA5_GITLAB(gitlab,gitlab,node) #White
+		FA6_GITLAB(gitlab,gitlab,node) #White
 		FA_GEARS(gitlabci,gitlab-ci-runner,node) #White
 
 		FA_LOCK(letsencrypt,letsencrypt-client,node) #White

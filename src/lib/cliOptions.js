@@ -50,6 +50,16 @@ module.exports = [
 		defaultValue: false,
 	},
 	{
+		name: 'examples',
+		type: Boolean,
+		defaultValue: false,
+	},
+	{
+		name: 'index',
+		type: Boolean,
+		defaultValue: false,
+	},
+	{
 		name: 'colors',
 		type: String,
 		multiple: true,
@@ -80,7 +90,7 @@ module.exports = [
 	{
 		name: 'binPlantuml',
 		type: String,
-		defaultValue: 'src/assets/bin/plantuml.jar',
+		defaultValue: 'src/assets/bin/plantuml-mit-1.2024.4.jar',
 		description: 'The path to the PlantUML executable (.jar) to use',
 	},
 	{

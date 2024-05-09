@@ -4,7 +4,9 @@ const Bluebird = require('bluebird'),
 	fs = require('fs-extra'),
 	path = require('path'),
 	ProgressBar = require('progress'),
-	utils = require('./utils');
+	utils = require('./utils')
+	packageJson = require('./../../package.json'),
+	version = "v" + packageJson.version;
 
 // config
 const cfg = require('./config');
@@ -48,12 +50,17 @@ async function generate() {
 	}
 
 	if (cfg.devel) {
+		cfg.examples = true;
 		cfg.png = true;
 		cfg.puml = true;
 		cfg.svg = true;
 		cfg.limit = 25;
 		cfg.sizes = [128];
 		cfg.icons = [
+			'fa6-database',
+			'fa6-docker',
+			'fa6-qrcode',
+			'fa6-gitlab',
 			'fa5-user_alt',
 			'fa5-gitlab',
 			'fa5-server',
@@ -70,6 +77,7 @@ async function generate() {
 			'dev-docker',
 			'dev-linux',
 			'dev2-html5',
+			'dev2-docker',
 			'gov-ambulance',
 			'weather-night_alt_thunderstorm',
 			'material-3d_rotation',
@@ -111,19 +119,24 @@ async function generate() {
 	await Promise.all(work);
 
 	if (cfg.release) {
-		// copy icons to project
+
+		// for rls always build the index and examples
+		cfg.examples = true;
+		cfg.index = true;
+
+		// copy icons to rls dir
 		for (let item of cfg.fonts) {
 			log.debug('Copying ' + item.name);
 
-			let releasePath = cfg.dirs.project + '/' + item.name,
+			let releasePath = cfg.dirs.icons + '/' + item.name,
 				pngPath = cfg.dirs.build + '/' + item.type + '/png/' + cfg.sizes[0],
 				pumlPath = cfg.dirs.build + '/' + item.type + '/puml';
 
 			await fs.ensureDirSync(releasePath);
 			await fs.emptyDirSync(releasePath);
 
-			let files = await utils.getFiles(pngPath);
-			files = files
+			let pngFiles = await utils.getFiles(pngPath);
+			pngFiles = pngFiles
 				.map((file) => {
 					return {
 						file: path.parse(file).name + path.parse(file).ext,
@@ -136,24 +149,7 @@ async function generate() {
 					return a.name > b.name ? 1 : b.name > a.name ? -1 : 0;
 				});
 
-			log.debug('Found ' + item.name + ' ' + files.length);
-
-			let indexFileName = releasePath + '/index.md';
-			let indexContent = `# ${item.name}\n\n\n`;
-			indexContent += `### Overview\n`;
-			indexContent += `| Name  | Macro  | Image | Url |\n`;
-			indexContent += `|-------|--------|-------|-----|\n`;
-
-			for (let file of files) {
-				await fs.copyFileSync(file.path, releasePath + '/' + file.file);
-
-				indexContent += `${file.name} |`;
-				indexContent += `${item.type.toUpperCase()}_${file.name.toUpperCase()} |`;
-				indexContent += `![image-${file.name}](${file.name}.png) |`;
-				indexContent += `${file.name}.puml |\n`;
-			}
-
-			fs.writeFileSync(indexFileName, indexContent);
+			log.debug('Found ' + item.name + ' ' + pngFiles.length);
 
 			let pumlFiles = await utils.getFiles(pumlPath);
 			pumlFiles = pumlFiles
@@ -173,6 +169,99 @@ async function generate() {
 				await fs.copyFileSync(file.path, releasePath + '/' + file.file);
 			}
 		}
+	}
+
+	if (cfg.index) {
+
+		// copy index.html & index.md
+		let indexHtmlSrcPath = './src/assets/docs/index.html',
+			indexHtmlPath = cfg.dirs.icons + '/index.html';
+
+		let indexHtmlContent = await fs.readFileSync(indexHtmlSrcPath);
+
+		fs.writeFileSync(indexHtmlPath, indexHtmlContent);
+
+		// copy icons to project
+		for (let item of cfg.fonts) {
+			log.debug('Copying ' + item.name);
+
+			let releasePath = cfg.dirs.icons + '/' + item.name,
+				pngPath = cfg.dirs.build + '/' + item.type + '/png/' + cfg.sizes[0],
+				pumlPath = cfg.dirs.build + '/' + item.type + '/puml';
+
+			await fs.ensureDirSync(releasePath);
+
+			let files = await utils.getFiles(pngPath);
+			files = files
+				.map((file) => {
+					return {
+						file: path.parse(file).name + path.parse(file).ext,
+						name: path.parse(file).name,
+						ext: path.parse(file).ext,
+						path: file,
+					};
+				})
+				.sort(function (a, b) {
+					return a.name > b.name ? 1 : b.name > a.name ? -1 : 0;
+				});
+
+			log.debug('Found ' + item.name + ' ' + files.length);
+
+			// Generate markdown file
+			let indexMdFileName = releasePath + '/index.md';
+			let indexMdContent = `# ${item.name}\n\n\n`;
+			indexMdContent += `### Overview\n`;
+			indexMdContent += `| Name  | Macro  | Image | Url |\n`;
+			indexMdContent += `|-------|--------|-------|-----|\n`;
+
+			for (let file of files) {
+				await fs.copyFileSync(file.path, releasePath + '/' + file.file);
+
+				indexMdContent += `| ${file.name}`;
+				indexMdContent += ` | ${item.type.toUpperCase()}_${file.name.toUpperCase()}`;
+				indexMdContent += ` | ![image-${file.name}](${file.name}.png)`;
+				indexMdContent += ` | ${file.name}.puml`;
+				indexMdContent += ` |\n`;
+			}
+
+			fs.writeFileSync(indexMdFileName, indexMdContent);
+
+
+			// Generate index html file
+			indexHtmlContent = `\n<h1>${item.name}</h1>\n`;
+			indexHtmlContent += "\n<main class=\"cards\">\n";
+
+			for (let file of files) {
+
+				const data = await fs.readFileSync(file.path);
+    			const base64 = data.toString('base64');
+
+				indexHtmlContent += `\n` +
+					`<article class="card">` +
+					`<img src="data:image/png;base64,${base64}" alt="Embedded Image" />` +
+					`<div class="text">` +
+					`<h2>${file.name}</h2>` +
+					`<pre>\n` +
+					`@startuml\n` +
+					`!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/${version}/icons"\n` +
+					`!include $ICONURL/common.puml\n` +
+					`!include $ICONURL/${item.name}/${file.name}.puml\n` +
+					`${item.type.toUpperCase()}_${file.name.toUpperCase()}(d1)\n` +
+					`@enduml` +
+					`</pre>` +
+					`</div>` +
+					`</article>` +
+					`\n`;
+			}
+
+			indexHtmlContent += "\n</main>\n";
+			indexHtmlContent += "<hr/>\n";
+
+			fs.appendFileSync(indexHtmlPath, indexHtmlContent);
+		}
+	}
+
+	if (cfg.examples) {
 		// Render examples
 		let examplesPath = cfg.dirs.project + '/examples';
 		let exampleFiles = await utils.getFiles(examplesPath);
@@ -183,7 +272,7 @@ async function generate() {
 		}
 	}
 
-	console.log('Done');
+	log.debug('Done');
 }
 
 function renderPuml(path) {

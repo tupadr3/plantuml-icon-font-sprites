@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "devel",
+			"type": "shell",
+			"command": "node ./src/lib/index.js --devel",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "devel",
+			"type": "shell",
+			"command": "node ./src/lib/index.js --devel",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "rm .tmp/build -rf && node ./src/lib/index.js -c 4 --release",
+			"problemMatcher": []
+		},
+		{
+			"label": "clean",
+			"type": "shell",
+			"command": "rm .tmp -rf",
+			"problemMatcher": []
+		}
+	]
+}

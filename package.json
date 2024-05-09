@@ -1,9 +1,10 @@
 {
 	"name": "plantuml-icon-font-sprites",
-	"version": "0.1.0",
+	"version": "3.0.0",
 	"author": "tupadr3",
 	"description": "A usefull description",
 	"license": "MIT",
+	"type": "commonjs",
 	"scripts": {
 		"devel": "node ./src/lib/index.js --devel",
 		"build": "rm .tmp/build -rf && node ./src/lib/index.js -c 4 --release",
@@ -11,21 +12,21 @@
 	},
 	"devDependencies": {},
 	"dependencies": {
-		"bluebird": "^3.5.1",
-		"command-line-args": "^5.1.1",
-		"command-line-usage": "^6.0.2",
-		"dateformat": "^3.0.3",
-		"eslint": "^5.9.0",
-		"extend": "^3.0.1",
-		"fs-extra": "^6.0.1",
-		"isomorphic-git": ">=1.8.2",
-		"lodash": "^4.17.10",
-		"minimist": "^1.2.0",
+		"bluebird": "^3.7.2",
+		"command-line-args": "^5.2.1",
+		"command-line-usage": "^7.0.1",
+		"dateformat": "^5.0.3",
+		"eslint": "^9.2.0",
+		"extend": "^3.0.2",
+		"fs-extra": "^11.2.0",
+		"lodash": "^4.17.21",
+		"minimist": "^1.2.8",
 		"ncp": "^2.0.0",
-		"os": "^0.1.1",
-		"pngjs": "^3.3.3",
-		"progress": "^2.0.0",
-		"winston": "^2.4.2",
-		"xml2js": "^0.4.19"
+		"os": "^0.1.2",
+		"pngjs": "^7.0.0",
+		"progress": "^2.0.3",
+		"simple-git": "^3.24.0",
+		"winston": "^3.13.0",
+		"xml2js": "^0.6.2"
 	}
 }

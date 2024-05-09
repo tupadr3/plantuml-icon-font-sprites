@@ -12,7 +12,7 @@ async function load(cfg, item) {
 }
 
 async function loadIcons(cfg, item) {
-	log.debug("Loading fa id's");
+	log.debug("Loading gov id's");
 	let content = await readFile(item.path + '/less/variables.less');
 	let lines = content.toString();
 
