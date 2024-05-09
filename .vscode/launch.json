@@ -1,0 +1,50 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run devel",
+			"type": "node",
+			"request": "launch",
+			"outputCapture": "std",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/lib/index.js",
+			"args": [
+				"--devel"
+			]
+		},
+		{
+			"name": "Run devel fa6",
+			"type": "node",
+			"request": "launch",
+			"outputCapture": "std",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/lib/index.js",
+			"args": [
+				"--devel",
+				"--fonts",
+				"fa6"
+			]
+		},
+		{
+			"name": "Build examples",
+			"type": "node",
+			"request": "launch",
+			"outputCapture": "std",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/lib/index.js",
+			"args": [
+				"--devel",
+				"--examples"
+			]
+		}
+	]
+}

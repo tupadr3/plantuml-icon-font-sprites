@@ -2,8 +2,8 @@
 
 skinparam defaultTextAlignment center
 
-!include ../common.puml
-!include ../devicons/mysql.puml
+!include ../icons/common.puml
+!include ../icons/devicons/mysql.puml
 
 DEV_MYSQL(db1)
 DEV_MYSQL(db2,label of db2)

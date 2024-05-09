@@ -9,7 +9,6 @@ yarn-error.log*
 .grunt
 
 # npm, yarn, build etc
-.vscode
 .sass-cache
 yarn.lock
 package-lock.json

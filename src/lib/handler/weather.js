@@ -12,7 +12,7 @@ async function load(cfg, item) {
 }
 
 async function loadIcons(cfg, item) {
-	log.debug("Loading fa id's");
+	log.debug("Loading weather id's");
 	let content = await readFile(item.path + '/css/weather-icons.css');
 	let lines = content.toString();
 

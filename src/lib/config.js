@@ -49,6 +49,7 @@ function initConfig() {
 	cfg.dirs = {};
 	cfg.dirs.temp = path.resolve(cfg.temp);
 	cfg.dirs.project = path.resolve('./');
+	cfg.dirs.icons = path.resolve(cfg.dirs.project + '/icons');
 	cfg.dirs.generated = path.resolve(cfg.temp + '/generated');
 	cfg.dirs.build = path.resolve(cfg.temp + '/' + cfg.build);
 	cfg.dirs.fonts = path.resolve(cfg.temp + '/fonts');

@@ -1,0 +1,38 @@
+{
+	"name": "Node.js",
+	// Use the Dockerfile in the .devcontainer folder.
+	"build": {
+		"dockerfile": "Dockerfile.dev"
+	},
+	"features": {
+		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+	},
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"mrmlnc.vscode-duplicate",
+				"EditorConfig.EditorConfig",
+				"tombonnike.vscode-status-bar-format-toggle",
+				"jebbs.plantuml",
+				"eamodio.gitlens",
+				"dbaeumer.vscode-eslint"
+			],
+			"settings": {
+				"npm.packageManager": "yarn",
+				"debug.console.wordWrap": false,
+				"debug.console.fontSize": 12,
+				"editor.stickyScroll.enabled": true,
+				"editor.foldingImportsByDefault": true,
+				"editor.codeActionsOnSave": {
+					"source.organizeImports": "explicit",
+					"source.fixAll.eslint": "explicit"
+				},
+				"[javascript]": {
+					"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+				}
+			}
+		}
+	}
+}
