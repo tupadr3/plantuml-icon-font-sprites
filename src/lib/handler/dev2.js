@@ -12,7 +12,7 @@ async function load(cfg, item) {
 async function loadIcons(cfg, item) {
 	log.debug("Loading devicons2 id's");
 
-	let content = await readFile(item.path + '/devicon.css');
+	let content = await readFile(item.path + '/devicon-base.css');
 	let lines = content.toString();
 
 	let match,

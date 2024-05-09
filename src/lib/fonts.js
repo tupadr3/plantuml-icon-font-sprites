@@ -3,25 +3,31 @@
  */
 const log = require('./logger'),
 	fs = require('fs-extra'),
-	git = require('isomorphic-git'),
-	http = require('isomorphic-git/http/node'),
+	simpleGit = require('simple-git'),
 	PNG = require('pngjs').PNG;
 
 function def() {
 	const fontDefs = [
 		{
+			prefix: 'FA6',
+			name: 'font-awesome-6',
+			type: 'fa6',
+			repo: 'https://github.com/FortAwesome/Font-Awesome.git',
+			branch: '6.x',
+		},
+		{
 			prefix: 'FA5',
 			name: 'font-awesome-5',
 			type: 'fa5',
 			repo: 'https://github.com/FortAwesome/Font-Awesome.git',
-			branch: '5.15.3',
+			branch: '5.x',
 		},
 		{
 			prefix: 'FA',
 			name: 'font-awesome',
 			type: 'fa',
 			repo: 'https://github.com/FortAwesome/Font-Awesome.git',
-			branch: 'fa-4',
+			branch: '4.x',
 		},
 		{
 			prefix: 'DEV',
@@ -42,7 +48,7 @@ function def() {
 			name: 'weather',
 			type: 'weather',
 			repo: 'https://github.com/erikflowers/weather-icons.git',
-			branch: 'master',
+			branch: 'v2.0.0',
 		},
 		{
 			prefix: 'MATERIAL',
@@ -56,7 +62,7 @@ function def() {
 			name: 'devicons2',
 			type: 'dev2',
 			repo: 'https://github.com/devicons/devicon.git',
-			branch: 'v2.12.0',
+			branch: 'v2.16.0',
 		},
 	];
 	return fontDefs;
@@ -118,6 +124,7 @@ async function load(cfg) {
 async function repo(cfg, item) {
 	log.info('Loading repo ' + item.repo + ' into ' + cfg.dirs.fonts);
 
+	const git = simpleGit();
 	const repoDir = cfg.dirs.fonts + '/' + item.type,
 		repoGitDir = cfg.dirs.fonts + '/' + item.type + '/.git';
 
@@ -128,16 +135,18 @@ async function repo(cfg, item) {
 		log.debug(`checking dir ${repoGitDir} for repo`);
 		const repoExists = fs.existsSync(repoGitDir);
 
+
+		const gitProgress = ({ method, stage, progress }) => {
+			log.debug(`${item.repo} git.${method} ${stage} stage ${progress}% complete`);
+		}
+
 		if (!repoExists) {
-			await git.clone({
-				fs,
-				http,
-				dir: repoDir,
-				url: item.repo,
-				singleBranch: true,
-				ref: item.branch,
-				depth: 10,
-			});
+			const gitClone = simpleGit({ progress: gitProgress });
+			await gitClone.clone(item.repo, repoDir, ['--branch', item.branch, '--single-branch', '--depth', '10']);
+		} else {
+			repoGit = simpleGit({ baseDir: repoDir, progress: gitProgress });
+			await repoGit.fetch();
+			await repoGit.clean(simpleGit.CleanOptions.FORCE);
 		}
 
 		log.debug(`checkout ${item.repo} branch:${item.branch} completed to dir ${repoDir}`);

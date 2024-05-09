@@ -12,7 +12,7 @@ async function load(cfg, item) {
 }
 
 async function loadIcons(cfg, item) {
-	log.debug("Loading fa id's");
+	log.debug("Loading fa5 id's");
 	let content = await readFile(item.path + '/less/_variables.less');
 	let lines = content.toString();
 
@@ -109,7 +109,7 @@ function getSvgCode(cfg, item) {
 		width: item.advWidth,
 		height: item.size,
 		shiftX: item.advWidth / 10 / 2,
-		shiftY: -item.size +item.offset -item.size / 10 / 2
+		shiftY: -item.size + item.offset - item.size / 10 / 2
 	};
 
 	return (
